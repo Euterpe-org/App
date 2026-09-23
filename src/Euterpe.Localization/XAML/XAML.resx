@@ -26,7 +26,7 @@
     <value>Browse...</value>
   </data>
   <data name="Button_CheckUpdate" xml:space="preserve">
-    <value>Check Update</value>
+    <value>Check for Updates</value>
   </data>
   <data name="Button_Confirm" xml:space="preserve">
     <value>Confirm</value>
@@ -50,7 +50,7 @@
     <value>Reinstall</value>
   </data>
   <data name="Button_Reselect" xml:space="preserve">
-    <value>Reselect</value>
+    <value>Change...</value>
   </data>
   <data name="Button_Retry" xml:space="preserve">
     <value>Retry</value>
@@ -65,7 +65,7 @@
     <value>Update</value>
   </data>
   <data name="ChartAnalyzer_Description" xml:space="preserve">
-    <value>Predict approximate ratings and analyze a chart's Note breakdown</value>
+    <value>Estimate a chart's difficulty rating and analyze its notes</value>
   </data>
   <data name="ChartAnalyzer_Title" xml:space="preserve">
     <value>Chart Analyzer</value>
@@ -158,10 +158,10 @@
     <value>Update All Charts</value>
   </data>
   <data name="ChartManage_UploadedBy" xml:space="preserve">
-    <value>by {0}</value>
+    <value>Uploaded by {0}</value>
   </data>
   <data name="ChartSortField_Author" xml:space="preserve">
-    <value>Author</value>
+    <value>Artist</value>
   </data>
   <data name="ChartSortField_Bpm" xml:space="preserve">
     <value>BPM</value>
@@ -224,7 +224,7 @@
     <value>Add a charter</value>
   </data>
   <data name="EpkEditor_Field_Author" xml:space="preserve">
-    <value>Song Author</value>
+    <value>Artist</value>
   </data>
   <data name="EpkEditor_Field_BackgroundVideoOpacity" xml:space="preserve">
     <value>Video Opacity</value>
@@ -254,10 +254,10 @@
     <value>Rating Display Override</value>
   </data>
   <data name="EpkEditor_Field_Name" xml:space="preserve">
-    <value>Chart Name</value>
+    <value>Song Title</value>
   </data>
   <data name="EpkEditor_Field_NameRomanized" xml:space="preserve">
-    <value>Romanized Name</value>
+    <value>Romanized Title</value>
   </data>
   <data name="EpkEditor_Field_SafeForStreamer" xml:space="preserve">
     <value>Safe for streamers</value>
@@ -266,7 +266,7 @@
     <value>Scene</value>
   </data>
   <data name="EpkEditor_Field_SceneEgg" xml:space="preserve">
-    <value>Scene Egg</value>
+    <value>Easter Egg Scene</value>
   </data>
   <data name="EpkEditor_Field_SearchKeywords" xml:space="preserve">
     <value>Search Keywords</value>
@@ -278,7 +278,7 @@
     <value>Refresh</value>
   </data>
   <data name="EpkEditor_Files_Summary" xml:space="preserve">
-    <value>{0} files · {1}</value>
+    <value>Files: {0} · {1}</value>
   </data>
   <data name="EpkEditor_Hint_Required" xml:space="preserve">
     <value>Fill in all required fields to save</value>
@@ -296,7 +296,7 @@
     <value>Rating</value>
   </data>
   <data name="EpkEditor_MissingFiles" xml:space="preserve">
-    <value>{0} file(s) referenced by this chart are missing from its folder</value>
+    <value>Files referenced by this chart but missing from its folder: {0}</value>
   </data>
   <data name="EpkEditor_NewFile" xml:space="preserve">
     <value>New EPK…</value>
@@ -413,10 +413,10 @@
     <value>Create an account to upload and manage your mods</value>
   </data>
   <data name="ModDevelop_Card_ModTemplate_Description" xml:space="preserve">
-    <value>For quick mod project creation</value>
+    <value>Quickly create new mod projects</value>
   </data>
   <data name="ModDevelop_Card_ModTemplate_Title" xml:space="preserve">
-    <value>Mod Template NuGet</value>
+    <value>Mod Template (NuGet)</value>
   </data>
   <data name="ModDevelop_Section_DevelopmentEnvironment" xml:space="preserve">
     <value>Development Environment</value>
@@ -482,7 +482,7 @@
     <value>Supported Game Version</value>
   </data>
   <data name="ModState_Duplicated" xml:space="preserve">
-    <value>Duplicated</value>
+    <value>Duplicate</value>
   </data>
   <data name="ModState_Duplicated_Reason" xml:space="preserve">
     <value>Duplicate mod files detected: {0}. Delete all but one of these files.</value>
@@ -509,13 +509,13 @@
     <value>Home</value>
   </data>
   <data name="Page_Logging" xml:space="preserve">
-    <value>Logging</value>
+    <value>Logs</value>
   </data>
   <data name="Page_Modding" xml:space="preserve">
     <value>Modding</value>
   </data>
   <data name="Page_Setting" xml:space="preserve">
-    <value>Setting</value>
+    <value>Settings</value>
   </data>
   <data name="Panel_Charting_CharterToolkit" xml:space="preserve">
     <value>Charter Toolkit</value>
@@ -548,7 +548,7 @@
     <value>Appearance</value>
   </data>
   <data name="Panel_Setting_Download" xml:space="preserve">
-    <value>Download</value>
+    <value>Downloads</value>
   </data>
   <data name="Panel_Setting_Experience" xml:space="preserve">
     <value>Experience</value>
@@ -557,19 +557,19 @@
     <value>File Management</value>
   </data>
   <data name="SearchBarPlaceholder_Chart" xml:space="preserve">
-    <value>Search Charts  (Name, Author, Charter, Tag)</value>
+    <value>Search charts (name, artist, charter, tag)</value>
   </data>
   <data name="SearchBarPlaceholder_Mod" xml:space="preserve">
-    <value>Search Mods  (Name, Author)</value>
+    <value>Search mods (name, author)</value>
   </data>
   <data name="Setting_Description_AlwaysShowScrollBar" xml:space="preserve">
-    <value>Always show scrollbar for lists</value>
+    <value>Always show scroll bars in lists</value>
   </data>
   <data name="Setting_Description_CacheFolder" xml:space="preserve">
-    <value>This includes the cache when you download files. Please do not change this when performing other operations</value>
+    <value>Stores cached downloads. Do not change this folder while other operations are in progress.</value>
   </data>
   <data name="Setting_Description_IgnoreException" xml:space="preserve">
-    <value>Prevent the application from quitting when an exception occurs. (Enable this only if you know what you are doing!)</value>
+    <value>Keep Euterpe running when an error occurs (enable only if you know what you're doing!)</value>
   </data>
   <data name="Setting_Description_Language" xml:space="preserve">
     <value>UI Language</value>
@@ -593,13 +593,13 @@
     <value>Update channel for Euterpe</value>
   </data>
   <data name="Setting_Title_AlwaysShowScrollBar" xml:space="preserve">
-    <value>Always Show ScrollBar</value>
+    <value>Always Show Scroll Bars</value>
   </data>
   <data name="Setting_Title_CacheFolder" xml:space="preserve">
     <value>Cache Folder</value>
   </data>
   <data name="Setting_Title_IgnoreException" xml:space="preserve">
-    <value>Ignore Exception</value>
+    <value>Ignore Errors</value>
   </data>
   <data name="Setting_Title_Language" xml:space="preserve">
     <value>Language</value>
@@ -629,7 +629,7 @@
     <value>Not a valid game folder</value>
   </data>
   <data name="Setup_GamePath_MdmcWarning" xml:space="preserve">
-    <value>If you have used MDMC before, a very small number of charts may not be recognized, and some mods will be replaced with upgraded versions, among which the Headquarters mod is not compatible with Euterpe. If you don't know what this message is about, you can safely ignore it.</value>
+    <value>If you've used MDMC before, a few charts may not be recognized, and some mods will be replaced with updated versions. The Headquarters mod is incompatible with Euterpe. If you're not sure what this means, you can ignore this notice.</value>
   </data>
   <data name="Setup_GamePath_MdmcWarning_Title" xml:space="preserve">
     <value>Compatibility notice</value>
@@ -683,10 +683,10 @@
     <value>Failed. Please check the log or retry.</value>
   </data>
   <data name="Setup_Task_ChartingTool" xml:space="preserve">
-    <value>Charting Tool (MDBMSC) (not implemented)</value>
+    <value>Charting Tool (not implemented)</value>
   </data>
   <data name="Setup_Task_ChartingTool_Description" xml:space="preserve">
-    <value>MDM chart creation toolkit (not implemented)</value>
+    <value>Chart creation tool</value>
   </data>
   <data name="Setup_Task_DotNetRuntime" xml:space="preserve">
     <value>.NET Runtime</value>
@@ -704,7 +704,7 @@
     <value>MD_DIRECTORY Variable</value>
   </data>
   <data name="Setup_Task_EnvVariable_Description" xml:space="preserve">
-    <value>Set game path environment variable</value>
+    <value>Set the environment variable for the game folder</value>
   </data>
   <data name="Setup_Task_EssentialMods" xml:space="preserve">
     <value>Essential Mods</value>
@@ -731,7 +731,7 @@
     <value>NuGet template for new mod projects</value>
   </data>
   <data name="Setup_Task_UninstallConflicts" xml:space="preserve">
-    <value>Uninstall Conflicts</value>
+    <value>Uninstall Conflicting Mods</value>
   </data>
   <data name="Setup_Task_UninstallConflicts_Description" xml:space="preserve">
     <value>Remove incompatible mods</value>
@@ -785,7 +785,7 @@
     <value>Share</value>
   </data>
   <data name="Splash_LoginPrompt" xml:space="preserve">
-    <value>Please log in and authorize in your browser</value>
+    <value>Sign in and authorize Euterpe in your browser</value>
   </data>
   <data name="ToolTip_EditModConfig" xml:space="preserve">
     <value>Edit Mod Config</value>
@@ -815,7 +815,7 @@
     <value>Stable</value>
   </data>
   <data name="UpdateDialog_Description" xml:space="preserve">
-    <value>A new version is ready and will be installed automatically.</value>
+    <value>A new version is available and will be downloaded and installed automatically.</value>
   </data>
   <data name="UpdateDialog_RestartHint" xml:space="preserve">
     <value>Euterpe will restart automatically when the update is ready.</value>

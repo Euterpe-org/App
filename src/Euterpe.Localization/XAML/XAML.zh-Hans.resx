@@ -65,7 +65,7 @@
     <value>更新</value>
   </data>
   <data name="ChartAnalyzer_Description" xml:space="preserve">
-    <value>预测大概定数并分析谱面 Note 信息</value>
+    <value>预估谱面定数并分析音符信息</value>
   </data>
   <data name="ChartAnalyzer_Title" xml:space="preserve">
     <value>谱面分析器</value>
@@ -143,7 +143,7 @@
     <value>选择</value>
   </data>
   <data name="ChartManage_SelectedCount" xml:space="preserve">
-    <value>已选 {0}</value>
+    <value>已选 {0} 张</value>
   </data>
   <data name="ChartManage_ShareHint" xml:space="preserve">
     <value>仅在线谱面可分享，每次最多 100 张</value>
@@ -161,7 +161,7 @@
     <value>由 {0} 上传</value>
   </data>
   <data name="ChartSortField_Author" xml:space="preserve">
-    <value>作者</value>
+    <value>曲师</value>
   </data>
   <data name="ChartSortField_Bpm" xml:space="preserve">
     <value>BPM</value>
@@ -188,7 +188,7 @@
     <value>本地</value>
   </data>
   <data name="ChartSource_Online" xml:space="preserve">
-    <value>线上</value>
+    <value>在线</value>
   </data>
   <data name="ChartSubmit_Description" xml:space="preserve">
     <value>上传并发布你的谱面</value>
@@ -209,7 +209,7 @@
     <value>GitHub 反馈</value>
   </data>
   <data name="CrashDialog_Header" xml:space="preserve">
-    <value>Euterpe 遇到了一个错误</value>
+    <value>Euterpe 遇到错误</value>
   </data>
   <data name="CrashDialog_Title" xml:space="preserve">
     <value>崩溃报告</value>
@@ -251,13 +251,13 @@
     <value>模式</value>
   </data>
   <data name="EpkEditor_Field_HideRatingOverride" xml:space="preserve">
-    <value>定数显示覆盖</value>
+    <value>自定义定数显示</value>
   </data>
   <data name="EpkEditor_Field_Name" xml:space="preserve">
     <value>曲名</value>
   </data>
   <data name="EpkEditor_Field_NameRomanized" xml:space="preserve">
-    <value>罗马音</value>
+    <value>曲名（罗马音）</value>
   </data>
   <data name="EpkEditor_Field_SafeForStreamer" xml:space="preserve">
     <value>适合直播</value>
@@ -296,13 +296,13 @@
     <value>定数</value>
   </data>
   <data name="EpkEditor_MissingFiles" xml:space="preserve">
-    <value>此谱面引用的 {0} 个文件在其文件夹中缺失</value>
+    <value>谱面文件夹中缺少 {0} 个引用的文件</value>
   </data>
   <data name="EpkEditor_NewFile" xml:space="preserve">
     <value>新建 EPK…</value>
   </data>
   <data name="EpkEditor_New_Description" xml:space="preserve">
-    <value>从一个放好素材的文件夹创建新谱面</value>
+    <value>从素材文件夹创建新谱面</value>
   </data>
   <data name="EpkEditor_OpenFile" xml:space="preserve">
     <value>打开 EPK 文件…</value>
@@ -317,7 +317,7 @@
     <value>谱面信息</value>
   </data>
   <data name="EpkEditor_Section_Discovery" xml:space="preserve">
-    <value>描述与发现</value>
+    <value>简介与搜索</value>
   </data>
   <data name="EpkEditor_Section_HiddenMode" xml:space="preserve">
     <value>隐藏难度</value>
@@ -341,13 +341,13 @@
     <value>打开本地谱文件夹</value>
   </data>
   <data name="Folder_OnlineCharts" xml:space="preserve">
-    <value>打开线上谱文件夹</value>
+    <value>打开在线谱文件夹</value>
   </data>
   <data name="Folder_UserData" xml:space="preserve">
     <value>配置文件夹</value>
   </data>
   <data name="Folder_UserLibs" xml:space="preserve">
-    <value>依赖文件夹</value>
+    <value>依赖库文件夹</value>
   </data>
   <data name="GameMode_Modded" xml:space="preserve">
     <value>Mod 版</value>
@@ -380,7 +380,7 @@
     <value>分析</value>
   </data>
   <data name="MelonLoaderLog_Empty" xml:space="preserve">
-    <value>暂无 MelonLoader 日志。</value>
+    <value>暂无 MelonLoader 日志</value>
   </data>
   <data name="MelonLoaderLog_Refresh" xml:space="preserve">
     <value>刷新</value>
@@ -404,7 +404,7 @@
     <value>.NET 10 SDK</value>
   </data>
   <data name="ModDevelop_Card_EnvVariable_Description" xml:space="preserve">
-    <value>使构建工具能够定位游戏文件</value>
+    <value>让构建工具能找到游戏文件</value>
   </data>
   <data name="ModDevelop_Card_EnvVariable_Title" xml:space="preserve">
     <value>设置环境变量</value>
@@ -416,7 +416,7 @@
     <value>快速创建模组项目</value>
   </data>
   <data name="ModDevelop_Card_ModTemplate_Title" xml:space="preserve">
-    <value>模组模板 NuGet</value>
+    <value>模组模板（NuGet）</value>
   </data>
   <data name="ModDevelop_Section_DevelopmentEnvironment" xml:space="preserve">
     <value>开发环境</value>
@@ -452,7 +452,7 @@
     <value>有更新</value>
   </data>
   <data name="ModIncompatibleReason_ConflictingMod" xml:space="preserve">
-    <value>与已启用的 Mod 冲突：{0}</value>
+    <value>与已启用的模组冲突：{0}</value>
   </data>
   <data name="ModIncompatibleReason_GameVersion" xml:space="preserve">
     <value>需要游戏版本 {0}</value>
@@ -476,16 +476,16 @@
     <value>仓库</value>
   </data>
   <data name="ModInfo_RequiredMelonLoaderVersion" xml:space="preserve">
-    <value>需要加载器版本</value>
+    <value>所需加载器版本</value>
   </data>
   <data name="ModInfo_SupportedGameVersion" xml:space="preserve">
-    <value>支持游戏版本</value>
+    <value>支持的游戏版本</value>
   </data>
   <data name="ModState_Duplicated" xml:space="preserve">
-    <value>重复</value>
+    <value>有重复</value>
   </data>
   <data name="ModState_Duplicated_Reason" xml:space="preserve">
-    <value>检测到重复的 Mod 文件：{0}。请删除多余文件，只保留其中一个。</value>
+    <value>检测到重复的模组文件：{0}。请删除多余文件，只保留其中一个。</value>
   </data>
   <data name="ModState_Incompatible" xml:space="preserve">
     <value>不兼容</value>
@@ -557,10 +557,10 @@
     <value>文件管理</value>
   </data>
   <data name="SearchBarPlaceholder_Chart" xml:space="preserve">
-    <value>搜索谱面  （名称，曲师，谱师，标签）</value>
+    <value>搜索谱面  （曲名、曲师、谱师、标签）</value>
   </data>
   <data name="SearchBarPlaceholder_Mod" xml:space="preserve">
-    <value>搜索模组  （名字，作者）</value>
+    <value>搜索模组  （名称、作者）</value>
   </data>
   <data name="Setting_Description_AlwaysShowScrollBar" xml:space="preserve">
     <value>始终显示列表滚动条</value>
@@ -569,7 +569,7 @@
     <value>包含下载文件时的缓存，请勿在执行其他操作时更改此项</value>
   </data>
   <data name="Setting_Description_IgnoreException" xml:space="preserve">
-    <value>阻止应用程序在遇到错误的时候退出（仅当你知道自己在做什么时才应该启用此功能！）</value>
+    <value>遇到错误时不退出应用（仅在你清楚自己在做什么时启用！）</value>
   </data>
   <data name="Setting_Description_Language" xml:space="preserve">
     <value>界面语言</value>
@@ -629,7 +629,7 @@
     <value>不是有效的游戏文件夹</value>
   </data>
   <data name="Setup_GamePath_MdmcWarning" xml:space="preserve">
-    <value>若你曾使用 MDMC，极少数谱面可能无法被识别，部分模组将被替换为升级版，其中 Headquarters 模组无法与 Euterpe 兼容。如果你不知道这条消息在说什么，忽略即可。</value>
+    <value>若你曾使用 MDMC，极少数谱面可能无法识别，部分模组会被替换为更新版本。Headquarters 模组与 Euterpe 不兼容。如果你不清楚这条消息的含义，可以忽略。</value>
   </data>
   <data name="Setup_GamePath_MdmcWarning_Title" xml:space="preserve">
     <value>兼容性告警</value>
@@ -683,10 +683,10 @@
     <value>执行失败，请查看日志或重试</value>
   </data>
   <data name="Setup_Task_ChartingTool" xml:space="preserve">
-    <value>制谱工具 (MDBMSC)（还未实现）</value>
+    <value>制谱工具（还未实现）</value>
   </data>
   <data name="Setup_Task_ChartingTool_Description" xml:space="preserve">
-    <value>MDM 谱面制作工具包（还未实现）</value>
+    <value>谱面制作工具</value>
   </data>
   <data name="Setup_Task_DotNetRuntime" xml:space="preserve">
     <value>.NET 运行时</value>
@@ -698,7 +698,7 @@
     <value>.NET SDK</value>
   </data>
   <data name="Setup_Task_DotNetSdk_Description" xml:space="preserve">
-    <value>模组开发必需</value>
+    <value>模组开发所需</value>
   </data>
   <data name="Setup_Task_EnvVariable" xml:space="preserve">
     <value>MD_DIRECTORY 变量</value>
@@ -710,7 +710,7 @@
     <value>必备模组</value>
   </data>
   <data name="Setup_Task_EssentialMods_Description" xml:space="preserve">
-    <value>获得最佳体验的核心模组</value>
+    <value>带来最佳体验的核心模组</value>
   </data>
   <data name="Setup_Task_MelonLoader" xml:space="preserve">
     <value>MelonLoader</value>
@@ -731,13 +731,13 @@
     <value>用于新模组项目的 NuGet 模板</value>
   </data>
   <data name="Setup_Task_UninstallConflicts" xml:space="preserve">
-    <value>卸载冲突</value>
+    <value>卸载冲突模组</value>
   </data>
   <data name="Setup_Task_UninstallConflicts_Description" xml:space="preserve">
     <value>移除不兼容的模组</value>
   </data>
   <data name="Setup_Title_GamePath" xml:space="preserve">
-    <value>定位游戏文件夹</value>
+    <value>选择游戏文件夹</value>
   </data>
   <data name="Setup_Title_SettingUp" xml:space="preserve">
     <value>正在设置 Euterpe</value>
@@ -788,7 +788,7 @@
     <value>请在浏览器里登录并授权</value>
   </data>
   <data name="ToolTip_EditModConfig" xml:space="preserve">
-    <value>编辑 Mod 配置</value>
+    <value>编辑模组配置</value>
   </data>
   <data name="Translator_ChineseSimplified" xml:space="preserve">
     <value>简体中文</value>

@@ -107,22 +107,22 @@
     <value>MelonLoader 卸载成功</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Install" xml:space="preserve">
-    <value>确定要安装 Mod 模板吗？</value>
+    <value>确定要安装模组模板吗？</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Install_Failed" xml:space="preserve">
-    <value>Mod 模板安装失败</value>
+    <value>模组模板安装失败</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Install_Success" xml:space="preserve">
-    <value>Mod 模板安装成功</value>
+    <value>模组模板安装成功</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Uninstall" xml:space="preserve">
-    <value>确定要卸载 Mod 模板吗？</value>
+    <value>确定要卸载模组模板吗？</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Uninstall_Failed" xml:space="preserve">
-    <value>Mod 模板卸载失败</value>
+    <value>模组模板卸载失败</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Uninstall_Success" xml:space="preserve">
-    <value>Mod 模板卸载成功</value>
+    <value>模组模板卸载成功</value>
   </data>
   <data name="MessageBox_Content_NewVersionAvailable" xml:space="preserve">
     <value>发现新版本：{0}，即将更新。</value>
@@ -134,7 +134,7 @@
     <value>未安装 protontricks，请先安装 protontricks 再继续。</value>
   </data>
   <data name="MessageBox_Content_Protontricks_Wineprefix_Failed" xml:space="preserve">
-    <value>通过 protontricks 运行 wine prefix 命令失败，无法继续安装 .NET Runtime。</value>
+    <value>通过 protontricks 配置 Wine 环境失败，无法继续安装 .NET 运行时。</value>
   </data>
   <data name="MessageBox_Content_ReadGameInformation_Failed" xml:space="preserve">
     <value>读取游戏信息失败
@@ -157,7 +157,7 @@
 {0}</value>
   </data>
   <data name="MessageBox_Content_SetPathEnvironment_Windows" xml:space="preserve">
-    <value>已成功将 MD_DIRECTORY 环境变量设置为 {0}</value>
+    <value>已将 MD_DIRECTORY 环境变量设置为 {0}</value>
   </data>
   <data name="MessageBox_Content_Update_Check_Failed" xml:space="preserve">
     <value>检查更新失败，请稍后重试</value>
@@ -205,7 +205,7 @@
     <value>已移除谱面 {0}</value>
   </data>
   <data name="Notification_Content_Chart_Sync_Summary" xml:space="preserve">
-    <value>已同步谱面：新增 {0}，移除 {1}</value>
+    <value>已同步谱面：新增 {0} 张，移除 {1} 张</value>
   </data>
   <data name="Notification_Content_Chart_UpdateAll_Partial" xml:space="preserve">
     <value>已更新 {0} 张谱面，{1} 张失败</value>
@@ -295,7 +295,7 @@
     <value>已移除模组 {0}</value>
   </data>
   <data name="Notification_Content_Mod_Sync_Summary" xml:space="preserve">
-    <value>已同步模组：新增 {0}，移除 {1}</value>
+    <value>已同步模组：新增 {0} 个，移除 {1} 个</value>
   </data>
   <data name="Notification_Content_Mod_Toggle_Failed" xml:space="preserve">
     <value>切换模组 {0} 状态失败</value>
@@ -331,7 +331,7 @@
     <value>错误</value>
   </data>
   <data name="Title_Notice" xml:space="preserve">
-    <value>注意</value>
+    <value>提示</value>
   </data>
   <data name="Title_Success" xml:space="preserve">
     <value>成功</value>

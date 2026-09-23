@@ -14,34 +14,34 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="FileDialog_Title_ChooseChartFile" xml:space="preserve">
-    <value>Pilih File Chart</value>
+    <value>Pilih file chart</value>
   </data>
   <data name="FileDialog_Title_ChooseEpkFile" xml:space="preserve">
-    <value>Pilih File EPK</value>
+    <value>Pilih file EPK</value>
   </data>
   <data name="FileDialog_Title_ChooseMdmFiles" xml:space="preserve">
-    <value>Pilih File MDM</value>
+    <value>Pilih file MDM</value>
   </data>
   <data name="FileDialog_Title_ChooseSteamExec" xml:space="preserve">
-    <value>Pilih Executable Steam</value>
+    <value>Pilih file executable Steam</value>
   </data>
   <data name="FilePickerFileType_AllFiles" xml:space="preserve">
-    <value>Semua File</value>
+    <value>Semua file</value>
   </data>
   <data name="FilePickerFileType_MdmFiles" xml:space="preserve">
     <value>File MDM</value>
   </data>
   <data name="FolderDialog_Title_ChooseCacheFolder" xml:space="preserve">
-    <value>Pilih Folder Cache</value>
+    <value>Pilih folder cache</value>
   </data>
   <data name="FolderDialog_Title_ChooseChartFolder" xml:space="preserve">
-    <value>Pilih Folder Chart</value>
+    <value>Pilih folder chart</value>
   </data>
   <data name="FolderDialog_Title_ChooseMuseDashFolder" xml:space="preserve">
-    <value>Pilih Folder Muse Dash</value>
+    <value>Pilih folder Muse Dash</value>
   </data>
   <data name="FolderDialog_Title_ChooseSteamFolder" xml:space="preserve">
-    <value>Pilih Folder Steam</value>
+    <value>Pilih folder Steam</value>
   </data>
   <data name="MessageBox_Button_No" xml:space="preserve">
     <value>Tidak</value>
@@ -53,10 +53,10 @@
     <value>Hapus {0} chart yang dipilih?</value>
   </data>
   <data name="MessageBox_Content_ChooseSteamExec" xml:space="preserve">
-    <value>Silakan pilih executable Steam</value>
+    <value>Pilih file executable Steam</value>
   </data>
   <data name="MessageBox_Content_ChooseSteamFolder" xml:space="preserve">
-    <value>Silakan pilih folder Steam</value>
+    <value>Pilih folder Steam</value>
   </data>
   <data name="MessageBox_Content_CrashDialog_CopyFailed" xml:space="preserve">
     <value>Gagal menyalin detail kesalahan ke clipboard.</value>
@@ -65,7 +65,7 @@
     <value>Detail kesalahan berhasil disalin ke clipboard.</value>
   </data>
   <data name="MessageBox_Content_DotNetSDK_Install" xml:space="preserve">
-    <value>Apakah Anda yakin ingin menginstal .NET SDK?</value>
+    <value>Yakin ingin menginstal .NET SDK?</value>
   </data>
   <data name="MessageBox_Content_DotNetSDK_Install_Failed" xml:space="preserve">
     <value>Gagal menginstal .NET 10 SDK</value>
@@ -77,10 +77,10 @@
     <value>Buang perubahan yang belum disimpan?</value>
   </data>
   <data name="MessageBox_Content_InvalidPath" xml:space="preserve">
-    <value>Jalur yang Anda pilih tidak valid. Coba lagi</value>
+    <value>Jalur yang dipilih tidak valid. Pilih lokasi lain.</value>
   </data>
   <data name="MessageBox_Content_Login_Failed" xml:space="preserve">
-    <value>Gagal masuk. Apakah Anda ingin mencoba lagi? Memilih Tidak akan menutup Euterpe.</value>
+    <value>Gagal login. Coba lagi? Memilih “Tidak” akan menutup Euterpe.</value>
   </data>
   <data name="MessageBox_Content_MdmFile_Create_Failed" xml:space="preserve">
     <value>Gagal membuat file MDM</value>
@@ -101,66 +101,66 @@
     <value>MelonLoader berhasil diinstal</value>
   </data>
   <data name="MessageBox_Content_MelonLoader_Uninstall_Failed" xml:space="preserve">
-    <value>Gagal menghapus MelonLoader</value>
+    <value>Gagal meng-uninstal MelonLoader</value>
   </data>
   <data name="MessageBox_Content_MelonLoader_Uninstall_Success" xml:space="preserve">
-    <value>MelonLoader berhasil dihapus</value>
+    <value>MelonLoader berhasil di-uninstal</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Install" xml:space="preserve">
-    <value>Apakah Anda yakin ingin menginstal Mod Template?</value>
+    <value>Yakin ingin menginstal template mod?</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Install_Failed" xml:space="preserve">
-    <value>Gagal menginstal Mod Template</value>
+    <value>Gagal menginstal template mod</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Install_Success" xml:space="preserve">
-    <value>Mod Template berhasil diinstal</value>
+    <value>Template mod berhasil diinstal</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Uninstall" xml:space="preserve">
-    <value>Apakah Anda yakin ingin menghapus Mod Template?</value>
+    <value>Yakin ingin meng-uninstal template mod?</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Uninstall_Failed" xml:space="preserve">
-    <value>Gagal menghapus Mod Template</value>
+    <value>Gagal meng-uninstal template mod</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Uninstall_Success" xml:space="preserve">
-    <value>Mod Template berhasil dihapus</value>
+    <value>Template mod berhasil di-uninstal</value>
   </data>
   <data name="MessageBox_Content_NewVersionAvailable" xml:space="preserve">
-    <value>Versi baru tersedia: {0}, memperbarui sekarang.</value>
+    <value>Versi baru tersedia: {0}. Pembaruan akan segera dimulai.</value>
   </data>
   <data name="MessageBox_Content_NoUpdatesFound" xml:space="preserve">
     <value>Tidak ada pembaruan yang tersedia</value>
   </data>
   <data name="MessageBox_Content_Protontricks_Not_Installed" xml:space="preserve">
-    <value>protontricks tidak terinstal. Silakan instal protontricks untuk melanjutkan.</value>
+    <value>protontricks belum terinstal. Instal protontricks dulu untuk melanjutkan.</value>
   </data>
   <data name="MessageBox_Content_Protontricks_Wineprefix_Failed" xml:space="preserve">
-    <value>Gagal menjalankan perintah wine prefix melalui protontricks. Tidak dapat melanjutkan instalasi .NET Runtime.</value>
+    <value>Gagal mengonfigurasi lingkungan Wine melalui protontricks. Instalasi .NET Runtime tidak dapat dilanjutkan.</value>
   </data>
   <data name="MessageBox_Content_ReadGameInformation_Failed" xml:space="preserve">
-    <value>Gagal membaca Informasi Game
+    <value>Gagal membaca informasi game
   {0}</value>
   </data>
   <data name="MessageBox_Content_SecretService_Unavailable" xml:space="preserve">
-    <value>Layanan keyring (secret-tool) tidak ditemukan. Sesi login Anda tidak dapat disimpan dan Anda harus login setiap kali.</value>
+    <value>Layanan keyring (secret-tool) tidak ditemukan. Sesi login kamu tidak dapat disimpan, jadi kamu harus login ulang setiap kali membuka Euterpe.</value>
   </data>
   <data name="MessageBox_Content_Server_Unavailable" xml:space="preserve">
-    <value>Server Euterpe saat ini tidak tersedia. Euterpe akan ditutup sekarang. Silakan coba lagi nanti.</value>
+    <value>Server Euterpe sedang tidak tersedia. Euterpe akan ditutup. Coba lagi nanti.</value>
   </data>
   <data name="MessageBox_Content_SetMdDirectoryEnvironment" xml:space="preserve">
-    <value>Apakah Anda yakin ingin mengatur variabel lingkungan MD_DIRECTORY?</value>
+    <value>Yakin ingin mengatur variabel lingkungan MD_DIRECTORY?</value>
   </data>
   <data name="MessageBox_Content_SetMdDirectoryEnvironment_Failed" xml:space="preserve">
     <value>Gagal mengatur variabel lingkungan MD_DIRECTORY</value>
   </data>
   <data name="MessageBox_Content_SetPathEnvironment_Linux" xml:space="preserve">
-    <value>Salin baris berikut dan tambahkan ke file /etc/environment Anda:
+    <value>Salin baris berikut dan tambahkan ke file /etc/environment kamu:
 {0}</value>
   </data>
   <data name="MessageBox_Content_SetPathEnvironment_Windows" xml:space="preserve">
     <value>Variabel lingkungan MD_DIRECTORY berhasil diatur ke {0}</value>
   </data>
   <data name="MessageBox_Content_Update_Check_Failed" xml:space="preserve">
-    <value>Gagal memeriksa pembaruan, silakan coba lagi nanti</value>
+    <value>Gagal memeriksa pembaruan, coba lagi nanti</value>
   </data>
   <data name="MessageBox_Content_Update_Failed" xml:space="preserve">
     <value>Gagal memperbarui ke versi {0}</value>
@@ -187,7 +187,7 @@
     <value>Chart {0} berhasil diimpor</value>
   </data>
   <data name="Notification_Content_Chart_Import_Unmigratable" xml:space="preserve">
-    <value>Chart {0} tidak dapat dimigrasi</value>
+    <value>Chart {0} tidak dapat dimigrasikan</value>
   </data>
   <data name="Notification_Content_Chart_Import_Unsupported" xml:space="preserve">
     <value>{0} bukan file atau folder chart yang didukung</value>
@@ -238,19 +238,19 @@
     <value>{0} berhasil disimpan</value>
   </data>
   <data name="Notification_Content_Lib_Import_Failed" xml:space="preserve">
-    <value>Gagal mengimpor pustaka {0}</value>
+    <value>Gagal mengimpor library {0}</value>
   </data>
   <data name="Notification_Content_Lib_Import_Success" xml:space="preserve">
-    <value>Pustaka {0} berhasil diimpor</value>
+    <value>Library {0} berhasil diimpor</value>
   </data>
   <data name="Notification_Content_Migration_None" xml:space="preserve">
-    <value>Tidak ada chart MDM untuk dimigrasi</value>
+    <value>Tidak ada chart MDM untuk dimigrasikan</value>
   </data>
   <data name="Notification_Content_Migration_Partial" xml:space="preserve">
-    <value>{0} chart CustomAlbums berhasil dimigrasi, {1} gagal</value>
+    <value>{0} chart CustomAlbums berhasil dimigrasikan, {1} gagal</value>
   </data>
   <data name="Notification_Content_Migration_Success" xml:space="preserve">
-    <value>{0} chart CustomAlbums berhasil dimigrasi</value>
+    <value>{0} chart CustomAlbums berhasil dimigrasikan</value>
   </data>
   <data name="Notification_Content_Mod_Import_Duplicated" xml:space="preserve">
     <value>Mod {0} sudah diimpor</value>
@@ -262,10 +262,10 @@
     <value>Mod {0} berhasil diimpor</value>
   </data>
   <data name="Notification_Content_Mod_Import_Unsupported" xml:space="preserve">
-    <value>{0} bukan file mod atau pustaka yang didukung</value>
+    <value>{0} bukan file mod atau library yang didukung</value>
   </data>
   <data name="Notification_Content_Mod_Install_AlreadyInstalled" xml:space="preserve">
-    <value>Mod {0} sudah terpasang</value>
+    <value>Mod {0} sudah terinstal</value>
   </data>
   <data name="Notification_Content_Mod_Install_Failed" xml:space="preserve">
     <value>Gagal menginstal mod {0}</value>
@@ -280,7 +280,7 @@
     <value>Mod {0} tidak ditemukan</value>
   </data>
   <data name="Notification_Content_Mod_NotInstalled" xml:space="preserve">
-    <value>Mod {0} belum terpasang</value>
+    <value>Mod {0} belum terinstal</value>
   </data>
   <data name="Notification_Content_Mod_Reinstall_Failed" xml:space="preserve">
     <value>Gagal menginstal ulang mod {0}</value>
@@ -301,10 +301,10 @@
     <value>Gagal mengubah status mod {0}</value>
   </data>
   <data name="Notification_Content_Mod_Uninstall_Failed" xml:space="preserve">
-    <value>Gagal menghapus mod {0}</value>
+    <value>Gagal meng-uninstal mod {0}</value>
   </data>
   <data name="Notification_Content_Mod_Uninstall_Success" xml:space="preserve">
-    <value>Mod {0} berhasil dihapus</value>
+    <value>Mod {0} berhasil di-uninstal</value>
   </data>
   <data name="Notification_Content_Mod_UpdateAll_Partial" xml:space="preserve">
     <value>{0} mod diperbarui, {1} gagal</value>
@@ -322,7 +322,7 @@
     <value>Mod {0} sudah terkini</value>
   </data>
   <data name="Notification_Content_Server_Error" xml:space="preserve">
-    <value>Server sementara tidak tersedia. Silakan coba lagi sebentar.</value>
+    <value>Server sedang tidak tersedia. Coba lagi dalam beberapa saat.</value>
   </data>
   <data name="Notification_Content_Share_Copy_Success" xml:space="preserve">
     <value>Kode berbagi disalin</value>

@@ -59,10 +59,10 @@
     <value>請選擇 Steam 資料夾</value>
   </data>
   <data name="MessageBox_Content_CrashDialog_CopyFailed" xml:space="preserve">
-    <value>複製錯誤詳情至剪貼簿失敗</value>
+    <value>複製錯誤資訊到剪貼簿失敗。</value>
   </data>
   <data name="MessageBox_Content_CrashDialog_CopySuccess" xml:space="preserve">
-    <value>已將錯誤詳情複製至剪貼簿</value>
+    <value>錯誤資訊已複製到剪貼簿。</value>
   </data>
   <data name="MessageBox_Content_DotNetSDK_Install" xml:space="preserve">
     <value>確定要安裝 .NET SDK 嗎？</value>
@@ -83,46 +83,46 @@
     <value>登入失敗，是否要重試？選擇「否」將關閉 Euterpe。</value>
   </data>
   <data name="MessageBox_Content_MdmFile_Create_Failed" xml:space="preserve">
-    <value>建立 MDM 檔案失敗</value>
+    <value>MDM 檔案建立失敗</value>
   </data>
   <data name="MessageBox_Content_MdmFile_Create_Success" xml:space="preserve">
     <value>MDM 檔案建立成功</value>
   </data>
   <data name="MessageBox_Content_MdmFile_Extract_Failed" xml:space="preserve">
-    <value>解壓縮 MDM 檔案失敗</value>
+    <value>MDM 檔案解壓縮失敗</value>
   </data>
   <data name="MessageBox_Content_MdmFile_Extract_Success" xml:space="preserve">
     <value>MDM 檔案解壓縮成功</value>
   </data>
   <data name="MessageBox_Content_MelonLoader_Install_Failed" xml:space="preserve">
-    <value>安裝 MelonLoader 失敗</value>
+    <value>MelonLoader 安裝失敗</value>
   </data>
   <data name="MessageBox_Content_MelonLoader_Install_Success" xml:space="preserve">
     <value>MelonLoader 安裝成功</value>
   </data>
   <data name="MessageBox_Content_MelonLoader_Uninstall_Failed" xml:space="preserve">
-    <value>解除安裝 MelonLoader 失敗</value>
+    <value>MelonLoader 解除安裝失敗</value>
   </data>
   <data name="MessageBox_Content_MelonLoader_Uninstall_Success" xml:space="preserve">
-    <value>MelonLoader 已成功解除安裝</value>
+    <value>MelonLoader 解除安裝成功</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Install" xml:space="preserve">
-    <value>確定要安裝 Mod 範本嗎？</value>
+    <value>確定要安裝模組範本嗎？</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Install_Failed" xml:space="preserve">
-    <value>安裝 Mod 範本失敗</value>
+    <value>模組範本安裝失敗</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Install_Success" xml:space="preserve">
-    <value>Mod 範本安裝成功</value>
+    <value>模組範本安裝成功</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Uninstall" xml:space="preserve">
-    <value>確定要解除安裝 Mod 範本嗎？</value>
+    <value>確定要解除安裝模組範本嗎？</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Uninstall_Failed" xml:space="preserve">
-    <value>解除安裝 Mod 範本失敗</value>
+    <value>模組範本解除安裝失敗</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Uninstall_Success" xml:space="preserve">
-    <value>Mod 範本已成功解除安裝</value>
+    <value>模組範本解除安裝成功</value>
   </data>
   <data name="MessageBox_Content_NewVersionAvailable" xml:space="preserve">
     <value>發現新版本：{0}，即將更新。</value>
@@ -134,14 +134,14 @@
     <value>尚未安裝 protontricks，請先安裝 protontricks 再繼續。</value>
   </data>
   <data name="MessageBox_Content_Protontricks_Wineprefix_Failed" xml:space="preserve">
-    <value>透過 protontricks 執行 wine prefix 指令失敗，無法繼續安裝 .NET Runtime。</value>
+    <value>透過 protontricks 設定 Wine 環境失敗，無法繼續安裝 .NET 執行階段。</value>
   </data>
   <data name="MessageBox_Content_ReadGameInformation_Failed" xml:space="preserve">
     <value>讀取遊戲資訊失敗
   {0}</value>
   </data>
   <data name="MessageBox_Content_SecretService_Unavailable" xml:space="preserve">
-    <value>找不到金鑰環服務（secret-tool）。您的登入工作階段無法儲存，每次都需要重新登入。</value>
+    <value>找不到金鑰環服務（secret-tool）。無法儲存登入工作階段，每次啟動時都需重新登入。</value>
   </data>
   <data name="MessageBox_Content_Server_Unavailable" xml:space="preserve">
     <value>Euterpe 伺服器目前無法使用。Euterpe 即將關閉，請稍後再試。</value>
@@ -150,14 +150,14 @@
     <value>確定要設定 MD_DIRECTORY 環境變數嗎？</value>
   </data>
   <data name="MessageBox_Content_SetMdDirectoryEnvironment_Failed" xml:space="preserve">
-    <value>設定 MD_DIRECTORY 環境變數失敗</value>
+    <value>MD_DIRECTORY 環境變數設定失敗</value>
   </data>
   <data name="MessageBox_Content_SetPathEnvironment_Linux" xml:space="preserve">
     <value>請複製以下內容並新增到 /etc/environment 檔案中：
 {0}</value>
   </data>
   <data name="MessageBox_Content_SetPathEnvironment_Windows" xml:space="preserve">
-    <value>已成功將 MD_DIRECTORY 環境變數設定為 {0}</value>
+    <value>已將 MD_DIRECTORY 環境變數設定為 {0}</value>
   </data>
   <data name="MessageBox_Content_Update_Check_Failed" xml:space="preserve">
     <value>檢查更新失敗，請稍後重試</value>
@@ -187,7 +187,7 @@
     <value>譜面 {0} 匯入成功</value>
   </data>
   <data name="Notification_Content_Chart_Import_Unmigratable" xml:space="preserve">
-    <value>譜面 {0} 無法遷移</value>
+    <value>譜面 {0} 無法移轉</value>
   </data>
   <data name="Notification_Content_Chart_Import_Unsupported" xml:space="preserve">
     <value>{0} 不是受支援的譜面檔案或資料夾</value>
@@ -205,7 +205,7 @@
     <value>已移除譜面 {0}</value>
   </data>
   <data name="Notification_Content_Chart_Sync_Summary" xml:space="preserve">
-    <value>已同步譜面：新增 {0}，移除 {1}</value>
+    <value>已同步譜面：新增 {0} 張，移除 {1} 張</value>
   </data>
   <data name="Notification_Content_Chart_UpdateAll_Partial" xml:space="preserve">
     <value>已更新 {0} 張譜面，{1} 張失敗</value>
@@ -238,19 +238,19 @@
     <value>已儲存「{0}」</value>
   </data>
   <data name="Notification_Content_Lib_Import_Failed" xml:space="preserve">
-    <value>相依庫 {0} 匯入失敗</value>
+    <value>相依程式庫 {0} 匯入失敗</value>
   </data>
   <data name="Notification_Content_Lib_Import_Success" xml:space="preserve">
-    <value>相依庫 {0} 匯入成功</value>
+    <value>相依程式庫 {0} 匯入成功</value>
   </data>
   <data name="Notification_Content_Migration_None" xml:space="preserve">
-    <value>沒有可遷移的 MDM 譜面</value>
+    <value>沒有可移轉的 MDM 譜面</value>
   </data>
   <data name="Notification_Content_Migration_Partial" xml:space="preserve">
-    <value>已遷移 {0} 張 CustomAlbums 譜面，{1} 張無法遷移</value>
+    <value>已移轉 {0} 張 CustomAlbums 譜面，{1} 張無法移轉</value>
   </data>
   <data name="Notification_Content_Migration_Success" xml:space="preserve">
-    <value>已遷移 {0} 張 CustomAlbums 譜面</value>
+    <value>已移轉 {0} 張 CustomAlbums 譜面</value>
   </data>
   <data name="Notification_Content_Mod_Import_Duplicated" xml:space="preserve">
     <value>模組 {0} 已匯入</value>
@@ -262,7 +262,7 @@
     <value>模組 {0} 匯入成功</value>
   </data>
   <data name="Notification_Content_Mod_Import_Unsupported" xml:space="preserve">
-    <value>{0} 不是受支援的模組或相依庫檔案</value>
+    <value>{0} 不是受支援的模組或相依程式庫檔案</value>
   </data>
   <data name="Notification_Content_Mod_Install_AlreadyInstalled" xml:space="preserve">
     <value>模組 {0} 已安裝</value>
@@ -295,7 +295,7 @@
     <value>已移除模組 {0}</value>
   </data>
   <data name="Notification_Content_Mod_Sync_Summary" xml:space="preserve">
-    <value>已同步模組：新增 {0}，移除 {1}</value>
+    <value>已同步模組：新增 {0} 個，移除 {1} 個</value>
   </data>
   <data name="Notification_Content_Mod_Toggle_Failed" xml:space="preserve">
     <value>切換模組 {0} 狀態失敗</value>
@@ -331,7 +331,7 @@
     <value>錯誤</value>
   </data>
   <data name="Title_Notice" xml:space="preserve">
-    <value>注意</value>
+    <value>提示</value>
   </data>
   <data name="Title_Success" xml:space="preserve">
     <value>成功</value>

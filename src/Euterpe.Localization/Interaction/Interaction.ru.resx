@@ -14,16 +14,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="FileDialog_Title_ChooseChartFile" xml:space="preserve">
-    <value>Выберите файл чарта</value>
+    <value>Выбери файл чарта</value>
   </data>
   <data name="FileDialog_Title_ChooseEpkFile" xml:space="preserve">
-    <value>Выберите файл EPK</value>
+    <value>Выбери файл EPK</value>
   </data>
   <data name="FileDialog_Title_ChooseMdmFiles" xml:space="preserve">
-    <value>Выберите файлы MDM</value>
+    <value>Выбери файлы MDM</value>
   </data>
   <data name="FileDialog_Title_ChooseSteamExec" xml:space="preserve">
-    <value>Выберите исполняемый файл Steam</value>
+    <value>Выбери исполняемый файл Steam</value>
   </data>
   <data name="FilePickerFileType_AllFiles" xml:space="preserve">
     <value>Все файлы</value>
@@ -32,16 +32,16 @@
     <value>Файлы MDM</value>
   </data>
   <data name="FolderDialog_Title_ChooseCacheFolder" xml:space="preserve">
-    <value>Выберите папку кэша</value>
+    <value>Выбери папку кэша</value>
   </data>
   <data name="FolderDialog_Title_ChooseChartFolder" xml:space="preserve">
-    <value>Выберите папку чартов</value>
+    <value>Выбери папку чартов</value>
   </data>
   <data name="FolderDialog_Title_ChooseMuseDashFolder" xml:space="preserve">
-    <value>Выберите папку Muse Dash</value>
+    <value>Выбери папку Muse Dash</value>
   </data>
   <data name="FolderDialog_Title_ChooseSteamFolder" xml:space="preserve">
-    <value>Выберите папку Steam</value>
+    <value>Выбери папку Steam</value>
   </data>
   <data name="MessageBox_Button_No" xml:space="preserve">
     <value>Нет</value>
@@ -53,10 +53,10 @@
     <value>Удалить выбранные чарты ({0})?</value>
   </data>
   <data name="MessageBox_Content_ChooseSteamExec" xml:space="preserve">
-    <value>Выберите исполняемый файл Steam</value>
+    <value>Выбери исполняемый файл Steam</value>
   </data>
   <data name="MessageBox_Content_ChooseSteamFolder" xml:space="preserve">
-    <value>Выберите папку Steam</value>
+    <value>Выбери папку Steam</value>
   </data>
   <data name="MessageBox_Content_CrashDialog_CopyFailed" xml:space="preserve">
     <value>Не удалось скопировать сведения об ошибке в буфер обмена.</value>
@@ -71,13 +71,13 @@
     <value>Не удалось установить .NET 10 SDK</value>
   </data>
   <data name="MessageBox_Content_DotNetSDK_Install_Success" xml:space="preserve">
-    <value>.NET 10 SDK успешно установлен</value>
+    <value>.NET 10 SDK установлен</value>
   </data>
   <data name="MessageBox_Content_Epk_Discard_Confirm" xml:space="preserve">
     <value>Отменить несохранённые изменения?</value>
   </data>
   <data name="MessageBox_Content_InvalidPath" xml:space="preserve">
-    <value>Выбранный путь недействителен. Попробуйте снова</value>
+    <value>Указан неверный путь. Выбери другой путь.</value>
   </data>
   <data name="MessageBox_Content_Login_Failed" xml:space="preserve">
     <value>Не удалось войти. Попробовать снова? При выборе «Нет» Euterpe закроется.</value>
@@ -86,25 +86,25 @@
     <value>Не удалось создать файл MDM</value>
   </data>
   <data name="MessageBox_Content_MdmFile_Create_Success" xml:space="preserve">
-    <value>Файлы MDM успешно созданы</value>
+    <value>Файлы MDM созданы</value>
   </data>
   <data name="MessageBox_Content_MdmFile_Extract_Failed" xml:space="preserve">
     <value>Не удалось извлечь файл MDM</value>
   </data>
   <data name="MessageBox_Content_MdmFile_Extract_Success" xml:space="preserve">
-    <value>Файлы MDM успешно извлечены</value>
+    <value>Файлы MDM извлечены</value>
   </data>
   <data name="MessageBox_Content_MelonLoader_Install_Failed" xml:space="preserve">
     <value>Не удалось установить MelonLoader</value>
   </data>
   <data name="MessageBox_Content_MelonLoader_Install_Success" xml:space="preserve">
-    <value>MelonLoader успешно установлен</value>
+    <value>MelonLoader установлен</value>
   </data>
   <data name="MessageBox_Content_MelonLoader_Uninstall_Failed" xml:space="preserve">
     <value>Не удалось удалить MelonLoader</value>
   </data>
   <data name="MessageBox_Content_MelonLoader_Uninstall_Success" xml:space="preserve">
-    <value>MelonLoader успешно удалён</value>
+    <value>MelonLoader удалён</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Install" xml:space="preserve">
     <value>Установить шаблон мода?</value>
@@ -113,7 +113,7 @@
     <value>Не удалось установить шаблон мода</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Install_Success" xml:space="preserve">
-    <value>Шаблон мода успешно установлен</value>
+    <value>Шаблон мода установлен</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Uninstall" xml:space="preserve">
     <value>Удалить шаблон мода?</value>
@@ -122,45 +122,45 @@
     <value>Не удалось удалить шаблон мода</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Uninstall_Success" xml:space="preserve">
-    <value>Шаблон мода успешно удалён</value>
+    <value>Шаблон мода удалён</value>
   </data>
   <data name="MessageBox_Content_NewVersionAvailable" xml:space="preserve">
     <value>Доступна новая версия: {0}. Выполняется обновление.</value>
   </data>
   <data name="MessageBox_Content_NoUpdatesFound" xml:space="preserve">
-    <value>Обновления не найдены</value>
+    <value>Обновлений нет</value>
   </data>
   <data name="MessageBox_Content_Protontricks_Not_Installed" xml:space="preserve">
-    <value>protontricks не установлен. Установите protontricks для продолжения.</value>
+    <value>protontricks не установлен. Установи protontricks для продолжения.</value>
   </data>
   <data name="MessageBox_Content_Protontricks_Wineprefix_Failed" xml:space="preserve">
-    <value>Не удалось выполнить команды wine prefix через protontricks. Установка .NET Runtime невозможна.</value>
+    <value>Не удалось настроить окружение Wine через protontricks. Установку .NET Runtime нельзя продолжить.</value>
   </data>
   <data name="MessageBox_Content_ReadGameInformation_Failed" xml:space="preserve">
     <value>Не удалось прочитать информацию об игре
   {0}</value>
   </data>
   <data name="MessageBox_Content_SecretService_Unavailable" xml:space="preserve">
-    <value>Служба хранения ключей (secret-tool) не найдена. Сессия входа не будет сохранена, и вам потребуется входить заново при каждом запуске.</value>
+    <value>Служба связки ключей (secret-tool) не найдена. Сессия не сохранится, поэтому входить придётся при каждом запуске.</value>
   </data>
   <data name="MessageBox_Content_Server_Unavailable" xml:space="preserve">
-    <value>Сервер Euterpe в настоящее время недоступен. Euterpe закроется. Пожалуйста, повторите попытку позже.</value>
+    <value>Сервер Euterpe сейчас недоступен. Euterpe закроется. Повтори попытку позже.</value>
   </data>
   <data name="MessageBox_Content_SetMdDirectoryEnvironment" xml:space="preserve">
-    <value>Установить переменную окружения MD_DIRECTORY?</value>
+    <value>Задать переменную среды MD_DIRECTORY?</value>
   </data>
   <data name="MessageBox_Content_SetMdDirectoryEnvironment_Failed" xml:space="preserve">
-    <value>Не удалось установить переменную окружения MD_DIRECTORY</value>
+    <value>Не удалось задать переменную среды MD_DIRECTORY</value>
   </data>
   <data name="MessageBox_Content_SetPathEnvironment_Linux" xml:space="preserve">
-    <value>Скопируйте следующую строку и добавьте её в файл /etc/environment:
+    <value>Скопируй следующую строку и добавь её в файл /etc/environment:
 {0}</value>
   </data>
   <data name="MessageBox_Content_SetPathEnvironment_Windows" xml:space="preserve">
-    <value>Переменная окружения MD_DIRECTORY установлена: {0}</value>
+    <value>Переменная среды MD_DIRECTORY задана: {0}</value>
   </data>
   <data name="MessageBox_Content_Update_Check_Failed" xml:space="preserve">
-    <value>Не удалось проверить обновления, попробуйте позже</value>
+    <value>Не удалось проверить обновления, попробуй позже</value>
   </data>
   <data name="MessageBox_Content_Update_Failed" xml:space="preserve">
     <value>Не удалось обновить до версии {0}</value>
@@ -178,25 +178,25 @@
     <value>Не удалось скачать чарт {0}</value>
   </data>
   <data name="Notification_Content_Chart_Download_Success" xml:space="preserve">
-    <value>Чарт {0} успешно скачан</value>
+    <value>Чарт {0} скачан</value>
   </data>
   <data name="Notification_Content_Chart_Import_Failed" xml:space="preserve">
     <value>Не удалось импортировать чарт {0}</value>
   </data>
   <data name="Notification_Content_Chart_Import_Success" xml:space="preserve">
-    <value>Чарт {0} успешно импортирован</value>
+    <value>Чарт {0} импортирован</value>
   </data>
   <data name="Notification_Content_Chart_Import_Unmigratable" xml:space="preserve">
     <value>Чарт {0} невозможно перенести</value>
   </data>
   <data name="Notification_Content_Chart_Import_Unsupported" xml:space="preserve">
-    <value>{0} не является поддерживаемым файлом или папкой чарта</value>
+    <value>{0} — неподдерживаемый файл или папка чарта</value>
   </data>
   <data name="Notification_Content_Chart_Remove_Failed" xml:space="preserve">
     <value>Не удалось удалить чарт {0}</value>
   </data>
   <data name="Notification_Content_Chart_Remove_Success" xml:space="preserve">
-    <value>Чарт {0} успешно удалён</value>
+    <value>Чарт {0} удалён</value>
   </data>
   <data name="Notification_Content_Chart_Sync_Added" xml:space="preserve">
     <value>Чарт {0} добавлен</value>
@@ -208,10 +208,10 @@
     <value>Чарты синхронизированы: добавлено {0}, удалено {1}</value>
   </data>
   <data name="Notification_Content_Chart_UpdateAll_Partial" xml:space="preserve">
-    <value>Обновлено {0} чартов, {1} не удалось</value>
+    <value>Обновлено чартов: {0}, не удалось: {1}</value>
   </data>
   <data name="Notification_Content_Chart_UpdateAll_Success" xml:space="preserve">
-    <value>Обновлено {0} чартов</value>
+    <value>Обновлено чартов: {0}</value>
   </data>
   <data name="Notification_Content_Chart_UpdateAll_UpToDate" xml:space="preserve">
     <value>Все чарты актуальны</value>
@@ -220,7 +220,7 @@
     <value>Не удалось обновить чарт {0}</value>
   </data>
   <data name="Notification_Content_Chart_Update_Success" xml:space="preserve">
-    <value>Чарт {0} успешно обновлён</value>
+    <value>Чарт {0} обновлён</value>
   </data>
   <data name="Notification_Content_Chart_Update_UpToDate" xml:space="preserve">
     <value>Чарт {0} уже актуален</value>
@@ -235,22 +235,22 @@
     <value>Не удалось сохранить {0}</value>
   </data>
   <data name="Notification_Content_Epk_Save_Success" xml:space="preserve">
-    <value>Сохранено {0}</value>
+    <value>Сохранено: {0}</value>
   </data>
   <data name="Notification_Content_Lib_Import_Failed" xml:space="preserve">
     <value>Не удалось импортировать библиотеку {0}</value>
   </data>
   <data name="Notification_Content_Lib_Import_Success" xml:space="preserve">
-    <value>Библиотека {0} успешно импортирована</value>
+    <value>Библиотека {0} импортирована</value>
   </data>
   <data name="Notification_Content_Migration_None" xml:space="preserve">
     <value>Нет чартов MDM для переноса</value>
   </data>
   <data name="Notification_Content_Migration_Partial" xml:space="preserve">
-    <value>Перенесено {0} чартов CustomAlbums, {1} не удалось</value>
+    <value>Перенесено чартов CustomAlbums: {0}, не удалось перенести: {1}</value>
   </data>
   <data name="Notification_Content_Migration_Success" xml:space="preserve">
-    <value>Перенесено {0} чартов CustomAlbums</value>
+    <value>Перенесено чартов CustomAlbums: {0}</value>
   </data>
   <data name="Notification_Content_Mod_Import_Duplicated" xml:space="preserve">
     <value>Мод {0} уже импортирован</value>
@@ -259,10 +259,10 @@
     <value>Не удалось импортировать мод {0}</value>
   </data>
   <data name="Notification_Content_Mod_Import_Success" xml:space="preserve">
-    <value>Мод {0} успешно импортирован</value>
+    <value>Мод {0} импортирован</value>
   </data>
   <data name="Notification_Content_Mod_Import_Unsupported" xml:space="preserve">
-    <value>{0} не является поддерживаемым файлом мода или библиотеки</value>
+    <value>{0} — неподдерживаемый файл мода или библиотеки</value>
   </data>
   <data name="Notification_Content_Mod_Install_AlreadyInstalled" xml:space="preserve">
     <value>Мод {0} уже установлен</value>
@@ -274,7 +274,7 @@
     <value>Мод {0} несовместим и не может быть установлен</value>
   </data>
   <data name="Notification_Content_Mod_Install_Success" xml:space="preserve">
-    <value>Мод {0} успешно установлен</value>
+    <value>Мод {0} установлен</value>
   </data>
   <data name="Notification_Content_Mod_NotFound" xml:space="preserve">
     <value>Мод {0} не найден</value>
@@ -286,7 +286,7 @@
     <value>Не удалось переустановить мод {0}</value>
   </data>
   <data name="Notification_Content_Mod_Reinstall_Success" xml:space="preserve">
-    <value>Мод {0} успешно переустановлен</value>
+    <value>Мод {0} переустановлен</value>
   </data>
   <data name="Notification_Content_Mod_Sync_Added" xml:space="preserve">
     <value>Мод {0} добавлен</value>
@@ -304,28 +304,28 @@
     <value>Не удалось удалить мод {0}</value>
   </data>
   <data name="Notification_Content_Mod_Uninstall_Success" xml:space="preserve">
-    <value>Мод {0} успешно удалён</value>
+    <value>Мод {0} удалён</value>
   </data>
   <data name="Notification_Content_Mod_UpdateAll_Partial" xml:space="preserve">
-    <value>Обновлено {0} модов, {1} не удалось</value>
+    <value>Обновлено модов: {0}, не удалось: {1}</value>
   </data>
   <data name="Notification_Content_Mod_UpdateAll_Success" xml:space="preserve">
-    <value>Обновлено {0} модов</value>
+    <value>Обновлено модов: {0}</value>
   </data>
   <data name="Notification_Content_Mod_Update_Failed" xml:space="preserve">
     <value>Не удалось обновить мод {0}</value>
   </data>
   <data name="Notification_Content_Mod_Update_Success" xml:space="preserve">
-    <value>Мод {0} успешно обновлён</value>
+    <value>Мод {0} обновлён</value>
   </data>
   <data name="Notification_Content_Mod_Update_UpToDate" xml:space="preserve">
     <value>Мод {0} уже актуален</value>
   </data>
   <data name="Notification_Content_Server_Error" xml:space="preserve">
-    <value>Сервер временно недоступен. Пожалуйста, повторите попытку через некоторое время.</value>
+    <value>Сервер временно недоступен. Повтори попытку чуть позже.</value>
   </data>
   <data name="Notification_Content_Share_Copy_Success" xml:space="preserve">
-    <value>Код общего доступа скопирован</value>
+    <value>Код скопирован в буфер обмена</value>
   </data>
   <data name="Title_Error" xml:space="preserve">
     <value>Ошибка</value>
@@ -334,7 +334,7 @@
     <value>Уведомление</value>
   </data>
   <data name="Title_Success" xml:space="preserve">
-    <value>Успех</value>
+    <value>Готово</value>
   </data>
   <data name="Title_Warning" xml:space="preserve">
     <value>Внимание</value>

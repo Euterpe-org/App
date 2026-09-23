@@ -38,7 +38,7 @@
     <value>安裝</value>
   </data>
   <data name="Button_LaunchGame" xml:space="preserve">
-    <value>啟動遊戲</value>
+    <value>開始遊戲</value>
   </data>
   <data name="Button_Next" xml:space="preserve">
     <value>下一步</value>
@@ -65,7 +65,7 @@
     <value>更新</value>
   </data>
   <data name="ChartAnalyzer_Description" xml:space="preserve">
-    <value>預測大概定數並分析譜面 Note 資訊</value>
+    <value>預估譜面定數並分析音符資訊</value>
   </data>
   <data name="ChartAnalyzer_Title" xml:space="preserve">
     <value>譜面分析器</value>
@@ -83,7 +83,7 @@
     <value>大觸</value>
   </data>
   <data name="CharterToolkit_Offline_Description" xml:space="preserve">
-    <value>在本機編輯譜面的 manifest 元數據</value>
+    <value>在本機編輯譜面的 manifest 中繼資料</value>
   </data>
   <data name="CharterToolkit_Offline_Title" xml:space="preserve">
     <value>離線工具</value>
@@ -101,13 +101,13 @@
     <value>刪除</value>
   </data>
   <data name="ChartManage_Descending" xml:space="preserve">
-    <value>降序</value>
+    <value>遞減</value>
   </data>
   <data name="ChartManage_Downloading" xml:space="preserve">
     <value>正在下載譜面</value>
   </data>
   <data name="ChartManage_DownloadingHint" xml:space="preserve">
-    <value>正在下載，請勿關閉應用，耐心等待…</value>
+    <value>正在下載，請勿關閉程式，耐心等待…</value>
   </data>
   <data name="ChartManage_Filter_Difficulty" xml:space="preserve">
     <value>難度</value>
@@ -116,22 +116,22 @@
     <value>含影片</value>
   </data>
   <data name="ChartManage_Filter_StreamerSafe" xml:space="preserve">
-    <value>直播安全</value>
+    <value>可直播</value>
   </data>
   <data name="ChartManage_GetCharts_Description" xml:space="preserve">
-    <value>在網路上瀏覽並下載譜面</value>
+    <value>瀏覽並下載譜面</value>
   </data>
   <data name="ChartManage_GetCharts_Title" xml:space="preserve">
     <value>取得譜面</value>
   </data>
   <data name="ChartManage_MigrateMdm" xml:space="preserve">
-    <value>遷移 MDM 譜面</value>
+    <value>移轉 MDM 譜面</value>
   </data>
   <data name="ChartManage_Migrating" xml:space="preserve">
-    <value>正在遷移譜面</value>
+    <value>正在移轉譜面</value>
   </data>
   <data name="ChartManage_MigratingHint" xml:space="preserve">
-    <value>正在遷移，請勿關閉應用，耐心等待…</value>
+    <value>正在移轉，請勿關閉程式，耐心等待…</value>
   </data>
   <data name="ChartManage_Rating" xml:space="preserve">
     <value>定數</value>
@@ -143,7 +143,7 @@
     <value>選擇</value>
   </data>
   <data name="ChartManage_SelectedCount" xml:space="preserve">
-    <value>已選 {0}</value>
+    <value>已選 {0} 張</value>
   </data>
   <data name="ChartManage_ShareHint" xml:space="preserve">
     <value>僅線上譜面可分享，每次最多 100 張</value>
@@ -161,7 +161,7 @@
     <value>由 {0} 上傳</value>
   </data>
   <data name="ChartSortField_Author" xml:space="preserve">
-    <value>作者</value>
+    <value>曲師</value>
   </data>
   <data name="ChartSortField_Bpm" xml:space="preserve">
     <value>BPM</value>
@@ -185,7 +185,7 @@
     <value>檔案大小</value>
   </data>
   <data name="ChartSource_Offline" xml:space="preserve">
-    <value>本地</value>
+    <value>本機</value>
   </data>
   <data name="ChartSource_Online" xml:space="preserve">
     <value>線上</value>
@@ -197,22 +197,22 @@
     <value>提交譜面</value>
   </data>
   <data name="CrashDialog_Button_Continue" xml:space="preserve">
-    <value>繼續</value>
+    <value>繼續執行</value>
   </data>
   <data name="CrashDialog_Button_Copy" xml:space="preserve">
-    <value>複製詳情</value>
+    <value>複製錯誤資訊</value>
   </data>
   <data name="CrashDialog_Button_Exit" xml:space="preserve">
-    <value>退出</value>
+    <value>結束</value>
   </data>
   <data name="CrashDialog_Button_Feedback" xml:space="preserve">
     <value>GitHub 意見回饋</value>
   </data>
   <data name="CrashDialog_Header" xml:space="preserve">
-    <value>Euterpe 發生錯誤</value>
+    <value>Euterpe 遇到錯誤</value>
   </data>
   <data name="CrashDialog_Title" xml:space="preserve">
-    <value>崩潰報告</value>
+    <value>當機報告</value>
   </data>
   <data name="DropDownButton_Open" xml:space="preserve">
     <value>開啟</value>
@@ -251,13 +251,13 @@
     <value>模式</value>
   </data>
   <data name="EpkEditor_Field_HideRatingOverride" xml:space="preserve">
-    <value>定數顯示覆蓋</value>
+    <value>定數顯示覆寫</value>
   </data>
   <data name="EpkEditor_Field_Name" xml:space="preserve">
     <value>曲名</value>
   </data>
   <data name="EpkEditor_Field_NameRomanized" xml:space="preserve">
-    <value>羅馬音</value>
+    <value>曲名（羅馬拼音）</value>
   </data>
   <data name="EpkEditor_Field_SafeForStreamer" xml:space="preserve">
     <value>適合直播</value>
@@ -281,7 +281,7 @@
     <value>{0} 個檔案 · {1}</value>
   </data>
   <data name="EpkEditor_Hint_Required" xml:space="preserve">
-    <value>請填寫所有必填項後儲存</value>
+    <value>請填寫所有必填欄位後儲存</value>
   </data>
   <data name="EpkEditor_Hint_TempoRange" xml:space="preserve">
     <value>請設定有效的速度範圍（最小值 ≤ 最大值）</value>
@@ -290,19 +290,19 @@
     <value>新增關鍵字</value>
   </data>
   <data name="EpkEditor_Launcher_Description" xml:space="preserve">
-    <value>開啟並編輯譜面 manifest.epk 的元數據</value>
+    <value>開啟並編輯譜面 manifest.epk 的中繼資料</value>
   </data>
   <data name="EpkEditor_Map_Rating" xml:space="preserve">
     <value>定數</value>
   </data>
   <data name="EpkEditor_MissingFiles" xml:space="preserve">
-    <value>此譜面引用的 {0} 個檔案在其資料夾中遺失</value>
+    <value>譜面參照的檔案中，有 {0} 個不在資料夾內</value>
   </data>
   <data name="EpkEditor_NewFile" xml:space="preserve">
-    <value>新建 EPK…</value>
+    <value>新增 EPK…</value>
   </data>
   <data name="EpkEditor_New_Description" xml:space="preserve">
-    <value>從一個放好素材的資料夾建立新譜面</value>
+    <value>從素材資料夾建立新譜面</value>
   </data>
   <data name="EpkEditor_OpenFile" xml:space="preserve">
     <value>開啟 EPK 檔案…</value>
@@ -317,7 +317,7 @@
     <value>譜面資訊</value>
   </data>
   <data name="EpkEditor_Section_Discovery" xml:space="preserve">
-    <value>描述與發現</value>
+    <value>簡介與搜尋</value>
   </data>
   <data name="EpkEditor_Section_HiddenMode" xml:space="preserve">
     <value>隱藏難度</value>
@@ -338,19 +338,19 @@
     <value>模組資料夾</value>
   </data>
   <data name="Folder_OfflineCharts" xml:space="preserve">
-    <value>開啟本地譜資料夾</value>
+    <value>開啟本機譜資料夾</value>
   </data>
   <data name="Folder_OnlineCharts" xml:space="preserve">
     <value>開啟線上譜資料夾</value>
   </data>
   <data name="Folder_UserData" xml:space="preserve">
-    <value>使用者資料</value>
+    <value>設定資料夾</value>
   </data>
   <data name="Folder_UserLibs" xml:space="preserve">
-    <value>依賴資料夾</value>
+    <value>相依程式庫資料夾</value>
   </data>
   <data name="GameMode_Modded" xml:space="preserve">
-    <value>模組版</value>
+    <value>Mod 版</value>
   </data>
   <data name="GameMode_Vanilla" xml:space="preserve">
     <value>原版</value>
@@ -365,7 +365,7 @@
     <value>喜歡 Euterpe 嗎？您可以透過以下方式支持我們</value>
   </data>
   <data name="HomePage_SupportTitle" xml:space="preserve">
-    <value>100% 免費 · 開源</value>
+    <value>100% 免費 · 開放原始碼</value>
   </data>
   <data name="HyperlinkButton_LearnMore" xml:space="preserve">
     <value>查看詳情</value>
@@ -380,7 +380,7 @@
     <value>分析</value>
   </data>
   <data name="MelonLoaderLog_Empty" xml:space="preserve">
-    <value>暫無 MelonLoader 記錄。</value>
+    <value>暫無 MelonLoader 記錄</value>
   </data>
   <data name="MelonLoaderLog_Refresh" xml:space="preserve">
     <value>重新整理</value>
@@ -398,13 +398,13 @@
     <value>未安裝</value>
   </data>
   <data name="ModDevelop_Card_DotNetSDK_Description" xml:space="preserve">
-    <value>模組開發必備</value>
+    <value>模組開發所需</value>
   </data>
   <data name="ModDevelop_Card_DotNetSDK_Title" xml:space="preserve">
     <value>.NET 10 SDK</value>
   </data>
   <data name="ModDevelop_Card_EnvVariable_Description" xml:space="preserve">
-    <value>讓建置工具能夠定位遊戲檔案</value>
+    <value>讓建置工具能找到遊戲檔案</value>
   </data>
   <data name="ModDevelop_Card_EnvVariable_Title" xml:space="preserve">
     <value>設定環境變數</value>
@@ -416,7 +416,7 @@
     <value>快速建立模組專案</value>
   </data>
   <data name="ModDevelop_Card_ModTemplate_Title" xml:space="preserve">
-    <value>模組範本 NuGet</value>
+    <value>模組範本（NuGet）</value>
   </data>
   <data name="ModDevelop_Section_DevelopmentEnvironment" xml:space="preserve">
     <value>開發環境</value>
@@ -452,7 +452,7 @@
     <value>有更新</value>
   </data>
   <data name="ModIncompatibleReason_ConflictingMod" xml:space="preserve">
-    <value>與已啟用的 Mod 衝突：{0}</value>
+    <value>與已啟用的模組衝突：{0}</value>
   </data>
   <data name="ModIncompatibleReason_GameVersion" xml:space="preserve">
     <value>需要遊戲版本 {0}</value>
@@ -464,10 +464,10 @@
     <value>作者</value>
   </data>
   <data name="ModInfo_Dependencies" xml:space="preserve">
-    <value>依賴項</value>
+    <value>相依性</value>
   </data>
   <data name="ModInfo_Details" xml:space="preserve">
-    <value>詳細資訊</value>
+    <value>詳情</value>
   </data>
   <data name="ModInfo_IncompatibleMods" xml:space="preserve">
     <value>不相容的模組</value>
@@ -476,22 +476,22 @@
     <value>儲存庫</value>
   </data>
   <data name="ModInfo_RequiredMelonLoaderVersion" xml:space="preserve">
-    <value>需要的載入器版本</value>
+    <value>所需載入器版本</value>
   </data>
   <data name="ModInfo_SupportedGameVersion" xml:space="preserve">
     <value>支援的遊戲版本</value>
   </data>
   <data name="ModState_Duplicated" xml:space="preserve">
-    <value>重複</value>
+    <value>有重複</value>
   </data>
   <data name="ModState_Duplicated_Reason" xml:space="preserve">
-    <value>偵測到重複的 Mod 檔案：{0}。請刪除多餘檔案，只保留其中一個。</value>
+    <value>偵測到重複的模組檔案：{0}。請刪除多餘檔案，只保留其中一個。</value>
   </data>
   <data name="ModState_Incompatible" xml:space="preserve">
     <value>不相容</value>
   </data>
   <data name="ModState_Modified" xml:space="preserve">
-    <value>已修改</value>
+    <value>被修改</value>
   </data>
   <data name="ModState_Newer" xml:space="preserve">
     <value>開發版</value>
@@ -500,7 +500,7 @@
     <value>已安裝</value>
   </data>
   <data name="ModState_Outdated" xml:space="preserve">
-    <value>有新版本</value>
+    <value>有新版</value>
   </data>
   <data name="Page_Charting" xml:space="preserve">
     <value>譜面</value>
@@ -557,25 +557,25 @@
     <value>檔案管理</value>
   </data>
   <data name="SearchBarPlaceholder_Chart" xml:space="preserve">
-    <value>搜尋譜面  （名稱、曲師、譜師、標籤）</value>
+    <value>搜尋譜面  （曲名、曲師、譜師、標籤）</value>
   </data>
   <data name="SearchBarPlaceholder_Mod" xml:space="preserve">
     <value>搜尋模組  （名稱、作者）</value>
   </data>
   <data name="Setting_Description_AlwaysShowScrollBar" xml:space="preserve">
-    <value>始終顯示列表捲軸</value>
+    <value>一律顯示清單的捲軸</value>
   </data>
   <data name="Setting_Description_CacheFolder" xml:space="preserve">
-    <value>此處包含下載檔案時的快取。進行其他操作時請勿變更此設定</value>
+    <value>包含下載檔案時的快取，請勿在執行其他操作時變更此項</value>
   </data>
   <data name="Setting_Description_IgnoreException" xml:space="preserve">
-    <value>發生例外狀況時不退出應用程式（僅在你清楚自己在做什麼時才啟用！）</value>
+    <value>遇到錯誤時不結束程式（僅在你清楚自己在做什麼時啟用！）</value>
   </data>
   <data name="Setting_Description_Language" xml:space="preserve">
     <value>介面語言</value>
   </data>
   <data name="Setting_Description_MinimizeToTrayOnClose" xml:space="preserve">
-    <value>開啟後，關閉主視窗不會退出 Euterpe；可從系統匣選單退出</value>
+    <value>開啟後，關閉主視窗不會結束 Euterpe；可從系統匣選單結束</value>
   </data>
   <data name="Setting_Description_MuseDashFolder" xml:space="preserve">
     <value>Muse Dash 執行檔所在資料夾</value>
@@ -584,7 +584,7 @@
     <value>啟動遊戲時是否顯示主控台</value>
   </data>
   <data name="Setting_Description_ShowStartScreen" xml:space="preserve">
-    <value>啟動遊戲時是否顯示啟動畫面</value>
+    <value>啟動遊戲時是否顯示載入畫面</value>
   </data>
   <data name="Setting_Description_SteamFolder" xml:space="preserve">
     <value>Steam 執行檔所在資料夾</value>
@@ -593,13 +593,13 @@
     <value>Euterpe 的更新頻道</value>
   </data>
   <data name="Setting_Title_AlwaysShowScrollBar" xml:space="preserve">
-    <value>始終顯示捲軸</value>
+    <value>一律顯示捲軸</value>
   </data>
   <data name="Setting_Title_CacheFolder" xml:space="preserve">
     <value>快取資料夾</value>
   </data>
   <data name="Setting_Title_IgnoreException" xml:space="preserve">
-    <value>忽略例外</value>
+    <value>忽略錯誤</value>
   </data>
   <data name="Setting_Title_Language" xml:space="preserve">
     <value>語言</value>
@@ -614,7 +614,7 @@
     <value>顯示主控台</value>
   </data>
   <data name="Setting_Title_ShowStartScreen" xml:space="preserve">
-    <value>顯示啟動畫面</value>
+    <value>顯示載入畫面</value>
   </data>
   <data name="Setting_Title_SteamFolder" xml:space="preserve">
     <value>Steam 資料夾</value>
@@ -629,7 +629,7 @@
     <value>不是有效的遊戲資料夾</value>
   </data>
   <data name="Setup_GamePath_MdmcWarning" xml:space="preserve">
-    <value>若你曾使用 MDMC，極少數譜面可能無法被識別，部分模組將被替換為升級版，其中 Headquarters 模組無法與 Euterpe 相容。如果你不知道這條訊息在說什麼，忽略即可。</value>
+    <value>若你曾使用 MDMC，極少數譜面可能無法辨識，部分模組也會替換為更新版本。Headquarters 模組與 Euterpe 不相容。如果你不清楚這則訊息的意思，可以忽略。</value>
   </data>
   <data name="Setup_GamePath_MdmcWarning_Title" xml:space="preserve">
     <value>相容性警告</value>
@@ -659,7 +659,7 @@
     <value>正在安裝模組範本……</value>
   </data>
   <data name="Setup_Progress_MigratingCharts" xml:space="preserve">
-    <value>正在遷移 CustomAlbums 譜面……</value>
+    <value>正在移轉 CustomAlbums 譜面……</value>
   </data>
   <data name="Setup_Progress_SettingEnvVariable" xml:space="preserve">
     <value>正在設定環境變數……</value>
@@ -671,7 +671,7 @@
     <value>失敗</value>
   </data>
   <data name="Setup_StepStatus_Pending" xml:space="preserve">
-    <value>等待中</value>
+    <value>待執行</value>
   </data>
   <data name="Setup_StepStatus_Running" xml:space="preserve">
     <value>進行中</value>
@@ -683,10 +683,10 @@
     <value>執行失敗，請查看記錄檔或重試</value>
   </data>
   <data name="Setup_Task_ChartingTool" xml:space="preserve">
-    <value>製譜工具 (MDBMSC)（還未實現）</value>
+    <value>製譜工具（尚未實作）</value>
   </data>
   <data name="Setup_Task_ChartingTool_Description" xml:space="preserve">
-    <value>MDM 譜面製作工具包（還未實現）</value>
+    <value>譜面製作工具</value>
   </data>
   <data name="Setup_Task_DotNetRuntime" xml:space="preserve">
     <value>.NET 執行階段</value>
@@ -698,7 +698,7 @@
     <value>.NET SDK</value>
   </data>
   <data name="Setup_Task_DotNetSdk_Description" xml:space="preserve">
-    <value>模組開發必需</value>
+    <value>模組開發所需</value>
   </data>
   <data name="Setup_Task_EnvVariable" xml:space="preserve">
     <value>MD_DIRECTORY 變數</value>
@@ -710,7 +710,7 @@
     <value>必備模組</value>
   </data>
   <data name="Setup_Task_EssentialMods_Description" xml:space="preserve">
-    <value>獲得最佳體驗的核心模組</value>
+    <value>帶來最佳體驗的核心模組</value>
   </data>
   <data name="Setup_Task_MelonLoader" xml:space="preserve">
     <value>MelonLoader</value>
@@ -719,10 +719,10 @@
     <value>必需的模組載入器框架</value>
   </data>
   <data name="Setup_Task_Migration" xml:space="preserve">
-    <value>遷移舊版資料</value>
+    <value>移轉舊版資料</value>
   </data>
   <data name="Setup_Task_Migration_Description" xml:space="preserve">
-    <value>將 CustomAlbums 等舊版模組的譜面轉換為 Euterpe 格式</value>
+    <value>將 CustomAlbums 等舊版模組中的譜面轉換為 Euterpe 格式</value>
   </data>
   <data name="Setup_Task_ModTemplate" xml:space="preserve">
     <value>模組範本</value>
@@ -731,13 +731,13 @@
     <value>用於新模組專案的 NuGet 範本</value>
   </data>
   <data name="Setup_Task_UninstallConflicts" xml:space="preserve">
-    <value>解除安裝衝突</value>
+    <value>解除安裝衝突模組</value>
   </data>
   <data name="Setup_Task_UninstallConflicts_Description" xml:space="preserve">
     <value>移除不相容的模組</value>
   </data>
   <data name="Setup_Title_GamePath" xml:space="preserve">
-    <value>定位遊戲資料夾</value>
+    <value>選擇遊戲資料夾</value>
   </data>
   <data name="Setup_Title_SettingUp" xml:space="preserve">
     <value>正在設定 Euterpe</value>

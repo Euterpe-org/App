@@ -65,10 +65,10 @@
     <value>Ažuriraj</value>
   </data>
   <data name="ChartAnalyzer_Description" xml:space="preserve">
-    <value>Predvidi približne razine i analiziraj raspodjelu Note u chartu</value>
+    <value>Procijeni razinu težine i analiziraj raspodjelu nota u chartu</value>
   </data>
   <data name="ChartAnalyzer_Title" xml:space="preserve">
-    <value>Chart Analyzer</value>
+    <value>Analizator chartova</value>
   </data>
   <data name="ChartDifficulty_Easy" xml:space="preserve">
     <value>Easy</value>
@@ -83,13 +83,13 @@
     <value>Master</value>
   </data>
   <data name="CharterToolkit_Offline_Description" xml:space="preserve">
-    <value>Uredi metapodatke manifesta charta lokalno</value>
+    <value>Lokalno uredi metapodatke manifesta charta</value>
   </data>
   <data name="CharterToolkit_Offline_Title" xml:space="preserve">
     <value>Offline alati</value>
   </data>
   <data name="CharterToolkit_Online_Description" xml:space="preserve">
-    <value>Analiziraj i pošalji chartove na Euterpe stranici (otvara se u pregledniku)</value>
+    <value>Analiziraj i pošalji chartove na web-stranici Euterpea (otvara se u pregledniku)</value>
   </data>
   <data name="CharterToolkit_Online_Title" xml:space="preserve">
     <value>Online alati</value>
@@ -107,7 +107,7 @@
     <value>Preuzimanje charta</value>
   </data>
   <data name="ChartManage_DownloadingHint" xml:space="preserve">
-    <value>Preuzimanje je u tijeku. Pričekajte i nemojte zatvoriti aplikaciju.</value>
+    <value>Preuzimanje u tijeku. Ne zatvaraj aplikaciju.</value>
   </data>
   <data name="ChartManage_Filter_Difficulty" xml:space="preserve">
     <value>Težina</value>
@@ -131,13 +131,13 @@
     <value>Migriranje chartova</value>
   </data>
   <data name="ChartManage_MigratingHint" xml:space="preserve">
-    <value>Migracija je u tijeku. Pričekajte i nemojte zatvoriti aplikaciju.</value>
+    <value>Migracija u tijeku. Ne zatvaraj aplikaciju.</value>
   </data>
   <data name="ChartManage_Rating" xml:space="preserve">
     <value>Razina</value>
   </data>
   <data name="ChartManage_Reset" xml:space="preserve">
-    <value>Poništi</value>
+    <value>Poništi filtre</value>
   </data>
   <data name="ChartManage_Select" xml:space="preserve">
     <value>Odaberi</value>
@@ -158,10 +158,10 @@
     <value>Ažuriraj sve chartove</value>
   </data>
   <data name="ChartManage_UploadedBy" xml:space="preserve">
-    <value>autor {0}</value>
+    <value>Prenio: {0}</value>
   </data>
   <data name="ChartSortField_Author" xml:space="preserve">
-    <value>Autor</value>
+    <value>Izvođač</value>
   </data>
   <data name="ChartSortField_Bpm" xml:space="preserve">
     <value>BPM</value>
@@ -206,7 +206,7 @@
     <value>Izlaz</value>
   </data>
   <data name="CrashDialog_Button_Feedback" xml:space="preserve">
-    <value>GitHub povratne informacije</value>
+    <value>Prijavi pogrešku na GitHubu</value>
   </data>
   <data name="CrashDialog_Header" xml:space="preserve">
     <value>Euterpe je naišao na pogrešku</value>
@@ -221,13 +221,13 @@
     <value>Natrag</value>
   </data>
   <data name="EpkEditor_Charters_Watermark" xml:space="preserve">
-    <value>Dodaj kreatora charta</value>
+    <value>Dodaj chartera</value>
   </data>
   <data name="EpkEditor_Field_Author" xml:space="preserve">
-    <value>Autor pjesme</value>
+    <value>Izvođač</value>
   </data>
   <data name="EpkEditor_Field_BackgroundVideoOpacity" xml:space="preserve">
-    <value>Prozirnost videozapisa</value>
+    <value>Neprozirnost videozapisa</value>
   </data>
   <data name="EpkEditor_Field_Bpm" xml:space="preserve">
     <value>BPM</value>
@@ -254,13 +254,13 @@
     <value>Nadjačavanje prikaza razine</value>
   </data>
   <data name="EpkEditor_Field_Name" xml:space="preserve">
-    <value>Naziv charta</value>
+    <value>Naslov pjesme</value>
   </data>
   <data name="EpkEditor_Field_NameRomanized" xml:space="preserve">
-    <value>Romanizirani naziv</value>
+    <value>Romanizirani naslov</value>
   </data>
   <data name="EpkEditor_Field_SafeForStreamer" xml:space="preserve">
-    <value>Sigurno za streamere</value>
+    <value>Sigurno za streamanje</value>
   </data>
   <data name="EpkEditor_Field_Scene" xml:space="preserve">
     <value>Scena</value>
@@ -278,13 +278,13 @@
     <value>Osvježi</value>
   </data>
   <data name="EpkEditor_Files_Summary" xml:space="preserve">
-    <value>{0} datoteka · {1}</value>
+    <value>Datoteke: {0} · {1}</value>
   </data>
   <data name="EpkEditor_Hint_Required" xml:space="preserve">
-    <value>Ispunite sva obavezna polja za spremanje</value>
+    <value>Za spremanje ispuni sva obvezna polja</value>
   </data>
   <data name="EpkEditor_Hint_TempoRange" xml:space="preserve">
-    <value>Postavite valjan raspon tempa (min ≤ maks)</value>
+    <value>Postavi valjan raspon tempa (min ≤ maks)</value>
   </data>
   <data name="EpkEditor_Keywords_Watermark" xml:space="preserve">
     <value>Dodaj ključnu riječ</value>
@@ -296,13 +296,13 @@
     <value>Razina</value>
   </data>
   <data name="EpkEditor_MissingFiles" xml:space="preserve">
-    <value>{0} datoteka na koje ovaj chart upućuje nedostaje u njegovoj mapi</value>
+    <value>Datoteke koje nedostaju u mapi charta: {0}</value>
   </data>
   <data name="EpkEditor_NewFile" xml:space="preserve">
     <value>Novi EPK…</value>
   </data>
   <data name="EpkEditor_New_Description" xml:space="preserve">
-    <value>Izgradi novi chart iz mape s resursima</value>
+    <value>Izradi novi chart iz mape s resursima</value>
   </data>
   <data name="EpkEditor_OpenFile" xml:space="preserve">
     <value>Otvori EPK datoteku…</value>
@@ -317,10 +317,10 @@
     <value>Informacije o chartu</value>
   </data>
   <data name="EpkEditor_Section_Discovery" xml:space="preserve">
-    <value>Opis i otkrivanje</value>
+    <value>Opis i pretraživanje</value>
   </data>
   <data name="EpkEditor_Section_HiddenMode" xml:space="preserve">
-    <value>Skrivena težina</value>
+    <value>Težina Hidden</value>
   </data>
   <data name="EpkEditor_Section_Identity" xml:space="preserve">
     <value>Osnovne informacije</value>
@@ -338,10 +338,10 @@
     <value>Mods</value>
   </data>
   <data name="Folder_OfflineCharts" xml:space="preserve">
-    <value>Otvori mapu Offline chartova</value>
+    <value>Otvori mapu offline chartova</value>
   </data>
   <data name="Folder_OnlineCharts" xml:space="preserve">
-    <value>Otvori mapu Online chartova</value>
+    <value>Otvori mapu online chartova</value>
   </data>
   <data name="Folder_UserData" xml:space="preserve">
     <value>UserData</value>
@@ -356,7 +356,7 @@
     <value>Bez modova</value>
   </data>
   <data name="HomePage_Button_GitHubStar" xml:space="preserve">
-    <value>Zvjezdica na GitHubu</value>
+    <value>Dodaj zvjezdicu na GitHubu</value>
   </data>
   <data name="HomePage_Button_Sponsor" xml:space="preserve">
     <value>Sponzoriraj</value>
@@ -375,6 +375,15 @@
   </data>
   <data name="LoadingMessage" xml:space="preserve">
     <value>Učitavanje...</value>
+  </data>
+  <data name="MelonLoaderLog_Analyze" xml:space="preserve">
+    <value>Analiziraj</value>
+  </data>
+  <data name="MelonLoaderLog_Empty" xml:space="preserve">
+    <value>Zapisnik MelonLoadera nije dostupan.</value>
+  </data>
+  <data name="MelonLoaderLog_Refresh" xml:space="preserve">
+    <value>Osvježi</value>
   </data>
   <data name="MelonLoader_Description" xml:space="preserve">
     <value>Za igranje s modovima potrebna je instalacija MelonLoadera</value>
@@ -395,19 +404,19 @@
     <value>.NET 10 SDK</value>
   </data>
   <data name="ModDevelop_Card_EnvVariable_Description" xml:space="preserve">
-    <value>Omogućava alatima za izgradnju pronalaženje datoteka igre</value>
+    <value>Omogućuje alatima za izgradnju da pronađu datoteke igre</value>
   </data>
   <data name="ModDevelop_Card_EnvVariable_Title" xml:space="preserve">
     <value>Postavi varijablu okruženja</value>
   </data>
   <data name="ModDevelop_Card_EuterpeHub_Description" xml:space="preserve">
-    <value>Napravite račun za prijenos i upravljanje modovima</value>
+    <value>Napravi račun za prijenos i upravljanje modovima</value>
   </data>
   <data name="ModDevelop_Card_ModTemplate_Description" xml:space="preserve">
     <value>Za brzo stvaranje projekta moda</value>
   </data>
   <data name="ModDevelop_Card_ModTemplate_Title" xml:space="preserve">
-    <value>Predložak moda NuGet</value>
+    <value>NuGet predložak moda</value>
   </data>
   <data name="ModDevelop_Section_DevelopmentEnvironment" xml:space="preserve">
     <value>Razvojno okruženje</value>
@@ -425,7 +434,7 @@
     <value>Nije postavljeno</value>
   </data>
   <data name="ModFilterType_All" xml:space="preserve">
-    <value>Sve</value>
+    <value>Svi</value>
   </data>
   <data name="ModFilterType_Disabled" xml:space="preserve">
     <value>Onemogućeni</value>
@@ -467,7 +476,7 @@
     <value>Repozitorij</value>
   </data>
   <data name="ModInfo_RequiredMelonLoaderVersion" xml:space="preserve">
-    <value>Potrebna verzija loadera</value>
+    <value>Potrebna verzija MelonLoadera</value>
   </data>
   <data name="ModInfo_SupportedGameVersion" xml:space="preserve">
     <value>Podržana verzija igre</value>
@@ -476,7 +485,7 @@
     <value>Dupliciran</value>
   </data>
   <data name="ModState_Duplicated_Reason" xml:space="preserve">
-    <value>Otkrivene su duplicirane datoteke moda: {0}. Izbrišite sve te datoteke osim jedne.</value>
+    <value>Otkrivene su duplicirane datoteke moda: {0}. Izbriši sve te datoteke osim jedne.</value>
   </data>
   <data name="ModState_Incompatible" xml:space="preserve">
     <value>Nekompatibilan</value>
@@ -488,7 +497,7 @@
     <value>Noviji</value>
   </data>
   <data name="ModState_Normal" xml:space="preserve">
-    <value>Instalirano</value>
+    <value>Instaliran</value>
   </data>
   <data name="ModState_Outdated" xml:space="preserve">
     <value>Dostupno ažuriranje</value>
@@ -518,7 +527,7 @@
     <value>Zapisnik aplikacije</value>
   </data>
   <data name="Panel_Logging_MelonLoaderLog" xml:space="preserve">
-    <value>MelonLoader zapisnik</value>
+    <value>Zapisnik MelonLoadera</value>
   </data>
   <data name="Panel_Modding_MelonLoader" xml:space="preserve">
     <value>MelonLoader</value>
@@ -548,28 +557,28 @@
     <value>Upravljanje datotekama</value>
   </data>
   <data name="SearchBarPlaceholder_Chart" xml:space="preserve">
-    <value>Pretraži chartove  (Naziv, Izvođač, Kreator, Oznaka)</value>
+    <value>Pretraži chartove (naslov, izvođač, charter, oznaka)</value>
   </data>
   <data name="SearchBarPlaceholder_Mod" xml:space="preserve">
-    <value>Pretraži modove  (Naziv, Autor)</value>
+    <value>Pretraži modove  (naziv, autor)</value>
   </data>
   <data name="Setting_Description_AlwaysShowScrollBar" xml:space="preserve">
     <value>Uvijek prikaži traku za pomicanje u popisima</value>
   </data>
   <data name="Setting_Description_CacheFolder" xml:space="preserve">
-    <value>Uključuje privremenu memoriju za preuzimanje datoteka. Ne mijenjajte ovo tijekom drugih operacija</value>
+    <value>Sadrži predmemoriju preuzimanja. Ne mijenjaj ovu mapu dok su druge radnje u tijeku.</value>
   </data>
   <data name="Setting_Description_IgnoreException" xml:space="preserve">
-    <value>Sprječava zatvaranje aplikacije kada dođe do pogreške (Omogućite samo ako znate što radite!)</value>
+    <value>Sprječava zatvaranje aplikacije kada dođe do pogreške (omogući samo ako znaš što radiš!)</value>
   </data>
   <data name="Setting_Description_Language" xml:space="preserve">
     <value>Jezik sučelja</value>
   </data>
   <data name="Setting_Description_MinimizeToTrayOnClose" xml:space="preserve">
-    <value>Nastavi izvoditi Euterpe u području obavijesti nakon zatvaranja glavnog prozora</value>
+    <value>Euterpe ostaje pokrenut u području obavijesti nakon zatvaranja glavnog prozora</value>
   </data>
   <data name="Setting_Description_MuseDashFolder" xml:space="preserve">
-    <value>Mapa s izvršnom datotekom Muse Dash</value>
+    <value>Mapa s izvršnom datotekom igre Muse Dash</value>
   </data>
   <data name="Setting_Description_ShowConsole" xml:space="preserve">
     <value>Prikaži konzolu pri pokretanju igre</value>
@@ -578,7 +587,7 @@
     <value>Prikaži početni zaslon pri pokretanju igre</value>
   </data>
   <data name="Setting_Description_SteamFolder" xml:space="preserve">
-    <value>Mapa s izvršnom datotekom Steam</value>
+    <value>Mapa s izvršnom datotekom Steama</value>
   </data>
   <data name="Setting_Description_UpdateChannel" xml:space="preserve">
     <value>Kanal ažuriranja za Euterpe</value>
@@ -587,7 +596,7 @@
     <value>Uvijek prikaži traku za pomicanje</value>
   </data>
   <data name="Setting_Title_CacheFolder" xml:space="preserve">
-    <value>Mapa privremene memorije</value>
+    <value>Mapa predmemorije</value>
   </data>
   <data name="Setting_Title_IgnoreException" xml:space="preserve">
     <value>Zanemari pogreške</value>
@@ -599,16 +608,16 @@
     <value>Minimiziraj u područje obavijesti pri zatvaranju</value>
   </data>
   <data name="Setting_Title_MuseDashFolder" xml:space="preserve">
-    <value>Muse Dash mapa</value>
+    <value>Mapa igre Muse Dash</value>
   </data>
   <data name="Setting_Title_ShowConsole" xml:space="preserve">
     <value>Prikaži konzolu</value>
   </data>
   <data name="Setting_Title_ShowStartScreen" xml:space="preserve">
-    <value>Prikaži početni zaslon</value>
+    <value>Prikaži zaslon učitavanja</value>
   </data>
   <data name="Setting_Title_SteamFolder" xml:space="preserve">
-    <value>Steam mapa</value>
+    <value>Mapa Steama</value>
   </data>
   <data name="Setting_Title_UpdateChannel" xml:space="preserve">
     <value>Kanal ažuriranja</value>
@@ -620,16 +629,16 @@
     <value>Mapa igre nije valjana</value>
   </data>
   <data name="Setup_GamePath_MdmcWarning" xml:space="preserve">
-    <value>Ako si ranije koristio MDMC, vrlo mali broj chartova možda neće biti prepoznat, a neki modovi bit će zamijenjeni nadograđenim verzijama; među njima Headquarters mod nije kompatibilan s Euterpeom. Ako ne znaš o čemu se radi u ovoj poruci, slobodno je zanemari.</value>
+    <value>Ako je prije korišten MDMC, vrlo mali broj chartova možda neće biti prepoznat, a neki će modovi biti zamijenjeni nadograđenim verzijama. Mod Headquarters nije kompatibilan s Euterpeom. Ako ne znaš o čemu je riječ, slobodno zanemari ovu poruku.</value>
   </data>
   <data name="Setup_GamePath_MdmcWarning_Title" xml:space="preserve">
     <value>Upozorenje o kompatibilnosti</value>
   </data>
   <data name="Setup_GamePath_WelcomeSubtitle" xml:space="preserve">
-    <value>Odvoji trenutak da ovo pročitaš, zatim odaberi mapu igre</value>
+    <value>Pročitaj ovo, a zatim odaberi mapu igre.</value>
   </data>
   <data name="Setup_GamePath_WelcomeTitle" xml:space="preserve">
-    <value>Prije nego što počneš</value>
+    <value>Prije početka</value>
   </data>
   <data name="Setup_Progress_EssentialModsInstalled" xml:space="preserve">
     <value>Osnovni modovi instalirani</value>
@@ -650,7 +659,7 @@
     <value>Instaliranje predloška moda ...</value>
   </data>
   <data name="Setup_Progress_MigratingCharts" xml:space="preserve">
-    <value>Migriranje CustomAlbums chartova ...</value>
+    <value>Migriranje chartova iz moda CustomAlbums ...</value>
   </data>
   <data name="Setup_Progress_SettingEnvVariable" xml:space="preserve">
     <value>Postavljanje varijable okruženja ...</value>
@@ -665,25 +674,25 @@
     <value>Na čekanju</value>
   </data>
   <data name="Setup_StepStatus_Running" xml:space="preserve">
-    <value>Izvršava se</value>
+    <value>U tijeku</value>
   </data>
   <data name="Setup_StepStatus_Succeeded" xml:space="preserve">
     <value>Gotovo</value>
   </data>
   <data name="Setup_Step_Failed" xml:space="preserve">
-    <value>Nije uspjelo. Provjerite zapisnik ili pokušajte ponovno.</value>
+    <value>Nije uspjelo. Provjeri zapisnik ili pokušaj ponovno.</value>
   </data>
   <data name="Setup_Task_ChartingTool" xml:space="preserve">
-    <value>Alat za chartove (MDBMSC) (nije implementirano)</value>
+    <value>Alat za chartove (nije implementiran)</value>
   </data>
   <data name="Setup_Task_ChartingTool_Description" xml:space="preserve">
-    <value>MDM alat za izradu chartova (nije implementirano)</value>
+    <value>Alat za izradu chartova</value>
   </data>
   <data name="Setup_Task_DotNetRuntime" xml:space="preserve">
     <value>.NET Runtime</value>
   </data>
   <data name="Setup_Task_DotNetRuntime_Description" xml:space="preserve">
-    <value>Potreban za pokretanje moddane igre</value>
+    <value>Potrebno za pokretanje igre s modovima</value>
   </data>
   <data name="Setup_Task_DotNetSdk" xml:space="preserve">
     <value>.NET SDK</value>
@@ -692,13 +701,13 @@
     <value>Potrebno za razvoj modova</value>
   </data>
   <data name="Setup_Task_EnvVariable" xml:space="preserve">
-    <value>MD_DIRECTORY varijabla</value>
+    <value>Varijabla MD_DIRECTORY</value>
   </data>
   <data name="Setup_Task_EnvVariable_Description" xml:space="preserve">
-    <value>Postavi varijablu okruženja za put igre</value>
+    <value>Postavi varijablu okruženja za mapu igre</value>
   </data>
   <data name="Setup_Task_EssentialMods" xml:space="preserve">
-    <value>Osnovni Modovi</value>
+    <value>Osnovni modovi</value>
   </data>
   <data name="Setup_Task_EssentialMods_Description" xml:space="preserve">
     <value>Glavni modovi za najbolje iskustvo</value>
@@ -707,22 +716,22 @@
     <value>MelonLoader</value>
   </data>
   <data name="Setup_Task_MelonLoader_Description" xml:space="preserve">
-    <value>Potreban okvir za učitavanje modova</value>
+    <value>Potreban alat za učitavanje modova</value>
   </data>
   <data name="Setup_Task_Migration" xml:space="preserve">
     <value>Migriraj starije podatke</value>
   </data>
   <data name="Setup_Task_Migration_Description" xml:space="preserve">
-    <value>Pretvori chartove iz starijih modova poput CustomAlbums u Euterpeov format</value>
+    <value>Pretvori chartove iz starijih modova poput moda CustomAlbums u Euterpeov format</value>
   </data>
   <data name="Setup_Task_ModTemplate" xml:space="preserve">
-    <value>Predložak Moda</value>
+    <value>Predložak moda</value>
   </data>
   <data name="Setup_Task_ModTemplate_Description" xml:space="preserve">
     <value>NuGet predložak za nove projekte modova</value>
   </data>
   <data name="Setup_Task_UninstallConflicts" xml:space="preserve">
-    <value>Deinstaliraj Konflikte</value>
+    <value>Deinstaliraj modove u sukobu</value>
   </data>
   <data name="Setup_Task_UninstallConflicts_Description" xml:space="preserve">
     <value>Ukloni nekompatibilne modove</value>
@@ -731,7 +740,7 @@
     <value>Pronađi mapu igre</value>
   </data>
   <data name="Setup_Title_SettingUp" xml:space="preserve">
-    <value>Postavljanje Euterpe</value>
+    <value>Postavljanje Euterpea</value>
   </data>
   <data name="Share_Import_Cancel" xml:space="preserve">
     <value>Odustani</value>
@@ -739,29 +748,44 @@
   <data name="Share_Import_Canceled" xml:space="preserve">
     <value>Uvoz otkazan</value>
   </data>
+  <data name="Share_Import_Empty" xml:space="preserve">
+    <value>Kopiraj kod za dijeljenje i pokušaj ponovno</value>
+  </data>
   <data name="Share_Import_Failed" xml:space="preserve">
     <value>Uvoz nije uspio</value>
   </data>
   <data name="Share_Import_Header" xml:space="preserve">
-    <value>Uvezi kod za dijeljenje</value>
+    <value>Uvoz podijeljenih chartova</value>
   </data>
   <data name="Share_Import_Invalid" xml:space="preserve">
-    <value>Nevažeći kod za dijeljenje</value>
+    <value>U međuspremniku nema koda za dijeljenje</value>
   </data>
   <data name="Share_Import_Preview" xml:space="preserve">
-    <value>{0} chartova</value>
+    <value>Spremno za uvoz: {0}</value>
+  </data>
+  <data name="Share_Import_Refresh" xml:space="preserve">
+    <value>Ponovno provjeri međuspremnik</value>
+  </data>
+  <data name="Share_Import_Result_Added" xml:space="preserve">
+    <value>Uvezeno: {0}</value>
+  </data>
+  <data name="Share_Import_Result_Failed" xml:space="preserve">
+    <value>Neuspjelo: {0}</value>
+  </data>
+  <data name="Share_Import_Result_Present" xml:space="preserve">
+    <value>Već u biblioteci: {0}</value>
   </data>
   <data name="Share_Import_Start" xml:space="preserve">
     <value>Započni uvoz</value>
   </data>
   <data name="Share_Import_WrongGame" xml:space="preserve">
-    <value>Ovaj je kod za {0}. Najprije prijeđite na tu igru.</value>
+    <value>Ovi su chartovi za {0}. Najprije prijeđi na tu igru.</value>
   </data>
   <data name="Share_Title" xml:space="preserve">
     <value>Dijeli</value>
   </data>
   <data name="Splash_LoginPrompt" xml:space="preserve">
-    <value>Prijavite se i autorizirajte u pregledniku</value>
+    <value>Prijavi se u pregledniku i odobri pristup aplikaciji Euterpe</value>
   </data>
   <data name="ToolTip_EditModConfig" xml:space="preserve">
     <value>Uredi konfiguraciju moda</value>
@@ -788,10 +812,10 @@
     <value>Beta</value>
   </data>
   <data name="UpdateChannel_Stable" xml:space="preserve">
-    <value>Stabilno</value>
+    <value>Stabilni</value>
   </data>
   <data name="UpdateDialog_Description" xml:space="preserve">
-    <value>Nova je verzija spremna i automatski će se instalirati.</value>
+    <value>Dostupna je nova verzija koja će se automatski preuzeti i instalirati.</value>
   </data>
   <data name="UpdateDialog_RestartHint" xml:space="preserve">
     <value>Euterpe će se automatski ponovno pokrenuti kada ažuriranje bude spremno.</value>
@@ -806,13 +830,13 @@
     <value>Ažuriranje Euterpea</value>
   </data>
   <data name="Wizard_Description_Welcome" xml:space="preserve">
-    <value>Odaberi svoju ulogu i zadatke za početak</value>
+    <value>Za početak odaberi ulogu i zadatke</value>
   </data>
   <data name="Wizard_Role_Charter" xml:space="preserve">
     <value>Charter</value>
   </data>
   <data name="Wizard_Role_Charter_Description" xml:space="preserve">
-    <value>Preporučeno za kreatore chartova</value>
+    <value>Preporučeno za chartere</value>
   </data>
   <data name="Wizard_Role_Custom" xml:space="preserve">
     <value>Prilagođeno</value>
@@ -836,6 +860,6 @@
     <value>Zadaci</value>
   </data>
   <data name="Wizard_Title_Welcome" xml:space="preserve">
-    <value>Dobrodošli u Euterpe</value>
+    <value>Dobro došli u Euterpe</value>
   </data>
 </root>

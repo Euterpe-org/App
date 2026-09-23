@@ -14,34 +14,34 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="FileDialog_Title_ChooseChartFile" xml:space="preserve">
-    <value>Chart fájl kiválasztása</value>
+    <value>Chartfájl kiválasztása</value>
   </data>
   <data name="FileDialog_Title_ChooseEpkFile" xml:space="preserve">
-    <value>EPK fájl kiválasztása</value>
+    <value>EPK-fájl kiválasztása</value>
   </data>
   <data name="FileDialog_Title_ChooseMdmFiles" xml:space="preserve">
-    <value>MDM fájlok kiválasztása</value>
+    <value>MDM-fájlok kiválasztása</value>
   </data>
   <data name="FileDialog_Title_ChooseSteamExec" xml:space="preserve">
-    <value>Steam futtatható fájl kiválasztása</value>
+    <value>A Steam futtatható fájljának kiválasztása</value>
   </data>
   <data name="FilePickerFileType_AllFiles" xml:space="preserve">
     <value>Minden fájl</value>
   </data>
   <data name="FilePickerFileType_MdmFiles" xml:space="preserve">
-    <value>MDM fájlok</value>
+    <value>MDM-fájlok</value>
   </data>
   <data name="FolderDialog_Title_ChooseCacheFolder" xml:space="preserve">
-    <value>Gyorsítótár mappa kiválasztása</value>
+    <value>Gyorsítótár-mappa kiválasztása</value>
   </data>
   <data name="FolderDialog_Title_ChooseChartFolder" xml:space="preserve">
-    <value>Chart mappa kiválasztása</value>
+    <value>Chartmappa kiválasztása</value>
   </data>
   <data name="FolderDialog_Title_ChooseMuseDashFolder" xml:space="preserve">
-    <value>Muse Dash mappa kiválasztása</value>
+    <value>Muse Dash-mappa kiválasztása</value>
   </data>
   <data name="FolderDialog_Title_ChooseSteamFolder" xml:space="preserve">
-    <value>Steam mappa kiválasztása</value>
+    <value>Steam-mappa kiválasztása</value>
   </data>
   <data name="MessageBox_Button_No" xml:space="preserve">
     <value>Nem</value>
@@ -56,10 +56,10 @@
     <value>Válaszd ki a Steam futtatható fájlját</value>
   </data>
   <data name="MessageBox_Content_ChooseSteamFolder" xml:space="preserve">
-    <value>Válaszd ki a Steam mappát</value>
+    <value>Válaszd ki a Steam-mappát</value>
   </data>
   <data name="MessageBox_Content_CrashDialog_CopyFailed" xml:space="preserve">
-    <value>Nem sikerült a hibarészletek vágólapra másolása.</value>
+    <value>Nem sikerült a hibarészleteket a vágólapra másolni.</value>
   </data>
   <data name="MessageBox_Content_CrashDialog_CopySuccess" xml:space="preserve">
     <value>Hibarészletek másolva a vágólapra.</value>
@@ -77,22 +77,22 @@
     <value>Elveted a nem mentett módosításokat?</value>
   </data>
   <data name="MessageBox_Content_InvalidPath" xml:space="preserve">
-    <value>A kiválasztott útvonal érvénytelen. Próbáld újra</value>
+    <value>A kiválasztott útvonal érvénytelen. Válassz másik útvonalat.</value>
   </data>
   <data name="MessageBox_Content_Login_Failed" xml:space="preserve">
-    <value>A bejelentkezés sikertelen. Szeretnéd újrapróbálni? A Nem választása bezárja az Euterpe-t.</value>
+    <value>A bejelentkezés sikertelen. Szeretnéd újrapróbálni? A „Nem” választása bezárja az Euterpét.</value>
   </data>
   <data name="MessageBox_Content_MdmFile_Create_Failed" xml:space="preserve">
-    <value>MDM fájl létrehozása sikertelen</value>
+    <value>Az MDM-fájl létrehozása sikertelen</value>
   </data>
   <data name="MessageBox_Content_MdmFile_Create_Success" xml:space="preserve">
-    <value>MDM fájlok sikeresen létrehozva</value>
+    <value>MDM-fájlok sikeresen létrehozva</value>
   </data>
   <data name="MessageBox_Content_MdmFile_Extract_Failed" xml:space="preserve">
-    <value>MDM fájl kibontása sikertelen</value>
+    <value>Az MDM-fájl kibontása sikertelen</value>
   </data>
   <data name="MessageBox_Content_MdmFile_Extract_Success" xml:space="preserve">
-    <value>MDM fájlok sikeresen kibontva</value>
+    <value>MDM-fájlok sikeresen kibontva</value>
   </data>
   <data name="MessageBox_Content_MelonLoader_Install_Failed" xml:space="preserve">
     <value>A MelonLoader telepítése sikertelen</value>
@@ -107,22 +107,22 @@
     <value>A MelonLoader sikeresen eltávolítva</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Install" xml:space="preserve">
-    <value>Szeretnéd telepíteni a mod sablont?</value>
+    <value>Szeretnéd telepíteni a modsablont?</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Install_Failed" xml:space="preserve">
-    <value>A mod sablon telepítése sikertelen</value>
+    <value>A modsablon telepítése sikertelen</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Install_Success" xml:space="preserve">
-    <value>A mod sablon sikeresen települt</value>
+    <value>A modsablon sikeresen települt</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Uninstall" xml:space="preserve">
-    <value>Szeretnéd eltávolítani a mod sablont?</value>
+    <value>Szeretnéd eltávolítani a modsablont?</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Uninstall_Failed" xml:space="preserve">
-    <value>A mod sablon eltávolítása sikertelen</value>
+    <value>A modsablon eltávolítása sikertelen</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Uninstall_Success" xml:space="preserve">
-    <value>A mod sablon sikeresen eltávolítva</value>
+    <value>A modsablon sikeresen eltávolítva</value>
   </data>
   <data name="MessageBox_Content_NewVersionAvailable" xml:space="preserve">
     <value>Új verzió elérhető: {0}. Frissítés folyamatban.</value>
@@ -131,20 +131,20 @@
     <value>Nincs elérhető frissítés</value>
   </data>
   <data name="MessageBox_Content_Protontricks_Not_Installed" xml:space="preserve">
-    <value>A protontricks nincs telepítve. A folytatáshoz telepítsd a protontricks-et.</value>
+    <value>A protontricks nincs telepítve. A folytatáshoz telepítsd a protontricks alkalmazást.</value>
   </data>
   <data name="MessageBox_Content_Protontricks_Wineprefix_Failed" xml:space="preserve">
-    <value>A wine prefix parancsok futtatása protontricks-en keresztül sikertelen. A .NET Runtime telepítése nem folytatható.</value>
+    <value>Nem sikerült beállítani a Wine-környezetet a protontricks segítségével. A .NET Runtime telepítése nem folytatható.</value>
   </data>
   <data name="MessageBox_Content_ReadGameInformation_Failed" xml:space="preserve">
     <value>A játékinformáció olvasása sikertelen
   {0}</value>
   </data>
   <data name="MessageBox_Content_SecretService_Unavailable" xml:space="preserve">
-    <value>Nem található kulcstartó szolgáltatás (secret-tool). A bejelentkezési munkamenet nem menthető, minden alkalommal újra kell jelentkezni.</value>
+    <value>Nem található kulcstartó-szolgáltatás (secret-tool). A bejelentkezés nem menthető, ezért minden alkalommal újra be kell jelentkezned.</value>
   </data>
   <data name="MessageBox_Content_Server_Unavailable" xml:space="preserve">
-    <value>Az Euterpe szerver jelenleg nem érhető el. Az Euterpe most bezárul. Kérjük, próbáld újra később.</value>
+    <value>Az Euterpe szervere jelenleg nem érhető el, ezért az alkalmazás bezárul. Próbáld újra később.</value>
   </data>
   <data name="MessageBox_Content_SetMdDirectoryEnvironment" xml:space="preserve">
     <value>Szeretnéd beállítani az MD_DIRECTORY környezeti változót?</value>
@@ -163,7 +163,7 @@
     <value>A frissítések keresése sikertelen, próbáld újra később</value>
   </data>
   <data name="MessageBox_Content_Update_Failed" xml:space="preserve">
-    <value>A(z) {0} verzióra való frissítés sikertelen</value>
+    <value>Nem sikerült frissíteni erre a verzióra: {0}</value>
   </data>
   <data name="Notification_Content_Audio_Play_Failed" xml:space="preserve">
     <value>Hang lejátszása sikertelen</value>
@@ -178,25 +178,25 @@
     <value>{0} chart letöltése sikertelen</value>
   </data>
   <data name="Notification_Content_Chart_Download_Success" xml:space="preserve">
-    <value>{0} chart sikeresen letöltve</value>
+    <value>{0} chart letöltve</value>
   </data>
   <data name="Notification_Content_Chart_Import_Failed" xml:space="preserve">
     <value>{0} chart importálása sikertelen</value>
   </data>
   <data name="Notification_Content_Chart_Import_Success" xml:space="preserve">
-    <value>{0} chart sikeresen importálva</value>
+    <value>{0} chart importálva</value>
   </data>
   <data name="Notification_Content_Chart_Import_Unmigratable" xml:space="preserve">
-    <value>A(z) {0} chart nem migrálható</value>
+    <value>{0} chart nem migrálható</value>
   </data>
   <data name="Notification_Content_Chart_Import_Unsupported" xml:space="preserve">
-    <value>{0} nem támogatott chart fájl vagy mappa</value>
+    <value>{0} nem támogatott chartfájl vagy -mappa</value>
   </data>
   <data name="Notification_Content_Chart_Remove_Failed" xml:space="preserve">
     <value>{0} chart eltávolítása sikertelen</value>
   </data>
   <data name="Notification_Content_Chart_Remove_Success" xml:space="preserve">
-    <value>{0} chart sikeresen eltávolítva</value>
+    <value>{0} chart eltávolítva</value>
   </data>
   <data name="Notification_Content_Chart_Sync_Added" xml:space="preserve">
     <value>{0} chart hozzáadva</value>
@@ -220,7 +220,7 @@
     <value>{0} chart frissítése sikertelen</value>
   </data>
   <data name="Notification_Content_Chart_Update_Success" xml:space="preserve">
-    <value>{0} chart sikeresen frissítve</value>
+    <value>{0} chart frissítve</value>
   </data>
   <data name="Notification_Content_Chart_Update_UpToDate" xml:space="preserve">
     <value>{0} chart már naprakész</value>
@@ -229,7 +229,7 @@
     <value>Online chartok nem szerkeszthetők</value>
   </data>
   <data name="Notification_Content_Epk_Open_Invalid" xml:space="preserve">
-    <value>Érvénytelen EPK fájl</value>
+    <value>Érvénytelen EPK-fájl</value>
   </data>
   <data name="Notification_Content_Epk_Save_Failed" xml:space="preserve">
     <value>{0} mentése sikertelen</value>
@@ -241,16 +241,16 @@
     <value>{0} könyvtár importálása sikertelen</value>
   </data>
   <data name="Notification_Content_Lib_Import_Success" xml:space="preserve">
-    <value>{0} könyvtár sikeresen importálva</value>
+    <value>{0} könyvtár importálva</value>
   </data>
   <data name="Notification_Content_Migration_None" xml:space="preserve">
-    <value>Nincs MDM chart a migráláshoz</value>
+    <value>Nincs migrálható MDM-chart</value>
   </data>
   <data name="Notification_Content_Migration_Partial" xml:space="preserve">
-    <value>{0} CustomAlbums chart migrálva, {1} sikertelen</value>
+    <value>{0} CustomAlbums-chart migrálva, {1} nem migrálható</value>
   </data>
   <data name="Notification_Content_Migration_Success" xml:space="preserve">
-    <value>{0} CustomAlbums chart sikeresen migrálva</value>
+    <value>{0} CustomAlbums-chart migrálva</value>
   </data>
   <data name="Notification_Content_Mod_Import_Duplicated" xml:space="preserve">
     <value>{0} mod már importálva van</value>
@@ -259,10 +259,10 @@
     <value>{0} mod importálása sikertelen</value>
   </data>
   <data name="Notification_Content_Mod_Import_Success" xml:space="preserve">
-    <value>{0} mod sikeresen importálva</value>
+    <value>{0} mod importálva</value>
   </data>
   <data name="Notification_Content_Mod_Import_Unsupported" xml:space="preserve">
-    <value>{0} nem támogatott mod vagy könyvtár fájl</value>
+    <value>{0} nem támogatott mod- vagy könyvtárfájl</value>
   </data>
   <data name="Notification_Content_Mod_Install_AlreadyInstalled" xml:space="preserve">
     <value>{0} mod már telepítve van</value>
@@ -271,10 +271,10 @@
     <value>{0} mod telepítése sikertelen</value>
   </data>
   <data name="Notification_Content_Mod_Install_Incompatible" xml:space="preserve">
-    <value>A(z) {0} mod nem kompatibilis, és nem telepíthető</value>
+    <value>{0} mod nem kompatibilis, ezért nem telepíthető</value>
   </data>
   <data name="Notification_Content_Mod_Install_Success" xml:space="preserve">
-    <value>{0} mod sikeresen telepítve</value>
+    <value>{0} mod telepítve</value>
   </data>
   <data name="Notification_Content_Mod_NotFound" xml:space="preserve">
     <value>{0} mod nem található</value>
@@ -286,7 +286,7 @@
     <value>{0} mod újratelepítése sikertelen</value>
   </data>
   <data name="Notification_Content_Mod_Reinstall_Success" xml:space="preserve">
-    <value>{0} mod sikeresen újratelepítve</value>
+    <value>{0} mod újratelepítve</value>
   </data>
   <data name="Notification_Content_Mod_Sync_Added" xml:space="preserve">
     <value>{0} mod hozzáadva</value>
@@ -298,13 +298,13 @@
     <value>Modok szinkronizálva: {0} hozzáadva, {1} eltávolítva</value>
   </data>
   <data name="Notification_Content_Mod_Toggle_Failed" xml:space="preserve">
-    <value>{0} mod állapotának váltása sikertelen</value>
+    <value>{0} mod be-/kikapcsolása sikertelen</value>
   </data>
   <data name="Notification_Content_Mod_Uninstall_Failed" xml:space="preserve">
     <value>{0} mod eltávolítása sikertelen</value>
   </data>
   <data name="Notification_Content_Mod_Uninstall_Success" xml:space="preserve">
-    <value>{0} mod sikeresen eltávolítva</value>
+    <value>{0} mod eltávolítva</value>
   </data>
   <data name="Notification_Content_Mod_UpdateAll_Partial" xml:space="preserve">
     <value>{0} mod frissítve, {1} sikertelen</value>
@@ -316,13 +316,13 @@
     <value>{0} mod frissítése sikertelen</value>
   </data>
   <data name="Notification_Content_Mod_Update_Success" xml:space="preserve">
-    <value>{0} mod sikeresen frissítve</value>
+    <value>{0} mod frissítve</value>
   </data>
   <data name="Notification_Content_Mod_Update_UpToDate" xml:space="preserve">
     <value>{0} mod már naprakész</value>
   </data>
   <data name="Notification_Content_Server_Error" xml:space="preserve">
-    <value>A szerver átmenetileg nem elérhető. Kérjük, próbáld újra egy pillanat múlva.</value>
+    <value>A szerver átmenetileg nem érhető el. Próbáld újra egy kicsit később.</value>
   </data>
   <data name="Notification_Content_Share_Copy_Success" xml:space="preserve">
     <value>Megosztási kód másolva</value>

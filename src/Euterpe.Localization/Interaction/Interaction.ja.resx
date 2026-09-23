@@ -59,10 +59,10 @@
     <value>Steam フォルダーを選択してください</value>
   </data>
   <data name="MessageBox_Content_CrashDialog_CopyFailed" xml:space="preserve">
-    <value>エラー詳細のクリップボードへのコピーに失敗しました。</value>
+    <value>エラーの詳細をクリップボードにコピーできませんでした。</value>
   </data>
   <data name="MessageBox_Content_CrashDialog_CopySuccess" xml:space="preserve">
-    <value>エラー詳細をクリップボードにコピーしました。</value>
+    <value>エラーの詳細をクリップボードにコピーしました。</value>
   </data>
   <data name="MessageBox_Content_DotNetSDK_Install" xml:space="preserve">
     <value>.NET SDK をインストールしますか？</value>
@@ -80,19 +80,19 @@
     <value>選択したパスが無効です。もう一度選択してください</value>
   </data>
   <data name="MessageBox_Content_Login_Failed" xml:space="preserve">
-    <value>サインインに失敗しました。もう一度お試しになりますか？「いいえ」を選択すると Euterpe を終了します。</value>
+    <value>ログインに失敗しました。再試行しますか？「いいえ」を選ぶと Euterpe を終了します。</value>
   </data>
   <data name="MessageBox_Content_MdmFile_Create_Failed" xml:space="preserve">
     <value>MDM ファイルの作成に失敗しました</value>
   </data>
   <data name="MessageBox_Content_MdmFile_Create_Success" xml:space="preserve">
-    <value>MDM ファイルの作成に成功しました</value>
+    <value>MDM ファイルを作成しました</value>
   </data>
   <data name="MessageBox_Content_MdmFile_Extract_Failed" xml:space="preserve">
     <value>MDM ファイルの展開に失敗しました</value>
   </data>
   <data name="MessageBox_Content_MdmFile_Extract_Success" xml:space="preserve">
-    <value>MDM ファイルの展開に成功しました</value>
+    <value>MDM ファイルを展開しました</value>
   </data>
   <data name="MessageBox_Content_MelonLoader_Install_Failed" xml:space="preserve">
     <value>MelonLoader のインストールに失敗しました</value>
@@ -125,16 +125,16 @@
     <value>Mod テンプレートのアンインストールが完了しました</value>
   </data>
   <data name="MessageBox_Content_NewVersionAvailable" xml:space="preserve">
-    <value>新しいバージョンがあります：{0}　まもなく更新します。</value>
+    <value>新しいバージョン {0} があります。更新を開始します。</value>
   </data>
   <data name="MessageBox_Content_NoUpdatesFound" xml:space="preserve">
-    <value>利用可能なアップデートはありません</value>
+    <value>利用可能な更新はありません</value>
   </data>
   <data name="MessageBox_Content_Protontricks_Not_Installed" xml:space="preserve">
     <value>protontricks がインストールされていません。続行するには protontricks をインストールしてください。</value>
   </data>
   <data name="MessageBox_Content_Protontricks_Wineprefix_Failed" xml:space="preserve">
-    <value>protontricks 経由での wine prefix コマンドの実行に失敗しました。.NET Runtime のインストールを続行できません。</value>
+    <value>protontricks による Wine 環境の設定に失敗しました。.NET Runtime のインストールを続行できません。</value>
   </data>
   <data name="MessageBox_Content_ReadGameInformation_Failed" xml:space="preserve">
     <value>ゲーム情報の読み取りに失敗しました
@@ -160,7 +160,7 @@
     <value>環境変数 MD_DIRECTORY を {0} に設定しました</value>
   </data>
   <data name="MessageBox_Content_Update_Check_Failed" xml:space="preserve">
-    <value>アップデートの確認に失敗しました。しばらくしてからもう一度お試しください</value>
+    <value>更新の確認に失敗しました。しばらくしてからもう一度お試しください</value>
   </data>
   <data name="MessageBox_Content_Update_Failed" xml:space="preserve">
     <value>バージョン {0} への更新に失敗しました</value>
@@ -169,10 +169,10 @@
     <value>オーディオの再生に失敗しました</value>
   </data>
   <data name="Notification_Content_Chart_BulkDelete_Partial" xml:space="preserve">
-    <value>譜面を {0} 件削除しました。{1} 件失敗しました</value>
+    <value>{0} 件の譜面を削除しました（{1} 件失敗）</value>
   </data>
   <data name="Notification_Content_Chart_BulkDelete_Success" xml:space="preserve">
-    <value>譜面を {0} 件削除しました</value>
+    <value>{0} 件の譜面を削除しました</value>
   </data>
   <data name="Notification_Content_Chart_Download_Failed" xml:space="preserve">
     <value>譜面 {0} のダウンロードに失敗しました</value>
@@ -214,13 +214,13 @@
     <value>{0} 件の譜面を更新しました</value>
   </data>
   <data name="Notification_Content_Chart_UpdateAll_UpToDate" xml:space="preserve">
-    <value>すべての譜面は最新です</value>
+    <value>すべての譜面が最新です</value>
   </data>
   <data name="Notification_Content_Chart_Update_Failed" xml:space="preserve">
-    <value>譜面 {0} のアップデートに失敗しました</value>
+    <value>譜面 {0} の更新に失敗しました</value>
   </data>
   <data name="Notification_Content_Chart_Update_Success" xml:space="preserve">
-    <value>譜面 {0} のアップデートが完了しました</value>
+    <value>譜面 {0} の更新が完了しました</value>
   </data>
   <data name="Notification_Content_Chart_Update_UpToDate" xml:space="preserve">
     <value>譜面 {0} はすでに最新です</value>
@@ -298,7 +298,7 @@
     <value>Mod を同期しました：{0} 件追加、{1} 件削除</value>
   </data>
   <data name="Notification_Content_Mod_Toggle_Failed" xml:space="preserve">
-    <value>Mod {0} の状態切り替えに失敗しました</value>
+    <value>Mod {0} の有効／無効の切り替えに失敗しました</value>
   </data>
   <data name="Notification_Content_Mod_Uninstall_Failed" xml:space="preserve">
     <value>Mod {0} のアンインストールに失敗しました</value>
@@ -313,10 +313,10 @@
     <value>{0} 件の Mod を更新しました</value>
   </data>
   <data name="Notification_Content_Mod_Update_Failed" xml:space="preserve">
-    <value>Mod {0} のアップデートに失敗しました</value>
+    <value>Mod {0} の更新に失敗しました</value>
   </data>
   <data name="Notification_Content_Mod_Update_Success" xml:space="preserve">
-    <value>Mod {0} のアップデートが完了しました</value>
+    <value>Mod {0} の更新が完了しました</value>
   </data>
   <data name="Notification_Content_Mod_Update_UpToDate" xml:space="preserve">
     <value>Mod {0} はすでに最新です</value>
@@ -334,7 +334,7 @@
     <value>お知らせ</value>
   </data>
   <data name="Title_Success" xml:space="preserve">
-    <value>成功</value>
+    <value>完了</value>
   </data>
   <data name="Title_Warning" xml:space="preserve">
     <value>警告</value>

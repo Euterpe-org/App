@@ -65,7 +65,7 @@
     <value>업데이트</value>
   </data>
   <data name="ChartAnalyzer_Description" xml:space="preserve">
-    <value>대략적인 레벨을 예측하고 채보의 Note 분석</value>
+    <value>대략적인 레벨 예측 및 채보 노트 구성 분석</value>
   </data>
   <data name="ChartAnalyzer_Title" xml:space="preserve">
     <value>채보 분석기</value>
@@ -107,7 +107,7 @@
     <value>채보 다운로드 중</value>
   </data>
   <data name="ChartManage_DownloadingHint" xml:space="preserve">
-    <value>다운로드가 진행 중입니다. 잠시 기다려 주시고 앱을 종료하지 마세요.</value>
+    <value>다운로드 중입니다. 앱을 닫지 말고 잠시 기다려 주세요.</value>
   </data>
   <data name="ChartManage_Filter_Difficulty" xml:space="preserve">
     <value>난이도</value>
@@ -119,7 +119,7 @@
     <value>방송 가능</value>
   </data>
   <data name="ChartManage_GetCharts_Description" xml:space="preserve">
-    <value>웹에서 채보 둘러보기 &amp; 다운로드</value>
+    <value>웹에서 채보 둘러보기 및 다운로드</value>
   </data>
   <data name="ChartManage_GetCharts_Title" xml:space="preserve">
     <value>채보 받기</value>
@@ -131,7 +131,7 @@
     <value>채보 마이그레이션 중</value>
   </data>
   <data name="ChartManage_MigratingHint" xml:space="preserve">
-    <value>마이그레이션이 진행 중입니다. 잠시 기다려 주시고 앱을 종료하지 마세요.</value>
+    <value>마이그레이션 중입니다. 앱을 닫지 말고 잠시 기다려 주세요.</value>
   </data>
   <data name="ChartManage_Rating" xml:space="preserve">
     <value>레벨</value>
@@ -146,7 +146,7 @@
     <value>{0}개 선택됨</value>
   </data>
   <data name="ChartManage_ShareHint" xml:space="preserve">
-    <value>온라인 채보만 공유할 수 있으며, 한 번에 최대 100개까지 가능합니다</value>
+    <value>온라인 채보만 공유 가능 (한 번에 최대 100개)</value>
   </data>
   <data name="ChartManage_SortBy" xml:space="preserve">
     <value>정렬 기준</value>
@@ -161,7 +161,7 @@
     <value>업로더: {0}</value>
   </data>
   <data name="ChartSortField_Author" xml:space="preserve">
-    <value>작성자</value>
+    <value>작곡가</value>
   </data>
   <data name="ChartSortField_Bpm" xml:space="preserve">
     <value>BPM</value>
@@ -185,10 +185,10 @@
     <value>파일 크기</value>
   </data>
   <data name="ChartSource_Offline" xml:space="preserve">
-    <value>Offline</value>
+    <value>오프라인</value>
   </data>
   <data name="ChartSource_Online" xml:space="preserve">
-    <value>Online</value>
+    <value>온라인</value>
   </data>
   <data name="ChartSubmit_Description" xml:space="preserve">
     <value>채보를 업로드하고 게시</value>
@@ -257,7 +257,7 @@
     <value>곡명</value>
   </data>
   <data name="EpkEditor_Field_NameRomanized" xml:space="preserve">
-    <value>로마자 이름</value>
+    <value>로마자 표기</value>
   </data>
   <data name="EpkEditor_Field_SafeForStreamer" xml:space="preserve">
     <value>방송 가능</value>
@@ -266,7 +266,7 @@
     <value>씬</value>
   </data>
   <data name="EpkEditor_Field_SceneEgg" xml:space="preserve">
-    <value>씬 (이스터 에그)</value>
+    <value>이스터 에그 씬</value>
   </data>
   <data name="EpkEditor_Field_SearchKeywords" xml:space="preserve">
     <value>검색 키워드</value>
@@ -302,7 +302,7 @@
     <value>새 EPK…</value>
   </data>
   <data name="EpkEditor_New_Description" xml:space="preserve">
-    <value>소재를 모아 둔 폴더에서 새 채보를 만듭니다</value>
+    <value>에셋을 모아 둔 폴더에서 새 채보를 만듭니다</value>
   </data>
   <data name="EpkEditor_OpenFile" xml:space="preserve">
     <value>EPK 파일 열기…</value>
@@ -317,7 +317,7 @@
     <value>채보 정보</value>
   </data>
   <data name="EpkEditor_Section_Discovery" xml:space="preserve">
-    <value>설명 및 탐색</value>
+    <value>설명 및 검색</value>
   </data>
   <data name="EpkEditor_Section_HiddenMode" xml:space="preserve">
     <value>히든 난이도</value>
@@ -338,16 +338,16 @@
     <value>모드 폴더</value>
   </data>
   <data name="Folder_OfflineCharts" xml:space="preserve">
-    <value>Offline 채보 폴더 열기</value>
+    <value>오프라인 채보 폴더 열기</value>
   </data>
   <data name="Folder_OnlineCharts" xml:space="preserve">
-    <value>Online 채보 폴더 열기</value>
+    <value>온라인 채보 폴더 열기</value>
   </data>
   <data name="Folder_UserData" xml:space="preserve">
-    <value>UserData</value>
+    <value>UserData 폴더</value>
   </data>
   <data name="Folder_UserLibs" xml:space="preserve">
-    <value>UserLibs</value>
+    <value>UserLibs 폴더</value>
   </data>
   <data name="GameMode_Modded" xml:space="preserve">
     <value>모드 적용</value>
@@ -356,13 +356,13 @@
     <value>바닐라</value>
   </data>
   <data name="HomePage_Button_GitHubStar" xml:space="preserve">
-    <value>GitHub에서 Star</value>
+    <value>GitHub Star 주기</value>
   </data>
   <data name="HomePage_Button_Sponsor" xml:space="preserve">
     <value>후원하기</value>
   </data>
   <data name="HomePage_SupportDescription" xml:space="preserve">
-    <value>Euterpe가 마음에 드셨나요? 이런 방법으로 도움을 주실 수 있습니다</value>
+    <value>Euterpe가 마음에 드셨나요? 이렇게 도와주세요</value>
   </data>
   <data name="HomePage_SupportTitle" xml:space="preserve">
     <value>100% 무료 · 오픈소스</value>
@@ -375,6 +375,15 @@
   </data>
   <data name="LoadingMessage" xml:space="preserve">
     <value>로딩 중...</value>
+  </data>
+  <data name="MelonLoaderLog_Analyze" xml:space="preserve">
+    <value>분석</value>
+  </data>
+  <data name="MelonLoaderLog_Empty" xml:space="preserve">
+    <value>MelonLoader 로그가 없습니다</value>
+  </data>
+  <data name="MelonLoaderLog_Refresh" xml:space="preserve">
+    <value>새로 고침</value>
   </data>
   <data name="MelonLoader_Description" xml:space="preserve">
     <value>모드를 사용하려면 MelonLoader 설치가 필요합니다</value>
@@ -407,7 +416,7 @@
     <value>모드 프로젝트를 빠르게 생성</value>
   </data>
   <data name="ModDevelop_Card_ModTemplate_Title" xml:space="preserve">
-    <value>모드 템플릿 NuGet</value>
+    <value>모드 템플릿 (NuGet)</value>
   </data>
   <data name="ModDevelop_Section_DevelopmentEnvironment" xml:space="preserve">
     <value>개발 환경</value>
@@ -443,13 +452,13 @@
     <value>업데이트 있음</value>
   </data>
   <data name="ModIncompatibleReason_ConflictingMod" xml:space="preserve">
-    <value>활성화된 모드와 충돌합니다: {0}</value>
+    <value>활성화된 모드와 충돌: {0}</value>
   </data>
   <data name="ModIncompatibleReason_GameVersion" xml:space="preserve">
-    <value>게임 버전 {0}이(가) 필요합니다</value>
+    <value>필요한 게임 버전: {0}</value>
   </data>
   <data name="ModIncompatibleReason_MelonLoader" xml:space="preserve">
-    <value>MelonLoader {0}이(가) 필요합니다</value>
+    <value>필요한 MelonLoader 버전: {0}</value>
   </data>
   <data name="ModInfo_Author" xml:space="preserve">
     <value>작성자</value>
@@ -509,7 +518,7 @@
     <value>설정</value>
   </data>
   <data name="Panel_Charting_CharterToolkit" xml:space="preserve">
-    <value>차터 도구</value>
+    <value>채보 제작 도구</value>
   </data>
   <data name="Panel_Charting_ChartManage" xml:space="preserve">
     <value>채보 관리</value>
@@ -548,7 +557,7 @@
     <value>파일 관리</value>
   </data>
   <data name="SearchBarPlaceholder_Chart" xml:space="preserve">
-    <value>채보 검색  (곡명, 아티스트, 채보 제작자, 태그)</value>
+    <value>채보 검색  (곡명, 작곡가, 채보 제작자, 태그)</value>
   </data>
   <data name="SearchBarPlaceholder_Mod" xml:space="preserve">
     <value>모드 검색  (이름, 작성자)</value>
@@ -560,7 +569,7 @@
     <value>파일 다운로드 시 사용되는 캐시 폴더입니다. 다른 작업 중에는 변경하지 마세요</value>
   </data>
   <data name="Setting_Description_IgnoreException" xml:space="preserve">
-    <value>오류 발생 시 앱을 종료하지 않습니다 (무엇을 하는지 알고 있을 때만 활성화하세요!)</value>
+    <value>오류 발생 시 앱을 종료하지 않습니다 (이 설정의 영향을 충분히 이해한 경우에만 활성화하세요!)</value>
   </data>
   <data name="Setting_Description_Language" xml:space="preserve">
     <value>UI 언어</value>
@@ -596,7 +605,7 @@
     <value>언어</value>
   </data>
   <data name="Setting_Title_MinimizeToTrayOnClose" xml:space="preserve">
-    <value>닫을 때 시스템 트레이로 최소화</value>
+    <value>닫을 때 트레이로 최소화</value>
   </data>
   <data name="Setting_Title_MuseDashFolder" xml:space="preserve">
     <value>Muse Dash 폴더</value>
@@ -620,7 +629,7 @@
     <value>유효한 게임 폴더가 아닙니다</value>
   </data>
   <data name="Setup_GamePath_MdmcWarning" xml:space="preserve">
-    <value>이전에 MDMC를 사용한 적이 있다면 극히 일부 채보가 인식되지 않을 수 있으며, 일부 모드는 업그레이드 버전으로 교체됩니다. 그중 Headquarters 모드는 Euterpe와 호환되지 않습니다. 이 메시지가 무슨 뜻인지 모르겠다면 무시하셔도 됩니다.</value>
+    <value>이전에 MDMC를 사용한 적이 있다면 극히 일부 채보가 인식되지 않을 수 있으며, 일부 모드는 업그레이드 버전으로 교체됩니다. Headquarters 모드는 Euterpe와 호환되지 않습니다. 이 메시지가 무슨 뜻인지 모르겠다면 무시하셔도 됩니다.</value>
   </data>
   <data name="Setup_GamePath_MdmcWarning_Title" xml:space="preserve">
     <value>호환성 경고</value>
@@ -656,7 +665,7 @@
     <value>환경 변수 설정 중…</value>
   </data>
   <data name="Setup_Progress_UninstallingConflict" xml:space="preserve">
-    <value>호환되지 않는 모드 제거 중: {0} …</value>
+    <value>호환되지 않는 모드 제거 중: {0}…</value>
   </data>
   <data name="Setup_StepStatus_Failed" xml:space="preserve">
     <value>실패</value>
@@ -674,16 +683,16 @@
     <value>실패했습니다. 로그를 확인하거나 다시 시도하세요.</value>
   </data>
   <data name="Setup_Task_ChartingTool" xml:space="preserve">
-    <value>채보 도구 (MDBMSC) (미구현)</value>
+    <value>채보 도구 (미구현)</value>
   </data>
   <data name="Setup_Task_ChartingTool_Description" xml:space="preserve">
-    <value>MDM 채보 제작 툴킷 (미구현)</value>
+    <value>채보 제작 도구</value>
   </data>
   <data name="Setup_Task_DotNetRuntime" xml:space="preserve">
     <value>.NET Runtime</value>
   </data>
   <data name="Setup_Task_DotNetRuntime_Description" xml:space="preserve">
-    <value>모드 적용 게임 실행에 필요</value>
+    <value>모드를 적용한 게임 실행에 필요</value>
   </data>
   <data name="Setup_Task_DotNetSdk" xml:space="preserve">
     <value>.NET SDK</value>
@@ -722,7 +731,7 @@
     <value>새 모드 프로젝트용 NuGet 템플릿</value>
   </data>
   <data name="Setup_Task_UninstallConflicts" xml:space="preserve">
-    <value>충돌 제거</value>
+    <value>충돌 모드 제거</value>
   </data>
   <data name="Setup_Task_UninstallConflicts_Description" xml:space="preserve">
     <value>호환되지 않는 모드 제거</value>
@@ -739,17 +748,32 @@
   <data name="Share_Import_Canceled" xml:space="preserve">
     <value>가져오기가 취소되었습니다</value>
   </data>
+  <data name="Share_Import_Empty" xml:space="preserve">
+    <value>공유 코드를 복사한 후 다시 시도하세요</value>
+  </data>
   <data name="Share_Import_Failed" xml:space="preserve">
     <value>가져오기에 실패했습니다</value>
   </data>
   <data name="Share_Import_Header" xml:space="preserve">
-    <value>공유 코드 가져오기</value>
+    <value>공유 채보 가져오기</value>
   </data>
   <data name="Share_Import_Invalid" xml:space="preserve">
-    <value>잘못된 공유 코드입니다</value>
+    <value>클립보드에 공유 코드가 없습니다</value>
   </data>
   <data name="Share_Import_Preview" xml:space="preserve">
-    <value>채보 {0}개</value>
+    <value>가져올 채보 {0}개</value>
+  </data>
+  <data name="Share_Import_Refresh" xml:space="preserve">
+    <value>클립보드 다시 확인</value>
+  </data>
+  <data name="Share_Import_Result_Added" xml:space="preserve">
+    <value>{0}개 가져옴</value>
+  </data>
+  <data name="Share_Import_Result_Failed" xml:space="preserve">
+    <value>{0}개 실패</value>
+  </data>
+  <data name="Share_Import_Result_Present" xml:space="preserve">
+    <value>{0}개 이미 보유</value>
   </data>
   <data name="Share_Import_Start" xml:space="preserve">
     <value>가져오기 시작</value>
@@ -761,7 +785,7 @@
     <value>공유</value>
   </data>
   <data name="Splash_LoginPrompt" xml:space="preserve">
-    <value>브라우저에서 로그인하고 승인해 주세요</value>
+    <value>브라우저에서 로그인하고 Euterpe의 접근 권한을 승인해 주세요</value>
   </data>
   <data name="ToolTip_EditModConfig" xml:space="preserve">
     <value>모드 설정 편집</value>
@@ -791,7 +815,7 @@
     <value>안정 버전</value>
   </data>
   <data name="UpdateDialog_Description" xml:space="preserve">
-    <value>새 버전이 준비되었으며 자동으로 설치됩니다.</value>
+    <value>새 버전이 있습니다. 자동으로 다운로드하고 설치합니다.</value>
   </data>
   <data name="UpdateDialog_RestartHint" xml:space="preserve">
     <value>업데이트가 준비되면 Euterpe가 자동으로 다시 시작됩니다.</value>
@@ -809,19 +833,19 @@
     <value>역할과 작업을 선택하여 시작하세요</value>
   </data>
   <data name="Wizard_Role_Charter" xml:space="preserve">
-    <value>차터</value>
+    <value>채보 제작자</value>
   </data>
   <data name="Wizard_Role_Charter_Description" xml:space="preserve">
     <value>채보 제작자에게 추천</value>
   </data>
   <data name="Wizard_Role_Custom" xml:space="preserve">
-    <value>사용자 정의</value>
+    <value>사용자 지정</value>
   </data>
   <data name="Wizard_Role_Custom_Description" xml:space="preserve">
-    <value>설정을 커스터마이즈</value>
+    <value>원하는 대로 설정</value>
   </data>
   <data name="Wizard_Role_Modder" xml:space="preserve">
-    <value>모더</value>
+    <value>모드 개발자</value>
   </data>
   <data name="Wizard_Role_Modder_Description" xml:space="preserve">
     <value>모드 개발자에게 추천</value>

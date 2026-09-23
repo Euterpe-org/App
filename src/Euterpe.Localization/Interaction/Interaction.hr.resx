@@ -35,10 +35,10 @@
     <value>Odaberi mapu predmemorije</value>
   </data>
   <data name="FolderDialog_Title_ChooseChartFolder" xml:space="preserve">
-    <value>Odaberi mapu chartova</value>
+    <value>Odaberi mapu charta</value>
   </data>
   <data name="FolderDialog_Title_ChooseMuseDashFolder" xml:space="preserve">
-    <value>Odaberi mapu Muse Dash</value>
+    <value>Odaberi mapu igre Muse Dash</value>
   </data>
   <data name="FolderDialog_Title_ChooseSteamFolder" xml:space="preserve">
     <value>Odaberi mapu Steama</value>
@@ -50,7 +50,7 @@
     <value>Da</value>
   </data>
   <data name="MessageBox_Content_Chart_BulkDelete_Confirm" xml:space="preserve">
-    <value>Izbrisati {0} odabranih chartova?</value>
+    <value>Izbrisati odabrane chartove ({0})?</value>
   </data>
   <data name="MessageBox_Content_ChooseSteamExec" xml:space="preserve">
     <value>Odaberi izvršnu datoteku Steama</value>
@@ -65,64 +65,64 @@
     <value>Detalji pogreške kopirani su u međuspremnik.</value>
   </data>
   <data name="MessageBox_Content_DotNetSDK_Install" xml:space="preserve">
-    <value>Želiš li instalirati .NET SDK?</value>
+    <value>Instalirati .NET SDK?</value>
   </data>
   <data name="MessageBox_Content_DotNetSDK_Install_Failed" xml:space="preserve">
     <value>Instalacija .NET 10 SDK-a nije uspjela</value>
   </data>
   <data name="MessageBox_Content_DotNetSDK_Install_Success" xml:space="preserve">
-    <value>.NET 10 SDK je uspješno instaliran</value>
+    <value>.NET 10 SDK je instaliran</value>
   </data>
   <data name="MessageBox_Content_Epk_Discard_Confirm" xml:space="preserve">
     <value>Odbaciti nespremljene promjene?</value>
   </data>
   <data name="MessageBox_Content_InvalidPath" xml:space="preserve">
-    <value>Odabrana putanja nije valjana. Pokušaj ponovo</value>
+    <value>Odabrana putanja nije valjana. Odaberi drugu putanju.</value>
   </data>
   <data name="MessageBox_Content_Login_Failed" xml:space="preserve">
-    <value>Prijava nije uspjela. Želiš li pokušati ponovo? Odabir opcije Ne zatvorit će Euterpe.</value>
+    <value>Prijava nije uspjela. Pokušati ponovno? Odabirom opcije „Ne” Euterpe će se zatvoriti.</value>
   </data>
   <data name="MessageBox_Content_MdmFile_Create_Failed" xml:space="preserve">
     <value>Stvaranje MDM datoteke nije uspjelo</value>
   </data>
   <data name="MessageBox_Content_MdmFile_Create_Success" xml:space="preserve">
-    <value>MDM datoteke uspješno stvorene</value>
+    <value>MDM datoteke su stvorene</value>
   </data>
   <data name="MessageBox_Content_MdmFile_Extract_Failed" xml:space="preserve">
     <value>Raspakiranje MDM datoteke nije uspjelo</value>
   </data>
   <data name="MessageBox_Content_MdmFile_Extract_Success" xml:space="preserve">
-    <value>MDM datoteke uspješno raspakirane</value>
+    <value>MDM datoteke su raspakirane</value>
   </data>
   <data name="MessageBox_Content_MelonLoader_Install_Failed" xml:space="preserve">
     <value>Instalacija MelonLoadera nije uspjela</value>
   </data>
   <data name="MessageBox_Content_MelonLoader_Install_Success" xml:space="preserve">
-    <value>MelonLoader je uspješno instaliran</value>
+    <value>MelonLoader je instaliran</value>
   </data>
   <data name="MessageBox_Content_MelonLoader_Uninstall_Failed" xml:space="preserve">
     <value>Deinstalacija MelonLoadera nije uspjela</value>
   </data>
   <data name="MessageBox_Content_MelonLoader_Uninstall_Success" xml:space="preserve">
-    <value>MelonLoader je uspješno deinstaliran</value>
+    <value>MelonLoader je deinstaliran</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Install" xml:space="preserve">
-    <value>Želiš li instalirati predložak moda?</value>
+    <value>Instalirati predložak moda?</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Install_Failed" xml:space="preserve">
     <value>Instalacija predloška moda nije uspjela</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Install_Success" xml:space="preserve">
-    <value>Predložak moda je uspješno instaliran</value>
+    <value>Predložak moda je instaliran</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Uninstall" xml:space="preserve">
-    <value>Želiš li deinstalirati predložak moda?</value>
+    <value>Deinstalirati predložak moda?</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Uninstall_Failed" xml:space="preserve">
     <value>Deinstalacija predloška moda nije uspjela</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Uninstall_Success" xml:space="preserve">
-    <value>Predložak moda je uspješno deinstaliran</value>
+    <value>Predložak moda je deinstaliran</value>
   </data>
   <data name="MessageBox_Content_NewVersionAvailable" xml:space="preserve">
     <value>Dostupna je nova verzija: {0}. Ažuriranje u tijeku.</value>
@@ -131,36 +131,36 @@
     <value>Nema dostupnih ažuriranja</value>
   </data>
   <data name="MessageBox_Content_Protontricks_Not_Installed" xml:space="preserve">
-    <value>protontricks nije instaliran. Instaliraj protontricks za nastavak.</value>
+    <value>protontricks nije instaliran. Za nastavak instaliraj protontricks.</value>
   </data>
   <data name="MessageBox_Content_Protontricks_Wineprefix_Failed" xml:space="preserve">
-    <value>Pokretanje wine prefix naredbi putem protontricksa nije uspjelo. Instalacija .NET Runtimea ne može nastaviti.</value>
+    <value>Postavljanje okruženja Wine pomoću alata protontricks nije uspjelo. Instalacija .NET Runtimea ne može se nastaviti.</value>
   </data>
   <data name="MessageBox_Content_ReadGameInformation_Failed" xml:space="preserve">
     <value>Čitanje informacija o igri nije uspjelo
   {0}</value>
   </data>
   <data name="MessageBox_Content_SecretService_Unavailable" xml:space="preserve">
-    <value>Nije pronađena usluga privezka ključeva (secret-tool). Sesija prijave ne može biti spremljena i morat ćeš se prijaviti svaki put iznova.</value>
+    <value>Nije pronađena usluga privjeska za ključeve (secret-tool). Sesiju prijave nije moguće spremiti pa ćeš se morati ponovno prijaviti pri svakom pokretanju aplikacije.</value>
   </data>
   <data name="MessageBox_Content_Server_Unavailable" xml:space="preserve">
-    <value>Euterpe poslužitelj trenutačno nije dostupan. Euterpe će se sada zatvoriti. Pokušajte ponovno kasnije.</value>
+    <value>Poslužitelj Euterpea trenutačno nije dostupan. Euterpe će se sada zatvoriti. Pokušaj ponovno kasnije.</value>
   </data>
   <data name="MessageBox_Content_SetMdDirectoryEnvironment" xml:space="preserve">
-    <value>Želiš li postaviti varijablu okruženja MD_DIRECTORY?</value>
+    <value>Postaviti varijablu okruženja MD_DIRECTORY?</value>
   </data>
   <data name="MessageBox_Content_SetMdDirectoryEnvironment_Failed" xml:space="preserve">
     <value>Postavljanje varijable okruženja MD_DIRECTORY nije uspjelo</value>
   </data>
   <data name="MessageBox_Content_SetPathEnvironment_Linux" xml:space="preserve">
-    <value>Kopiraj sljedeći red i dodaj ga u datoteku /etc/environment:
+    <value>Kopiraj sljedeći redak i dodaj ga u datoteku /etc/environment:
 {0}</value>
   </data>
   <data name="MessageBox_Content_SetPathEnvironment_Windows" xml:space="preserve">
     <value>Varijabla okruženja MD_DIRECTORY postavljena je na {0}</value>
   </data>
   <data name="MessageBox_Content_Update_Check_Failed" xml:space="preserve">
-    <value>Provjera ažuriranja nije uspjela, pokušajte ponovo kasnije</value>
+    <value>Provjera ažuriranja nije uspjela. Pokušaj ponovno kasnije.</value>
   </data>
   <data name="MessageBox_Content_Update_Failed" xml:space="preserve">
     <value>Ažuriranje na verziju {0} nije uspjelo</value>
@@ -178,13 +178,13 @@
     <value>Preuzimanje charta {0} nije uspjelo</value>
   </data>
   <data name="Notification_Content_Chart_Download_Success" xml:space="preserve">
-    <value>Chart {0} uspješno preuzet</value>
+    <value>Chart {0} je preuzet</value>
   </data>
   <data name="Notification_Content_Chart_Import_Failed" xml:space="preserve">
     <value>Uvoz charta {0} nije uspio</value>
   </data>
   <data name="Notification_Content_Chart_Import_Success" xml:space="preserve">
-    <value>Chart {0} uspješno uvezen</value>
+    <value>Chart {0} je uvezen</value>
   </data>
   <data name="Notification_Content_Chart_Import_Unmigratable" xml:space="preserve">
     <value>Chart {0} se ne može migrirati</value>
@@ -196,7 +196,7 @@
     <value>Uklanjanje charta {0} nije uspjelo</value>
   </data>
   <data name="Notification_Content_Chart_Remove_Success" xml:space="preserve">
-    <value>Chart {0} uspješno uklonjen</value>
+    <value>Chart {0} je uklonjen</value>
   </data>
   <data name="Notification_Content_Chart_Sync_Added" xml:space="preserve">
     <value>Chart {0} dodan</value>
@@ -205,13 +205,13 @@
     <value>Chart {0} uklonjen</value>
   </data>
   <data name="Notification_Content_Chart_Sync_Summary" xml:space="preserve">
-    <value>Chartovi sinkronizirani: {0} dodano, {1} uklonjeno</value>
+    <value>Sinkronizacija chartova – dodano: {0}, uklonjeno: {1}</value>
   </data>
   <data name="Notification_Content_Chart_UpdateAll_Partial" xml:space="preserve">
-    <value>Ažurirano {0} chartova, {1} neuspješno</value>
+    <value>Ažurirano chartova: {0}, neuspjelo: {1}</value>
   </data>
   <data name="Notification_Content_Chart_UpdateAll_Success" xml:space="preserve">
-    <value>Ažurirano {0} chartova</value>
+    <value>Ažurirano chartova: {0}</value>
   </data>
   <data name="Notification_Content_Chart_UpdateAll_UpToDate" xml:space="preserve">
     <value>Svi chartovi su ažurni</value>
@@ -220,7 +220,7 @@
     <value>Ažuriranje charta {0} nije uspjelo</value>
   </data>
   <data name="Notification_Content_Chart_Update_Success" xml:space="preserve">
-    <value>Chart {0} uspješno ažuriran</value>
+    <value>Chart {0} je ažuriran</value>
   </data>
   <data name="Notification_Content_Chart_Update_UpToDate" xml:space="preserve">
     <value>Chart {0} je već ažuran</value>
@@ -232,25 +232,25 @@
     <value>Nevaljana EPK datoteka</value>
   </data>
   <data name="Notification_Content_Epk_Save_Failed" xml:space="preserve">
-    <value>Spremanje {0} nije uspjelo</value>
+    <value>Spremanje charta {0} nije uspjelo</value>
   </data>
   <data name="Notification_Content_Epk_Save_Success" xml:space="preserve">
-    <value>Spremljeno {0}</value>
+    <value>Chart {0} je spremljen</value>
   </data>
   <data name="Notification_Content_Lib_Import_Failed" xml:space="preserve">
     <value>Uvoz biblioteke {0} nije uspio</value>
   </data>
   <data name="Notification_Content_Lib_Import_Success" xml:space="preserve">
-    <value>Biblioteka {0} uspješno uvezena</value>
+    <value>Biblioteka {0} je uvezena</value>
   </data>
   <data name="Notification_Content_Migration_None" xml:space="preserve">
     <value>Nema MDM chartova za migraciju</value>
   </data>
   <data name="Notification_Content_Migration_Partial" xml:space="preserve">
-    <value>Migrirano {0} CustomAlbums chartova, {1} neuspješno</value>
+    <value>Migrirano chartova iz moda CustomAlbums: {0}, nije moguće migrirati: {1}</value>
   </data>
   <data name="Notification_Content_Migration_Success" xml:space="preserve">
-    <value>Migrirano {0} CustomAlbums chartova</value>
+    <value>Migrirano chartova iz moda CustomAlbums: {0}</value>
   </data>
   <data name="Notification_Content_Mod_Import_Duplicated" xml:space="preserve">
     <value>Mod {0} je već uvezen</value>
@@ -259,7 +259,7 @@
     <value>Uvoz moda {0} nije uspio</value>
   </data>
   <data name="Notification_Content_Mod_Import_Success" xml:space="preserve">
-    <value>Mod {0} uspješno uvezen</value>
+    <value>Mod {0} je uvezen</value>
   </data>
   <data name="Notification_Content_Mod_Import_Unsupported" xml:space="preserve">
     <value>{0} nije podržana datoteka moda ili biblioteke</value>
@@ -268,13 +268,13 @@
     <value>Mod {0} je već instaliran</value>
   </data>
   <data name="Notification_Content_Mod_Install_Failed" xml:space="preserve">
-    <value>Mod {0} nije uspješno instaliran</value>
+    <value>Instalacija moda {0} nije uspjela</value>
   </data>
   <data name="Notification_Content_Mod_Install_Incompatible" xml:space="preserve">
     <value>Mod {0} nije kompatibilan i ne može se instalirati</value>
   </data>
   <data name="Notification_Content_Mod_Install_Success" xml:space="preserve">
-    <value>Mod {0} uspješno instaliran</value>
+    <value>Mod {0} je instaliran</value>
   </data>
   <data name="Notification_Content_Mod_NotFound" xml:space="preserve">
     <value>Mod {0} nije pronađen</value>
@@ -283,10 +283,10 @@
     <value>Mod {0} nije instaliran</value>
   </data>
   <data name="Notification_Content_Mod_Reinstall_Failed" xml:space="preserve">
-    <value>Mod {0} nije uspješno ponovno instaliran</value>
+    <value>Ponovna instalacija moda {0} nije uspjela</value>
   </data>
   <data name="Notification_Content_Mod_Reinstall_Success" xml:space="preserve">
-    <value>Mod {0} uspješno ponovno instaliran</value>
+    <value>Mod {0} je ponovno instaliran</value>
   </data>
   <data name="Notification_Content_Mod_Sync_Added" xml:space="preserve">
     <value>Mod {0} dodan</value>
@@ -295,40 +295,40 @@
     <value>Mod {0} uklonjen</value>
   </data>
   <data name="Notification_Content_Mod_Sync_Summary" xml:space="preserve">
-    <value>Modovi sinkronizirani: {0} dodano, {1} uklonjeno</value>
+    <value>Sinkronizacija modova – dodano: {0}, uklonjeno: {1}</value>
   </data>
   <data name="Notification_Content_Mod_Toggle_Failed" xml:space="preserve">
     <value>Promjena stanja moda {0} nije uspjela</value>
   </data>
   <data name="Notification_Content_Mod_Uninstall_Failed" xml:space="preserve">
-    <value>Mod {0} nije uspješno deinstaliran</value>
+    <value>Deinstalacija moda {0} nije uspjela</value>
   </data>
   <data name="Notification_Content_Mod_Uninstall_Success" xml:space="preserve">
-    <value>Mod {0} uspješno deinstaliran</value>
+    <value>Mod {0} je deinstaliran</value>
   </data>
   <data name="Notification_Content_Mod_UpdateAll_Partial" xml:space="preserve">
-    <value>Ažurirano {0} modova, {1} neuspješno</value>
+    <value>Ažurirano modova: {0}, neuspjelo: {1}</value>
   </data>
   <data name="Notification_Content_Mod_UpdateAll_Success" xml:space="preserve">
-    <value>Ažurirano {0} modova</value>
+    <value>Ažurirano modova: {0}</value>
   </data>
   <data name="Notification_Content_Mod_Update_Failed" xml:space="preserve">
-    <value>Mod {0} nije uspješno ažuriran</value>
+    <value>Ažuriranje moda {0} nije uspjelo</value>
   </data>
   <data name="Notification_Content_Mod_Update_Success" xml:space="preserve">
-    <value>Mod {0} uspješno ažuriran</value>
+    <value>Mod {0} je ažuriran</value>
   </data>
   <data name="Notification_Content_Mod_Update_UpToDate" xml:space="preserve">
     <value>Mod {0} je već ažuran</value>
   </data>
   <data name="Notification_Content_Server_Error" xml:space="preserve">
-    <value>Poslužitelj je privremeno nedostupan. Pokušajte ponovno za trenutak.</value>
+    <value>Poslužitelj je privremeno nedostupan. Pokušaj ponovno za trenutak.</value>
   </data>
   <data name="Notification_Content_Share_Copy_Success" xml:space="preserve">
     <value>Kod za dijeljenje kopiran</value>
   </data>
   <data name="Title_Error" xml:space="preserve">
-    <value>Greška</value>
+    <value>Pogreška</value>
   </data>
   <data name="Title_Notice" xml:space="preserve">
     <value>Obavijest</value>

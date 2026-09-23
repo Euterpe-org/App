@@ -50,7 +50,7 @@
     <value>Yes</value>
   </data>
   <data name="MessageBox_Content_Chart_BulkDelete_Confirm" xml:space="preserve">
-    <value>Delete {0} selected charts?</value>
+    <value>Delete selected charts ({0})?</value>
   </data>
   <data name="MessageBox_Content_ChooseSteamExec" xml:space="preserve">
     <value>Please select the Steam executable</value>
@@ -71,13 +71,13 @@
     <value>Failed to install .NET 10 SDK</value>
   </data>
   <data name="MessageBox_Content_DotNetSDK_Install_Success" xml:space="preserve">
-    <value>.NET 10 SDK has been successfully installed</value>
+    <value>.NET 10 SDK installed</value>
   </data>
   <data name="MessageBox_Content_Epk_Discard_Confirm" xml:space="preserve">
     <value>Discard unsaved changes?</value>
   </data>
   <data name="MessageBox_Content_InvalidPath" xml:space="preserve">
-    <value>The path you have chosen is invalid. Try again</value>
+    <value>The selected path is invalid. Choose another path.</value>
   </data>
   <data name="MessageBox_Content_Login_Failed" xml:space="preserve">
     <value>Sign-in failed. Would you like to try again? Selecting No will close Euterpe.</value>
@@ -98,31 +98,31 @@
     <value>Failed to install MelonLoader</value>
   </data>
   <data name="MessageBox_Content_MelonLoader_Install_Success" xml:space="preserve">
-    <value>MelonLoader has been successfully installed</value>
+    <value>MelonLoader installed</value>
   </data>
   <data name="MessageBox_Content_MelonLoader_Uninstall_Failed" xml:space="preserve">
     <value>Failed to uninstall MelonLoader</value>
   </data>
   <data name="MessageBox_Content_MelonLoader_Uninstall_Success" xml:space="preserve">
-    <value>MelonLoader uninstalled successfully</value>
+    <value>MelonLoader uninstalled</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Install" xml:space="preserve">
-    <value>Are you sure you want to install the Mod Template?</value>
+    <value>Install the mod template?</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Install_Failed" xml:space="preserve">
-    <value>Failed to install Mod Template</value>
+    <value>Failed to install the mod template</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Install_Success" xml:space="preserve">
-    <value>Mod Template has been successfully installed</value>
+    <value>Mod template installed</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Uninstall" xml:space="preserve">
-    <value>Are you sure you want to uninstall the Mod Template?</value>
+    <value>Uninstall the mod template?</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Uninstall_Failed" xml:space="preserve">
-    <value>Failed to uninstall Mod Template</value>
+    <value>Failed to uninstall the mod template</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Uninstall_Success" xml:space="preserve">
-    <value>Mod Template uninstalled successfully</value>
+    <value>Mod template uninstalled</value>
   </data>
   <data name="MessageBox_Content_NewVersionAvailable" xml:space="preserve">
     <value>New version available: {0}, updating now.</value>
@@ -134,14 +134,14 @@
     <value>protontricks is not installed. Please install protontricks to proceed.</value>
   </data>
   <data name="MessageBox_Content_Protontricks_Wineprefix_Failed" xml:space="preserve">
-    <value>Failed to run wine prefix commands via protontricks. Cannot proceed with .NET Runtime installation.</value>
+    <value>Failed to configure the Wine environment using protontricks. The .NET Runtime installation cannot continue.</value>
   </data>
   <data name="MessageBox_Content_ReadGameInformation_Failed" xml:space="preserve">
-    <value>Reading Game Information failed
+    <value>Failed to read game information
   {0}</value>
   </data>
   <data name="MessageBox_Content_SecretService_Unavailable" xml:space="preserve">
-    <value>No keyring service (secret-tool) was found. Your login session cannot be saved and you will need to log in again each time.</value>
+    <value>No keyring service (secret-tool) was found. Euterpe cannot save your session, so you'll need to sign in each time you start the app.</value>
   </data>
   <data name="MessageBox_Content_Server_Unavailable" xml:space="preserve">
     <value>The Euterpe server is currently unavailable. Euterpe will now close. Please try again later.</value>
@@ -157,10 +157,10 @@
 {0}</value>
   </data>
   <data name="MessageBox_Content_SetPathEnvironment_Windows" xml:space="preserve">
-    <value>MD_DIRECTORY environment variable successfully set to {0}</value>
+    <value>MD_DIRECTORY environment variable set to {0}</value>
   </data>
   <data name="MessageBox_Content_Update_Check_Failed" xml:space="preserve">
-    <value>Failed to check for updates, please try again later</value>
+    <value>Failed to check for updates. Try again later.</value>
   </data>
   <data name="MessageBox_Content_Update_Failed" xml:space="preserve">
     <value>Failed to update to version {0}</value>
@@ -169,22 +169,22 @@
     <value>Failed to play audio</value>
   </data>
   <data name="Notification_Content_Chart_BulkDelete_Partial" xml:space="preserve">
-    <value>Deleted {0} charts, {1} failed</value>
+    <value>Charts deleted: {0}; failed: {1}</value>
   </data>
   <data name="Notification_Content_Chart_BulkDelete_Success" xml:space="preserve">
-    <value>Deleted {0} charts</value>
+    <value>Charts deleted: {0}</value>
   </data>
   <data name="Notification_Content_Chart_Download_Failed" xml:space="preserve">
     <value>Failed to download chart {0}</value>
   </data>
   <data name="Notification_Content_Chart_Download_Success" xml:space="preserve">
-    <value>Chart {0} successfully downloaded</value>
+    <value>Downloaded chart {0}</value>
   </data>
   <data name="Notification_Content_Chart_Import_Failed" xml:space="preserve">
     <value>Failed to import chart {0}</value>
   </data>
   <data name="Notification_Content_Chart_Import_Success" xml:space="preserve">
-    <value>Chart {0} successfully imported</value>
+    <value>Imported chart {0}</value>
   </data>
   <data name="Notification_Content_Chart_Import_Unmigratable" xml:space="preserve">
     <value>Chart {0} cannot be migrated</value>
@@ -196,7 +196,7 @@
     <value>Failed to remove chart {0}</value>
   </data>
   <data name="Notification_Content_Chart_Remove_Success" xml:space="preserve">
-    <value>Chart {0} successfully removed</value>
+    <value>Removed chart {0}</value>
   </data>
   <data name="Notification_Content_Chart_Sync_Added" xml:space="preserve">
     <value>Added chart {0}</value>
@@ -208,10 +208,10 @@
     <value>Synced charts: {0} added, {1} removed</value>
   </data>
   <data name="Notification_Content_Chart_UpdateAll_Partial" xml:space="preserve">
-    <value>Updated {0} charts, {1} failed</value>
+    <value>Charts updated: {0}; failed: {1}</value>
   </data>
   <data name="Notification_Content_Chart_UpdateAll_Success" xml:space="preserve">
-    <value>Updated {0} charts</value>
+    <value>Charts updated: {0}</value>
   </data>
   <data name="Notification_Content_Chart_UpdateAll_UpToDate" xml:space="preserve">
     <value>All charts are up to date</value>
@@ -220,7 +220,7 @@
     <value>Failed to update chart {0}</value>
   </data>
   <data name="Notification_Content_Chart_Update_Success" xml:space="preserve">
-    <value>Chart {0} successfully updated</value>
+    <value>Updated chart {0}</value>
   </data>
   <data name="Notification_Content_Chart_Update_UpToDate" xml:space="preserve">
     <value>Chart {0} is already up to date</value>
@@ -241,25 +241,25 @@
     <value>Failed to import library {0}</value>
   </data>
   <data name="Notification_Content_Lib_Import_Success" xml:space="preserve">
-    <value>Library {0} successfully imported</value>
+    <value>Imported library {0}</value>
   </data>
   <data name="Notification_Content_Migration_None" xml:space="preserve">
     <value>No MDM charts to migrate</value>
   </data>
   <data name="Notification_Content_Migration_Partial" xml:space="preserve">
-    <value>Migrated {0} CustomAlbums charts, {1} could not be migrated</value>
+    <value>CustomAlbums charts: {0} migrated, {1} could not be migrated</value>
   </data>
   <data name="Notification_Content_Migration_Success" xml:space="preserve">
-    <value>Migrated {0} CustomAlbums charts</value>
+    <value>CustomAlbums charts migrated: {0}</value>
   </data>
   <data name="Notification_Content_Mod_Import_Duplicated" xml:space="preserve">
-    <value>Mod {0} is already imported</value>
+    <value>Mod {0} has already been imported</value>
   </data>
   <data name="Notification_Content_Mod_Import_Failed" xml:space="preserve">
     <value>Failed to import mod {0}</value>
   </data>
   <data name="Notification_Content_Mod_Import_Success" xml:space="preserve">
-    <value>Mod {0} successfully imported</value>
+    <value>Imported mod {0}</value>
   </data>
   <data name="Notification_Content_Mod_Import_Unsupported" xml:space="preserve">
     <value>{0} is not a supported mod or library file</value>
@@ -274,7 +274,7 @@
     <value>Mod {0} is incompatible and cannot be installed</value>
   </data>
   <data name="Notification_Content_Mod_Install_Success" xml:space="preserve">
-    <value>Mod {0} successfully installed</value>
+    <value>Installed mod {0}</value>
   </data>
   <data name="Notification_Content_Mod_NotFound" xml:space="preserve">
     <value>Mod {0} not found</value>
@@ -286,7 +286,7 @@
     <value>Failed to reinstall mod {0}</value>
   </data>
   <data name="Notification_Content_Mod_Reinstall_Success" xml:space="preserve">
-    <value>Mod {0} successfully reinstalled</value>
+    <value>Reinstalled mod {0}</value>
   </data>
   <data name="Notification_Content_Mod_Sync_Added" xml:space="preserve">
     <value>Added mod {0}</value>
@@ -304,19 +304,19 @@
     <value>Failed to uninstall mod {0}</value>
   </data>
   <data name="Notification_Content_Mod_Uninstall_Success" xml:space="preserve">
-    <value>Mod {0} successfully uninstalled</value>
+    <value>Uninstalled mod {0}</value>
   </data>
   <data name="Notification_Content_Mod_UpdateAll_Partial" xml:space="preserve">
-    <value>Updated {0} mods, {1} failed</value>
+    <value>Mods updated: {0}; failed: {1}</value>
   </data>
   <data name="Notification_Content_Mod_UpdateAll_Success" xml:space="preserve">
-    <value>Updated {0} mods</value>
+    <value>Mods updated: {0}</value>
   </data>
   <data name="Notification_Content_Mod_Update_Failed" xml:space="preserve">
     <value>Failed to update mod {0}</value>
   </data>
   <data name="Notification_Content_Mod_Update_Success" xml:space="preserve">
-    <value>Mod {0} successfully updated</value>
+    <value>Updated mod {0}</value>
   </data>
   <data name="Notification_Content_Mod_Update_UpToDate" xml:space="preserve">
     <value>Mod {0} is already up to date</value>

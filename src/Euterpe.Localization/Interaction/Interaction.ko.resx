@@ -47,7 +47,7 @@
     <value>아니요</value>
   </data>
   <data name="MessageBox_Button_Yes" xml:space="preserve">
-    <value>네</value>
+    <value>예</value>
   </data>
   <data name="MessageBox_Content_Chart_BulkDelete_Confirm" xml:space="preserve">
     <value>선택한 채보 {0}개를 삭제하시겠습니까?</value>
@@ -80,7 +80,7 @@
     <value>선택한 경로가 올바르지 않습니다. 다시 선택해 주세요</value>
   </data>
   <data name="MessageBox_Content_Login_Failed" xml:space="preserve">
-    <value>로그인에 실패했습니다. 다시 시도하시겠습니까? 아니요를 선택하면 Euterpe가 종료됩니다.</value>
+    <value>로그인에 실패했습니다. 다시 시도하시겠습니까? '아니요'를 선택하면 Euterpe가 종료됩니다.</value>
   </data>
   <data name="MessageBox_Content_MdmFile_Create_Failed" xml:space="preserve">
     <value>MDM 파일 생성에 실패했습니다</value>
@@ -125,7 +125,7 @@
     <value>모드 템플릿이 제거되었습니다</value>
   </data>
   <data name="MessageBox_Content_NewVersionAvailable" xml:space="preserve">
-    <value>새 버전 {0}을(를) 사용할 수 있습니다. 곧 업데이트합니다.</value>
+    <value>새 버전이 있습니다: {0}. 지금 업데이트합니다.</value>
   </data>
   <data name="MessageBox_Content_NoUpdatesFound" xml:space="preserve">
     <value>사용 가능한 업데이트가 없습니다</value>
@@ -134,7 +134,7 @@
     <value>protontricks가 설치되어 있지 않습니다. 계속하려면 protontricks를 설치해 주세요.</value>
   </data>
   <data name="MessageBox_Content_Protontricks_Wineprefix_Failed" xml:space="preserve">
-    <value>protontricks를 통한 wine prefix 명령 실행에 실패했습니다. .NET Runtime 설치를 계속할 수 없습니다.</value>
+    <value>protontricks로 Wine 환경을 설정하지 못했습니다. .NET Runtime 설치를 계속할 수 없습니다.</value>
   </data>
   <data name="MessageBox_Content_ReadGameInformation_Failed" xml:space="preserve">
     <value>게임 정보 읽기에 실패했습니다
@@ -157,19 +157,19 @@
 {0}</value>
   </data>
   <data name="MessageBox_Content_SetPathEnvironment_Windows" xml:space="preserve">
-    <value>환경 변수 MD_DIRECTORY가 {0}(으)로 설정되었습니다</value>
+    <value>환경 변수 MD_DIRECTORY를 다음 값으로 설정했습니다: {0}</value>
   </data>
   <data name="MessageBox_Content_Update_Check_Failed" xml:space="preserve">
     <value>업데이트를 확인하지 못했습니다. 나중에 다시 시도해 주세요</value>
   </data>
   <data name="MessageBox_Content_Update_Failed" xml:space="preserve">
-    <value>버전 {0}(으)로 업데이트하지 못했습니다</value>
+    <value>{0} 버전으로 업데이트하지 못했습니다</value>
   </data>
   <data name="Notification_Content_Audio_Play_Failed" xml:space="preserve">
     <value>오디오 재생에 실패했습니다</value>
   </data>
   <data name="Notification_Content_Chart_BulkDelete_Partial" xml:space="preserve">
-    <value>채보 {0}개 삭제, {1}개 실패</value>
+    <value>채보 {0}개를 삭제했으며, {1}개는 삭제하지 못했습니다</value>
   </data>
   <data name="Notification_Content_Chart_BulkDelete_Success" xml:space="preserve">
     <value>채보 {0}개를 삭제했습니다</value>
@@ -178,37 +178,37 @@
     <value>채보 {0} 다운로드에 실패했습니다</value>
   </data>
   <data name="Notification_Content_Chart_Download_Success" xml:space="preserve">
-    <value>채보 {0}이(가) 다운로드되었습니다</value>
+    <value>채보 {0} 다운로드가 완료되었습니다</value>
   </data>
   <data name="Notification_Content_Chart_Import_Failed" xml:space="preserve">
     <value>채보 {0} 가져오기에 실패했습니다</value>
   </data>
   <data name="Notification_Content_Chart_Import_Success" xml:space="preserve">
-    <value>채보 {0}을(를) 가져왔습니다</value>
+    <value>채보 {0} 가져오기가 완료되었습니다</value>
   </data>
   <data name="Notification_Content_Chart_Import_Unmigratable" xml:space="preserve">
-    <value>채보 {0}을(를) 마이그레이션할 수 없습니다</value>
+    <value>{0} 채보는 마이그레이션할 수 없습니다</value>
   </data>
   <data name="Notification_Content_Chart_Import_Unsupported" xml:space="preserve">
-    <value>{0}은(는) 지원되는 채보 파일 또는 폴더가 아닙니다</value>
+    <value>지원되지 않는 채보 파일 또는 폴더입니다: {0}</value>
   </data>
   <data name="Notification_Content_Chart_Remove_Failed" xml:space="preserve">
     <value>채보 {0} 삭제에 실패했습니다</value>
   </data>
   <data name="Notification_Content_Chart_Remove_Success" xml:space="preserve">
-    <value>채보 {0}이(가) 삭제되었습니다</value>
+    <value>채보 {0} 삭제가 완료되었습니다</value>
   </data>
   <data name="Notification_Content_Chart_Sync_Added" xml:space="preserve">
-    <value>채보 {0}이(가) 추가되었습니다</value>
+    <value>{0} 채보가 추가되었습니다</value>
   </data>
   <data name="Notification_Content_Chart_Sync_Removed" xml:space="preserve">
-    <value>채보 {0}이(가) 삭제되었습니다</value>
+    <value>{0} 채보가 삭제되었습니다</value>
   </data>
   <data name="Notification_Content_Chart_Sync_Summary" xml:space="preserve">
     <value>채보 동기화 완료: 추가 {0}개, 삭제 {1}개</value>
   </data>
   <data name="Notification_Content_Chart_UpdateAll_Partial" xml:space="preserve">
-    <value>채보 {0}개가 업데이트되었고, {1}개가 실패했습니다</value>
+    <value>채보 {0}개를 업데이트했으며, {1}개는 업데이트하지 못했습니다</value>
   </data>
   <data name="Notification_Content_Chart_UpdateAll_Success" xml:space="preserve">
     <value>채보 {0}개가 업데이트되었습니다</value>
@@ -220,10 +220,10 @@
     <value>채보 {0} 업데이트에 실패했습니다</value>
   </data>
   <data name="Notification_Content_Chart_Update_Success" xml:space="preserve">
-    <value>채보 {0}이(가) 업데이트되었습니다</value>
+    <value>채보 {0} 업데이트가 완료되었습니다</value>
   </data>
   <data name="Notification_Content_Chart_Update_UpToDate" xml:space="preserve">
-    <value>채보 {0}은(는) 이미 최신 버전입니다</value>
+    <value>{0} 채보는 이미 최신 버전입니다</value>
   </data>
   <data name="Notification_Content_Epk_Edit_OnlineReadonly" xml:space="preserve">
     <value>온라인 채보는 편집할 수 없습니다</value>
@@ -235,64 +235,64 @@
     <value>{0} 저장에 실패했습니다</value>
   </data>
   <data name="Notification_Content_Epk_Save_Success" xml:space="preserve">
-    <value>{0}이(가) 저장되었습니다</value>
+    <value>{0} 저장이 완료되었습니다</value>
   </data>
   <data name="Notification_Content_Lib_Import_Failed" xml:space="preserve">
     <value>라이브러리 {0} 가져오기에 실패했습니다</value>
   </data>
   <data name="Notification_Content_Lib_Import_Success" xml:space="preserve">
-    <value>라이브러리 {0}을(를) 가져왔습니다</value>
+    <value>라이브러리 {0} 가져오기가 완료되었습니다</value>
   </data>
   <data name="Notification_Content_Migration_None" xml:space="preserve">
     <value>마이그레이션할 MDM 채보가 없습니다</value>
   </data>
   <data name="Notification_Content_Migration_Partial" xml:space="preserve">
-    <value>CustomAlbums 채보 {0}개가 마이그레이션되었고, {1}개가 실패했습니다</value>
+    <value>CustomAlbums 채보 {0}개를 마이그레이션했으며, {1}개는 마이그레이션하지 못했습니다</value>
   </data>
   <data name="Notification_Content_Migration_Success" xml:space="preserve">
     <value>CustomAlbums 채보 {0}개를 마이그레이션했습니다</value>
   </data>
   <data name="Notification_Content_Mod_Import_Duplicated" xml:space="preserve">
-    <value>모드 {0}은(는) 이미 가져왔습니다</value>
+    <value>{0} 모드는 이미 가져왔습니다</value>
   </data>
   <data name="Notification_Content_Mod_Import_Failed" xml:space="preserve">
     <value>모드 {0} 가져오기에 실패했습니다</value>
   </data>
   <data name="Notification_Content_Mod_Import_Success" xml:space="preserve">
-    <value>모드 {0}을(를) 가져왔습니다</value>
+    <value>모드 {0} 가져오기가 완료되었습니다</value>
   </data>
   <data name="Notification_Content_Mod_Import_Unsupported" xml:space="preserve">
-    <value>{0}은(는) 지원되는 모드 또는 라이브러리 파일이 아닙니다</value>
+    <value>지원되지 않는 모드 또는 라이브러리 파일입니다: {0}</value>
   </data>
   <data name="Notification_Content_Mod_Install_AlreadyInstalled" xml:space="preserve">
-    <value>모드 {0}은(는) 이미 설치되어 있습니다</value>
+    <value>{0} 모드는 이미 설치되어 있습니다</value>
   </data>
   <data name="Notification_Content_Mod_Install_Failed" xml:space="preserve">
     <value>모드 {0} 설치에 실패했습니다</value>
   </data>
   <data name="Notification_Content_Mod_Install_Incompatible" xml:space="preserve">
-    <value>모드 {0}은(는) 호환되지 않아 설치할 수 없습니다</value>
+    <value>{0} 모드는 호환되지 않아 설치할 수 없습니다</value>
   </data>
   <data name="Notification_Content_Mod_Install_Success" xml:space="preserve">
-    <value>모드 {0}이(가) 설치되었습니다</value>
+    <value>모드 {0} 설치가 완료되었습니다</value>
   </data>
   <data name="Notification_Content_Mod_NotFound" xml:space="preserve">
-    <value>모드 {0}을(를) 찾을 수 없습니다</value>
+    <value>{0} 모드를 찾을 수 없습니다</value>
   </data>
   <data name="Notification_Content_Mod_NotInstalled" xml:space="preserve">
-    <value>모드 {0}이(가) 설치되어 있지 않습니다</value>
+    <value>{0} 모드가 설치되어 있지 않습니다</value>
   </data>
   <data name="Notification_Content_Mod_Reinstall_Failed" xml:space="preserve">
     <value>모드 {0} 재설치에 실패했습니다</value>
   </data>
   <data name="Notification_Content_Mod_Reinstall_Success" xml:space="preserve">
-    <value>모드 {0}이(가) 재설치되었습니다</value>
+    <value>모드 {0} 재설치가 완료되었습니다</value>
   </data>
   <data name="Notification_Content_Mod_Sync_Added" xml:space="preserve">
-    <value>모드 {0}이(가) 추가되었습니다</value>
+    <value>{0} 모드가 추가되었습니다</value>
   </data>
   <data name="Notification_Content_Mod_Sync_Removed" xml:space="preserve">
-    <value>모드 {0}이(가) 삭제되었습니다</value>
+    <value>{0} 모드가 삭제되었습니다</value>
   </data>
   <data name="Notification_Content_Mod_Sync_Summary" xml:space="preserve">
     <value>모드 동기화 완료: 추가 {0}개, 삭제 {1}개</value>
@@ -304,10 +304,10 @@
     <value>모드 {0} 제거에 실패했습니다</value>
   </data>
   <data name="Notification_Content_Mod_Uninstall_Success" xml:space="preserve">
-    <value>모드 {0}이(가) 제거되었습니다</value>
+    <value>모드 {0} 제거가 완료되었습니다</value>
   </data>
   <data name="Notification_Content_Mod_UpdateAll_Partial" xml:space="preserve">
-    <value>모드 {0}개가 업데이트되었고, {1}개가 실패했습니다</value>
+    <value>모드 {0}개를 업데이트했으며, {1}개는 업데이트하지 못했습니다</value>
   </data>
   <data name="Notification_Content_Mod_UpdateAll_Success" xml:space="preserve">
     <value>모드 {0}개가 업데이트되었습니다</value>
@@ -316,10 +316,10 @@
     <value>모드 {0} 업데이트에 실패했습니다</value>
   </data>
   <data name="Notification_Content_Mod_Update_Success" xml:space="preserve">
-    <value>모드 {0}이(가) 업데이트되었습니다</value>
+    <value>모드 {0} 업데이트가 완료되었습니다</value>
   </data>
   <data name="Notification_Content_Mod_Update_UpToDate" xml:space="preserve">
-    <value>모드 {0}은(는) 이미 최신 버전입니다</value>
+    <value>{0} 모드는 이미 최신 버전입니다</value>
   </data>
   <data name="Notification_Content_Server_Error" xml:space="preserve">
     <value>서버가 일시적으로 응답하지 않습니다. 잠시 후 다시 시도해 주세요.</value>
@@ -337,6 +337,6 @@
     <value>성공</value>
   </data>
   <data name="Title_Warning" xml:space="preserve">
-    <value>주의</value>
+    <value>경고</value>
   </data>
 </root>

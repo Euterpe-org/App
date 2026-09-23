@@ -65,25 +65,25 @@
     <value>Обновить</value>
   </data>
   <data name="ChartAnalyzer_Description" xml:space="preserve">
-    <value>Прогнозировать приблизительные уровни и анализировать разбивку Note чарта</value>
+    <value>Оценить уровень сложности чарта и проанализировать его ноты</value>
   </data>
   <data name="ChartAnalyzer_Title" xml:space="preserve">
-    <value>Chart Analyzer</value>
+    <value>Анализатор чартов</value>
   </data>
   <data name="ChartDifficulty_Easy" xml:space="preserve">
-    <value>Легко</value>
+    <value>Easy</value>
   </data>
   <data name="ChartDifficulty_Hard" xml:space="preserve">
-    <value>Сложно</value>
+    <value>Hard</value>
   </data>
   <data name="ChartDifficulty_Hidden" xml:space="preserve">
-    <value>Скрытый</value>
+    <value>Hidden</value>
   </data>
   <data name="ChartDifficulty_Master" xml:space="preserve">
-    <value>Мастер</value>
+    <value>Master</value>
   </data>
   <data name="CharterToolkit_Offline_Description" xml:space="preserve">
-    <value>Редактировать метаданные manifest чарта локально</value>
+    <value>Редактировать метаданные чарта локально</value>
   </data>
   <data name="CharterToolkit_Offline_Title" xml:space="preserve">
     <value>Офлайн-инструменты</value>
@@ -107,7 +107,7 @@
     <value>Скачивание чарта</value>
   </data>
   <data name="ChartManage_DownloadingHint" xml:space="preserve">
-    <value>Выполняется скачивание. Пожалуйста, подождите и не закрывайте приложение.</value>
+    <value>Идёт скачивание, не закрывай приложение.</value>
   </data>
   <data name="ChartManage_Filter_Difficulty" xml:space="preserve">
     <value>Сложность</value>
@@ -119,7 +119,7 @@
     <value>Безопасно для стрима</value>
   </data>
   <data name="ChartManage_GetCharts_Description" xml:space="preserve">
-    <value>Просмотр и загрузка чартов в сети</value>
+    <value>Просмотр и скачивание чартов на сайте</value>
   </data>
   <data name="ChartManage_GetCharts_Title" xml:space="preserve">
     <value>Получить чарты</value>
@@ -131,7 +131,7 @@
     <value>Перенос чартов</value>
   </data>
   <data name="ChartManage_MigratingHint" xml:space="preserve">
-    <value>Выполняется перенос. Пожалуйста, подождите и не закрывайте приложение.</value>
+    <value>Идёт перенос, не закрывай приложение.</value>
   </data>
   <data name="ChartManage_Rating" xml:space="preserve">
     <value>Уровень</value>
@@ -149,7 +149,7 @@
     <value>Можно делиться только онлайн-чартами, не более 100 за раз</value>
   </data>
   <data name="ChartManage_SortBy" xml:space="preserve">
-    <value>Сортировать по</value>
+    <value>Сортировка</value>
   </data>
   <data name="ChartManage_Tag_Video" xml:space="preserve">
     <value>Видео</value>
@@ -161,7 +161,7 @@
     <value>от {0}</value>
   </data>
   <data name="ChartSortField_Author" xml:space="preserve">
-    <value>Автор</value>
+    <value>Исполнитель</value>
   </data>
   <data name="ChartSortField_Bpm" xml:space="preserve">
     <value>BPM</value>
@@ -173,7 +173,7 @@
     <value>Дата обновления</value>
   </data>
   <data name="ChartSortField_MapCount" xml:space="preserve">
-    <value>Карты</value>
+    <value>Число карт</value>
   </data>
   <data name="ChartSortField_Name" xml:space="preserve">
     <value>Название</value>
@@ -185,13 +185,13 @@
     <value>Размер файла</value>
   </data>
   <data name="ChartSource_Offline" xml:space="preserve">
-    <value>Offline</value>
+    <value>Офлайн</value>
   </data>
   <data name="ChartSource_Online" xml:space="preserve">
-    <value>Online</value>
+    <value>Онлайн</value>
   </data>
   <data name="ChartSubmit_Description" xml:space="preserve">
-    <value>Загрузите и опубликуйте свой чарт</value>
+    <value>Загрузить и опубликовать свой чарт</value>
   </data>
   <data name="ChartSubmit_Title" xml:space="preserve">
     <value>Отправить чарт</value>
@@ -203,16 +203,16 @@
     <value>Копировать сведения</value>
   </data>
   <data name="CrashDialog_Button_Exit" xml:space="preserve">
-    <value>Выход</value>
+    <value>Выйти</value>
   </data>
   <data name="CrashDialog_Button_Feedback" xml:space="preserve">
-    <value>Отзыв на GitHub</value>
+    <value>Сообщить на GitHub</value>
   </data>
   <data name="CrashDialog_Header" xml:space="preserve">
-    <value>Euterpe столкнулся с ошибкой</value>
+    <value>В Euterpe произошла ошибка</value>
   </data>
   <data name="CrashDialog_Title" xml:space="preserve">
-    <value>Отчёт об аварийном завершении</value>
+    <value>Отчёт о сбое</value>
   </data>
   <data name="DropDownButton_Open" xml:space="preserve">
     <value>Открыть</value>
@@ -224,10 +224,10 @@
     <value>Добавить чартера</value>
   </data>
   <data name="EpkEditor_Field_Author" xml:space="preserve">
-    <value>Автор песни</value>
+    <value>Исполнитель</value>
   </data>
   <data name="EpkEditor_Field_BackgroundVideoOpacity" xml:space="preserve">
-    <value>Прозрачность видео</value>
+    <value>Непрозрачность видео</value>
   </data>
   <data name="EpkEditor_Field_Bpm" xml:space="preserve">
     <value>BPM</value>
@@ -251,13 +251,13 @@
     <value>Режим</value>
   </data>
   <data name="EpkEditor_Field_HideRatingOverride" xml:space="preserve">
-    <value>Переопределение отображения уровня</value>
+    <value>Отображаемый уровень</value>
   </data>
   <data name="EpkEditor_Field_Name" xml:space="preserve">
-    <value>Название чарта</value>
+    <value>Название композиции</value>
   </data>
   <data name="EpkEditor_Field_NameRomanized" xml:space="preserve">
-    <value>Название романизацией</value>
+    <value>Название латиницей</value>
   </data>
   <data name="EpkEditor_Field_SafeForStreamer" xml:space="preserve">
     <value>Безопасно для стрима</value>
@@ -269,7 +269,7 @@
     <value>Сцена (пасхалка)</value>
   </data>
   <data name="EpkEditor_Field_SearchKeywords" xml:space="preserve">
-    <value>Ключевые слова поиска</value>
+    <value>Ключевые слова</value>
   </data>
   <data name="EpkEditor_Field_TempoVariable" xml:space="preserve">
     <value>Переменный темп</value>
@@ -278,25 +278,25 @@
     <value>Обновить</value>
   </data>
   <data name="EpkEditor_Files_Summary" xml:space="preserve">
-    <value>{0} файлов · {1}</value>
+    <value>Файлов: {0} · {1}</value>
   </data>
   <data name="EpkEditor_Hint_Required" xml:space="preserve">
-    <value>Заполните все обязательные поля для сохранения</value>
+    <value>Заполни все обязательные поля для сохранения</value>
   </data>
   <data name="EpkEditor_Hint_TempoRange" xml:space="preserve">
-    <value>Задайте допустимый диапазон темпа (мин ≤ макс)</value>
+    <value>Задай допустимый диапазон темпа (мин ≤ макс)</value>
   </data>
   <data name="EpkEditor_Keywords_Watermark" xml:space="preserve">
     <value>Добавить ключевое слово</value>
   </data>
   <data name="EpkEditor_Launcher_Description" xml:space="preserve">
-    <value>Открыть manifest.epk чарта и редактировать его метаданные</value>
+    <value>Открыть manifest.epk чарта и изменить метаданные</value>
   </data>
   <data name="EpkEditor_Map_Rating" xml:space="preserve">
     <value>Уровень</value>
   </data>
   <data name="EpkEditor_MissingFiles" xml:space="preserve">
-    <value>{0} файл(ов), на которые ссылается этот чарт, отсутствуют в его папке</value>
+    <value>В папке чарта не хватает файлов: {0}</value>
   </data>
   <data name="EpkEditor_NewFile" xml:space="preserve">
     <value>Новый EPK…</value>
@@ -317,7 +317,7 @@
     <value>Сведения о чарте</value>
   </data>
   <data name="EpkEditor_Section_Discovery" xml:space="preserve">
-    <value>Описание и обнаружение</value>
+    <value>Описание и поиск</value>
   </data>
   <data name="EpkEditor_Section_HiddenMode" xml:space="preserve">
     <value>Скрытая сложность</value>
@@ -338,10 +338,10 @@
     <value>Моды</value>
   </data>
   <data name="Folder_OfflineCharts" xml:space="preserve">
-    <value>Открыть папку чартов Offline</value>
+    <value>Папка офлайн-чартов</value>
   </data>
   <data name="Folder_OnlineCharts" xml:space="preserve">
-    <value>Открыть папку чартов Online</value>
+    <value>Папка онлайн-чартов</value>
   </data>
   <data name="Folder_UserData" xml:space="preserve">
     <value>UserData</value>
@@ -362,7 +362,7 @@
     <value>Поддержать</value>
   </data>
   <data name="HomePage_SupportDescription" xml:space="preserve">
-    <value>Нравится Euterpe? Вот как вы можете помочь</value>
+    <value>Нравится Euterpe? Вот как ты можешь помочь</value>
   </data>
   <data name="HomePage_SupportTitle" xml:space="preserve">
     <value>100% бесплатно и с открытым кодом</value>
@@ -376,8 +376,17 @@
   <data name="LoadingMessage" xml:space="preserve">
     <value>Загрузка...</value>
   </data>
+  <data name="MelonLoaderLog_Analyze" xml:space="preserve">
+    <value>Анализировать</value>
+  </data>
+  <data name="MelonLoaderLog_Empty" xml:space="preserve">
+    <value>Нет лога MelonLoader.</value>
+  </data>
+  <data name="MelonLoaderLog_Refresh" xml:space="preserve">
+    <value>Обновить</value>
+  </data>
   <data name="MelonLoader_Description" xml:space="preserve">
-    <value>Для использования модов необходимо установить MelonLoader</value>
+    <value>Для игры с модами нужен MelonLoader</value>
   </data>
   <data name="MelonLoader_State_Downloading" xml:space="preserve">
     <value>Скачивание {0}: {1} МБ</value>
@@ -389,7 +398,7 @@
     <value>Не установлен</value>
   </data>
   <data name="ModDevelop_Card_DotNetSDK_Description" xml:space="preserve">
-    <value>Необходимо для разработки модов</value>
+    <value>Нужен для разработки модов</value>
   </data>
   <data name="ModDevelop_Card_DotNetSDK_Title" xml:space="preserve">
     <value>.NET 10 SDK</value>
@@ -398,10 +407,10 @@
     <value>Позволяет инструментам сборки находить файлы игры</value>
   </data>
   <data name="ModDevelop_Card_EnvVariable_Title" xml:space="preserve">
-    <value>Установить переменную среды</value>
+    <value>Задать переменную среды</value>
   </data>
   <data name="ModDevelop_Card_EuterpeHub_Description" xml:space="preserve">
-    <value>Создайте аккаунт для загрузки и управления модами</value>
+    <value>Создай аккаунт, чтобы загружать моды и управлять ими</value>
   </data>
   <data name="ModDevelop_Card_ModTemplate_Description" xml:space="preserve">
     <value>Для быстрого создания проекта мода</value>
@@ -476,7 +485,7 @@
     <value>Дубликат</value>
   </data>
   <data name="ModState_Duplicated_Reason" xml:space="preserve">
-    <value>Обнаружены дубликаты файлов мода: {0}. Удалите все эти файлы, кроме одного.</value>
+    <value>Найдены дубликаты файлов мода: {0}. Оставь только один из них.</value>
   </data>
   <data name="ModState_Incompatible" xml:space="preserve">
     <value>Несовместим</value>
@@ -533,13 +542,13 @@
     <value>О программе</value>
   </data>
   <data name="Panel_Setting_Advanced" xml:space="preserve">
-    <value>Расширенные</value>
+    <value>Дополнительно</value>
   </data>
   <data name="Panel_Setting_Appearance" xml:space="preserve">
     <value>Внешний вид</value>
   </data>
   <data name="Panel_Setting_Download" xml:space="preserve">
-    <value>Загрузка</value>
+    <value>Загрузки</value>
   </data>
   <data name="Panel_Setting_Experience" xml:space="preserve">
     <value>Интерфейс</value>
@@ -548,25 +557,25 @@
     <value>Управление файлами</value>
   </data>
   <data name="SearchBarPlaceholder_Chart" xml:space="preserve">
-    <value>Поиск чартов  (Название, Артист, Чартер, Тег)</value>
+    <value>Поиск чартов (название, исполнитель, чартер, тег)</value>
   </data>
   <data name="SearchBarPlaceholder_Mod" xml:space="preserve">
-    <value>Поиск модов  (Название, Автор)</value>
+    <value>Поиск модов (название, автор)</value>
   </data>
   <data name="Setting_Description_AlwaysShowScrollBar" xml:space="preserve">
     <value>Всегда показывать полосу прокрутки в списках</value>
   </data>
   <data name="Setting_Description_CacheFolder" xml:space="preserve">
-    <value>Содержит кэш загруженных файлов. Не меняйте во время других операций</value>
+    <value>Содержит кэш скачанных файлов. Не меняй во время других операций</value>
   </data>
   <data name="Setting_Description_IgnoreException" xml:space="preserve">
-    <value>Не закрывать приложение при возникновении ошибки (Включайте только если понимаете, что делаете!)</value>
+    <value>Не закрывать приложение при ошибках (включай, только если понимаешь, что делаешь!)</value>
   </data>
   <data name="Setting_Description_Language" xml:space="preserve">
     <value>Язык интерфейса</value>
   </data>
   <data name="Setting_Description_MinimizeToTrayOnClose" xml:space="preserve">
-    <value>Продолжать работу Euterpe в области уведомлений после закрытия главного окна</value>
+    <value>Euterpe продолжит работать в трее после закрытия главного окна</value>
   </data>
   <data name="Setting_Description_MuseDashFolder" xml:space="preserve">
     <value>Папка с исполняемым файлом Muse Dash</value>
@@ -596,7 +605,7 @@
     <value>Язык</value>
   </data>
   <data name="Setting_Title_MinimizeToTrayOnClose" xml:space="preserve">
-    <value>Сворачивать в область уведомлений при закрытии</value>
+    <value>Сворачивать в трей при закрытии</value>
   </data>
   <data name="Setting_Title_MuseDashFolder" xml:space="preserve">
     <value>Папка Muse Dash</value>
@@ -614,19 +623,19 @@
     <value>Канал обновлений</value>
   </data>
   <data name="Setup_Description_GamePath" xml:space="preserve">
-    <value>Укажите, где установлена игра</value>
+    <value>Укажи, где установлена игра</value>
   </data>
   <data name="Setup_GamePath_Invalid" xml:space="preserve">
     <value>Недопустимая папка игры</value>
   </data>
   <data name="Setup_GamePath_MdmcWarning" xml:space="preserve">
-    <value>Если вы ранее использовали MDMC, небольшое число чартов может не распознаться, а некоторые моды будут заменены обновлёнными версиями; среди них мод Headquarters несовместим с Euterpe. Если вы не понимаете, о чём это сообщение, его можно проигнорировать.</value>
+    <value>Если раньше использовался MDMC, несколько чартов могут не распознаться, а некоторые моды будут заменены обновлёнными версиями. Мод Headquarters несовместим с Euterpe. Если ты не понимаешь, о чём это сообщение, его можно проигнорировать.</value>
   </data>
   <data name="Setup_GamePath_MdmcWarning_Title" xml:space="preserve">
     <value>Предупреждение о совместимости</value>
   </data>
   <data name="Setup_GamePath_WelcomeSubtitle" xml:space="preserve">
-    <value>Уделите минуту этой заметке, затем выберите папку с игрой</value>
+    <value>Прочти это, а затем выбери папку игры.</value>
   </data>
   <data name="Setup_GamePath_WelcomeTitle" xml:space="preserve">
     <value>Прежде чем начать</value>
@@ -635,28 +644,28 @@
     <value>Основные моды установлены</value>
   </data>
   <data name="Setup_Progress_InitializingEssentialMods" xml:space="preserve">
-    <value>Инициализация основных модов ...</value>
+    <value>Инициализация основных модов...</value>
   </data>
   <data name="Setup_Progress_InstallingDotNetRuntime" xml:space="preserve">
-    <value>Установка .NET Runtime ...</value>
+    <value>Установка .NET Runtime...</value>
   </data>
   <data name="Setup_Progress_InstallingDotNetSdk" xml:space="preserve">
-    <value>Установка .NET SDK ...</value>
+    <value>Установка .NET SDK...</value>
   </data>
   <data name="Setup_Progress_InstallingMelonLoader" xml:space="preserve">
-    <value>Установка MelonLoader ...</value>
+    <value>Установка MelonLoader...</value>
   </data>
   <data name="Setup_Progress_InstallingModTemplate" xml:space="preserve">
-    <value>Установка шаблона мода ...</value>
+    <value>Установка шаблона мода...</value>
   </data>
   <data name="Setup_Progress_MigratingCharts" xml:space="preserve">
-    <value>Перенос чартов CustomAlbums ...</value>
+    <value>Перенос чартов CustomAlbums...</value>
   </data>
   <data name="Setup_Progress_SettingEnvVariable" xml:space="preserve">
-    <value>Настройка переменной окружения ...</value>
+    <value>Настройка переменной среды...</value>
   </data>
   <data name="Setup_Progress_UninstallingConflict" xml:space="preserve">
-    <value>Удаление несовместимого мода: {0} ...</value>
+    <value>Удаление несовместимого мода: {0}...</value>
   </data>
   <data name="Setup_StepStatus_Failed" xml:space="preserve">
     <value>Ошибка</value>
@@ -671,46 +680,46 @@
     <value>Готово</value>
   </data>
   <data name="Setup_Step_Failed" xml:space="preserve">
-    <value>Не удалось выполнить. Проверьте журнал или повторите попытку.</value>
+    <value>Ошибка. Проверь лог или повтори попытку.</value>
   </data>
   <data name="Setup_Task_ChartingTool" xml:space="preserve">
-    <value>Инструмент для чартов (MDBMSC) (не реализовано)</value>
+    <value>Инструмент для чартов (пока недоступен)</value>
   </data>
   <data name="Setup_Task_ChartingTool_Description" xml:space="preserve">
-    <value>Набор инструментов для создания чартов MDM (не реализовано)</value>
+    <value>Инструмент для создания чартов</value>
   </data>
   <data name="Setup_Task_DotNetRuntime" xml:space="preserve">
     <value>.NET Runtime</value>
   </data>
   <data name="Setup_Task_DotNetRuntime_Description" xml:space="preserve">
-    <value>Необходимо для запуска модифицированной игры</value>
+    <value>Нужен для запуска игры с модами</value>
   </data>
   <data name="Setup_Task_DotNetSdk" xml:space="preserve">
     <value>.NET SDK</value>
   </data>
   <data name="Setup_Task_DotNetSdk_Description" xml:space="preserve">
-    <value>Необходимо для разработки модов</value>
+    <value>Нужен для разработки модов</value>
   </data>
   <data name="Setup_Task_EnvVariable" xml:space="preserve">
     <value>Переменная MD_DIRECTORY</value>
   </data>
   <data name="Setup_Task_EnvVariable_Description" xml:space="preserve">
-    <value>Установить переменную окружения пути к игре</value>
+    <value>Задать переменную среды с путём к игре</value>
   </data>
   <data name="Setup_Task_EssentialMods" xml:space="preserve">
     <value>Основные моды</value>
   </data>
   <data name="Setup_Task_EssentialMods_Description" xml:space="preserve">
-    <value>Основные моды для лучшего опыта</value>
+    <value>Ключевые моды для комфортной игры</value>
   </data>
   <data name="Setup_Task_MelonLoader" xml:space="preserve">
     <value>MelonLoader</value>
   </data>
   <data name="Setup_Task_MelonLoader_Description" xml:space="preserve">
-    <value>Необходимый фреймворк загрузчика модов</value>
+    <value>Обязательный загрузчик модов</value>
   </data>
   <data name="Setup_Task_Migration" xml:space="preserve">
-    <value>Перенести устаревшие данные</value>
+    <value>Перенести старые данные</value>
   </data>
   <data name="Setup_Task_Migration_Description" xml:space="preserve">
     <value>Конвертировать чарты из старых модов (например, CustomAlbums) в формат Euterpe</value>
@@ -722,13 +731,13 @@
     <value>Шаблон NuGet для новых проектов модов</value>
   </data>
   <data name="Setup_Task_UninstallConflicts" xml:space="preserve">
-    <value>Удалить конфликты</value>
+    <value>Удалить конфликтующие моды</value>
   </data>
   <data name="Setup_Task_UninstallConflicts_Description" xml:space="preserve">
     <value>Удалить несовместимые моды</value>
   </data>
   <data name="Setup_Title_GamePath" xml:space="preserve">
-    <value>Найти папку игры</value>
+    <value>Папка игры</value>
   </data>
   <data name="Setup_Title_SettingUp" xml:space="preserve">
     <value>Настройка Euterpe</value>
@@ -739,29 +748,44 @@
   <data name="Share_Import_Canceled" xml:space="preserve">
     <value>Импорт отменён</value>
   </data>
+  <data name="Share_Import_Empty" xml:space="preserve">
+    <value>Скопируй код и попробуй снова</value>
+  </data>
   <data name="Share_Import_Failed" xml:space="preserve">
     <value>Не удалось импортировать</value>
   </data>
   <data name="Share_Import_Header" xml:space="preserve">
-    <value>Импортировать код общего доступа</value>
+    <value>Импорт чартов по коду</value>
   </data>
   <data name="Share_Import_Invalid" xml:space="preserve">
-    <value>Недопустимый код общего доступа</value>
+    <value>В буфере обмена нет кода для импорта</value>
   </data>
   <data name="Share_Import_Preview" xml:space="preserve">
-    <value>Чартов: {0}</value>
+    <value>Готово к импорту: {0}</value>
+  </data>
+  <data name="Share_Import_Refresh" xml:space="preserve">
+    <value>Проверить буфер обмена снова</value>
+  </data>
+  <data name="Share_Import_Result_Added" xml:space="preserve">
+    <value>Импортировано: {0}</value>
+  </data>
+  <data name="Share_Import_Result_Failed" xml:space="preserve">
+    <value>Не удалось: {0}</value>
+  </data>
+  <data name="Share_Import_Result_Present" xml:space="preserve">
+    <value>Уже в библиотеке: {0}</value>
   </data>
   <data name="Share_Import_Start" xml:space="preserve">
     <value>Начать импорт</value>
   </data>
   <data name="Share_Import_WrongGame" xml:space="preserve">
-    <value>Этот код предназначен для {0}. Сначала переключитесь на эту игру.</value>
+    <value>Эти чарты для {0}. Сначала переключись на эту игру.</value>
   </data>
   <data name="Share_Title" xml:space="preserve">
     <value>Поделиться</value>
   </data>
   <data name="Splash_LoginPrompt" xml:space="preserve">
-    <value>Войдите и авторизуйтесь в браузере</value>
+    <value>Войди в аккаунт в браузере и предоставь Euterpe доступ</value>
   </data>
   <data name="ToolTip_EditModConfig" xml:space="preserve">
     <value>Изменить конфигурацию мода</value>
@@ -785,13 +809,13 @@
     <value>Испанский</value>
   </data>
   <data name="UpdateChannel_Beta" xml:space="preserve">
-    <value>Бета-версия</value>
+    <value>Бета</value>
   </data>
   <data name="UpdateChannel_Stable" xml:space="preserve">
     <value>Стабильный</value>
   </data>
   <data name="UpdateDialog_Description" xml:space="preserve">
-    <value>Новая версия готова и будет установлена автоматически.</value>
+    <value>Доступна новая версия. Она будет скачана и установлена автоматически.</value>
   </data>
   <data name="UpdateDialog_RestartHint" xml:space="preserve">
     <value>Euterpe автоматически перезапустится, когда обновление будет готово.</value>
@@ -806,7 +830,7 @@
     <value>Обновление Euterpe</value>
   </data>
   <data name="Wizard_Description_Welcome" xml:space="preserve">
-    <value>Выберите свою роль и задачи для начала</value>
+    <value>Для начала выбери роль и задачи</value>
   </data>
   <data name="Wizard_Role_Charter" xml:space="preserve">
     <value>Чартер</value>
@@ -815,10 +839,10 @@
     <value>Рекомендуется для создателей чартов</value>
   </data>
   <data name="Wizard_Role_Custom" xml:space="preserve">
-    <value>Пользовательский</value>
+    <value>Свой вариант</value>
   </data>
   <data name="Wizard_Role_Custom_Description" xml:space="preserve">
-    <value>Настройте свою конфигурацию</value>
+    <value>Настрой всё под себя</value>
   </data>
   <data name="Wizard_Role_Modder" xml:space="preserve">
     <value>Моддер</value>

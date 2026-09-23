@@ -14,7 +14,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AllGameVersionCompatible" xml:space="preserve">
-    <value>Todos</value>
+    <value>Todas</value>
   </data>
   <data name="Button_Apply" xml:space="preserve">
     <value>Aplicar</value>
@@ -26,7 +26,7 @@
     <value>Procurar...</value>
   </data>
   <data name="Button_CheckUpdate" xml:space="preserve">
-    <value>Verificar atualização</value>
+    <value>Verificar atualizações</value>
   </data>
   <data name="Button_Confirm" xml:space="preserve">
     <value>Confirmar</value>
@@ -50,7 +50,7 @@
     <value>Reinstalar</value>
   </data>
   <data name="Button_Reselect" xml:space="preserve">
-    <value>Selecionar novamente</value>
+    <value>Alterar</value>
   </data>
   <data name="Button_Retry" xml:space="preserve">
     <value>Tentar novamente</value>
@@ -65,25 +65,25 @@
     <value>Atualizar</value>
   </data>
   <data name="ChartAnalyzer_Description" xml:space="preserve">
-    <value>Prevê classificações aproximadas e analisa a distribuição de Note de um chart</value>
+    <value>Estime o nível de dificuldade e analise as notas de um chart</value>
   </data>
   <data name="ChartAnalyzer_Title" xml:space="preserve">
-    <value>Chart Analyzer</value>
+    <value>Analisador de charts</value>
   </data>
   <data name="ChartDifficulty_Easy" xml:space="preserve">
-    <value>Fácil</value>
+    <value>Easy</value>
   </data>
   <data name="ChartDifficulty_Hard" xml:space="preserve">
-    <value>Difícil</value>
+    <value>Hard</value>
   </data>
   <data name="ChartDifficulty_Hidden" xml:space="preserve">
-    <value>Oculto</value>
+    <value>Hidden</value>
   </data>
   <data name="ChartDifficulty_Master" xml:space="preserve">
     <value>Master</value>
   </data>
   <data name="CharterToolkit_Offline_Description" xml:space="preserve">
-    <value>Edite localmente os metadados do manifest de um chart</value>
+    <value>Edite os metadados de um chart no seu computador</value>
   </data>
   <data name="CharterToolkit_Offline_Title" xml:space="preserve">
     <value>Ferramentas offline</value>
@@ -116,10 +116,10 @@
     <value>Com vídeo</value>
   </data>
   <data name="ChartManage_Filter_StreamerSafe" xml:space="preserve">
-    <value>Seguro para transmissão</value>
+    <value>Seguro para streamers</value>
   </data>
   <data name="ChartManage_GetCharts_Description" xml:space="preserve">
-    <value>Explore &amp; baixe charts na web</value>
+    <value>Explore e baixe charts na web</value>
   </data>
   <data name="ChartManage_GetCharts_Title" xml:space="preserve">
     <value>Obter charts</value>
@@ -143,7 +143,7 @@
     <value>Selecionar</value>
   </data>
   <data name="ChartManage_SelectedCount" xml:space="preserve">
-    <value>{0} selecionados</value>
+    <value>Selecionados: {0}</value>
   </data>
   <data name="ChartManage_ShareHint" xml:space="preserve">
     <value>Somente charts online podem ser compartilhados, até 100 por vez</value>
@@ -158,10 +158,10 @@
     <value>Atualizar todos os charts</value>
   </data>
   <data name="ChartManage_UploadedBy" xml:space="preserve">
-    <value>por {0}</value>
+    <value>Enviado por {0}</value>
   </data>
   <data name="ChartSortField_Author" xml:space="preserve">
-    <value>Autor</value>
+    <value>Artista</value>
   </data>
   <data name="ChartSortField_Bpm" xml:space="preserve">
     <value>BPM</value>
@@ -206,7 +206,7 @@
     <value>Sair</value>
   </data>
   <data name="CrashDialog_Button_Feedback" xml:space="preserve">
-    <value>Feedback no GitHub</value>
+    <value>Relatar no GitHub</value>
   </data>
   <data name="CrashDialog_Header" xml:space="preserve">
     <value>Euterpe encontrou um erro</value>
@@ -221,10 +221,10 @@
     <value>Voltar</value>
   </data>
   <data name="EpkEditor_Charters_Watermark" xml:space="preserve">
-    <value>Adicionar um charter</value>
+    <value>Adicionar charter</value>
   </data>
   <data name="EpkEditor_Field_Author" xml:space="preserve">
-    <value>Autor da música</value>
+    <value>Artista</value>
   </data>
   <data name="EpkEditor_Field_BackgroundVideoOpacity" xml:space="preserve">
     <value>Opacidade do vídeo</value>
@@ -251,13 +251,13 @@
     <value>Modo</value>
   </data>
   <data name="EpkEditor_Field_HideRatingOverride" xml:space="preserve">
-    <value>Substituição de nível exibido</value>
+    <value>Nível exibido personalizado</value>
   </data>
   <data name="EpkEditor_Field_Name" xml:space="preserve">
-    <value>Nome do chart</value>
+    <value>Título da música</value>
   </data>
   <data name="EpkEditor_Field_NameRomanized" xml:space="preserve">
-    <value>Nome romanizado</value>
+    <value>Título romanizado</value>
   </data>
   <data name="EpkEditor_Field_SafeForStreamer" xml:space="preserve">
     <value>Seguro para streamers</value>
@@ -269,34 +269,34 @@
     <value>Cena (Easter Egg)</value>
   </data>
   <data name="EpkEditor_Field_SearchKeywords" xml:space="preserve">
-    <value>Palavras-chave de pesquisa</value>
+    <value>Palavras-chave</value>
   </data>
   <data name="EpkEditor_Field_TempoVariable" xml:space="preserve">
-    <value>Tempo variável</value>
+    <value>BPM variável</value>
   </data>
   <data name="EpkEditor_Files_Refresh" xml:space="preserve">
     <value>Atualizar</value>
   </data>
   <data name="EpkEditor_Files_Summary" xml:space="preserve">
-    <value>{0} arquivos · {1}</value>
+    <value>Arquivos: {0} · {1}</value>
   </data>
   <data name="EpkEditor_Hint_Required" xml:space="preserve">
     <value>Preencha todos os campos obrigatórios para salvar</value>
   </data>
   <data name="EpkEditor_Hint_TempoRange" xml:space="preserve">
-    <value>Defina um intervalo de tempo válido (mín ≤ máx)</value>
+    <value>Defina um intervalo de BPM válido (mín. ≤ máx.)</value>
   </data>
   <data name="EpkEditor_Keywords_Watermark" xml:space="preserve">
-    <value>Adicionar uma palavra-chave</value>
+    <value>Adicionar palavra-chave</value>
   </data>
   <data name="EpkEditor_Launcher_Description" xml:space="preserve">
-    <value>Abrir e editar os metadados do manifest.epk de um chart</value>
+    <value>Abra e edite os metadados do manifest.epk de um chart</value>
   </data>
   <data name="EpkEditor_Map_Rating" xml:space="preserve">
     <value>Nível</value>
   </data>
   <data name="EpkEditor_MissingFiles" xml:space="preserve">
-    <value>{0} arquivo(s) referenciado(s) por este chart estão ausentes da pasta dele</value>
+    <value>Arquivos usados pelo chart que não foram encontrados na pasta: {0}</value>
   </data>
   <data name="EpkEditor_NewFile" xml:space="preserve">
     <value>Novo EPK…</value>
@@ -317,10 +317,10 @@
     <value>Informações do chart</value>
   </data>
   <data name="EpkEditor_Section_Discovery" xml:space="preserve">
-    <value>Descrição e descoberta</value>
+    <value>Descrição e pesquisa</value>
   </data>
   <data name="EpkEditor_Section_HiddenMode" xml:space="preserve">
-    <value>Dificuldade oculta</value>
+    <value>Dificuldade Hidden</value>
   </data>
   <data name="EpkEditor_Section_Identity" xml:space="preserve">
     <value>Informações básicas</value>
@@ -338,10 +338,10 @@
     <value>Mods</value>
   </data>
   <data name="Folder_OfflineCharts" xml:space="preserve">
-    <value>Abrir pasta de charts Offline</value>
+    <value>Abrir pasta de charts offline</value>
   </data>
   <data name="Folder_OnlineCharts" xml:space="preserve">
-    <value>Abrir pasta de charts Online</value>
+    <value>Abrir pasta de charts online</value>
   </data>
   <data name="Folder_UserData" xml:space="preserve">
     <value>Dados do usuário</value>
@@ -356,7 +356,7 @@
     <value>Vanilla</value>
   </data>
   <data name="HomePage_Button_GitHubStar" xml:space="preserve">
-    <value>Favoritar no GitHub</value>
+    <value>Dar uma estrela no GitHub</value>
   </data>
   <data name="HomePage_Button_Sponsor" xml:space="preserve">
     <value>Patrocinar</value>
@@ -376,8 +376,17 @@
   <data name="LoadingMessage" xml:space="preserve">
     <value>Carregando...</value>
   </data>
+  <data name="MelonLoaderLog_Analyze" xml:space="preserve">
+    <value>Analisar</value>
+  </data>
+  <data name="MelonLoaderLog_Empty" xml:space="preserve">
+    <value>Nenhum log do MelonLoader disponível.</value>
+  </data>
+  <data name="MelonLoaderLog_Refresh" xml:space="preserve">
+    <value>Atualizar</value>
+  </data>
   <data name="MelonLoader_Description" xml:space="preserve">
-    <value>A instalação do MelonLoader é necessária para jogar com mods</value>
+    <value>É preciso instalar o MelonLoader para jogar com mods</value>
   </data>
   <data name="MelonLoader_State_Downloading" xml:space="preserve">
     <value>Baixando {0}: {1} MB</value>
@@ -407,7 +416,7 @@
     <value>Para criação rápida de projetos de mod</value>
   </data>
   <data name="ModDevelop_Card_ModTemplate_Title" xml:space="preserve">
-    <value>Mod Template NuGet</value>
+    <value>Template de mod (NuGet)</value>
   </data>
   <data name="ModDevelop_Section_DevelopmentEnvironment" xml:space="preserve">
     <value>Ambiente de desenvolvimento</value>
@@ -467,10 +476,10 @@
     <value>Repositório</value>
   </data>
   <data name="ModInfo_RequiredMelonLoaderVersion" xml:space="preserve">
-    <value>Versão do Loader necessária</value>
+    <value>Versão do MelonLoader necessária</value>
   </data>
   <data name="ModInfo_SupportedGameVersion" xml:space="preserve">
-    <value>Versão do jogo suportada</value>
+    <value>Versão compatível do jogo</value>
   </data>
   <data name="ModState_Duplicated" xml:space="preserve">
     <value>Duplicado</value>
@@ -485,7 +494,7 @@
     <value>Modificado</value>
   </data>
   <data name="ModState_Newer" xml:space="preserve">
-    <value>Mais recente</value>
+    <value>Versão dev</value>
   </data>
   <data name="ModState_Normal" xml:space="preserve">
     <value>Instalado</value>
@@ -494,22 +503,22 @@
     <value>Atualização disponível</value>
   </data>
   <data name="Page_Charting" xml:space="preserve">
-    <value>Charting</value>
+    <value>Charts</value>
   </data>
   <data name="Page_Home" xml:space="preserve">
     <value>Início</value>
   </data>
   <data name="Page_Logging" xml:space="preserve">
-    <value>Registro</value>
+    <value>Logs</value>
   </data>
   <data name="Page_Modding" xml:space="preserve">
-    <value>Modding</value>
+    <value>Mods</value>
   </data>
   <data name="Page_Setting" xml:space="preserve">
     <value>Configurações</value>
   </data>
   <data name="Panel_Charting_CharterToolkit" xml:space="preserve">
-    <value>Kit de ferramentas do charter</value>
+    <value>Ferramentas do charter</value>
   </data>
   <data name="Panel_Charting_ChartManage" xml:space="preserve">
     <value>Gerenciar charts</value>
@@ -527,7 +536,7 @@
     <value>Desenvolvimento de mods</value>
   </data>
   <data name="Panel_Modding_ModManage" xml:space="preserve">
-    <value>Gerenciamento de mods</value>
+    <value>Gerenciar mods</value>
   </data>
   <data name="Panel_Setting_About" xml:space="preserve">
     <value>Sobre</value>
@@ -548,19 +557,19 @@
     <value>Gerenciamento de arquivos</value>
   </data>
   <data name="SearchBarPlaceholder_Chart" xml:space="preserve">
-    <value>Pesquisar charts  (Nome, Autor, Charter, Etiqueta)</value>
+    <value>Pesquisar charts (nome, artista, charter, tag)</value>
   </data>
   <data name="SearchBarPlaceholder_Mod" xml:space="preserve">
-    <value>Pesquisar mods  (Nome, Autor)</value>
+    <value>Pesquisar mods  (nome, autor)</value>
   </data>
   <data name="Setting_Description_AlwaysShowScrollBar" xml:space="preserve">
-    <value>Sempre exibir a barra de rolagem para a lista</value>
+    <value>Sempre exibir a barra de rolagem nas listas</value>
   </data>
   <data name="Setting_Description_CacheFolder" xml:space="preserve">
-    <value>Inclui o cache gerado ao baixar arquivos. Não altere isso durante outras operações</value>
+    <value>Armazena o cache de downloads. Não altere esta pasta enquanto houver outras operações em andamento.</value>
   </data>
   <data name="Setting_Description_IgnoreException" xml:space="preserve">
-    <value>Impede que o aplicativo seja encerrado quando ocorrer uma exceção. (Ative apenas se souber o que está fazendo!)</value>
+    <value>Mantém o Euterpe em execução quando ocorre um erro (ative apenas se souber o que está fazendo!)</value>
   </data>
   <data name="Setting_Description_Language" xml:space="preserve">
     <value>Idioma da interface</value>
@@ -572,10 +581,10 @@
     <value>Pasta do executável do Muse Dash</value>
   </data>
   <data name="Setting_Description_ShowConsole" xml:space="preserve">
-    <value>Se o console deve ser exibido quando o jogo for iniciado</value>
+    <value>Exibir o console ao iniciar o jogo</value>
   </data>
   <data name="Setting_Description_ShowStartScreen" xml:space="preserve">
-    <value>Se a tela inicial deve ser exibida quando o jogo for iniciado</value>
+    <value>Exibir a tela de carregamento ao iniciar o jogo</value>
   </data>
   <data name="Setting_Description_SteamFolder" xml:space="preserve">
     <value>Pasta do executável do Steam</value>
@@ -590,7 +599,7 @@
     <value>Pasta de cache</value>
   </data>
   <data name="Setting_Title_IgnoreException" xml:space="preserve">
-    <value>Ignorar exceção</value>
+    <value>Ignorar erros</value>
   </data>
   <data name="Setting_Title_Language" xml:space="preserve">
     <value>Idioma</value>
@@ -605,7 +614,7 @@
     <value>Exibir console</value>
   </data>
   <data name="Setting_Title_ShowStartScreen" xml:space="preserve">
-    <value>Exibir tela inicial</value>
+    <value>Exibir tela de carregamento</value>
   </data>
   <data name="Setting_Title_SteamFolder" xml:space="preserve">
     <value>Pasta do Steam</value>
@@ -620,13 +629,13 @@
     <value>Pasta do jogo inválida</value>
   </data>
   <data name="Setup_GamePath_MdmcWarning" xml:space="preserve">
-    <value>Se você já usou o MDMC, é possível que um número muito pequeno de charts não seja reconhecido, e alguns mods serão substituídos por versões atualizadas; entre eles, o mod Headquarters não é compatível com o Euterpe. Se você não sabe do que se trata esta mensagem, pode ignorá-la.</value>
+    <value>Se você já usou o MDMC, alguns poucos charts podem não ser reconhecidos e alguns mods serão substituídos por versões atualizadas. O mod Headquarters não é compatível com o Euterpe. Se você não sabe do que se trata esta mensagem, pode ignorá-la.</value>
   </data>
   <data name="Setup_GamePath_MdmcWarning_Title" xml:space="preserve">
     <value>Aviso de compatibilidade</value>
   </data>
   <data name="Setup_GamePath_WelcomeSubtitle" xml:space="preserve">
-    <value>Reserve um momento para ler isto e depois escolha a pasta do jogo.</value>
+    <value>Leia isto com atenção e depois escolha a pasta do jogo.</value>
   </data>
   <data name="Setup_GamePath_WelcomeTitle" xml:space="preserve">
     <value>Antes de começar</value>
@@ -635,31 +644,31 @@
     <value>Mods essenciais instalados</value>
   </data>
   <data name="Setup_Progress_InitializingEssentialMods" xml:space="preserve">
-    <value>Inicializando mods essenciais ...</value>
+    <value>Inicializando mods essenciais...</value>
   </data>
   <data name="Setup_Progress_InstallingDotNetRuntime" xml:space="preserve">
-    <value>Instalando .NET Runtime ...</value>
+    <value>Instalando .NET Runtime...</value>
   </data>
   <data name="Setup_Progress_InstallingDotNetSdk" xml:space="preserve">
-    <value>Instalando .NET SDK ...</value>
+    <value>Instalando .NET SDK...</value>
   </data>
   <data name="Setup_Progress_InstallingMelonLoader" xml:space="preserve">
-    <value>Instalando MelonLoader ...</value>
+    <value>Instalando MelonLoader...</value>
   </data>
   <data name="Setup_Progress_InstallingModTemplate" xml:space="preserve">
-    <value>Instalando mod template ...</value>
+    <value>Instalando template de mod...</value>
   </data>
   <data name="Setup_Progress_MigratingCharts" xml:space="preserve">
-    <value>Migrando charts do CustomAlbums ...</value>
+    <value>Migrando charts do CustomAlbums...</value>
   </data>
   <data name="Setup_Progress_SettingEnvVariable" xml:space="preserve">
-    <value>Definindo variável de ambiente ...</value>
+    <value>Definindo variável de ambiente...</value>
   </data>
   <data name="Setup_Progress_UninstallingConflict" xml:space="preserve">
-    <value>Desinstalando mod incompatível: {0} ...</value>
+    <value>Desinstalando mod incompatível: {0}...</value>
   </data>
   <data name="Setup_StepStatus_Failed" xml:space="preserve">
-    <value>Falhou</value>
+    <value>Falha</value>
   </data>
   <data name="Setup_StepStatus_Pending" xml:space="preserve">
     <value>Pendente</value>
@@ -674,10 +683,10 @@
     <value>Falhou. Verifique o log ou tente novamente.</value>
   </data>
   <data name="Setup_Task_ChartingTool" xml:space="preserve">
-    <value>Ferramenta de charting (MDBMSC) (não implementado)</value>
+    <value>Ferramenta de criação de charts (não implementada)</value>
   </data>
   <data name="Setup_Task_ChartingTool_Description" xml:space="preserve">
-    <value>Kit de criação de charts MDM (não implementado)</value>
+    <value>Ferramenta de criação de charts</value>
   </data>
   <data name="Setup_Task_DotNetRuntime" xml:space="preserve">
     <value>.NET Runtime</value>
@@ -695,7 +704,7 @@
     <value>Variável MD_DIRECTORY</value>
   </data>
   <data name="Setup_Task_EnvVariable_Description" xml:space="preserve">
-    <value>Definir variável de ambiente do caminho do jogo</value>
+    <value>Definir a variável de ambiente com o caminho do jogo</value>
   </data>
   <data name="Setup_Task_EssentialMods" xml:space="preserve">
     <value>Mods essenciais</value>
@@ -707,7 +716,7 @@
     <value>MelonLoader</value>
   </data>
   <data name="Setup_Task_MelonLoader_Description" xml:space="preserve">
-    <value>Framework do mod loader necessário</value>
+    <value>Carregador de mods necessário</value>
   </data>
   <data name="Setup_Task_Migration" xml:space="preserve">
     <value>Migrar dados legados</value>
@@ -716,13 +725,13 @@
     <value>Converter charts de mods antigos como o CustomAlbums para o formato do Euterpe</value>
   </data>
   <data name="Setup_Task_ModTemplate" xml:space="preserve">
-    <value>Mod Template</value>
+    <value>Template de mod</value>
   </data>
   <data name="Setup_Task_ModTemplate_Description" xml:space="preserve">
     <value>Template NuGet para novos projetos de mod</value>
   </data>
   <data name="Setup_Task_UninstallConflicts" xml:space="preserve">
-    <value>Desinstalar conflitos</value>
+    <value>Desinstalar mods em conflito</value>
   </data>
   <data name="Setup_Task_UninstallConflicts_Description" xml:space="preserve">
     <value>Remover mods incompatíveis</value>
@@ -739,29 +748,44 @@
   <data name="Share_Import_Canceled" xml:space="preserve">
     <value>Importação cancelada</value>
   </data>
+  <data name="Share_Import_Empty" xml:space="preserve">
+    <value>Copie um código de compartilhamento e tente novamente</value>
+  </data>
   <data name="Share_Import_Failed" xml:space="preserve">
     <value>Falha na importação</value>
   </data>
   <data name="Share_Import_Header" xml:space="preserve">
-    <value>Importar um código de compartilhamento</value>
+    <value>Importar charts compartilhados</value>
   </data>
   <data name="Share_Import_Invalid" xml:space="preserve">
-    <value>Código de compartilhamento inválido</value>
+    <value>A área de transferência não contém um código de compartilhamento</value>
   </data>
   <data name="Share_Import_Preview" xml:space="preserve">
-    <value>{0} charts</value>
+    <value>Charts prontos para importar: {0}</value>
+  </data>
+  <data name="Share_Import_Refresh" xml:space="preserve">
+    <value>Verificar a área de transferência novamente</value>
+  </data>
+  <data name="Share_Import_Result_Added" xml:space="preserve">
+    <value>Importados: {0}</value>
+  </data>
+  <data name="Share_Import_Result_Failed" xml:space="preserve">
+    <value>{0} com falha</value>
+  </data>
+  <data name="Share_Import_Result_Present" xml:space="preserve">
+    <value>{0} já na biblioteca</value>
   </data>
   <data name="Share_Import_Start" xml:space="preserve">
     <value>Iniciar importação</value>
   </data>
   <data name="Share_Import_WrongGame" xml:space="preserve">
-    <value>Este código é para {0}. Primeiro, mude para esse jogo.</value>
+    <value>Estes charts são de {0}. Mude para esse jogo primeiro.</value>
   </data>
   <data name="Share_Title" xml:space="preserve">
     <value>Compartilhar</value>
   </data>
   <data name="Splash_LoginPrompt" xml:space="preserve">
-    <value>Faça login e autorize no navegador</value>
+    <value>Faça login no navegador e autorize o acesso do Euterpe</value>
   </data>
   <data name="ToolTip_EditModConfig" xml:space="preserve">
     <value>Editar configuração do mod</value>
@@ -791,7 +815,7 @@
     <value>Estável</value>
   </data>
   <data name="UpdateDialog_Description" xml:space="preserve">
-    <value>Uma nova versão está pronta e será instalada automaticamente.</value>
+    <value>Uma nova versão está disponível e será baixada e instalada automaticamente.</value>
   </data>
   <data name="UpdateDialog_RestartHint" xml:space="preserve">
     <value>O Euterpe será reiniciado automaticamente quando a atualização estiver pronta.</value>
@@ -806,7 +830,7 @@
     <value>Atualizando o Euterpe</value>
   </data>
   <data name="Wizard_Description_Welcome" xml:space="preserve">
-    <value>Escolha sua função e tarefas para começar</value>
+    <value>Escolha seu perfil e as tarefas para começar</value>
   </data>
   <data name="Wizard_Role_Charter" xml:space="preserve">
     <value>Charter</value>

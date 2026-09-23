@@ -26,16 +26,16 @@
     <value>Telusuri...</value>
   </data>
   <data name="Button_CheckUpdate" xml:space="preserve">
-    <value>Periksa Pembaruan</value>
+    <value>Periksa pembaruan</value>
   </data>
   <data name="Button_Confirm" xml:space="preserve">
     <value>Konfirmasi</value>
   </data>
   <data name="Button_HelpTranslate" xml:space="preserve">
-    <value>Bantu Terjemahkan</value>
+    <value>Bantu terjemahkan</value>
   </data>
   <data name="Button_Install" xml:space="preserve">
-    <value>Pasang</value>
+    <value>Instal</value>
   </data>
   <data name="Button_LaunchGame" xml:space="preserve">
     <value>Main</value>
@@ -44,40 +44,40 @@
     <value>Selanjutnya</value>
   </data>
   <data name="Button_OpenLog" xml:space="preserve">
-    <value>Buka Log</value>
+    <value>Buka log</value>
   </data>
   <data name="Button_Reinstall" xml:space="preserve">
-    <value>Pasang Ulang</value>
+    <value>Instal ulang</value>
   </data>
   <data name="Button_Reselect" xml:space="preserve">
-    <value>Pilih Ulang</value>
+    <value>Pilih ulang</value>
   </data>
   <data name="Button_Retry" xml:space="preserve">
     <value>Coba lagi</value>
   </data>
   <data name="Button_SourceCode" xml:space="preserve">
-    <value>Kode Sumber</value>
+    <value>Kode sumber</value>
   </data>
   <data name="Button_Uninstall" xml:space="preserve">
-    <value>Hapus</value>
+    <value>Uninstal</value>
   </data>
   <data name="Button_Update" xml:space="preserve">
     <value>Perbarui</value>
   </data>
   <data name="ChartAnalyzer_Description" xml:space="preserve">
-    <value>Prediksi perkiraan tingkat dan analisis rincian Note sebuah chart</value>
+    <value>Perkirakan level dan analisis rincian note sebuah chart</value>
   </data>
   <data name="ChartAnalyzer_Title" xml:space="preserve">
-    <value>Chart Analyzer</value>
+    <value>Analisis chart</value>
   </data>
   <data name="ChartDifficulty_Easy" xml:space="preserve">
-    <value>Mudah</value>
+    <value>Easy</value>
   </data>
   <data name="ChartDifficulty_Hard" xml:space="preserve">
-    <value>Sulit</value>
+    <value>Hard</value>
   </data>
   <data name="ChartDifficulty_Hidden" xml:space="preserve">
-    <value>Tersembunyi</value>
+    <value>Hidden</value>
   </data>
   <data name="ChartDifficulty_Master" xml:space="preserve">
     <value>Master</value>
@@ -86,13 +86,13 @@
     <value>Edit metadata manifest chart secara lokal</value>
   </data>
   <data name="CharterToolkit_Offline_Title" xml:space="preserve">
-    <value>Alat Offline</value>
+    <value>Alat offline</value>
   </data>
   <data name="CharterToolkit_Online_Description" xml:space="preserve">
-    <value>Analisis dan kirim chart di situs Euterpe (terbuka di browser Anda)</value>
+    <value>Analisis dan kirim chart di situs Euterpe (dibuka di browser)</value>
   </data>
   <data name="CharterToolkit_Online_Title" xml:space="preserve">
-    <value>Alat Online</value>
+    <value>Alat online</value>
   </data>
   <data name="ChartManage_Bpm" xml:space="preserve">
     <value>BPM</value>
@@ -104,40 +104,40 @@
     <value>Menurun</value>
   </data>
   <data name="ChartManage_Downloading" xml:space="preserve">
-    <value>Mengunduh Chart</value>
+    <value>Mengunduh chart</value>
   </data>
   <data name="ChartManage_DownloadingHint" xml:space="preserve">
-    <value>Pengunduhan sedang berlangsung. Mohon tunggu dan jangan tutup aplikasi.</value>
+    <value>Sedang mengunduh. Tunggu sebentar dan jangan tutup aplikasi.</value>
   </data>
   <data name="ChartManage_Filter_Difficulty" xml:space="preserve">
     <value>Kesulitan</value>
   </data>
   <data name="ChartManage_Filter_HasVideo" xml:space="preserve">
-    <value>Ada Video</value>
+    <value>Ada video</value>
   </data>
   <data name="ChartManage_Filter_StreamerSafe" xml:space="preserve">
-    <value>Aman untuk Streaming</value>
+    <value>Aman untuk streamer</value>
   </data>
   <data name="ChartManage_GetCharts_Description" xml:space="preserve">
     <value>Jelajahi &amp; unduh chart di web</value>
   </data>
   <data name="ChartManage_GetCharts_Title" xml:space="preserve">
-    <value>Dapatkan Chart</value>
+    <value>Dapatkan chart</value>
   </data>
   <data name="ChartManage_MigrateMdm" xml:space="preserve">
-    <value>Migrasi Chart MDM</value>
+    <value>Migrasikan chart MDM</value>
   </data>
   <data name="ChartManage_Migrating" xml:space="preserve">
-    <value>Migrasi Chart</value>
+    <value>Memigrasikan chart</value>
   </data>
   <data name="ChartManage_MigratingHint" xml:space="preserve">
-    <value>Migrasi sedang berlangsung. Mohon tunggu dan jangan tutup aplikasi.</value>
+    <value>Migrasi sedang berlangsung. Tunggu sebentar dan jangan tutup aplikasi.</value>
   </data>
   <data name="ChartManage_Rating" xml:space="preserve">
-    <value>Tingkat</value>
+    <value>Level</value>
   </data>
   <data name="ChartManage_Reset" xml:space="preserve">
-    <value>Atur Ulang</value>
+    <value>Atur ulang</value>
   </data>
   <data name="ChartManage_Select" xml:space="preserve">
     <value>Pilih</value>
@@ -149,40 +149,40 @@
     <value>Hanya chart online yang dapat dibagikan, maksimal 100 sekaligus</value>
   </data>
   <data name="ChartManage_SortBy" xml:space="preserve">
-    <value>Urutkan Berdasarkan</value>
+    <value>Urutkan menurut</value>
   </data>
   <data name="ChartManage_Tag_Video" xml:space="preserve">
     <value>Video</value>
   </data>
   <data name="ChartManage_UpdateAll" xml:space="preserve">
-    <value>Perbarui Semua Chart</value>
+    <value>Perbarui semua chart</value>
   </data>
   <data name="ChartManage_UploadedBy" xml:space="preserve">
-    <value>oleh {0}</value>
+    <value>Diunggah oleh {0}</value>
   </data>
   <data name="ChartSortField_Author" xml:space="preserve">
-    <value>Penulis</value>
+    <value>Artis</value>
   </data>
   <data name="ChartSortField_Bpm" xml:space="preserve">
     <value>BPM</value>
   </data>
   <data name="ChartSortField_DateAdded" xml:space="preserve">
-    <value>Tanggal Ditambahkan</value>
+    <value>Tanggal ditambahkan</value>
   </data>
   <data name="ChartSortField_DateUpdated" xml:space="preserve">
-    <value>Tanggal Diperbarui</value>
+    <value>Tanggal diperbarui</value>
   </data>
   <data name="ChartSortField_MapCount" xml:space="preserve">
-    <value>Jumlah Map</value>
+    <value>Jumlah map</value>
   </data>
   <data name="ChartSortField_Name" xml:space="preserve">
     <value>Nama</value>
   </data>
   <data name="ChartSortField_Rating" xml:space="preserve">
-    <value>Tingkat</value>
+    <value>Level</value>
   </data>
   <data name="ChartSortField_Size" xml:space="preserve">
-    <value>Ukuran File</value>
+    <value>Ukuran file</value>
   </data>
   <data name="ChartSource_Offline" xml:space="preserve">
     <value>Offline</value>
@@ -191,28 +191,28 @@
     <value>Online</value>
   </data>
   <data name="ChartSubmit_Description" xml:space="preserve">
-    <value>Unggah dan publikasikan chart Anda</value>
+    <value>Unggah dan publikasikan chart kamu</value>
   </data>
   <data name="ChartSubmit_Title" xml:space="preserve">
-    <value>Kirim Chart</value>
+    <value>Kirim chart</value>
   </data>
   <data name="CrashDialog_Button_Continue" xml:space="preserve">
     <value>Lanjutkan</value>
   </data>
   <data name="CrashDialog_Button_Copy" xml:space="preserve">
-    <value>Salin Detail</value>
+    <value>Salin detail</value>
   </data>
   <data name="CrashDialog_Button_Exit" xml:space="preserve">
     <value>Keluar</value>
   </data>
   <data name="CrashDialog_Button_Feedback" xml:space="preserve">
-    <value>Umpan Balik GitHub</value>
+    <value>Lapor di GitHub</value>
   </data>
   <data name="CrashDialog_Header" xml:space="preserve">
     <value>Euterpe mengalami kesalahan</value>
   </data>
   <data name="CrashDialog_Title" xml:space="preserve">
-    <value>Laporan Crash</value>
+    <value>Laporan crash</value>
   </data>
   <data name="DropDownButton_Open" xml:space="preserve">
     <value>Buka</value>
@@ -221,22 +221,22 @@
     <value>Kembali</value>
   </data>
   <data name="EpkEditor_Charters_Watermark" xml:space="preserve">
-    <value>Tambah charter</value>
+    <value>Tambah pembuat chart</value>
   </data>
   <data name="EpkEditor_Field_Author" xml:space="preserve">
-    <value>Penulis Lagu</value>
+    <value>Artis</value>
   </data>
   <data name="EpkEditor_Field_BackgroundVideoOpacity" xml:space="preserve">
-    <value>Opasitas Video</value>
+    <value>Opasitas video</value>
   </data>
   <data name="EpkEditor_Field_Bpm" xml:space="preserve">
     <value>BPM</value>
   </data>
   <data name="EpkEditor_Field_BpmMax" xml:space="preserve">
-    <value>BPM Maks</value>
+    <value>BPM maks</value>
   </data>
   <data name="EpkEditor_Field_BpmMin" xml:space="preserve">
-    <value>BPM Min</value>
+    <value>BPM min</value>
   </data>
   <data name="EpkEditor_Field_Description" xml:space="preserve">
     <value>Deskripsi</value>
@@ -251,25 +251,25 @@
     <value>Mode</value>
   </data>
   <data name="EpkEditor_Field_HideRatingOverride" xml:space="preserve">
-    <value>Penggantian Tampilan Tingkat</value>
+    <value>Level yang ditampilkan</value>
   </data>
   <data name="EpkEditor_Field_Name" xml:space="preserve">
-    <value>Nama Chart</value>
+    <value>Judul lagu</value>
   </data>
   <data name="EpkEditor_Field_NameRomanized" xml:space="preserve">
-    <value>Nama Romanisasi</value>
+    <value>Judul (romanisasi)</value>
   </data>
   <data name="EpkEditor_Field_SafeForStreamer" xml:space="preserve">
     <value>Aman untuk streamer</value>
   </data>
   <data name="EpkEditor_Field_Scene" xml:space="preserve">
-    <value>Adegan</value>
+    <value>Latar</value>
   </data>
   <data name="EpkEditor_Field_SceneEgg" xml:space="preserve">
-    <value>Adegan (Easter Egg)</value>
+    <value>Latar easter egg</value>
   </data>
   <data name="EpkEditor_Field_SearchKeywords" xml:space="preserve">
-    <value>Kata Kunci Pencarian</value>
+    <value>Kata kunci pencarian</value>
   </data>
   <data name="EpkEditor_Field_TempoVariable" xml:space="preserve">
     <value>Tempo bervariasi</value>
@@ -293,19 +293,19 @@
     <value>Buka dan edit metadata manifest.epk sebuah chart</value>
   </data>
   <data name="EpkEditor_Map_Rating" xml:space="preserve">
-    <value>Tingkat</value>
+    <value>Level</value>
   </data>
   <data name="EpkEditor_MissingFiles" xml:space="preserve">
-    <value>{0} file yang dirujuk oleh chart ini tidak ada di foldernya</value>
+    <value>{0} file yang dipakai chart ini tidak ada di foldernya</value>
   </data>
   <data name="EpkEditor_NewFile" xml:space="preserve">
-    <value>EPK Baru…</value>
+    <value>EPK baru…</value>
   </data>
   <data name="EpkEditor_New_Description" xml:space="preserve">
     <value>Buat chart baru dari folder berisi aset</value>
   </data>
   <data name="EpkEditor_OpenFile" xml:space="preserve">
-    <value>Buka File EPK…</value>
+    <value>Buka file EPK…</value>
   </data>
   <data name="EpkEditor_OpenFolder" xml:space="preserve">
     <value>Buka folder</value>
@@ -314,58 +314,58 @@
     <value>Simpan</value>
   </data>
   <data name="EpkEditor_Section_ChartInfo" xml:space="preserve">
-    <value>Info Chart</value>
+    <value>Info chart</value>
   </data>
   <data name="EpkEditor_Section_Discovery" xml:space="preserve">
-    <value>Deskripsi &amp; Penemuan</value>
+    <value>Deskripsi &amp; pencarian</value>
   </data>
   <data name="EpkEditor_Section_HiddenMode" xml:space="preserve">
-    <value>Kesulitan Tersembunyi</value>
+    <value>Kesulitan Hidden</value>
   </data>
   <data name="EpkEditor_Section_Identity" xml:space="preserve">
-    <value>Info Dasar</value>
+    <value>Info dasar</value>
   </data>
   <data name="EpkEditor_Section_Maps" xml:space="preserve">
     <value>Map</value>
   </data>
   <data name="File_AppLogs" xml:space="preserve">
-    <value>Log Aplikasi</value>
+    <value>Log aplikasi</value>
   </data>
   <data name="File_GameLogs" xml:space="preserve">
-    <value>Log Game</value>
+    <value>Log game</value>
   </data>
   <data name="Folder_Mods" xml:space="preserve">
-    <value>Mod</value>
+    <value>Mods</value>
   </data>
   <data name="Folder_OfflineCharts" xml:space="preserve">
-    <value>Buka Folder Charts Offline</value>
+    <value>Buka folder chart offline</value>
   </data>
   <data name="Folder_OnlineCharts" xml:space="preserve">
-    <value>Buka Folder Charts Online</value>
+    <value>Buka folder chart online</value>
   </data>
   <data name="Folder_UserData" xml:space="preserve">
-    <value>Data Pengguna</value>
+    <value>UserData</value>
   </data>
   <data name="Folder_UserLibs" xml:space="preserve">
-    <value>Pustaka Pengguna</value>
+    <value>UserLibs</value>
   </data>
   <data name="GameMode_Modded" xml:space="preserve">
-    <value>Termodifikasi</value>
+    <value>Dengan mod</value>
   </data>
   <data name="GameMode_Vanilla" xml:space="preserve">
     <value>Vanilla</value>
   </data>
   <data name="HomePage_Button_GitHubStar" xml:space="preserve">
-    <value>Beri Bintang di GitHub</value>
+    <value>Beri bintang di GitHub</value>
   </data>
   <data name="HomePage_Button_Sponsor" xml:space="preserve">
     <value>Sponsor</value>
   </data>
   <data name="HomePage_SupportDescription" xml:space="preserve">
-    <value>Menikmati Euterpe? Inilah cara Anda dapat membantu</value>
+    <value>Suka Euterpe? Begini cara kamu bisa membantu</value>
   </data>
   <data name="HomePage_SupportTitle" xml:space="preserve">
-    <value>100% Gratis &amp; Sumber Terbuka</value>
+    <value>100% gratis &amp; open source</value>
   </data>
   <data name="HyperlinkButton_LearnMore" xml:space="preserve">
     <value>Pelajari lebih lanjut</value>
@@ -376,17 +376,26 @@
   <data name="LoadingMessage" xml:space="preserve">
     <value>Memuat...</value>
   </data>
+  <data name="MelonLoaderLog_Analyze" xml:space="preserve">
+    <value>Analisis</value>
+  </data>
+  <data name="MelonLoaderLog_Empty" xml:space="preserve">
+    <value>Belum ada log MelonLoader.</value>
+  </data>
+  <data name="MelonLoaderLog_Refresh" xml:space="preserve">
+    <value>Segarkan</value>
+  </data>
   <data name="MelonLoader_Description" xml:space="preserve">
-    <value>Pemasangan MelonLoader diperlukan untuk bermain dengan mod</value>
+    <value>MelonLoader perlu diinstal untuk bermain dengan mod</value>
   </data>
   <data name="MelonLoader_State_Downloading" xml:space="preserve">
     <value>Mengunduh {0}: {1} MB</value>
   </data>
   <data name="MelonLoader_State_Installed" xml:space="preserve">
-    <value>Terpasang</value>
+    <value>Terinstal</value>
   </data>
   <data name="MelonLoader_State_NotInstalled" xml:space="preserve">
-    <value>Belum Terpasang</value>
+    <value>Belum terinstal</value>
   </data>
   <data name="ModDevelop_Card_DotNetSDK_Description" xml:space="preserve">
     <value>Diperlukan untuk pengembangan mod</value>
@@ -395,55 +404,55 @@
     <value>.NET 10 SDK</value>
   </data>
   <data name="ModDevelop_Card_EnvVariable_Description" xml:space="preserve">
-    <value>Memungkinkan build tools untuk menemukan file game</value>
+    <value>Agar alat build dapat menemukan file game</value>
   </data>
   <data name="ModDevelop_Card_EnvVariable_Title" xml:space="preserve">
-    <value>Atur Variabel Lingkungan</value>
+    <value>Atur variabel lingkungan</value>
   </data>
   <data name="ModDevelop_Card_EuterpeHub_Description" xml:space="preserve">
-    <value>Buat akun untuk mengunggah dan mengelola mod Anda</value>
+    <value>Buat akun untuk mengunggah dan mengelola mod kamu</value>
   </data>
   <data name="ModDevelop_Card_ModTemplate_Description" xml:space="preserve">
-    <value>Untuk pembuatan proyek mod yang cepat</value>
+    <value>Untuk membuat proyek mod dengan cepat</value>
   </data>
   <data name="ModDevelop_Card_ModTemplate_Title" xml:space="preserve">
-    <value>NuGet Mod Template</value>
+    <value>Template mod (NuGet)</value>
   </data>
   <data name="ModDevelop_Section_DevelopmentEnvironment" xml:space="preserve">
-    <value>Lingkungan Pengembangan</value>
+    <value>Lingkungan pengembangan</value>
   </data>
   <data name="ModDevelop_Section_RecommendedIDEs" xml:space="preserve">
-    <value>IDE yang Direkomendasikan</value>
+    <value>IDE yang disarankan</value>
   </data>
   <data name="ModDevelop_Section_SubmitMod" xml:space="preserve">
-    <value>Kirim Mod</value>
+    <value>Kirim mod</value>
   </data>
   <data name="ModDevelop_Status_NotInstalled" xml:space="preserve">
-    <value>Belum Terpasang</value>
+    <value>Belum terinstal</value>
   </data>
   <data name="ModDevelop_Status_NotSet" xml:space="preserve">
-    <value>Belum Diatur</value>
+    <value>Belum diatur</value>
   </data>
   <data name="ModFilterType_All" xml:space="preserve">
     <value>Semua</value>
   </data>
   <data name="ModFilterType_Disabled" xml:space="preserve">
-    <value>Dinonaktifkan</value>
+    <value>Nonaktif</value>
   </data>
   <data name="ModFilterType_Enabled" xml:space="preserve">
-    <value>Diaktifkan</value>
+    <value>Aktif</value>
   </data>
   <data name="ModFilterType_Incompatible" xml:space="preserve">
-    <value>Tidak Kompatibel</value>
+    <value>Tidak kompatibel</value>
   </data>
   <data name="ModFilterType_Installed" xml:space="preserve">
-    <value>Terpasang</value>
+    <value>Terinstal</value>
   </data>
   <data name="ModFilterType_Outdated" xml:space="preserve">
-    <value>Usang</value>
+    <value>Ada pembaruan</value>
   </data>
   <data name="ModIncompatibleReason_ConflictingMod" xml:space="preserve">
-    <value>Bertentangan dengan mod yang diaktifkan: {0}</value>
+    <value>Konflik dengan mod aktif: {0}</value>
   </data>
   <data name="ModIncompatibleReason_GameVersion" xml:space="preserve">
     <value>Membutuhkan versi game {0}</value>
@@ -452,7 +461,7 @@
     <value>Membutuhkan MelonLoader {0}</value>
   </data>
   <data name="ModInfo_Author" xml:space="preserve">
-    <value>Penulis</value>
+    <value>Pembuat</value>
   </data>
   <data name="ModInfo_Dependencies" xml:space="preserve">
     <value>Dependensi</value>
@@ -461,16 +470,16 @@
     <value>Detail</value>
   </data>
   <data name="ModInfo_IncompatibleMods" xml:space="preserve">
-    <value>Mod Tidak Kompatibel</value>
+    <value>Mod tidak kompatibel</value>
   </data>
   <data name="ModInfo_Repository" xml:space="preserve">
     <value>Repositori</value>
   </data>
   <data name="ModInfo_RequiredMelonLoaderVersion" xml:space="preserve">
-    <value>Versi Loader yang Dibutuhkan</value>
+    <value>Versi loader yang dibutuhkan</value>
   </data>
   <data name="ModInfo_SupportedGameVersion" xml:space="preserve">
-    <value>Versi Game yang Didukung</value>
+    <value>Versi game yang didukung</value>
   </data>
   <data name="ModState_Duplicated" xml:space="preserve">
     <value>Duplikat</value>
@@ -479,22 +488,22 @@
     <value>File mod duplikat terdeteksi: {0}. Hapus semua file ini kecuali satu.</value>
   </data>
   <data name="ModState_Incompatible" xml:space="preserve">
-    <value>Tidak Kompatibel</value>
+    <value>Tidak kompatibel</value>
   </data>
   <data name="ModState_Modified" xml:space="preserve">
     <value>Dimodifikasi</value>
   </data>
   <data name="ModState_Newer" xml:space="preserve">
-    <value>Lebih Baru</value>
+    <value>Versi dev</value>
   </data>
   <data name="ModState_Normal" xml:space="preserve">
-    <value>Terpasang</value>
+    <value>Terinstal</value>
   </data>
   <data name="ModState_Outdated" xml:space="preserve">
-    <value>Pembaruan Tersedia</value>
+    <value>Ada pembaruan</value>
   </data>
   <data name="Page_Charting" xml:space="preserve">
-    <value>Charting</value>
+    <value>Chart</value>
   </data>
   <data name="Page_Home" xml:space="preserve">
     <value>Beranda</value>
@@ -503,19 +512,19 @@
     <value>Log</value>
   </data>
   <data name="Page_Modding" xml:space="preserve">
-    <value>Modding</value>
+    <value>Mod</value>
   </data>
   <data name="Page_Setting" xml:space="preserve">
     <value>Pengaturan</value>
   </data>
   <data name="Panel_Charting_CharterToolkit" xml:space="preserve">
-    <value>Toolkit Charter</value>
+    <value>Alat untuk pembuat chart</value>
   </data>
   <data name="Panel_Charting_ChartManage" xml:space="preserve">
-    <value>Kelola Chart</value>
+    <value>Kelola chart</value>
   </data>
   <data name="Panel_Logging_AppLog" xml:space="preserve">
-    <value>Log Aplikasi</value>
+    <value>Log aplikasi</value>
   </data>
   <data name="Panel_Logging_MelonLoaderLog" xml:space="preserve">
     <value>Log MelonLoader</value>
@@ -524,10 +533,10 @@
     <value>MelonLoader</value>
   </data>
   <data name="Panel_Modding_ModDevelop" xml:space="preserve">
-    <value>Pengembangan Mod</value>
+    <value>Pengembangan mod</value>
   </data>
   <data name="Panel_Modding_ModManage" xml:space="preserve">
-    <value>Kelola Mod</value>
+    <value>Kelola mod</value>
   </data>
   <data name="Panel_Setting_About" xml:space="preserve">
     <value>Tentang</value>
@@ -539,58 +548,58 @@
     <value>Tampilan</value>
   </data>
   <data name="Panel_Setting_Download" xml:space="preserve">
-    <value>Unduh</value>
+    <value>Unduhan</value>
   </data>
   <data name="Panel_Setting_Experience" xml:space="preserve">
     <value>Pengalaman</value>
   </data>
   <data name="Panel_Setting_FileManagement" xml:space="preserve">
-    <value>Manajemen File</value>
+    <value>Manajemen file</value>
   </data>
   <data name="SearchBarPlaceholder_Chart" xml:space="preserve">
-    <value>Cari Chart  (Nama, Penulis, Charter, Tag)</value>
+    <value>Cari chart (judul, artis, pembuat chart, tag)</value>
   </data>
   <data name="SearchBarPlaceholder_Mod" xml:space="preserve">
-    <value>Cari Mod  (Nama, Penulis)</value>
+    <value>Cari mod  (nama, pembuat)</value>
   </data>
   <data name="Setting_Description_AlwaysShowScrollBar" xml:space="preserve">
-    <value>Selalu tampilkan scrollbar untuk daftar</value>
+    <value>Selalu tampilkan bilah gulir pada daftar</value>
   </data>
   <data name="Setting_Description_CacheFolder" xml:space="preserve">
-    <value>Ini termasuk cache saat Anda mengunduh file. Jangan ubah ini saat sedang melakukan operasi lain</value>
+    <value>Berisi cache unduhan. Jangan ubah saat proses lain sedang berjalan</value>
   </data>
   <data name="Setting_Description_IgnoreException" xml:space="preserve">
-    <value>Cegah aplikasi keluar ketika terjadi eksepsi. (Aktifkan hanya jika Anda tahu apa yang Anda lakukan!)</value>
+    <value>Cegah aplikasi tertutup saat terjadi kesalahan. (Aktifkan hanya jika kamu tahu apa yang kamu lakukan!)</value>
   </data>
   <data name="Setting_Description_Language" xml:space="preserve">
-    <value>Bahasa UI</value>
+    <value>Bahasa antarmuka</value>
   </data>
   <data name="Setting_Description_MinimizeToTrayOnClose" xml:space="preserve">
     <value>Biarkan Euterpe tetap berjalan di baki sistem saat jendela utama ditutup</value>
   </data>
   <data name="Setting_Description_MuseDashFolder" xml:space="preserve">
-    <value>Folder executable Muse Dash</value>
+    <value>Folder instalasi Muse Dash</value>
   </data>
   <data name="Setting_Description_ShowConsole" xml:space="preserve">
-    <value>Apakah menampilkan konsol saat game diluncurkan</value>
+    <value>Tampilkan jendela konsol saat game dijalankan</value>
   </data>
   <data name="Setting_Description_ShowStartScreen" xml:space="preserve">
-    <value>Apakah menampilkan layar mulai saat game diluncurkan</value>
+    <value>Tampilkan layar pembuka saat game dijalankan</value>
   </data>
   <data name="Setting_Description_SteamFolder" xml:space="preserve">
-    <value>Folder executable Steam</value>
+    <value>Folder instalasi Steam</value>
   </data>
   <data name="Setting_Description_UpdateChannel" xml:space="preserve">
-    <value>Saluran pembaruan untuk Euterpe</value>
+    <value>Saluran pembaruan Euterpe</value>
   </data>
   <data name="Setting_Title_AlwaysShowScrollBar" xml:space="preserve">
-    <value>Selalu Tampilkan ScrollBar</value>
+    <value>Selalu tampilkan bilah gulir</value>
   </data>
   <data name="Setting_Title_CacheFolder" xml:space="preserve">
-    <value>Folder Cache</value>
+    <value>Folder cache</value>
   </data>
   <data name="Setting_Title_IgnoreException" xml:space="preserve">
-    <value>Abaikan Eksepsi</value>
+    <value>Abaikan kesalahan</value>
   </data>
   <data name="Setting_Title_Language" xml:space="preserve">
     <value>Bahasa</value>
@@ -602,61 +611,61 @@
     <value>Folder Muse Dash</value>
   </data>
   <data name="Setting_Title_ShowConsole" xml:space="preserve">
-    <value>Tampilkan Konsol</value>
+    <value>Tampilkan konsol</value>
   </data>
   <data name="Setting_Title_ShowStartScreen" xml:space="preserve">
-    <value>Tampilkan Layar Mulai</value>
+    <value>Tampilkan layar pembuka</value>
   </data>
   <data name="Setting_Title_SteamFolder" xml:space="preserve">
     <value>Folder Steam</value>
   </data>
   <data name="Setting_Title_UpdateChannel" xml:space="preserve">
-    <value>Saluran Pembaruan</value>
+    <value>Saluran pembaruan</value>
   </data>
   <data name="Setup_Description_GamePath" xml:space="preserve">
-    <value>Beri tahu kami di mana game terpasang</value>
+    <value>Beri tahu kami di mana game diinstal</value>
   </data>
   <data name="Setup_GamePath_Invalid" xml:space="preserve">
     <value>Bukan folder game yang valid</value>
   </data>
   <data name="Setup_GamePath_MdmcWarning" xml:space="preserve">
-    <value>Jika Anda pernah menggunakan MDMC, sejumlah kecil chart mungkin tidak dikenali, dan beberapa mod akan diganti dengan versi yang ditingkatkan; di antaranya, mod Headquarters tidak kompatibel dengan Euterpe. Jika Anda tidak mengerti maksud pesan ini, abaikan saja.</value>
+    <value>Jika kamu pernah menggunakan MDMC, sebagian kecil chart mungkin tidak dikenali dan beberapa mod akan diganti dengan versi yang lebih baru. Mod Headquarters tidak kompatibel dengan Euterpe. Jika kamu tidak mengerti maksud pesan ini, abaikan saja.</value>
   </data>
   <data name="Setup_GamePath_MdmcWarning_Title" xml:space="preserve">
     <value>Peringatan kompatibilitas</value>
   </data>
   <data name="Setup_GamePath_WelcomeSubtitle" xml:space="preserve">
-    <value>Luangkan waktu untuk membaca ini, lalu pilih folder game Anda</value>
+    <value>Luangkan waktu untuk membaca ini, lalu pilih folder game kamu</value>
   </data>
   <data name="Setup_GamePath_WelcomeTitle" xml:space="preserve">
-    <value>Sebelum Anda mulai</value>
+    <value>Sebelum kamu mulai</value>
   </data>
   <data name="Setup_Progress_EssentialModsInstalled" xml:space="preserve">
-    <value>Mod esensial terpasang</value>
+    <value>Mod esensial terinstal</value>
   </data>
   <data name="Setup_Progress_InitializingEssentialMods" xml:space="preserve">
-    <value>Menginisialisasi mod esensial ...</value>
+    <value>Menyiapkan mod esensial ...</value>
   </data>
   <data name="Setup_Progress_InstallingDotNetRuntime" xml:space="preserve">
-    <value>Memasang .NET Runtime ...</value>
+    <value>Menginstal .NET Runtime ...</value>
   </data>
   <data name="Setup_Progress_InstallingDotNetSdk" xml:space="preserve">
-    <value>Memasang .NET SDK ...</value>
+    <value>Menginstal .NET SDK ...</value>
   </data>
   <data name="Setup_Progress_InstallingMelonLoader" xml:space="preserve">
-    <value>Memasang MelonLoader ...</value>
+    <value>Menginstal MelonLoader ...</value>
   </data>
   <data name="Setup_Progress_InstallingModTemplate" xml:space="preserve">
-    <value>Memasang mod template ...</value>
+    <value>Menginstal template mod ...</value>
   </data>
   <data name="Setup_Progress_MigratingCharts" xml:space="preserve">
-    <value>Memigrasi chart CustomAlbums ...</value>
+    <value>Memigrasikan chart CustomAlbums ...</value>
   </data>
   <data name="Setup_Progress_SettingEnvVariable" xml:space="preserve">
     <value>Mengatur variabel lingkungan ...</value>
   </data>
   <data name="Setup_Progress_UninstallingConflict" xml:space="preserve">
-    <value>Mencopot mod yang tidak kompatibel: {0} ...</value>
+    <value>Meng-uninstal mod yang tidak kompatibel: {0} ...</value>
   </data>
   <data name="Setup_StepStatus_Failed" xml:space="preserve">
     <value>Gagal</value>
@@ -674,10 +683,10 @@
     <value>Gagal. Periksa log atau coba lagi.</value>
   </data>
   <data name="Setup_Task_ChartingTool" xml:space="preserve">
-    <value>Alat Charting (MDBMSC) (belum diimplementasikan)</value>
+    <value>Alat pembuat chart (belum tersedia)</value>
   </data>
   <data name="Setup_Task_ChartingTool_Description" xml:space="preserve">
-    <value>Toolkit pembuatan chart MDM (belum diimplementasikan)</value>
+    <value>Alat pembuat chart</value>
   </data>
   <data name="Setup_Task_DotNetRuntime" xml:space="preserve">
     <value>.NET Runtime</value>
@@ -695,10 +704,10 @@
     <value>Variabel MD_DIRECTORY</value>
   </data>
   <data name="Setup_Task_EnvVariable_Description" xml:space="preserve">
-    <value>Atur variabel lingkungan jalur game</value>
+    <value>Atur variabel lingkungan untuk folder game</value>
   </data>
   <data name="Setup_Task_EssentialMods" xml:space="preserve">
-    <value>Mod Esensial</value>
+    <value>Mod esensial</value>
   </data>
   <data name="Setup_Task_EssentialMods_Description" xml:space="preserve">
     <value>Mod inti untuk pengalaman terbaik</value>
@@ -710,19 +719,19 @@
     <value>Framework mod loader yang diperlukan</value>
   </data>
   <data name="Setup_Task_Migration" xml:space="preserve">
-    <value>Migrasi Data Lama</value>
+    <value>Migrasi data lama</value>
   </data>
   <data name="Setup_Task_Migration_Description" xml:space="preserve">
     <value>Konversi chart dari mod lama seperti CustomAlbums ke format Euterpe</value>
   </data>
   <data name="Setup_Task_ModTemplate" xml:space="preserve">
-    <value>Mod Template</value>
+    <value>Template mod</value>
   </data>
   <data name="Setup_Task_ModTemplate_Description" xml:space="preserve">
     <value>Template NuGet untuk proyek mod baru</value>
   </data>
   <data name="Setup_Task_UninstallConflicts" xml:space="preserve">
-    <value>Hapus Konflik</value>
+    <value>Uninstal mod yang berkonflik</value>
   </data>
   <data name="Setup_Task_UninstallConflicts_Description" xml:space="preserve">
     <value>Hapus mod yang tidak kompatibel</value>
@@ -739,38 +748,53 @@
   <data name="Share_Import_Canceled" xml:space="preserve">
     <value>Impor dibatalkan</value>
   </data>
+  <data name="Share_Import_Empty" xml:space="preserve">
+    <value>Salin kode berbagi, lalu coba lagi</value>
+  </data>
   <data name="Share_Import_Failed" xml:space="preserve">
     <value>Impor gagal</value>
   </data>
   <data name="Share_Import_Header" xml:space="preserve">
-    <value>Impor kode berbagi</value>
+    <value>Impor chart yang dibagikan</value>
   </data>
   <data name="Share_Import_Invalid" xml:space="preserve">
-    <value>Kode berbagi tidak valid</value>
+    <value>Clipboard tidak berisi kode berbagi</value>
   </data>
   <data name="Share_Import_Preview" xml:space="preserve">
-    <value>{0} chart</value>
+    <value>{0} chart siap diimpor</value>
+  </data>
+  <data name="Share_Import_Refresh" xml:space="preserve">
+    <value>Periksa clipboard lagi</value>
+  </data>
+  <data name="Share_Import_Result_Added" xml:space="preserve">
+    <value>{0} diimpor</value>
+  </data>
+  <data name="Share_Import_Result_Failed" xml:space="preserve">
+    <value>{0} gagal</value>
+  </data>
+  <data name="Share_Import_Result_Present" xml:space="preserve">
+    <value>{0} sudah ada di koleksi</value>
   </data>
   <data name="Share_Import_Start" xml:space="preserve">
     <value>Mulai impor</value>
   </data>
   <data name="Share_Import_WrongGame" xml:space="preserve">
-    <value>Kode ini untuk {0}. Beralihlah ke game tersebut terlebih dahulu.</value>
+    <value>Chart ini untuk {0}. Ganti ke game tersebut dulu.</value>
   </data>
   <data name="Share_Title" xml:space="preserve">
     <value>Bagikan</value>
   </data>
   <data name="Splash_LoginPrompt" xml:space="preserve">
-    <value>Silakan masuk dan otorisasi di browser</value>
+    <value>Login dan beri izin di browser</value>
   </data>
   <data name="ToolTip_EditModConfig" xml:space="preserve">
-    <value>Edit Konfigurasi Mod</value>
+    <value>Edit konfigurasi mod</value>
   </data>
   <data name="Translator_ChineseSimplified" xml:space="preserve">
-    <value>Tionghoa Sederhana</value>
+    <value>Tionghoa (Sederhana)</value>
   </data>
   <data name="Translator_ChineseTraditional" xml:space="preserve">
-    <value>Tionghoa Tradisional</value>
+    <value>Tionghoa (Tradisional)</value>
   </data>
   <data name="Translator_Hungarian" xml:space="preserve">
     <value>Hungaria</value>
@@ -785,16 +809,16 @@
     <value>Spanyol</value>
   </data>
   <data name="UpdateChannel_Beta" xml:space="preserve">
-    <value>Versi beta</value>
+    <value>Beta</value>
   </data>
   <data name="UpdateChannel_Stable" xml:space="preserve">
     <value>Stabil</value>
   </data>
   <data name="UpdateDialog_Description" xml:space="preserve">
-    <value>Versi baru sudah siap dan akan dipasang secara otomatis.</value>
+    <value>Versi baru tersedia dan akan diunduh serta diinstal secara otomatis.</value>
   </data>
   <data name="UpdateDialog_RestartHint" xml:space="preserve">
-    <value>Euterpe akan dimulai ulang secara otomatis saat pembaruan siap.</value>
+    <value>Euterpe akan dimulai ulang otomatis setelah pembaruan siap.</value>
   </data>
   <data name="UpdateDialog_State_Downloading" xml:space="preserve">
     <value>Mengunduh pembaruan…</value>
@@ -806,10 +830,10 @@
     <value>Memperbarui Euterpe</value>
   </data>
   <data name="Wizard_Description_Welcome" xml:space="preserve">
-    <value>Pilih peran dan tugas Anda untuk memulai</value>
+    <value>Pilih peran dan tugasmu untuk memulai</value>
   </data>
   <data name="Wizard_Role_Charter" xml:space="preserve">
-    <value>Charter</value>
+    <value>Pembuat chart</value>
   </data>
   <data name="Wizard_Role_Charter_Description" xml:space="preserve">
     <value>Direkomendasikan untuk pembuat chart</value>
@@ -818,7 +842,7 @@
     <value>Kustom</value>
   </data>
   <data name="Wizard_Role_Custom_Description" xml:space="preserve">
-    <value>Sesuaikan pengaturan Anda</value>
+    <value>Sesuaikan pengaturanmu</value>
   </data>
   <data name="Wizard_Role_Modder" xml:space="preserve">
     <value>Modder</value>
@@ -836,6 +860,6 @@
     <value>Tugas</value>
   </data>
   <data name="Wizard_Title_Welcome" xml:space="preserve">
-    <value>Selamat Datang di Euterpe</value>
+    <value>Selamat datang di Euterpe</value>
   </data>
 </root>

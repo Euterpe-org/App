@@ -35,7 +35,7 @@
     <value>Escolher pasta de cache</value>
   </data>
   <data name="FolderDialog_Title_ChooseChartFolder" xml:space="preserve">
-    <value>Escolher pasta de charts</value>
+    <value>Escolher pasta do chart</value>
   </data>
   <data name="FolderDialog_Title_ChooseMuseDashFolder" xml:space="preserve">
     <value>Escolher pasta do Muse Dash</value>
@@ -50,7 +50,7 @@
     <value>Sim</value>
   </data>
   <data name="MessageBox_Content_Chart_BulkDelete_Confirm" xml:space="preserve">
-    <value>Excluir os {0} charts selecionados?</value>
+    <value>Excluir a seleção de charts ({0})?</value>
   </data>
   <data name="MessageBox_Content_ChooseSteamExec" xml:space="preserve">
     <value>Selecione o executável do Steam</value>
@@ -68,19 +68,19 @@
     <value>Tem certeza de que deseja instalar o .NET SDK?</value>
   </data>
   <data name="MessageBox_Content_DotNetSDK_Install_Failed" xml:space="preserve">
-    <value>Falha ao instalar .NET 10 SDK</value>
+    <value>Falha ao instalar o .NET 10 SDK</value>
   </data>
   <data name="MessageBox_Content_DotNetSDK_Install_Success" xml:space="preserve">
-    <value>.NET 10 SDK foi instalado com sucesso</value>
+    <value>.NET 10 SDK instalado com sucesso</value>
   </data>
   <data name="MessageBox_Content_Epk_Discard_Confirm" xml:space="preserve">
     <value>Descartar alterações não salvas?</value>
   </data>
   <data name="MessageBox_Content_InvalidPath" xml:space="preserve">
-    <value>O caminho escolhido é inválido. Tente novamente</value>
+    <value>O caminho escolhido é inválido. Escolha outro caminho.</value>
   </data>
   <data name="MessageBox_Content_Login_Failed" xml:space="preserve">
-    <value>Falha ao entrar. Deseja tentar novamente? Selecionar Não fechará o Euterpe.</value>
+    <value>Falha no login. Deseja tentar novamente? Se escolher “Não”, o Euterpe será fechado.</value>
   </data>
   <data name="MessageBox_Content_MdmFile_Create_Failed" xml:space="preserve">
     <value>Falha ao criar arquivo MDM</value>
@@ -95,34 +95,34 @@
     <value>Arquivos MDM extraídos com sucesso</value>
   </data>
   <data name="MessageBox_Content_MelonLoader_Install_Failed" xml:space="preserve">
-    <value>Falha ao instalar MelonLoader</value>
+    <value>Falha ao instalar o MelonLoader</value>
   </data>
   <data name="MessageBox_Content_MelonLoader_Install_Success" xml:space="preserve">
-    <value>MelonLoader foi instalado com sucesso</value>
+    <value>MelonLoader instalado com sucesso</value>
   </data>
   <data name="MessageBox_Content_MelonLoader_Uninstall_Failed" xml:space="preserve">
-    <value>Falha ao desinstalar MelonLoader</value>
+    <value>Falha ao desinstalar o MelonLoader</value>
   </data>
   <data name="MessageBox_Content_MelonLoader_Uninstall_Success" xml:space="preserve">
     <value>MelonLoader desinstalado com sucesso</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Install" xml:space="preserve">
-    <value>Tem certeza de que deseja instalar o Mod Template?</value>
+    <value>Tem certeza de que deseja instalar o template de mod?</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Install_Failed" xml:space="preserve">
-    <value>Falha ao instalar Mod Template</value>
+    <value>Falha ao instalar o template de mod</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Install_Success" xml:space="preserve">
-    <value>Mod Template foi instalado com sucesso</value>
+    <value>Template de mod instalado com sucesso</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Uninstall" xml:space="preserve">
-    <value>Tem certeza de que deseja desinstalar o Mod Template?</value>
+    <value>Tem certeza de que deseja desinstalar o template de mod?</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Uninstall_Failed" xml:space="preserve">
-    <value>Falha ao desinstalar Mod Template</value>
+    <value>Falha ao desinstalar o template de mod</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Uninstall_Success" xml:space="preserve">
-    <value>Mod Template desinstalado com sucesso</value>
+    <value>Template de mod desinstalado com sucesso</value>
   </data>
   <data name="MessageBox_Content_NewVersionAvailable" xml:space="preserve">
     <value>Nova versão disponível: {0}, atualizando agora.</value>
@@ -134,17 +134,17 @@
     <value>protontricks não está instalado. Instale o protontricks para continuar.</value>
   </data>
   <data name="MessageBox_Content_Protontricks_Wineprefix_Failed" xml:space="preserve">
-    <value>Falha ao executar comandos wine prefix via protontricks. Não é possível continuar com a instalação do .NET Runtime.</value>
+    <value>Falha ao configurar o ambiente do Wine com o protontricks. Não é possível continuar com a instalação do .NET Runtime.</value>
   </data>
   <data name="MessageBox_Content_ReadGameInformation_Failed" xml:space="preserve">
     <value>Falha ao ler informações do jogo
   {0}</value>
   </data>
   <data name="MessageBox_Content_SecretService_Unavailable" xml:space="preserve">
-    <value>Nenhum serviço de chaveiro (secret-tool) foi encontrado. Sua sessão de login não pode ser salva e você precisará fazer login a cada vez.</value>
+    <value>Nenhum serviço de chaveiro (secret-tool) foi encontrado. Sua sessão de login não será salva e você precisará fazer login sempre que abrir o Euterpe.</value>
   </data>
   <data name="MessageBox_Content_Server_Unavailable" xml:space="preserve">
-    <value>O servidor do Euterpe está indisponível no momento. O Euterpe será fechado agora. Por favor, tente novamente mais tarde.</value>
+    <value>O servidor do Euterpe está indisponível no momento. O Euterpe será fechado. Tente novamente mais tarde.</value>
   </data>
   <data name="MessageBox_Content_SetMdDirectoryEnvironment" xml:space="preserve">
     <value>Tem certeza de que deseja definir a variável de ambiente MD_DIRECTORY?</value>
@@ -160,7 +160,7 @@
     <value>Variável de ambiente MD_DIRECTORY definida com sucesso para {0}</value>
   </data>
   <data name="MessageBox_Content_Update_Check_Failed" xml:space="preserve">
-    <value>Falha ao verificar atualizações, tente novamente mais tarde</value>
+    <value>Falha ao verificar atualizações. Tente novamente mais tarde.</value>
   </data>
   <data name="MessageBox_Content_Update_Failed" xml:space="preserve">
     <value>Falha ao atualizar para a versão {0}</value>
@@ -169,10 +169,10 @@
     <value>Falha ao reproduzir áudio</value>
   </data>
   <data name="Notification_Content_Chart_BulkDelete_Partial" xml:space="preserve">
-    <value>{0} charts excluídos, {1} com falha</value>
+    <value>Charts excluídos: {0}; com falha: {1}</value>
   </data>
   <data name="Notification_Content_Chart_BulkDelete_Success" xml:space="preserve">
-    <value>{0} charts excluídos</value>
+    <value>Charts excluídos: {0}</value>
   </data>
   <data name="Notification_Content_Chart_Download_Failed" xml:space="preserve">
     <value>Falha ao baixar o chart {0}</value>
@@ -190,7 +190,7 @@
     <value>O chart {0} não pode ser migrado</value>
   </data>
   <data name="Notification_Content_Chart_Import_Unsupported" xml:space="preserve">
-    <value>{0} não é um arquivo ou pasta de chart suportado</value>
+    <value>{0} não é um arquivo ou pasta de chart compatível</value>
   </data>
   <data name="Notification_Content_Chart_Remove_Failed" xml:space="preserve">
     <value>Falha ao remover o chart {0}</value>
@@ -205,13 +205,13 @@
     <value>Chart {0} removido</value>
   </data>
   <data name="Notification_Content_Chart_Sync_Summary" xml:space="preserve">
-    <value>Charts sincronizados: {0} adicionado(s), {1} removido(s)</value>
+    <value>Charts sincronizados. Adicionados: {0}; removidos: {1}</value>
   </data>
   <data name="Notification_Content_Chart_UpdateAll_Partial" xml:space="preserve">
-    <value>{0} charts atualizados, {1} falharam</value>
+    <value>Charts atualizados: {0}; com falha: {1}</value>
   </data>
   <data name="Notification_Content_Chart_UpdateAll_Success" xml:space="preserve">
-    <value>{0} charts atualizados</value>
+    <value>Charts atualizados: {0}</value>
   </data>
   <data name="Notification_Content_Chart_UpdateAll_UpToDate" xml:space="preserve">
     <value>Todos os charts estão atualizados</value>
@@ -247,10 +247,10 @@
     <value>Nenhum chart MDM para migrar</value>
   </data>
   <data name="Notification_Content_Migration_Partial" xml:space="preserve">
-    <value>{0} charts do CustomAlbums migrados, {1} falharam</value>
+    <value>Charts do CustomAlbums migrados: {0}; não migrados: {1}</value>
   </data>
   <data name="Notification_Content_Migration_Success" xml:space="preserve">
-    <value>{0} charts do CustomAlbums migrados</value>
+    <value>Charts do CustomAlbums migrados: {0}</value>
   </data>
   <data name="Notification_Content_Mod_Import_Duplicated" xml:space="preserve">
     <value>Mod {0} já foi importado</value>
@@ -262,7 +262,7 @@
     <value>Mod {0} importado com sucesso</value>
   </data>
   <data name="Notification_Content_Mod_Import_Unsupported" xml:space="preserve">
-    <value>{0} não é um arquivo de mod ou biblioteca suportado</value>
+    <value>{0} não é um arquivo de mod ou biblioteca compatível</value>
   </data>
   <data name="Notification_Content_Mod_Install_AlreadyInstalled" xml:space="preserve">
     <value>Mod {0} já está instalado</value>
@@ -295,10 +295,10 @@
     <value>Mod {0} removido</value>
   </data>
   <data name="Notification_Content_Mod_Sync_Summary" xml:space="preserve">
-    <value>Mods sincronizados: {0} adicionado(s), {1} removido(s)</value>
+    <value>Mods sincronizados. Adicionados: {0}; removidos: {1}</value>
   </data>
   <data name="Notification_Content_Mod_Toggle_Failed" xml:space="preserve">
-    <value>Falha ao alternar o estado do mod {0}</value>
+    <value>Falha ao ativar/desativar o mod {0}</value>
   </data>
   <data name="Notification_Content_Mod_Uninstall_Failed" xml:space="preserve">
     <value>Falha ao desinstalar o mod {0}</value>
@@ -307,10 +307,10 @@
     <value>Mod {0} desinstalado com sucesso</value>
   </data>
   <data name="Notification_Content_Mod_UpdateAll_Partial" xml:space="preserve">
-    <value>{0} mods atualizados, {1} falharam</value>
+    <value>Mods atualizados: {0}; com falha: {1}</value>
   </data>
   <data name="Notification_Content_Mod_UpdateAll_Success" xml:space="preserve">
-    <value>{0} mods atualizados</value>
+    <value>Mods atualizados: {0}</value>
   </data>
   <data name="Notification_Content_Mod_Update_Failed" xml:space="preserve">
     <value>Falha ao atualizar o mod {0}</value>
@@ -322,7 +322,7 @@
     <value>Mod {0} já está atualizado</value>
   </data>
   <data name="Notification_Content_Server_Error" xml:space="preserve">
-    <value>O servidor está temporariamente indisponível. Por favor, tente novamente em instantes.</value>
+    <value>O servidor está temporariamente indisponível. Tente novamente em instantes.</value>
   </data>
   <data name="Notification_Content_Share_Copy_Success" xml:space="preserve">
     <value>Código de compartilhamento copiado</value>

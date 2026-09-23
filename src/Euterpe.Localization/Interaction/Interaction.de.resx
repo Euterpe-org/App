@@ -38,7 +38,7 @@
     <value>Chart-Ordner auswählen</value>
   </data>
   <data name="FolderDialog_Title_ChooseMuseDashFolder" xml:space="preserve">
-    <value>Muse Dash-Ordner auswählen</value>
+    <value>Muse-Dash-Ordner auswählen</value>
   </data>
   <data name="FolderDialog_Title_ChooseSteamFolder" xml:space="preserve">
     <value>Steam-Ordner auswählen</value>
@@ -50,13 +50,13 @@
     <value>Ja</value>
   </data>
   <data name="MessageBox_Content_Chart_BulkDelete_Confirm" xml:space="preserve">
-    <value>Die {0} ausgewählten Charts löschen?</value>
+    <value>Ausgewählte Charts löschen ({0})?</value>
   </data>
   <data name="MessageBox_Content_ChooseSteamExec" xml:space="preserve">
-    <value>Bitte wähle die Steam-Programmdatei aus</value>
+    <value>Wähle die Steam-Programmdatei aus</value>
   </data>
   <data name="MessageBox_Content_ChooseSteamFolder" xml:space="preserve">
-    <value>Bitte wähle den Steam-Ordner aus</value>
+    <value>Wähle den Steam-Ordner aus</value>
   </data>
   <data name="MessageBox_Content_CrashDialog_CopyFailed" xml:space="preserve">
     <value>Fehlerdetails konnten nicht in die Zwischenablage kopiert werden.</value>
@@ -68,16 +68,16 @@
     <value>Möchtest du das .NET SDK installieren?</value>
   </data>
   <data name="MessageBox_Content_DotNetSDK_Install_Failed" xml:space="preserve">
-    <value>Installation des .NET 10 SDK fehlgeschlagen</value>
+    <value>.NET 10 SDK konnte nicht installiert werden</value>
   </data>
   <data name="MessageBox_Content_DotNetSDK_Install_Success" xml:space="preserve">
-    <value>.NET 10 SDK wurde erfolgreich installiert</value>
+    <value>.NET 10 SDK wurde installiert</value>
   </data>
   <data name="MessageBox_Content_Epk_Discard_Confirm" xml:space="preserve">
     <value>Nicht gespeicherte Änderungen verwerfen?</value>
   </data>
   <data name="MessageBox_Content_InvalidPath" xml:space="preserve">
-    <value>Der gewählte Pfad ist ungültig. Bitte versuche es erneut</value>
+    <value>Der gewählte Pfad ist ungültig. Wähle einen anderen Pfad.</value>
   </data>
   <data name="MessageBox_Content_Login_Failed" xml:space="preserve">
     <value>Anmeldung fehlgeschlagen. Möchtest du es erneut versuchen? Wenn du Nein wählst, wird Euterpe geschlossen.</value>
@@ -86,43 +86,43 @@
     <value>MDM-Datei konnte nicht erstellt werden</value>
   </data>
   <data name="MessageBox_Content_MdmFile_Create_Success" xml:space="preserve">
-    <value>MDM-Dateien erfolgreich erstellt</value>
+    <value>MDM-Dateien erstellt</value>
   </data>
   <data name="MessageBox_Content_MdmFile_Extract_Failed" xml:space="preserve">
     <value>MDM-Datei konnte nicht entpackt werden</value>
   </data>
   <data name="MessageBox_Content_MdmFile_Extract_Success" xml:space="preserve">
-    <value>MDM-Dateien erfolgreich entpackt</value>
+    <value>MDM-Dateien entpackt</value>
   </data>
   <data name="MessageBox_Content_MelonLoader_Install_Failed" xml:space="preserve">
     <value>MelonLoader konnte nicht installiert werden</value>
   </data>
   <data name="MessageBox_Content_MelonLoader_Install_Success" xml:space="preserve">
-    <value>MelonLoader wurde erfolgreich installiert</value>
+    <value>MelonLoader wurde installiert</value>
   </data>
   <data name="MessageBox_Content_MelonLoader_Uninstall_Failed" xml:space="preserve">
     <value>MelonLoader konnte nicht deinstalliert werden</value>
   </data>
   <data name="MessageBox_Content_MelonLoader_Uninstall_Success" xml:space="preserve">
-    <value>MelonLoader wurde erfolgreich deinstalliert</value>
+    <value>MelonLoader wurde deinstalliert</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Install" xml:space="preserve">
     <value>Möchtest du die Mod-Vorlage installieren?</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Install_Failed" xml:space="preserve">
-    <value>Installation der Mod-Vorlage fehlgeschlagen</value>
+    <value>Mod-Vorlage konnte nicht installiert werden</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Install_Success" xml:space="preserve">
-    <value>Mod-Vorlage wurde erfolgreich installiert</value>
+    <value>Mod-Vorlage wurde installiert</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Uninstall" xml:space="preserve">
     <value>Möchtest du die Mod-Vorlage deinstallieren?</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Uninstall_Failed" xml:space="preserve">
-    <value>Deinstallation der Mod-Vorlage fehlgeschlagen</value>
+    <value>Mod-Vorlage konnte nicht deinstalliert werden</value>
   </data>
   <data name="MessageBox_Content_ModTemplate_Uninstall_Success" xml:space="preserve">
-    <value>Mod-Vorlage wurde erfolgreich deinstalliert</value>
+    <value>Mod-Vorlage wurde deinstalliert</value>
   </data>
   <data name="MessageBox_Content_NewVersionAvailable" xml:space="preserve">
     <value>Neue Version verfügbar: {0}. Wird jetzt aktualisiert.</value>
@@ -131,20 +131,20 @@
     <value>Keine Updates verfügbar</value>
   </data>
   <data name="MessageBox_Content_Protontricks_Not_Installed" xml:space="preserve">
-    <value>protontricks ist nicht installiert. Bitte installiere protontricks, um fortzufahren.</value>
+    <value>protontricks ist nicht installiert. Installiere protontricks, um fortzufahren.</value>
   </data>
   <data name="MessageBox_Content_Protontricks_Wineprefix_Failed" xml:space="preserve">
-    <value>Ausführung der Wine-Prefix-Befehle über protontricks fehlgeschlagen. Die .NET Runtime-Installation kann nicht fortgesetzt werden.</value>
+    <value>Die Wine-Konfiguration über protontricks ist fehlgeschlagen. Die .NET Runtime kann nicht installiert werden.</value>
   </data>
   <data name="MessageBox_Content_ReadGameInformation_Failed" xml:space="preserve">
     <value>Lesen der Spielinformationen fehlgeschlagen
   {0}</value>
   </data>
   <data name="MessageBox_Content_SecretService_Unavailable" xml:space="preserve">
-    <value>Es wurde kein Schlüsselbundservice (secret-tool) gefunden. Deine Anmeldesitzung kann nicht gespeichert werden, und du musst dich bei jedem Start erneut anmelden.</value>
+    <value>Kein Schlüsselbunddienst (secret-tool) gefunden. Deine Anmeldung kann nicht gespeichert werden, daher musst du dich bei jedem Start neu anmelden.</value>
   </data>
   <data name="MessageBox_Content_Server_Unavailable" xml:space="preserve">
-    <value>Der Euterpe-Server ist derzeit nicht verfügbar. Euterpe wird jetzt geschlossen. Bitte versuche es später erneut.</value>
+    <value>Der Euterpe-Server ist nicht erreichbar. Euterpe wird jetzt beendet. Versuche es später erneut.</value>
   </data>
   <data name="MessageBox_Content_SetMdDirectoryEnvironment" xml:space="preserve">
     <value>Möchtest du die Umgebungsvariable MD_DIRECTORY setzen?</value>
@@ -160,7 +160,7 @@
     <value>Umgebungsvariable MD_DIRECTORY wurde auf {0} gesetzt</value>
   </data>
   <data name="MessageBox_Content_Update_Check_Failed" xml:space="preserve">
-    <value>Suche nach Updates fehlgeschlagen, bitte versuche es später erneut</value>
+    <value>Suche nach Updates fehlgeschlagen. Versuche es später erneut.</value>
   </data>
   <data name="MessageBox_Content_Update_Failed" xml:space="preserve">
     <value>Aktualisierung auf Version {0} fehlgeschlagen</value>
@@ -169,34 +169,34 @@
     <value>Audio konnte nicht abgespielt werden</value>
   </data>
   <data name="Notification_Content_Chart_BulkDelete_Partial" xml:space="preserve">
-    <value>{0} Charts gelöscht, {1} fehlgeschlagen</value>
+    <value>Charts gelöscht: {0}; fehlgeschlagen: {1}</value>
   </data>
   <data name="Notification_Content_Chart_BulkDelete_Success" xml:space="preserve">
-    <value>{0} Charts gelöscht</value>
+    <value>Charts gelöscht: {0}</value>
   </data>
   <data name="Notification_Content_Chart_Download_Failed" xml:space="preserve">
     <value>Chart {0} konnte nicht heruntergeladen werden</value>
   </data>
   <data name="Notification_Content_Chart_Download_Success" xml:space="preserve">
-    <value>Chart {0} erfolgreich heruntergeladen</value>
+    <value>Chart {0} heruntergeladen</value>
   </data>
   <data name="Notification_Content_Chart_Import_Failed" xml:space="preserve">
     <value>Chart {0} konnte nicht importiert werden</value>
   </data>
   <data name="Notification_Content_Chart_Import_Success" xml:space="preserve">
-    <value>Chart {0} erfolgreich importiert</value>
+    <value>Chart {0} importiert</value>
   </data>
   <data name="Notification_Content_Chart_Import_Unmigratable" xml:space="preserve">
     <value>Chart {0} kann nicht migriert werden</value>
   </data>
   <data name="Notification_Content_Chart_Import_Unsupported" xml:space="preserve">
-    <value>{0} ist keine unterstützte Chart-Datei oder kein unterstützter Ordner</value>
+    <value>{0} ist weder eine unterstützte Chart-Datei noch ein unterstützter Ordner</value>
   </data>
   <data name="Notification_Content_Chart_Remove_Failed" xml:space="preserve">
     <value>Chart {0} konnte nicht entfernt werden</value>
   </data>
   <data name="Notification_Content_Chart_Remove_Success" xml:space="preserve">
-    <value>Chart {0} erfolgreich entfernt</value>
+    <value>Chart {0} entfernt</value>
   </data>
   <data name="Notification_Content_Chart_Sync_Added" xml:space="preserve">
     <value>Chart {0} hinzugefügt</value>
@@ -208,10 +208,10 @@
     <value>Charts synchronisiert: {0} hinzugefügt, {1} entfernt</value>
   </data>
   <data name="Notification_Content_Chart_UpdateAll_Partial" xml:space="preserve">
-    <value>{0} Charts aktualisiert, {1} fehlgeschlagen</value>
+    <value>Charts aktualisiert: {0}; fehlgeschlagen: {1}</value>
   </data>
   <data name="Notification_Content_Chart_UpdateAll_Success" xml:space="preserve">
-    <value>{0} Charts aktualisiert</value>
+    <value>Charts aktualisiert: {0}</value>
   </data>
   <data name="Notification_Content_Chart_UpdateAll_UpToDate" xml:space="preserve">
     <value>Alle Charts sind aktuell</value>
@@ -220,7 +220,7 @@
     <value>Chart {0} konnte nicht aktualisiert werden</value>
   </data>
   <data name="Notification_Content_Chart_Update_Success" xml:space="preserve">
-    <value>Chart {0} erfolgreich aktualisiert</value>
+    <value>Chart {0} aktualisiert</value>
   </data>
   <data name="Notification_Content_Chart_Update_UpToDate" xml:space="preserve">
     <value>Chart {0} ist bereits aktuell</value>
@@ -241,16 +241,16 @@
     <value>Bibliothek {0} konnte nicht importiert werden</value>
   </data>
   <data name="Notification_Content_Lib_Import_Success" xml:space="preserve">
-    <value>Bibliothek {0} erfolgreich importiert</value>
+    <value>Bibliothek {0} importiert</value>
   </data>
   <data name="Notification_Content_Migration_None" xml:space="preserve">
     <value>Keine MDM-Charts zum Migrieren</value>
   </data>
   <data name="Notification_Content_Migration_Partial" xml:space="preserve">
-    <value>{0} CustomAlbums-Charts migriert, {1} fehlgeschlagen</value>
+    <value>CustomAlbums-Charts migriert: {0}; fehlgeschlagen: {1}</value>
   </data>
   <data name="Notification_Content_Migration_Success" xml:space="preserve">
-    <value>{0} CustomAlbums-Charts migriert</value>
+    <value>CustomAlbums-Charts migriert: {0}</value>
   </data>
   <data name="Notification_Content_Mod_Import_Duplicated" xml:space="preserve">
     <value>Mod {0} wurde bereits importiert</value>
@@ -259,7 +259,7 @@
     <value>Mod {0} konnte nicht importiert werden</value>
   </data>
   <data name="Notification_Content_Mod_Import_Success" xml:space="preserve">
-    <value>Mod {0} erfolgreich importiert</value>
+    <value>Mod {0} importiert</value>
   </data>
   <data name="Notification_Content_Mod_Import_Unsupported" xml:space="preserve">
     <value>{0} ist keine unterstützte Mod- oder Bibliotheksdatei</value>
@@ -274,7 +274,7 @@
     <value>Mod {0} ist inkompatibel und kann nicht installiert werden</value>
   </data>
   <data name="Notification_Content_Mod_Install_Success" xml:space="preserve">
-    <value>Mod {0} erfolgreich installiert</value>
+    <value>Mod {0} installiert</value>
   </data>
   <data name="Notification_Content_Mod_NotFound" xml:space="preserve">
     <value>Mod {0} nicht gefunden</value>
@@ -286,7 +286,7 @@
     <value>Mod {0} konnte nicht neu installiert werden</value>
   </data>
   <data name="Notification_Content_Mod_Reinstall_Success" xml:space="preserve">
-    <value>Mod {0} erfolgreich neu installiert</value>
+    <value>Mod {0} neu installiert</value>
   </data>
   <data name="Notification_Content_Mod_Sync_Added" xml:space="preserve">
     <value>Mod {0} hinzugefügt</value>
@@ -298,34 +298,34 @@
     <value>Mods synchronisiert: {0} hinzugefügt, {1} entfernt</value>
   </data>
   <data name="Notification_Content_Mod_Toggle_Failed" xml:space="preserve">
-    <value>Status von Mod {0} konnte nicht umgeschaltet werden</value>
+    <value>Mod {0} konnte nicht (de)aktiviert werden</value>
   </data>
   <data name="Notification_Content_Mod_Uninstall_Failed" xml:space="preserve">
     <value>Mod {0} konnte nicht deinstalliert werden</value>
   </data>
   <data name="Notification_Content_Mod_Uninstall_Success" xml:space="preserve">
-    <value>Mod {0} erfolgreich deinstalliert</value>
+    <value>Mod {0} deinstalliert</value>
   </data>
   <data name="Notification_Content_Mod_UpdateAll_Partial" xml:space="preserve">
-    <value>{0} Mods aktualisiert, {1} fehlgeschlagen</value>
+    <value>Mods aktualisiert: {0}; fehlgeschlagen: {1}</value>
   </data>
   <data name="Notification_Content_Mod_UpdateAll_Success" xml:space="preserve">
-    <value>{0} Mods aktualisiert</value>
+    <value>Mods aktualisiert: {0}</value>
   </data>
   <data name="Notification_Content_Mod_Update_Failed" xml:space="preserve">
     <value>Mod {0} konnte nicht aktualisiert werden</value>
   </data>
   <data name="Notification_Content_Mod_Update_Success" xml:space="preserve">
-    <value>Mod {0} erfolgreich aktualisiert</value>
+    <value>Mod {0} aktualisiert</value>
   </data>
   <data name="Notification_Content_Mod_Update_UpToDate" xml:space="preserve">
     <value>Mod {0} ist bereits aktuell</value>
   </data>
   <data name="Notification_Content_Server_Error" xml:space="preserve">
-    <value>Der Server ist vorübergehend nicht verfügbar. Bitte versuche es in einem Moment erneut.</value>
+    <value>Server vorübergehend nicht erreichbar. Versuche es gleich noch einmal.</value>
   </data>
   <data name="Notification_Content_Share_Copy_Success" xml:space="preserve">
-    <value>Freigabecode kopiert</value>
+    <value>Share-Code kopiert</value>
   </data>
   <data name="Title_Error" xml:space="preserve">
     <value>Fehler</value>

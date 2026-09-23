@@ -50,7 +50,7 @@
     <value>Sí</value>
   </data>
   <data name="MessageBox_Content_Chart_BulkDelete_Confirm" xml:space="preserve">
-    <value>¿Eliminar los {0} charts seleccionados?</value>
+    <value>¿Eliminar la selección de charts ({0})?</value>
   </data>
   <data name="MessageBox_Content_ChooseSteamExec" xml:space="preserve">
     <value>Selecciona el ejecutable de Steam</value>
@@ -77,7 +77,7 @@
     <value>¿Descartar los cambios sin guardar?</value>
   </data>
   <data name="MessageBox_Content_InvalidPath" xml:space="preserve">
-    <value>La ruta seleccionada no es válida. Inténtalo de nuevo</value>
+    <value>La ruta seleccionada no es válida. Selecciona otra.</value>
   </data>
   <data name="MessageBox_Content_Login_Failed" xml:space="preserve">
     <value>No se pudo iniciar sesión. ¿Quieres intentarlo de nuevo? Si seleccionas No, Euterpe se cerrará.</value>
@@ -134,33 +134,33 @@
     <value>protontricks no está instalado. Instala protontricks para continuar.</value>
   </data>
   <data name="MessageBox_Content_Protontricks_Wineprefix_Failed" xml:space="preserve">
-    <value>Error al ejecutar los comandos de wine prefix a través de protontricks. No se puede continuar con la instalación de .NET Runtime.</value>
+    <value>No se pudo configurar el entorno de Wine con protontricks. No se puede continuar con la instalación de .NET Runtime.</value>
   </data>
   <data name="MessageBox_Content_ReadGameInformation_Failed" xml:space="preserve">
     <value>No se pudo leer la información del juego
   {0}</value>
   </data>
   <data name="MessageBox_Content_SecretService_Unavailable" xml:space="preserve">
-    <value>No se encontró ningún servicio de llavero (secret-tool). Tu sesión no se puede guardar y tendrás que iniciar sesión cada vez.</value>
+    <value>No se encontró ningún servicio de llavero (secret-tool). Tu sesión no se puede guardar y tendrás que iniciar sesión cada vez que abras Euterpe.</value>
   </data>
   <data name="MessageBox_Content_Server_Unavailable" xml:space="preserve">
-    <value>El servidor de Euterpe no está disponible actualmente. Euterpe se cerrará ahora. Por favor, inténtalo de nuevo más tarde.</value>
+    <value>El servidor de Euterpe no está disponible. Euterpe se cerrará ahora. Inténtalo de nuevo más tarde.</value>
   </data>
   <data name="MessageBox_Content_SetMdDirectoryEnvironment" xml:space="preserve">
-    <value>¿Quieres establecer la variable de entorno MD_DIRECTORY?</value>
+    <value>¿Quieres configurar la variable de entorno MD_DIRECTORY?</value>
   </data>
   <data name="MessageBox_Content_SetMdDirectoryEnvironment_Failed" xml:space="preserve">
-    <value>No se pudo establecer la variable de entorno MD_DIRECTORY</value>
+    <value>No se pudo configurar la variable de entorno MD_DIRECTORY</value>
   </data>
   <data name="MessageBox_Content_SetPathEnvironment_Linux" xml:space="preserve">
-    <value>Copia la siguiente línea y agrégala a tu archivo /etc/environment:
+    <value>Copia la siguiente línea y añádela a tu archivo /etc/environment:
 {0}</value>
   </data>
   <data name="MessageBox_Content_SetPathEnvironment_Windows" xml:space="preserve">
-    <value>La variable de entorno MD_DIRECTORY se estableció a {0}</value>
+    <value>La variable de entorno MD_DIRECTORY se configuró en {0}</value>
   </data>
   <data name="MessageBox_Content_Update_Check_Failed" xml:space="preserve">
-    <value>No se pudo buscar actualizaciones, inténtalo de nuevo más tarde</value>
+    <value>No se pudieron buscar actualizaciones. Inténtalo de nuevo más tarde.</value>
   </data>
   <data name="MessageBox_Content_Update_Failed" xml:space="preserve">
     <value>No se pudo actualizar a la versión {0}</value>
@@ -169,10 +169,10 @@
     <value>Error al reproducir el audio</value>
   </data>
   <data name="Notification_Content_Chart_BulkDelete_Partial" xml:space="preserve">
-    <value>Se eliminaron {0} charts; {1} fallaron</value>
+    <value>Charts eliminados: {0}; errores: {1}</value>
   </data>
   <data name="Notification_Content_Chart_BulkDelete_Success" xml:space="preserve">
-    <value>Se eliminaron {0} charts</value>
+    <value>Charts eliminados: {0}</value>
   </data>
   <data name="Notification_Content_Chart_Download_Failed" xml:space="preserve">
     <value>Error al descargar el chart {0}</value>
@@ -205,13 +205,13 @@
     <value>Chart {0} eliminado</value>
   </data>
   <data name="Notification_Content_Chart_Sync_Summary" xml:space="preserve">
-    <value>Charts sincronizados: {0} añadido(s), {1} eliminado(s)</value>
+    <value>Charts sincronizados. Añadidos: {0}; eliminados: {1}</value>
   </data>
   <data name="Notification_Content_Chart_UpdateAll_Partial" xml:space="preserve">
-    <value>{0} charts actualizados, {1} fallaron</value>
+    <value>Charts actualizados: {0}; errores: {1}</value>
   </data>
   <data name="Notification_Content_Chart_UpdateAll_Success" xml:space="preserve">
-    <value>{0} charts actualizados</value>
+    <value>Charts actualizados: {0}</value>
   </data>
   <data name="Notification_Content_Chart_UpdateAll_UpToDate" xml:space="preserve">
     <value>Todos los charts están actualizados</value>
@@ -247,10 +247,10 @@
     <value>No hay charts MDM para migrar</value>
   </data>
   <data name="Notification_Content_Migration_Partial" xml:space="preserve">
-    <value>{0} charts de CustomAlbums migrados, {1} fallaron</value>
+    <value>Charts de CustomAlbums migrados: {0}; sin migrar: {1}</value>
   </data>
   <data name="Notification_Content_Migration_Success" xml:space="preserve">
-    <value>{0} charts de CustomAlbums migrados</value>
+    <value>Charts de CustomAlbums migrados: {0}</value>
   </data>
   <data name="Notification_Content_Mod_Import_Duplicated" xml:space="preserve">
     <value>El mod {0} ya está importado</value>
@@ -295,7 +295,7 @@
     <value>Mod {0} eliminado</value>
   </data>
   <data name="Notification_Content_Mod_Sync_Summary" xml:space="preserve">
-    <value>Mods sincronizados: {0} añadido(s), {1} eliminado(s)</value>
+    <value>Mods sincronizados. Añadidos: {0}; eliminados: {1}</value>
   </data>
   <data name="Notification_Content_Mod_Toggle_Failed" xml:space="preserve">
     <value>Error al cambiar el estado del mod {0}</value>
@@ -307,10 +307,10 @@
     <value>Mod {0} desinstalado correctamente</value>
   </data>
   <data name="Notification_Content_Mod_UpdateAll_Partial" xml:space="preserve">
-    <value>{0} mods actualizados, {1} fallaron</value>
+    <value>Mods actualizados: {0}; errores: {1}</value>
   </data>
   <data name="Notification_Content_Mod_UpdateAll_Success" xml:space="preserve">
-    <value>{0} mods actualizados</value>
+    <value>Mods actualizados: {0}</value>
   </data>
   <data name="Notification_Content_Mod_Update_Failed" xml:space="preserve">
     <value>Error al actualizar el mod {0}</value>
@@ -322,7 +322,7 @@
     <value>El mod {0} ya está actualizado</value>
   </data>
   <data name="Notification_Content_Server_Error" xml:space="preserve">
-    <value>El servidor no está disponible temporalmente. Por favor, inténtalo de nuevo en un momento.</value>
+    <value>El servidor no está disponible en este momento. Inténtalo de nuevo más tarde.</value>
   </data>
   <data name="Notification_Content_Share_Copy_Success" xml:space="preserve">
     <value>Código para compartir copiado</value>

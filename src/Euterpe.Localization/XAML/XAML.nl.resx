@@ -26,13 +26,13 @@
     <value>Bladeren...</value>
   </data>
   <data name="Button_CheckUpdate" xml:space="preserve">
-    <value>Controleer Update</value>
+    <value>Controleren op updates</value>
   </data>
   <data name="Button_Confirm" xml:space="preserve">
     <value>Bevestigen</value>
   </data>
   <data name="Button_HelpTranslate" xml:space="preserve">
-    <value>Help Vertalen</value>
+    <value>Help vertalen</value>
   </data>
   <data name="Button_Install" xml:space="preserve">
     <value>Installeren</value>
@@ -53,7 +53,7 @@
     <value>Opnieuw selecteren</value>
   </data>
   <data name="Button_Retry" xml:space="preserve">
-    <value>Opnieuw</value>
+    <value>Opnieuw proberen</value>
   </data>
   <data name="Button_SourceCode" xml:space="preserve">
     <value>Broncode</value>
@@ -65,19 +65,19 @@
     <value>Bijwerken</value>
   </data>
   <data name="ChartAnalyzer_Description" xml:space="preserve">
-    <value>Voorspel bij benadering de niveaus en analyseer de Note-opbouw van een chart</value>
+    <value>Schat het niveau en analyseer de note-opbouw van een chart</value>
   </data>
   <data name="ChartAnalyzer_Title" xml:space="preserve">
-    <value>Chart Analyzer</value>
+    <value>Chartanalyse</value>
   </data>
   <data name="ChartDifficulty_Easy" xml:space="preserve">
-    <value>Makkelijk</value>
+    <value>Easy</value>
   </data>
   <data name="ChartDifficulty_Hard" xml:space="preserve">
-    <value>Moeilijk</value>
+    <value>Hard</value>
   </data>
   <data name="ChartDifficulty_Hidden" xml:space="preserve">
-    <value>Verborgen</value>
+    <value>Hidden</value>
   </data>
   <data name="ChartDifficulty_Master" xml:space="preserve">
     <value>Master</value>
@@ -107,10 +107,10 @@
     <value>Chart downloaden</value>
   </data>
   <data name="ChartManage_DownloadingHint" xml:space="preserve">
-    <value>Download is bezig. Een moment geduld en sluit de app niet.</value>
+    <value>Bezig met downloaden. Even geduld, sluit de app niet.</value>
   </data>
   <data name="ChartManage_Filter_Difficulty" xml:space="preserve">
-    <value>Moeilijkheid</value>
+    <value>Moeilijkheidsgraad</value>
   </data>
   <data name="ChartManage_Filter_HasVideo" xml:space="preserve">
     <value>Met video</value>
@@ -131,13 +131,13 @@
     <value>Charts migreren</value>
   </data>
   <data name="ChartManage_MigratingHint" xml:space="preserve">
-    <value>Migratie is bezig. Een moment geduld en sluit de app niet.</value>
+    <value>Bezig met migreren. Even geduld, sluit de app niet.</value>
   </data>
   <data name="ChartManage_Rating" xml:space="preserve">
     <value>Niveau</value>
   </data>
   <data name="ChartManage_Reset" xml:space="preserve">
-    <value>Herstellen</value>
+    <value>Resetten</value>
   </data>
   <data name="ChartManage_Select" xml:space="preserve">
     <value>Selecteren</value>
@@ -161,7 +161,7 @@
     <value>door {0}</value>
   </data>
   <data name="ChartSortField_Author" xml:space="preserve">
-    <value>Auteur</value>
+    <value>Artiest</value>
   </data>
   <data name="ChartSortField_Bpm" xml:space="preserve">
     <value>BPM</value>
@@ -173,7 +173,7 @@
     <value>Bijgewerkt op</value>
   </data>
   <data name="ChartSortField_MapCount" xml:space="preserve">
-    <value>Maps</value>
+    <value>Aantal maps</value>
   </data>
   <data name="ChartSortField_Name" xml:space="preserve">
     <value>Naam</value>
@@ -206,7 +206,7 @@
     <value>Afsluiten</value>
   </data>
   <data name="CrashDialog_Button_Feedback" xml:space="preserve">
-    <value>GitHub Feedback</value>
+    <value>GitHub-feedback</value>
   </data>
   <data name="CrashDialog_Header" xml:space="preserve">
     <value>Euterpe heeft een fout ondervonden</value>
@@ -221,13 +221,13 @@
     <value>Terug</value>
   </data>
   <data name="EpkEditor_Charters_Watermark" xml:space="preserve">
-    <value>Een charter toevoegen</value>
+    <value>Charter toevoegen</value>
   </data>
   <data name="EpkEditor_Field_Author" xml:space="preserve">
-    <value>Songauteur</value>
+    <value>Artiest</value>
   </data>
   <data name="EpkEditor_Field_BackgroundVideoOpacity" xml:space="preserve">
-    <value>Videotransparantie</value>
+    <value>Videodekking</value>
   </data>
   <data name="EpkEditor_Field_Bpm" xml:space="preserve">
     <value>BPM</value>
@@ -254,10 +254,10 @@
     <value>Niveauweergave overschrijven</value>
   </data>
   <data name="EpkEditor_Field_Name" xml:space="preserve">
-    <value>Chartnaam</value>
+    <value>Titel van het nummer</value>
   </data>
   <data name="EpkEditor_Field_NameRomanized" xml:space="preserve">
-    <value>Geromaniseerde naam</value>
+    <value>Titel in Latijns schrift</value>
   </data>
   <data name="EpkEditor_Field_SafeForStreamer" xml:space="preserve">
     <value>Streamveilig</value>
@@ -278,7 +278,7 @@
     <value>Vernieuwen</value>
   </data>
   <data name="EpkEditor_Files_Summary" xml:space="preserve">
-    <value>{0} bestanden · {1}</value>
+    <value>Bestanden: {0} · {1}</value>
   </data>
   <data name="EpkEditor_Hint_Required" xml:space="preserve">
     <value>Vul alle verplichte velden in om op te slaan</value>
@@ -287,7 +287,7 @@
     <value>Stel een geldig tempobereik in (min ≤ max)</value>
   </data>
   <data name="EpkEditor_Keywords_Watermark" xml:space="preserve">
-    <value>Een zoekwoord toevoegen</value>
+    <value>Zoekwoord toevoegen</value>
   </data>
   <data name="EpkEditor_Launcher_Description" xml:space="preserve">
     <value>De manifest.epk van een chart openen en de metadata ervan bewerken</value>
@@ -296,7 +296,7 @@
     <value>Niveau</value>
   </data>
   <data name="EpkEditor_MissingFiles" xml:space="preserve">
-    <value>{0} bestand(en) waarnaar deze chart verwijst ontbreken in de map</value>
+    <value>Bestanden waarnaar deze chart verwijst maar die ontbreken in de map: {0}</value>
   </data>
   <data name="EpkEditor_NewFile" xml:space="preserve">
     <value>Nieuwe EPK…</value>
@@ -314,13 +314,13 @@
     <value>Opslaan</value>
   </data>
   <data name="EpkEditor_Section_ChartInfo" xml:space="preserve">
-    <value>Chart-info</value>
+    <value>Chartinfo</value>
   </data>
   <data name="EpkEditor_Section_Discovery" xml:space="preserve">
     <value>Beschrijving &amp; vindbaarheid</value>
   </data>
   <data name="EpkEditor_Section_HiddenMode" xml:space="preserve">
-    <value>Verborgen moeilijkheid</value>
+    <value>Hidden-moeilijkheidsgraad</value>
   </data>
   <data name="EpkEditor_Section_Identity" xml:space="preserve">
     <value>Basisinfo</value>
@@ -338,10 +338,10 @@
     <value>Mods</value>
   </data>
   <data name="Folder_OfflineCharts" xml:space="preserve">
-    <value>Offline-chartsmap openen</value>
+    <value>Map met offline charts openen</value>
   </data>
   <data name="Folder_OnlineCharts" xml:space="preserve">
-    <value>Online-chartsmap openen</value>
+    <value>Map met online charts openen</value>
   </data>
   <data name="Folder_UserData" xml:space="preserve">
     <value>Gebruikersgegevens</value>
@@ -359,7 +359,7 @@
     <value>Ster geven op GitHub</value>
   </data>
   <data name="HomePage_Button_Sponsor" xml:space="preserve">
-    <value>Sponsor</value>
+    <value>Sponsoren</value>
   </data>
   <data name="HomePage_SupportDescription" xml:space="preserve">
     <value>Vind je Euterpe leuk? Zo kun je helpen</value>
@@ -376,11 +376,20 @@
   <data name="LoadingMessage" xml:space="preserve">
     <value>Laden...</value>
   </data>
+  <data name="MelonLoaderLog_Analyze" xml:space="preserve">
+    <value>Analyseren</value>
+  </data>
+  <data name="MelonLoaderLog_Empty" xml:space="preserve">
+    <value>Geen MelonLoader-log beschikbaar.</value>
+  </data>
+  <data name="MelonLoaderLog_Refresh" xml:space="preserve">
+    <value>Vernieuwen</value>
+  </data>
   <data name="MelonLoader_Description" xml:space="preserve">
-    <value>Installatie van MelonLoader is vereist om met mods te spelen</value>
+    <value>MelonLoader is vereist om met mods te spelen</value>
   </data>
   <data name="MelonLoader_State_Downloading" xml:space="preserve">
-    <value>Downloaden van {0}: {1} MB</value>
+    <value>{0} downloaden: {1} MB</value>
   </data>
   <data name="MelonLoader_State_Installed" xml:space="preserve">
     <value>Geïnstalleerd</value>
@@ -395,19 +404,19 @@
     <value>.NET 10 SDK</value>
   </data>
   <data name="ModDevelop_Card_EnvVariable_Description" xml:space="preserve">
-    <value>Stelt buildtools in staat spelbestanden te vinden</value>
+    <value>Hiermee vinden buildtools de spelbestanden</value>
   </data>
   <data name="ModDevelop_Card_EnvVariable_Title" xml:space="preserve">
     <value>Omgevingsvariabele instellen</value>
   </data>
   <data name="ModDevelop_Card_EuterpeHub_Description" xml:space="preserve">
-    <value>Maak een account om uw mods te uploaden en te beheren</value>
+    <value>Maak een account om je mods te uploaden en te beheren</value>
   </data>
   <data name="ModDevelop_Card_ModTemplate_Description" xml:space="preserve">
-    <value>Voor snelle aanmaak van modprojecten</value>
+    <value>Snel een modproject aanmaken</value>
   </data>
   <data name="ModDevelop_Card_ModTemplate_Title" xml:space="preserve">
-    <value>Mod Template NuGet</value>
+    <value>NuGet-modtemplate</value>
   </data>
   <data name="ModDevelop_Section_DevelopmentEnvironment" xml:space="preserve">
     <value>Ontwikkelomgeving</value>
@@ -467,7 +476,7 @@
     <value>Repository</value>
   </data>
   <data name="ModInfo_RequiredMelonLoaderVersion" xml:space="preserve">
-    <value>Vereiste Loader-versie</value>
+    <value>Vereiste loaderversie</value>
   </data>
   <data name="ModInfo_SupportedGameVersion" xml:space="preserve">
     <value>Ondersteunde spelversie</value>
@@ -494,7 +503,7 @@
     <value>Update beschikbaar</value>
   </data>
   <data name="Page_Charting" xml:space="preserve">
-    <value>Charting</value>
+    <value>Charts</value>
   </data>
   <data name="Page_Home" xml:space="preserve">
     <value>Start</value>
@@ -503,7 +512,7 @@
     <value>Logboek</value>
   </data>
   <data name="Page_Modding" xml:space="preserve">
-    <value>Modding</value>
+    <value>Mods</value>
   </data>
   <data name="Page_Setting" xml:space="preserve">
     <value>Instellingen</value>
@@ -539,28 +548,28 @@
     <value>Uiterlijk</value>
   </data>
   <data name="Panel_Setting_Download" xml:space="preserve">
-    <value>Downloaden</value>
+    <value>Downloads</value>
   </data>
   <data name="Panel_Setting_Experience" xml:space="preserve">
-    <value>Ervaring</value>
+    <value>Gedrag</value>
   </data>
   <data name="Panel_Setting_FileManagement" xml:space="preserve">
     <value>Bestandsbeheer</value>
   </data>
   <data name="SearchBarPlaceholder_Chart" xml:space="preserve">
-    <value>Charts zoeken  (Naam, Auteur, Charter, Tag)</value>
+    <value>Charts zoeken (naam, artiest, charter, tag)</value>
   </data>
   <data name="SearchBarPlaceholder_Mod" xml:space="preserve">
-    <value>Mods zoeken  (Naam, Auteur)</value>
+    <value>Mods zoeken (naam, auteur)</value>
   </data>
   <data name="Setting_Description_AlwaysShowScrollBar" xml:space="preserve">
-    <value>Altijd schuifbalk weergeven voor de lijst</value>
+    <value>Schuifbalk van lijsten altijd weergeven</value>
   </data>
   <data name="Setting_Description_CacheFolder" xml:space="preserve">
-    <value>Dit omvat de cache wanneer u bestanden downloadt. Wijzig dit niet tijdens andere bewerkingen</value>
+    <value>Bevat de cache voor downloads. Wijzig dit niet terwijl er andere bewerkingen bezig zijn</value>
   </data>
   <data name="Setting_Description_IgnoreException" xml:space="preserve">
-    <value>Voorkom dat de applicatie afsluit wanneer een uitzondering optreedt. (Schakel dit alleen in als u weet wat u doet!)</value>
+    <value>Voorkom dat de app afsluit wanneer er een fout optreedt. (Schakel dit alleen in als je weet wat je doet!)</value>
   </data>
   <data name="Setting_Description_Language" xml:space="preserve">
     <value>UI-taal</value>
@@ -569,34 +578,34 @@
     <value>Euterpe actief houden in het systeemvak wanneer het hoofdvenster wordt gesloten</value>
   </data>
   <data name="Setting_Description_MuseDashFolder" xml:space="preserve">
-    <value>Map met Muse Dash-uitvoerbaar bestand</value>
+    <value>Map met het uitvoerbare bestand van Muse Dash</value>
   </data>
   <data name="Setting_Description_ShowConsole" xml:space="preserve">
-    <value>Of de console wordt weergegeven wanneer het spel wordt gestart</value>
+    <value>De console weergeven wanneer het spel start</value>
   </data>
   <data name="Setting_Description_ShowStartScreen" xml:space="preserve">
-    <value>Of het startscherm wordt weergegeven wanneer het spel wordt gestart</value>
+    <value>Het startscherm weergeven wanneer het spel start</value>
   </data>
   <data name="Setting_Description_SteamFolder" xml:space="preserve">
-    <value>Map met Steam-uitvoerbaar bestand</value>
+    <value>Map met het uitvoerbare bestand van Steam</value>
   </data>
   <data name="Setting_Description_UpdateChannel" xml:space="preserve">
     <value>Updatekanaal voor Euterpe</value>
   </data>
   <data name="Setting_Title_AlwaysShowScrollBar" xml:space="preserve">
-    <value>Altijd schuifbalk weergeven</value>
+    <value>Schuifbalk altijd weergeven</value>
   </data>
   <data name="Setting_Title_CacheFolder" xml:space="preserve">
     <value>Cachemap</value>
   </data>
   <data name="Setting_Title_IgnoreException" xml:space="preserve">
-    <value>Uitzondering negeren</value>
+    <value>Fouten negeren</value>
   </data>
   <data name="Setting_Title_Language" xml:space="preserve">
     <value>Taal</value>
   </data>
   <data name="Setting_Title_MinimizeToTrayOnClose" xml:space="preserve">
-    <value>Bij sluiten minimaliseren naar het systeemvak</value>
+    <value>Bij sluiten naar systeemvak minimaliseren</value>
   </data>
   <data name="Setting_Title_MuseDashFolder" xml:space="preserve">
     <value>Muse Dash-map</value>
@@ -620,52 +629,52 @@
     <value>Geen geldige spelmap</value>
   </data>
   <data name="Setup_GamePath_MdmcWarning" xml:space="preserve">
-    <value>Als u eerder MDMC hebt gebruikt, worden mogelijk enkele charts niet herkend en worden sommige mods vervangen door bijgewerkte versies; daarvan is de Headquarters-mod niet compatibel met Euterpe. Als u niet weet waar dit bericht over gaat, kunt u het gerust negeren.</value>
+    <value>Als je eerder MDMC hebt gebruikt, worden mogelijk enkele charts niet herkend en worden sommige mods vervangen door bijgewerkte versies. De Headquarters-mod is niet compatibel met Euterpe. Als je niet weet waar dit bericht over gaat, kun je het gerust negeren.</value>
   </data>
   <data name="Setup_GamePath_MdmcWarning_Title" xml:space="preserve">
     <value>Compatibiliteitswaarschuwing</value>
   </data>
   <data name="Setup_GamePath_WelcomeSubtitle" xml:space="preserve">
-    <value>Neem even de tijd om dit te lezen en kies daarna uw spelmap.</value>
+    <value>Neem even de tijd om dit te lezen en kies daarna je spelmap.</value>
   </data>
   <data name="Setup_GamePath_WelcomeTitle" xml:space="preserve">
-    <value>Voordat u begint</value>
+    <value>Voordat je begint</value>
   </data>
   <data name="Setup_Progress_EssentialModsInstalled" xml:space="preserve">
     <value>Essentiële mods geïnstalleerd</value>
   </data>
   <data name="Setup_Progress_InitializingEssentialMods" xml:space="preserve">
-    <value>Essentiële mods initialiseren ...</value>
+    <value>Essentiële mods initialiseren...</value>
   </data>
   <data name="Setup_Progress_InstallingDotNetRuntime" xml:space="preserve">
-    <value>.NET Runtime installeren ...</value>
+    <value>.NET Runtime installeren...</value>
   </data>
   <data name="Setup_Progress_InstallingDotNetSdk" xml:space="preserve">
-    <value>.NET SDK installeren ...</value>
+    <value>.NET SDK installeren...</value>
   </data>
   <data name="Setup_Progress_InstallingMelonLoader" xml:space="preserve">
-    <value>MelonLoader installeren ...</value>
+    <value>MelonLoader installeren...</value>
   </data>
   <data name="Setup_Progress_InstallingModTemplate" xml:space="preserve">
-    <value>Mod-template installeren ...</value>
+    <value>Modtemplate installeren...</value>
   </data>
   <data name="Setup_Progress_MigratingCharts" xml:space="preserve">
-    <value>CustomAlbums-charts migreren ...</value>
+    <value>CustomAlbums-charts migreren...</value>
   </data>
   <data name="Setup_Progress_SettingEnvVariable" xml:space="preserve">
-    <value>Omgevingsvariabele instellen ...</value>
+    <value>Omgevingsvariabele instellen...</value>
   </data>
   <data name="Setup_Progress_UninstallingConflict" xml:space="preserve">
-    <value>Incompatibele mod verwijderen: {0} ...</value>
+    <value>Incompatibele mod verwijderen: {0}...</value>
   </data>
   <data name="Setup_StepStatus_Failed" xml:space="preserve">
     <value>Mislukt</value>
   </data>
   <data name="Setup_StepStatus_Pending" xml:space="preserve">
-    <value>Wachtend</value>
+    <value>In wachtrij</value>
   </data>
   <data name="Setup_StepStatus_Running" xml:space="preserve">
-    <value>Actief</value>
+    <value>Bezig</value>
   </data>
   <data name="Setup_StepStatus_Succeeded" xml:space="preserve">
     <value>Klaar</value>
@@ -674,16 +683,16 @@
     <value>Mislukt. Controleer het logboek of probeer opnieuw.</value>
   </data>
   <data name="Setup_Task_ChartingTool" xml:space="preserve">
-    <value>Charting Tool (MDBMSC) (niet geïmplementeerd)</value>
+    <value>Charttool (nog niet beschikbaar)</value>
   </data>
   <data name="Setup_Task_ChartingTool_Description" xml:space="preserve">
-    <value>Toolkit voor het maken van MDM-charts (niet geïmplementeerd)</value>
+    <value>Tool voor het maken van charts</value>
   </data>
   <data name="Setup_Task_DotNetRuntime" xml:space="preserve">
     <value>.NET Runtime</value>
   </data>
   <data name="Setup_Task_DotNetRuntime_Description" xml:space="preserve">
-    <value>Vereist om de gemodde game te draaien</value>
+    <value>Vereist om het spel met mods te draaien</value>
   </data>
   <data name="Setup_Task_DotNetSdk" xml:space="preserve">
     <value>.NET SDK</value>
@@ -707,22 +716,22 @@
     <value>MelonLoader</value>
   </data>
   <data name="Setup_Task_MelonLoader_Description" xml:space="preserve">
-    <value>Vereist mod loader-framework</value>
+    <value>Vereiste modloader</value>
   </data>
   <data name="Setup_Task_Migration" xml:space="preserve">
-    <value>Verouderde gegevens migreren</value>
+    <value>Oude gegevens migreren</value>
   </data>
   <data name="Setup_Task_Migration_Description" xml:space="preserve">
     <value>Charts van oudere mods zoals CustomAlbums omzetten naar het formaat van Euterpe</value>
   </data>
   <data name="Setup_Task_ModTemplate" xml:space="preserve">
-    <value>Mod Template</value>
+    <value>Modtemplate</value>
   </data>
   <data name="Setup_Task_ModTemplate_Description" xml:space="preserve">
     <value>NuGet-template voor nieuwe modprojecten</value>
   </data>
   <data name="Setup_Task_UninstallConflicts" xml:space="preserve">
-    <value>Conflicten verwijderen</value>
+    <value>Conflicterende mods verwijderen</value>
   </data>
   <data name="Setup_Task_UninstallConflicts_Description" xml:space="preserve">
     <value>Incompatibele mods verwijderen</value>
@@ -739,29 +748,44 @@
   <data name="Share_Import_Canceled" xml:space="preserve">
     <value>Import geannuleerd</value>
   </data>
+  <data name="Share_Import_Empty" xml:space="preserve">
+    <value>Kopieer een deelcode en probeer het opnieuw</value>
+  </data>
   <data name="Share_Import_Failed" xml:space="preserve">
     <value>Importeren mislukt</value>
   </data>
   <data name="Share_Import_Header" xml:space="preserve">
-    <value>Een deelcode importeren</value>
+    <value>Gedeelde charts importeren</value>
   </data>
   <data name="Share_Import_Invalid" xml:space="preserve">
-    <value>Ongeldige deelcode</value>
+    <value>Geen deelcode op het klembord</value>
   </data>
   <data name="Share_Import_Preview" xml:space="preserve">
-    <value>{0} charts</value>
+    <value>{0} klaar om te importeren</value>
+  </data>
+  <data name="Share_Import_Refresh" xml:space="preserve">
+    <value>Klembord opnieuw controleren</value>
+  </data>
+  <data name="Share_Import_Result_Added" xml:space="preserve">
+    <value>{0} geïmporteerd</value>
+  </data>
+  <data name="Share_Import_Result_Failed" xml:space="preserve">
+    <value>{0} mislukt</value>
+  </data>
+  <data name="Share_Import_Result_Present" xml:space="preserve">
+    <value>{0} al in je bibliotheek</value>
   </data>
   <data name="Share_Import_Start" xml:space="preserve">
     <value>Import starten</value>
   </data>
   <data name="Share_Import_WrongGame" xml:space="preserve">
-    <value>Deze code is voor {0}. Schakel eerst over naar die game.</value>
+    <value>Deze charts zijn voor {0}. Schakel eerst over naar dat spel.</value>
   </data>
   <data name="Share_Title" xml:space="preserve">
     <value>Delen</value>
   </data>
   <data name="Splash_LoginPrompt" xml:space="preserve">
-    <value>Log in en autoriseer in de browser</value>
+    <value>Meld je aan in je browser en geef Euterpe toestemming</value>
   </data>
   <data name="ToolTip_EditModConfig" xml:space="preserve">
     <value>Modconfiguratie bewerken</value>
@@ -791,7 +815,7 @@
     <value>Stabiel</value>
   </data>
   <data name="UpdateDialog_Description" xml:space="preserve">
-    <value>Een nieuwe versie staat klaar en wordt automatisch geïnstalleerd.</value>
+    <value>Er is een nieuwe versie beschikbaar. Deze wordt automatisch gedownload en geïnstalleerd.</value>
   </data>
   <data name="UpdateDialog_RestartHint" xml:space="preserve">
     <value>Euterpe wordt automatisch opnieuw gestart wanneer de update gereed is.</value>
@@ -806,7 +830,7 @@
     <value>Euterpe bijwerken</value>
   </data>
   <data name="Wizard_Description_Welcome" xml:space="preserve">
-    <value>Kies uw rol en taken om te beginnen</value>
+    <value>Kies je rol en taken om te beginnen</value>
   </data>
   <data name="Wizard_Role_Charter" xml:space="preserve">
     <value>Charter</value>
@@ -818,7 +842,7 @@
     <value>Aangepast</value>
   </data>
   <data name="Wizard_Role_Custom_Description" xml:space="preserve">
-    <value>Pas uw configuratie aan</value>
+    <value>Pas je configuratie aan</value>
   </data>
   <data name="Wizard_Role_Modder" xml:space="preserve">
     <value>Modder</value>
@@ -830,7 +854,7 @@
     <value>Speler</value>
   </data>
   <data name="Wizard_Role_Player_Description" xml:space="preserve">
-    <value>Aanbevolen voor reguliere spelers</value>
+    <value>Aanbevolen voor gewone spelers</value>
   </data>
   <data name="Wizard_Section_Tasks" xml:space="preserve">
     <value>Taken</value>
