@@ -13,9 +13,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="FileDialog_Title_ChooseChartFile" xml:space="preserve">
-    <value>Pilih file chart</value>
-  </data>
   <data name="FileDialog_Title_ChooseEpkFile" xml:space="preserve">
     <value>Pilih file EPK</value>
   </data>
@@ -42,12 +39,6 @@
   </data>
   <data name="FolderDialog_Title_ChooseSteamFolder" xml:space="preserve">
     <value>Pilih folder Steam</value>
-  </data>
-  <data name="MessageBox_Button_No" xml:space="preserve">
-    <value>Tidak</value>
-  </data>
-  <data name="MessageBox_Button_Yes" xml:space="preserve">
-    <value>Ya</value>
   </data>
   <data name="MessageBox_Content_Chart_BulkDelete_Confirm" xml:space="preserve">
     <value>Hapus {0} chart yang dipilih?</value>
@@ -82,18 +73,6 @@
   <data name="MessageBox_Content_Login_Failed" xml:space="preserve">
     <value>Gagal login. Coba lagi? Memilih “Tidak” akan menutup Euterpe.</value>
   </data>
-  <data name="MessageBox_Content_MdmFile_Create_Failed" xml:space="preserve">
-    <value>Gagal membuat file MDM</value>
-  </data>
-  <data name="MessageBox_Content_MdmFile_Create_Success" xml:space="preserve">
-    <value>File MDM berhasil dibuat</value>
-  </data>
-  <data name="MessageBox_Content_MdmFile_Extract_Failed" xml:space="preserve">
-    <value>Gagal mengekstrak file MDM</value>
-  </data>
-  <data name="MessageBox_Content_MdmFile_Extract_Success" xml:space="preserve">
-    <value>File MDM berhasil diekstrak</value>
-  </data>
   <data name="MessageBox_Content_MelonLoader_Install_Failed" xml:space="preserve">
     <value>Gagal menginstal MelonLoader</value>
   </data>
@@ -123,9 +102,6 @@
   </data>
   <data name="MessageBox_Content_ModTemplate_Uninstall_Success" xml:space="preserve">
     <value>Template mod berhasil di-uninstal</value>
-  </data>
-  <data name="MessageBox_Content_NewVersionAvailable" xml:space="preserve">
-    <value>Versi baru tersedia: {0}. Pembaruan akan segera dimulai.</value>
   </data>
   <data name="MessageBox_Content_NoUpdatesFound" xml:space="preserve">
     <value>Tidak ada pembaruan yang tersedia</value>

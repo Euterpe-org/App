@@ -586,9 +586,6 @@
   <data name="Setting_Description_ShowStartScreen" xml:space="preserve">
     <value>게임 실행 시 시작 화면 표시 여부</value>
   </data>
-  <data name="Setting_Description_SteamFolder" xml:space="preserve">
-    <value>Steam 실행 파일이 있는 폴더</value>
-  </data>
   <data name="Setting_Description_UpdateChannel" xml:space="preserve">
     <value>Euterpe 업데이트 채널</value>
   </data>
@@ -616,14 +613,8 @@
   <data name="Setting_Title_ShowStartScreen" xml:space="preserve">
     <value>시작 화면 표시</value>
   </data>
-  <data name="Setting_Title_SteamFolder" xml:space="preserve">
-    <value>Steam 폴더</value>
-  </data>
   <data name="Setting_Title_UpdateChannel" xml:space="preserve">
     <value>업데이트 채널</value>
-  </data>
-  <data name="Setup_Description_GamePath" xml:space="preserve">
-    <value>게임이 설치된 위치를 알려주세요</value>
   </data>
   <data name="Setup_GamePath_Invalid" xml:space="preserve">
     <value>유효한 게임 폴더가 아닙니다</value>
@@ -789,24 +780,6 @@
   </data>
   <data name="ToolTip_EditModConfig" xml:space="preserve">
     <value>모드 설정 편집</value>
-  </data>
-  <data name="Translator_ChineseSimplified" xml:space="preserve">
-    <value>중국어(간체)</value>
-  </data>
-  <data name="Translator_ChineseTraditional" xml:space="preserve">
-    <value>중국어(번체)</value>
-  </data>
-  <data name="Translator_Hungarian" xml:space="preserve">
-    <value>헝가리어</value>
-  </data>
-  <data name="Translator_Korean" xml:space="preserve">
-    <value>한국어</value>
-  </data>
-  <data name="Translator_Russian" xml:space="preserve">
-    <value>러시아어</value>
-  </data>
-  <data name="Translator_Spanish" xml:space="preserve">
-    <value>스페인어</value>
   </data>
   <data name="UpdateChannel_Beta" xml:space="preserve">
     <value>베타 버전</value>

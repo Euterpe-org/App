@@ -13,9 +13,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="FileDialog_Title_ChooseChartFile" xml:space="preserve">
-    <value>Choose Chart File</value>
-  </data>
   <data name="FileDialog_Title_ChooseEpkFile" xml:space="preserve">
     <value>Choose EPK File</value>
   </data>
@@ -42,12 +39,6 @@
   </data>
   <data name="FolderDialog_Title_ChooseSteamFolder" xml:space="preserve">
     <value>Choose Steam Folder</value>
-  </data>
-  <data name="MessageBox_Button_No" xml:space="preserve">
-    <value>No</value>
-  </data>
-  <data name="MessageBox_Button_Yes" xml:space="preserve">
-    <value>Yes</value>
   </data>
   <data name="MessageBox_Content_Chart_BulkDelete_Confirm" xml:space="preserve">
     <value>Delete selected charts ({0})?</value>
@@ -82,18 +73,6 @@
   <data name="MessageBox_Content_Login_Failed" xml:space="preserve">
     <value>Sign-in failed. Would you like to try again? Selecting No will close Euterpe.</value>
   </data>
-  <data name="MessageBox_Content_MdmFile_Create_Failed" xml:space="preserve">
-    <value>Failed to create MDM file</value>
-  </data>
-  <data name="MessageBox_Content_MdmFile_Create_Success" xml:space="preserve">
-    <value>MDM files created successfully</value>
-  </data>
-  <data name="MessageBox_Content_MdmFile_Extract_Failed" xml:space="preserve">
-    <value>Failed to extract MDM file</value>
-  </data>
-  <data name="MessageBox_Content_MdmFile_Extract_Success" xml:space="preserve">
-    <value>MDM files extracted successfully</value>
-  </data>
   <data name="MessageBox_Content_MelonLoader_Install_Failed" xml:space="preserve">
     <value>Failed to install MelonLoader</value>
   </data>
@@ -123,9 +102,6 @@
   </data>
   <data name="MessageBox_Content_ModTemplate_Uninstall_Success" xml:space="preserve">
     <value>Mod template uninstalled</value>
-  </data>
-  <data name="MessageBox_Content_NewVersionAvailable" xml:space="preserve">
-    <value>New version available: {0}, updating now.</value>
   </data>
   <data name="MessageBox_Content_NoUpdatesFound" xml:space="preserve">
     <value>No updates available</value>

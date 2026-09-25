@@ -586,9 +586,6 @@
   <data name="Setting_Description_ShowStartScreen" xml:space="preserve">
     <value>ゲーム起動時に MelonLoader の起動画面を表示</value>
   </data>
-  <data name="Setting_Description_SteamFolder" xml:space="preserve">
-    <value>Steam の実行ファイルがあるフォルダー</value>
-  </data>
   <data name="Setting_Description_UpdateChannel" xml:space="preserve">
     <value>Euterpe の更新チャンネル</value>
   </data>
@@ -616,14 +613,8 @@
   <data name="Setting_Title_ShowStartScreen" xml:space="preserve">
     <value>起動画面を表示</value>
   </data>
-  <data name="Setting_Title_SteamFolder" xml:space="preserve">
-    <value>Steam フォルダー</value>
-  </data>
   <data name="Setting_Title_UpdateChannel" xml:space="preserve">
     <value>更新チャンネル</value>
-  </data>
-  <data name="Setup_Description_GamePath" xml:space="preserve">
-    <value>ゲームのインストール先を指定してください</value>
   </data>
   <data name="Setup_GamePath_Invalid" xml:space="preserve">
     <value>有効なゲームフォルダーではありません</value>
@@ -789,24 +780,6 @@
   </data>
   <data name="ToolTip_EditModConfig" xml:space="preserve">
     <value>Mod 設定を編集</value>
-  </data>
-  <data name="Translator_ChineseSimplified" xml:space="preserve">
-    <value>簡体字中国語</value>
-  </data>
-  <data name="Translator_ChineseTraditional" xml:space="preserve">
-    <value>繁体字中国語</value>
-  </data>
-  <data name="Translator_Hungarian" xml:space="preserve">
-    <value>ハンガリー語</value>
-  </data>
-  <data name="Translator_Korean" xml:space="preserve">
-    <value>韓国語</value>
-  </data>
-  <data name="Translator_Russian" xml:space="preserve">
-    <value>ロシア語</value>
-  </data>
-  <data name="Translator_Spanish" xml:space="preserve">
-    <value>スペイン語</value>
   </data>
   <data name="UpdateChannel_Beta" xml:space="preserve">
     <value>ベータ版</value>

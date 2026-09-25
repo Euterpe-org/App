@@ -13,9 +13,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="FileDialog_Title_ChooseChartFile" xml:space="preserve">
-    <value>譜面ファイルを選択</value>
-  </data>
   <data name="FileDialog_Title_ChooseEpkFile" xml:space="preserve">
     <value>EPK ファイルを選択</value>
   </data>
@@ -42,12 +39,6 @@
   </data>
   <data name="FolderDialog_Title_ChooseSteamFolder" xml:space="preserve">
     <value>Steam フォルダーを選択</value>
-  </data>
-  <data name="MessageBox_Button_No" xml:space="preserve">
-    <value>いいえ</value>
-  </data>
-  <data name="MessageBox_Button_Yes" xml:space="preserve">
-    <value>はい</value>
   </data>
   <data name="MessageBox_Content_Chart_BulkDelete_Confirm" xml:space="preserve">
     <value>選択した {0} 件の譜面を削除しますか？</value>
@@ -82,18 +73,6 @@
   <data name="MessageBox_Content_Login_Failed" xml:space="preserve">
     <value>ログインに失敗しました。再試行しますか？「いいえ」を選ぶと Euterpe を終了します。</value>
   </data>
-  <data name="MessageBox_Content_MdmFile_Create_Failed" xml:space="preserve">
-    <value>MDM ファイルの作成に失敗しました</value>
-  </data>
-  <data name="MessageBox_Content_MdmFile_Create_Success" xml:space="preserve">
-    <value>MDM ファイルを作成しました</value>
-  </data>
-  <data name="MessageBox_Content_MdmFile_Extract_Failed" xml:space="preserve">
-    <value>MDM ファイルの展開に失敗しました</value>
-  </data>
-  <data name="MessageBox_Content_MdmFile_Extract_Success" xml:space="preserve">
-    <value>MDM ファイルを展開しました</value>
-  </data>
   <data name="MessageBox_Content_MelonLoader_Install_Failed" xml:space="preserve">
     <value>MelonLoader のインストールに失敗しました</value>
   </data>
@@ -123,9 +102,6 @@
   </data>
   <data name="MessageBox_Content_ModTemplate_Uninstall_Success" xml:space="preserve">
     <value>Mod テンプレートのアンインストールが完了しました</value>
-  </data>
-  <data name="MessageBox_Content_NewVersionAvailable" xml:space="preserve">
-    <value>新しいバージョン {0} があります。更新を開始します。</value>
   </data>
   <data name="MessageBox_Content_NoUpdatesFound" xml:space="preserve">
     <value>利用可能な更新はありません</value>

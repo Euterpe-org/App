@@ -13,9 +13,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="FileDialog_Title_ChooseChartFile" xml:space="preserve">
-    <value>選擇譜面檔案</value>
-  </data>
   <data name="FileDialog_Title_ChooseEpkFile" xml:space="preserve">
     <value>選擇 EPK 檔案</value>
   </data>
@@ -42,12 +39,6 @@
   </data>
   <data name="FolderDialog_Title_ChooseSteamFolder" xml:space="preserve">
     <value>選擇 Steam 資料夾</value>
-  </data>
-  <data name="MessageBox_Button_No" xml:space="preserve">
-    <value>否</value>
-  </data>
-  <data name="MessageBox_Button_Yes" xml:space="preserve">
-    <value>是</value>
   </data>
   <data name="MessageBox_Content_Chart_BulkDelete_Confirm" xml:space="preserve">
     <value>刪除選取的 {0} 張譜面？</value>
@@ -82,18 +73,6 @@
   <data name="MessageBox_Content_Login_Failed" xml:space="preserve">
     <value>登入失敗，是否要重試？選擇「否」將關閉 Euterpe。</value>
   </data>
-  <data name="MessageBox_Content_MdmFile_Create_Failed" xml:space="preserve">
-    <value>MDM 檔案建立失敗</value>
-  </data>
-  <data name="MessageBox_Content_MdmFile_Create_Success" xml:space="preserve">
-    <value>MDM 檔案建立成功</value>
-  </data>
-  <data name="MessageBox_Content_MdmFile_Extract_Failed" xml:space="preserve">
-    <value>MDM 檔案解壓縮失敗</value>
-  </data>
-  <data name="MessageBox_Content_MdmFile_Extract_Success" xml:space="preserve">
-    <value>MDM 檔案解壓縮成功</value>
-  </data>
   <data name="MessageBox_Content_MelonLoader_Install_Failed" xml:space="preserve">
     <value>MelonLoader 安裝失敗</value>
   </data>
@@ -123,9 +102,6 @@
   </data>
   <data name="MessageBox_Content_ModTemplate_Uninstall_Success" xml:space="preserve">
     <value>模組範本解除安裝成功</value>
-  </data>
-  <data name="MessageBox_Content_NewVersionAvailable" xml:space="preserve">
-    <value>發現新版本：{0}，即將更新。</value>
   </data>
   <data name="MessageBox_Content_NoUpdatesFound" xml:space="preserve">
     <value>沒有可用的更新</value>

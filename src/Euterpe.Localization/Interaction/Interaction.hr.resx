@@ -13,9 +13,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="FileDialog_Title_ChooseChartFile" xml:space="preserve">
-    <value>Odaberi datoteku charta</value>
-  </data>
   <data name="FileDialog_Title_ChooseEpkFile" xml:space="preserve">
     <value>Odaberi EPK datoteku</value>
   </data>
@@ -42,12 +39,6 @@
   </data>
   <data name="FolderDialog_Title_ChooseSteamFolder" xml:space="preserve">
     <value>Odaberi mapu Steama</value>
-  </data>
-  <data name="MessageBox_Button_No" xml:space="preserve">
-    <value>Ne</value>
-  </data>
-  <data name="MessageBox_Button_Yes" xml:space="preserve">
-    <value>Da</value>
   </data>
   <data name="MessageBox_Content_Chart_BulkDelete_Confirm" xml:space="preserve">
     <value>Izbrisati odabrane chartove ({0})?</value>
@@ -82,18 +73,6 @@
   <data name="MessageBox_Content_Login_Failed" xml:space="preserve">
     <value>Prijava nije uspjela. Pokušati ponovno? Odabirom opcije „Ne” Euterpe će se zatvoriti.</value>
   </data>
-  <data name="MessageBox_Content_MdmFile_Create_Failed" xml:space="preserve">
-    <value>Stvaranje MDM datoteke nije uspjelo</value>
-  </data>
-  <data name="MessageBox_Content_MdmFile_Create_Success" xml:space="preserve">
-    <value>MDM datoteke su stvorene</value>
-  </data>
-  <data name="MessageBox_Content_MdmFile_Extract_Failed" xml:space="preserve">
-    <value>Raspakiranje MDM datoteke nije uspjelo</value>
-  </data>
-  <data name="MessageBox_Content_MdmFile_Extract_Success" xml:space="preserve">
-    <value>MDM datoteke su raspakirane</value>
-  </data>
   <data name="MessageBox_Content_MelonLoader_Install_Failed" xml:space="preserve">
     <value>Instalacija MelonLoadera nije uspjela</value>
   </data>
@@ -123,9 +102,6 @@
   </data>
   <data name="MessageBox_Content_ModTemplate_Uninstall_Success" xml:space="preserve">
     <value>Predložak moda je deinstaliran</value>
-  </data>
-  <data name="MessageBox_Content_NewVersionAvailable" xml:space="preserve">
-    <value>Dostupna je nova verzija: {0}. Ažuriranje u tijeku.</value>
   </data>
   <data name="MessageBox_Content_NoUpdatesFound" xml:space="preserve">
     <value>Nema dostupnih ažuriranja</value>

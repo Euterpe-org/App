@@ -586,9 +586,6 @@
   <data name="Setting_Description_ShowStartScreen" xml:space="preserve">
     <value>Exibir a tela de carregamento ao iniciar o jogo</value>
   </data>
-  <data name="Setting_Description_SteamFolder" xml:space="preserve">
-    <value>Pasta do executável do Steam</value>
-  </data>
   <data name="Setting_Description_UpdateChannel" xml:space="preserve">
     <value>Canal de atualização do Euterpe</value>
   </data>
@@ -616,14 +613,8 @@
   <data name="Setting_Title_ShowStartScreen" xml:space="preserve">
     <value>Exibir tela de carregamento</value>
   </data>
-  <data name="Setting_Title_SteamFolder" xml:space="preserve">
-    <value>Pasta do Steam</value>
-  </data>
   <data name="Setting_Title_UpdateChannel" xml:space="preserve">
     <value>Canal de atualização</value>
-  </data>
-  <data name="Setup_Description_GamePath" xml:space="preserve">
-    <value>Diga-nos onde o jogo está instalado</value>
   </data>
   <data name="Setup_GamePath_Invalid" xml:space="preserve">
     <value>Pasta do jogo inválida</value>
@@ -789,24 +780,6 @@
   </data>
   <data name="ToolTip_EditModConfig" xml:space="preserve">
     <value>Editar configuração do mod</value>
-  </data>
-  <data name="Translator_ChineseSimplified" xml:space="preserve">
-    <value>Chinês simplificado</value>
-  </data>
-  <data name="Translator_ChineseTraditional" xml:space="preserve">
-    <value>Chinês tradicional</value>
-  </data>
-  <data name="Translator_Hungarian" xml:space="preserve">
-    <value>Húngaro</value>
-  </data>
-  <data name="Translator_Korean" xml:space="preserve">
-    <value>Coreano</value>
-  </data>
-  <data name="Translator_Russian" xml:space="preserve">
-    <value>Russo</value>
-  </data>
-  <data name="Translator_Spanish" xml:space="preserve">
-    <value>Espanhol</value>
   </data>
   <data name="UpdateChannel_Beta" xml:space="preserve">
     <value>Beta</value>
