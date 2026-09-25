@@ -1,68 +1,67 @@
 <Project>
-    <PropertyGroup>
-        <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
-    </PropertyGroup>
-    <ItemGroup>
-        <PackageVersion Include="AsmResolver.DotNet" Version="6.0.1"/>
-        <PackageVersion Include="AssetsTools.NET" Version="3.0.5"/>
-        <PackageVersion Include="AsyncAwaitBestPractices" Version="10.0.0"/>
-        <PackageVersion Include="Autofac.Extensions.DependencyInjection" Version="11.0.2"/>
-        <PackageVersion Include="Avalonia.Labs.AnimatedImage" Version="12.0.2"/>
-        <PackageVersion Include="Avalonia.Labs.Controls" Version="12.0.2"/>
-        <PackageVersion Include="Basic.Reference.Assemblies.Net100" Version="1.8.12"/>
-        <PackageVersion Include="Avalonia" Version="12.1.3"/>
-        <PackageVersion Include="Avalonia.Desktop" Version="12.1.3"/>
-        <PackageVersion Include="Avalonia.Fonts.Inter" Version="12.1.3"/>
-        <PackageVersion Include="Avalonia.Headless" Version="12.1.3"/>
-        <PackageVersion Include="Autofac" Version="9.3.4"/>
-        <PackageVersion Include="AvaloniaUI.DiagnosticsSupport" Version="2.2.3"/>
-        <PackageVersion Include="Cake.Frosting" Version="6.3.0"/>
-        <PackageVersion Include="CliWrap" Version="3.10.5"/>
-        <PackageVersion Include="CommunityToolkit.Mvvm" Version="8.4.2"/>
-        <PackageVersion Include="DotNext.Threading" Version="6.8.0"/>
-        <PackageVersion Include="Downloader" Version="5.9.8"/>
-        <PackageVersion Include="DynamicData" Version="9.4.33"/>
-        <PackageVersion Include="HotAvalonia" Version="3.1.5"/>
-        <PackageVersion Include="Irihi.Ursa" Version="2.2.0"/>
-        <PackageVersion Include="Irihi.Ursa.Themes.Semi" Version="2.2.0"/>
-        <PackageVersion Include="JetBrains.Annotations" Version="2026.2.0"/>
-        <PackageVersion Include="JetBrains.dotCover.Framework" Version="1.0.2"/>
-        <PackageVersion Include="Meziantou.Framework.SnapshotTesting.Roslyn" Version="1.0.12"/>
-        <PackageVersion Include="Nerdbank.MessagePack" Version="1.3.88"/>
-        <PackageVersion Include="Microsoft.Build.Utilities.Core" Version="18.10.1"/>
-        <PackageVersion Include="Microsoft.CodeAnalysis.Analyzers" Version="5.9.0"/>
-        <PackageVersion Include="Microsoft.CodeAnalysis.CSharp" Version="5.9.0"/>
-        <PackageVersion Include="Microsoft.Extensions.Http" Version="10.0.12"/>
-        <PackageVersion Include="Microsoft.Extensions.Http.Resilience" Version="10.10.0"/>
-        <PackageVersion Include="NetEscapades.EnumGenerators" Version="1.0.0-beta21"/>
-        <PackageVersion Include="NLog" Version="6.2.1"/>
-        <PackageVersion Include="NLog.Extensions.Logging" Version="6.2.1"/>
-        <PackageVersion Include="NVorbis" Version="1.0.0-rc.2"/>
-        <PackageVersion Include="ObservableCollections" Version="3.3.4"/>
-        <PackageVersion Include="Polyfill" Version="11.4.0"/>
-        <PackageVersion Include="R3" Version="1.3.1"/>
-        <PackageVersion Include="R3Extensions.Avalonia" Version="1.3.1"/>
-        <PackageVersion Include="Refit" Version="16.3.0"/>
-        <PackageVersion Include="Refit.HttpClientFactory" Version="16.3.0"/>
-        <PackageVersion Include="ResXLocalize.Avalonia.R3" Version="2.0.0"/>
-        <PackageVersion Include="Riok.Mapperly" Version="4.3.1"/>
-        <PackageVersion Include="Roslynator.CodeAnalysis.Analyzers" Version="5.0.0"/>
-        <PackageVersion Include="Semi.Avalonia" Version="12.1.0.1"/>
-        <PackageVersion Include="Semver" Version="3.0.0"/>
-        <PackageVersion Include="SoundFlow" Version="1.4.1"/>
-        <PackageVersion Include="System.Security.Cryptography.ProtectedData" Version="10.0.12"/>
-        <PackageVersion Include="Tmds.DBus.Generator" Version="0.95.1"/>
-        <PackageVersion Include="Tmds.DBus.Protocol" Version="0.95.1"/>
-        <PackageVersion Include="TUnit" Version="1.67.0"/>
-        <PackageVersion Include="TUnit.Mocks" Version="1.67.0"/>
-        <PackageVersion Include="TUnit.Mocks.Http" Version="1.67.0"/>
-        <PackageVersion Include="TUnit.Mocks.Logging" Version="1.67.0"/>
-        <PackageVersion Include="ValveKeyValue" Version="0.71.0.528"/>
-        <PackageVersion Include="Velopack" Version="1.2.158"/>
-        <PackageVersion Include="Xaml.Behaviors.Interactions.DragAndDrop" Version="12.0.7"/>
-        <GlobalPackageReference Include="Meziantou.Analyzer" Version="3.0.200"/>
-        <GlobalPackageReference Include="MinVer" Version="8.0.0"/>
-        <GlobalPackageReference Include="Roslynator.Analyzers" Version="5.0.0"/>
-        <GlobalPackageReference Include="Roslynator.Formatting.Analyzers" Version="5.0.0"/>
-    </ItemGroup>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageVersion Include="AsmResolver.DotNet" Version="6.0.1" />
+    <PackageVersion Include="AssetsTools.NET" Version="3.0.5" />
+    <PackageVersion Include="AsyncAwaitBestPractices" Version="10.0.0" />
+    <PackageVersion Include="Autofac.Extensions.DependencyInjection" Version="11.0.2" />
+    <PackageVersion Include="Avalonia.Labs.AnimatedImage" Version="12.0.2" />
+    <PackageVersion Include="Avalonia.Labs.Controls" Version="12.0.2" />
+    <PackageVersion Include="Basic.Reference.Assemblies.Net100" Version="1.8.12" />
+    <PackageVersion Include="Avalonia" Version="12.1.3" />
+    <PackageVersion Include="Avalonia.Desktop" Version="12.1.3" />
+    <PackageVersion Include="Avalonia.Fonts.Inter" Version="12.1.3" />
+    <PackageVersion Include="Avalonia.Headless" Version="12.1.3" />
+    <PackageVersion Include="Autofac" Version="9.3.4" />
+    <PackageVersion Include="AvaloniaUI.DiagnosticsSupport" Version="2.2.3" />
+    <PackageVersion Include="Cake.Frosting" Version="6.3.0" />
+    <PackageVersion Include="CliWrap" Version="3.10.5" />
+    <PackageVersion Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+    <PackageVersion Include="DotNext.Threading" Version="6.8.0" />
+    <PackageVersion Include="Downloader" Version="5.9.8" />
+    <PackageVersion Include="DynamicData" Version="9.4.33" />
+    <PackageVersion Include="HotAvalonia" Version="3.1.5" />
+    <PackageVersion Include="Irihi.Ursa" Version="2.2.0" />
+    <PackageVersion Include="Irihi.Ursa.Themes.Semi" Version="2.2.0" />
+    <PackageVersion Include="JetBrains.Annotations" Version="2026.2.0" />
+    <PackageVersion Include="JetBrains.dotCover.Framework" Version="1.0.2" />
+    <PackageVersion Include="Meziantou.Framework.SnapshotTesting.Roslyn" Version="1.0.12" />
+    <PackageVersion Include="Nerdbank.MessagePack" Version="1.3.88" />
+    <PackageVersion Include="Microsoft.Build.Utilities.Core" Version="18.10.1" />
+    <PackageVersion Include="Microsoft.CodeAnalysis.Analyzers" Version="5.9.0" />
+    <PackageVersion Include="Microsoft.CodeAnalysis.CSharp" Version="5.9.0" />
+    <PackageVersion Include="Microsoft.Extensions.Http" Version="10.0.12" />
+    <PackageVersion Include="Microsoft.Extensions.Http.Resilience" Version="10.10.0" />
+    <PackageVersion Include="NetEscapades.EnumGenerators" Version="1.0.0-beta21" />
+    <PackageVersion Include="NLog" Version="6.2.1" />
+    <PackageVersion Include="NLog.Extensions.Logging" Version="6.2.1" />
+    <PackageVersion Include="NVorbis" Version="1.0.0-rc.2" />
+    <PackageVersion Include="ObservableCollections" Version="3.3.4" />
+    <PackageVersion Include="R3" Version="1.3.1" />
+    <PackageVersion Include="R3Extensions.Avalonia" Version="1.3.1" />
+    <PackageVersion Include="Refit" Version="16.3.0" />
+    <PackageVersion Include="Refit.HttpClientFactory" Version="16.3.0" />
+    <PackageVersion Include="ResXLocalize.Avalonia.R3" Version="2.0.0" />
+    <PackageVersion Include="Riok.Mapperly" Version="4.3.1" />
+    <PackageVersion Include="Roslynator.CodeAnalysis.Analyzers" Version="5.0.0" />
+    <PackageVersion Include="Semi.Avalonia" Version="12.1.0.1" />
+    <PackageVersion Include="Semver" Version="3.0.0" />
+    <PackageVersion Include="SoundFlow" Version="1.4.1" />
+    <PackageVersion Include="System.Security.Cryptography.ProtectedData" Version="10.0.12" />
+    <PackageVersion Include="Tmds.DBus.Generator" Version="0.95.1" />
+    <PackageVersion Include="Tmds.DBus.Protocol" Version="0.95.1" />
+    <PackageVersion Include="TUnit" Version="1.67.0" />
+    <PackageVersion Include="TUnit.Mocks" Version="1.67.0" />
+    <PackageVersion Include="TUnit.Mocks.Http" Version="1.67.0" />
+    <PackageVersion Include="TUnit.Mocks.Logging" Version="1.67.0" />
+    <PackageVersion Include="ValveKeyValue" Version="0.71.0.528" />
+    <PackageVersion Include="Velopack" Version="1.2.158" />
+    <PackageVersion Include="Xaml.Behaviors.Interactions.DragAndDrop" Version="12.0.7" />
+    <GlobalPackageReference Include="Meziantou.Analyzer" Version="3.0.200" />
+    <GlobalPackageReference Include="MinVer" Version="8.0.0" />
+    <GlobalPackageReference Include="Roslynator.Analyzers" Version="5.0.0" />
+    <GlobalPackageReference Include="Roslynator.Formatting.Analyzers" Version="5.0.0" />
+  </ItemGroup>
 </Project>
