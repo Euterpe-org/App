@@ -1,3 +1,4 @@
+using System.Reflection;
 using AssetsTools.NET.Extra;
 
 namespace Euterpe.Core;
@@ -53,7 +54,7 @@ internal sealed class GameLocalService : IGameLocalService
     public void ReadGameInformation()
     {
         var assetsManager = new AssetsManager();
-        assetsManager.LoadClassPackage(ResourceService.GetAssetAsStream("classdata.tpk"));
+        assetsManager.LoadClassPackage(Assembly.GetExecutingAssembly().GetManifestResourceStream("classdata.tpk"));
 
         var instance = assetsManager.LoadAssetsFile(GameConfig.GlobalGameManagersPath, true);
         var unityVersion = instance.file.Metadata.UnityVersion;
@@ -117,7 +118,6 @@ internal sealed class GameLocalService : IGameLocalService
     public required IGamePathDiscovery GamePaths { get; init; }
     public required ILogger<GameLocalService> Logger { get; init; }
     public required IMessageBoxService MessageBoxService { get; init; }
-    public required IResourceService ResourceService { get; init; }
 
     #endregion Injections
 }

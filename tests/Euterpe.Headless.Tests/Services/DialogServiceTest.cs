@@ -1,6 +1,3 @@
-using Euterpe.Abstractions;
-using Euterpe.Core;
-
 namespace Euterpe.Headless.Tests.Services;
 
 [TestSubject(typeof(DialogService))]

@@ -1,16 +1,12 @@
 <Application
     xmlns="https://github.com/avaloniaui"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:e="https://github.com/Euterpe-org/Euterpe"
-    xmlns:semi="https://irihi.tech/semi"
     x:Class="Euterpe.Headless.Tests.App"
     RequestedThemeVariant="Dark">
 
     <Application.Styles>
-        <e:EuterpeTheme />
-        <semi:SemiTheme />
-        <semi:SemiPopupAnimations />
-        <semi:UrsaSemiTheme />
+        <StyleInclude
+            Source="avares://Euterpe.Desktop/AppStyles.axaml" />
     </Application.Styles>
 
 </Application>

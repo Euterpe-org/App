@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <Sdk Name="StuDev.AotAnywhere"/>
+
+    <ItemGroup>
+        <PackageReference Include="Tmds.DBus.Generator"/>
+        <PackageReference Include="Tmds.DBus.Protocol"/>
+    </ItemGroup>
+
+    <ItemDefinitionGroup>
+        <AdditionalFiles>
+            <GenerateDBusTypes>false</GenerateDBusTypes>
+        </AdditionalFiles>
+    </ItemDefinitionGroup>
+
+    <ItemGroup>
+        <AdditionalFiles Include="DBusXml\*.xml" GenerateDBusTypes="true" DBusGeneratorMode="Proxy" Namespace="$(RootNamespace).DBus"/>
+    </ItemGroup>
+
+</Project>

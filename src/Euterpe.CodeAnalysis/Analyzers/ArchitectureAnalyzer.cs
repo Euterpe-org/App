@@ -7,6 +7,7 @@ public sealed class ArchitectureAnalyzer : DiagnosticAnalyzer
     public const string CoreTypeRuleId = "EUT0002";
     public const string SharedTypeRuleId = "EUT0003";
     public const string ModelsTypeRuleId = "EUT0004";
+    public const string PlatformTypeRuleId = "EUT0005";
 
     private const string Category = "Architecture";
 
@@ -42,7 +43,15 @@ public sealed class ArchitectureAnalyzer : DiagnosticAnalyzer
         DiagnosticSeverity.Error,
         true);
 
-    public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics => [AbstractionsTypeRule, CoreTypeRule, SharedTypeRule, ModelsTypeRule];
+    private static readonly DiagnosticDescriptor PlatformTypeRule = new(
+        PlatformTypeRuleId,
+        "Platform services must be internal and sealed",
+        "Platform service '{0}' must be internal and sealed",
+        Category,
+        DiagnosticSeverity.Error,
+        true);
+
+    public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics => [AbstractionsTypeRule, CoreTypeRule, SharedTypeRule, ModelsTypeRule, PlatformTypeRule];
 
     public override void Initialize(AnalysisContext context)
     {
@@ -72,6 +81,9 @@ public sealed class ArchitectureAnalyzer : DiagnosticAnalyzer
                 { TypeKind: TypeKind.Class, DeclaredAccessibility: not Accessibility.Public } => SharedTypeRule,
             ModelsAssemblyName when type is
                 { TypeKind: TypeKind.Class, IsStatic: false, DeclaredAccessibility: not Accessibility.Public } => ModelsTypeRule,
+            "Euterpe" when type.ContainingNamespace.ToDisplayString() is "Euterpe.Windows" or "Euterpe.Linux"
+                           && type is { TypeKind: TypeKind.Class, IsStatic: false }
+                               and not { DeclaredAccessibility: Accessibility.Internal, IsSealed: true } => PlatformTypeRule,
             _ => null
         };
 

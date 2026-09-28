@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <Sdk Name="StuDev.AotAnywhere"/>
+
+    <PropertyGroup>
+        <ApplicationIcon>..\..\Euterpe.Desktop\Assets\Icon.ico</ApplicationIcon>
+        <ApplicationManifest>app.manifest</ApplicationManifest>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="System.Security.Cryptography.ProtectedData"/>
+    </ItemGroup>
+
+</Project>

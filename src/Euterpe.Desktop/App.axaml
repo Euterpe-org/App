@@ -1,0 +1,34 @@
+<Application
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vm="using:Euterpe"
+    x:Class="Euterpe.App"
+    x:DataType="vm:AppViewModel"
+    RequestedThemeVariant="Dark">
+
+    <Application.Styles>
+        <StyleInclude
+            Source="/AppStyles.axaml" />
+    </Application.Styles>
+
+    <TrayIcon.Icons>
+        <TrayIcons>
+            <TrayIcon
+                Command="{Binding ShowCommand, Mode=OneTime}"
+                Icon="/Assets/Icon.ico"
+                ToolTipText="Euterpe">
+                <TrayIcon.Menu>
+                    <NativeMenu>
+                        <NativeMenuItem
+                            Command="{Binding ShowCommand, Mode=OneTime}"
+                            Header="Show" />
+                        <NativeMenuItem
+                            Command="{Binding ExitCommand, Mode=OneTime}"
+                            Header="Exit" />
+                    </NativeMenu>
+                </TrayIcon.Menu>
+            </TrayIcon>
+        </TrayIcons>
+    </TrayIcon.Icons>
+
+</Application>

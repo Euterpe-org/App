@@ -86,7 +86,7 @@ public sealed class ThemeSwitchingTest : HeadlessTest
     });
 
     [Test]
-    public Task SharedResource_CheckMark_ResolvesRegardlessOfTheme() => RunOnUI(async () =>
+    public Task FindResource_CheckMark_ResolvesRegardlessOfTheme() => RunOnUI(async () =>
     {
         var window = NewWindow();
         try

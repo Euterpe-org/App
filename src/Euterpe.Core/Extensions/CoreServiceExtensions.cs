@@ -6,11 +6,10 @@ using NLog.Extensions.Logging;
 using Refit;
 using SoundFlow.Abstracts;
 using SoundFlow.Backends.MiniAudio;
-using Velopack.Sources;
 
 namespace Euterpe.Core.Extensions;
 
-public static partial class CoreServiceExtensions
+public static class CoreServiceExtensions
 {
     extension(IServiceCollection services)
     {
@@ -107,22 +106,13 @@ public static partial class CoreServiceExtensions
             builder.RegisterType<AudioPlayerService>().As<IAudioPlayerService>().PropertiesAutowired().SingleInstance();
             builder.RegisterType<AuthService>().As<IAuthService>().PropertiesAutowired().SingleInstance();
             builder.RegisterType<CrashLogUploadService>().As<ICrashLogUploadService>().PropertiesAutowired().SingleInstance();
-            builder.RegisterType<DialogService>().As<IDialogService>().PropertiesAutowired().SingleInstance();
             builder.RegisterType<FileSystemService>().As<IFileSystemService>().PropertiesAutowired().SingleInstance();
-            builder.RegisterType<FileSystemPickerService>().As<IFileSystemPickerService>().PropertiesAutowired().SingleInstance();
             builder.RegisterType<ImageCacheService>().As<IRemoteImageLoader>().PropertiesAutowired().SingleInstance();
             builder.RegisterType<JsonSerializationService>().As<IJsonSerializationService>().PropertiesAutowired().SingleInstance();
             builder.RegisterType<MessagePackSerializationService>().As<IMessagePackSerializationService>().PropertiesAutowired().SingleInstance();
             builder.RegisterType<LoopbackCallbackListener>().As<ILoopbackCallbackListener>().InstancePerDependency();
-            builder.RegisterType<MessageBoxService>().As<IMessageBoxService>().SingleInstance();
-            builder.RegisterType<NotificationService>().As<INotificationService>().As<INotificationServiceWiring>().PropertiesAutowired().SingleInstance();
-            builder.RegisterType<ResourceService>().As<IResourceService>().PropertiesAutowired().SingleInstance();
             builder.RegisterType<TelemetryService>().As<ITelemetryService>().PropertiesAutowired().SingleInstance();
-            builder.RegisterType<UpdateService>().As<IUpdateService>().PropertiesAutowired().SingleInstance();
-            builder.RegisterType<VelopackFileDownloader>().As<IFileDownloader>().PropertiesAutowired().SingleInstance();
             builder.RegisterType<VdfSerializationService>().As<IVdfSerializationService>().PropertiesAutowired().SingleInstance();
-
-            builder.RegisterPerPlatformAppServices();
         }
 
         public void RegisterPerGameCoreServices(GameId activeGame)
@@ -162,8 +152,6 @@ public static partial class CoreServiceExtensions
             builder.RegisterType<MelonLoaderStep>().As<ISetupStep>().PropertiesAutowired().InstancePerLifetimeScope();
             builder.RegisterType<ModTemplateStep>().As<ISetupStep>().PropertiesAutowired().InstancePerLifetimeScope();
             builder.RegisterType<UninstallConflictsStep>().As<ISetupStep>().PropertiesAutowired().InstancePerLifetimeScope();
-
-            builder.RegisterPerPlatformGameServices();
         }
     }
 }

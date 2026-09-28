@@ -14,10 +14,6 @@
                     x:Key="Dark"
                     Source="/Themes/Resources/DarkResource.axaml" />
             </ResourceDictionary.ThemeDictionaries>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceInclude
-                    Source="/Themes/Resources/SharedResource.axaml" />
-            </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Styles.Resources>
     <!--  Controls  -->

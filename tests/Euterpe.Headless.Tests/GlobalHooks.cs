@@ -1,6 +1,5 @@
 using Autofac;
 using Euterpe.Abstractions;
-using Euterpe.Core;
 
 namespace Euterpe.Headless.Tests;
 

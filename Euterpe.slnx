@@ -21,11 +21,17 @@
         <Project Path="src/Euterpe.Contracts/Euterpe.Contracts.csproj"/>
         <Project Path="src/Euterpe.Controls/Euterpe.Controls.csproj"/>
         <Project Path="src/Euterpe.Core/Euterpe.Core.csproj"/>
+        <Project Path="src/Euterpe.Desktop/Euterpe.Desktop.csproj"/>
         <Project Path="src/Euterpe.Localization/Euterpe.Localization.csproj"/>
         <Project Path="src/Euterpe.Models/Euterpe.Models.csproj"/>
         <Project Path="src/Euterpe.Shared/Euterpe.Shared.csproj"/>
         <Project Path="src/Euterpe.Tasks/Euterpe.Tasks.csproj"/>
-        <Project Path="src/Euterpe/Euterpe.csproj"/>
+    </Folder>
+    <Folder Name="/src/Platforms/">
+        <File Path="src/Platforms/AssemblyInfo.cs"/>
+        <File Path="src/Platforms/Directory.Build.props"/>
+        <Project Path="src/Platforms/Euterpe.Linux/Euterpe.Linux.csproj"/>
+        <Project Path="src/Platforms/Euterpe.Windows/Euterpe.Windows.csproj"/>
     </Folder>
     <Folder Name="/tests/">
         <Project Path="tests/Euterpe.CodeAnalysis.Tests/Euterpe.CodeAnalysis.Tests.csproj"/>

@@ -11,8 +11,8 @@
     <ItemGroup>
         <ProjectReference Include="..\Euterpe.CodeAnalysis\Euterpe.CodeAnalysis.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false"/>
         <ProjectReference Include="..\Euterpe.Contracts\Euterpe.Contracts.csproj"/>
-        <ProjectReference Include="..\Euterpe.Shared\Euterpe.Shared.csproj"/>
         <ProjectReference Include="..\Euterpe.Localization\Euterpe.Localization.csproj"/>
+        <ProjectReference Include="..\Euterpe.Shared\Euterpe.Shared.csproj"/>
     </ItemGroup>
 
 </Project>

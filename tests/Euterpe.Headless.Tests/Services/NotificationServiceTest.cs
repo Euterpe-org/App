@@ -1,5 +1,3 @@
-using Euterpe.Abstractions;
-using Euterpe.Core;
 using WindowNotificationManager = Ursa.Controls.WindowNotificationManager;
 
 namespace Euterpe.Headless.Tests.Services;

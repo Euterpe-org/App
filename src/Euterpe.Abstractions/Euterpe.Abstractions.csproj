@@ -1,17 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <ItemGroup>
-        <ProjectReference Include="..\Euterpe.Contracts\Euterpe.Contracts.csproj"/>
-        <ProjectReference Include="..\Euterpe.CodeAnalysis\Euterpe.CodeAnalysis.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false"/>
-        <ProjectReference Include="..\Euterpe.Models\Euterpe.Models.csproj"/>
-        <ProjectReference Include="..\Euterpe.Shared\Euterpe.Shared.csproj"/>
-    </ItemGroup>
-
-    <ItemGroup>
+        <PackageReference Include="Avalonia"/>
         <PackageReference Include="DotNext.Threading"/>
         <PackageReference Include="Downloader"/>
         <PackageReference Include="DynamicData"/>
-        <PackageReference Include="Irihi.Ursa"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Euterpe.CodeAnalysis\Euterpe.CodeAnalysis.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false"/>
+        <ProjectReference Include="..\Euterpe.Contracts\Euterpe.Contracts.csproj"/>
+        <ProjectReference Include="..\Euterpe.Models\Euterpe.Models.csproj"/>
+        <ProjectReference Include="..\Euterpe.Shared\Euterpe.Shared.csproj"/>
     </ItemGroup>
 
 </Project>

@@ -1,6 +1,5 @@
 using Avalonia.Platform.Storage;
 using TUnit.Mocks.Logging;
-using Ursa.Controls;
 
 namespace Euterpe.Tests.Core;
 
@@ -45,7 +44,7 @@ public sealed class AppLocalServiceTest
         steam.CheckIsValidSteamFolder("/good").Returns(true);
 
         var messageBox = IMessageBoxService.Mock();
-        messageBox.ErrorAsync(Any<string>()).Returns(MessageBoxResult.Yes);
+        messageBox.ErrorAsync(Any<string>()).Returns(() => Task.CompletedTask);
 
         var service = CreateService(picker, steam, messageBox);
         var result = await service.GetSteamFolderAsync();
@@ -79,7 +78,7 @@ public sealed class AppLocalServiceTest
         steam.CheckIsValidSteamExecPath("/usr/bin/steam").Returns(true);
 
         var messageBox = IMessageBoxService.Mock();
-        messageBox.ErrorAsync(Any<string>()).Returns(MessageBoxResult.Yes);
+        messageBox.ErrorAsync(Any<string>()).Returns(() => Task.CompletedTask);
 
         var service = CreateService(picker, steam, messageBox);
         var result = await service.GetSteamExecPathAsync();

@@ -19,8 +19,8 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\src\Euterpe\Euterpe.csproj"/>
         <ProjectReference Include="..\..\src\Euterpe.Controls\Euterpe.Controls.csproj"/>
+        <ProjectReference Include="..\..\src\Euterpe.Desktop\Euterpe.Desktop.csproj"/>
     </ItemGroup>
 
 </Project>

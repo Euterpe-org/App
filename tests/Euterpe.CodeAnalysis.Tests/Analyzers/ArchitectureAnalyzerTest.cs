@@ -7,6 +7,19 @@ namespace Euterpe.CodeAnalysis.Tests.Analyzers;
 public sealed class ArchitectureAnalyzerTest
 {
     [Test]
+    [Arguments("Euterpe.Windows")]
+    [Arguments("Euterpe.Linux")]
+    public async Task AnalyzeNamedType_PlatformPublicService_ReportsDiagnostic(string namespaceName)
+    {
+        var diagnostics = await AnalyzerTestHelper.RunAsync<ArchitectureAnalyzer>(
+            "Euterpe",
+            $"namespace {namespaceName}; public class Service;").ConfigureAwait(false);
+
+        await Assert.That(diagnostics.Select(static diagnostic => diagnostic.Id))
+            .IsEquivalentTo([ArchitectureAnalyzer.PlatformTypeRuleId]);
+    }
+
+    [Test]
     public async Task AnalyzeNamedType_AbstractionsNonPublicClass_ReportsDiagnostic()
     {
         var diagnostics = await AnalyzerTestHelper.RunAsync<ArchitectureAnalyzer>(

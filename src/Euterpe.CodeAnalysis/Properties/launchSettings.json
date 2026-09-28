@@ -3,7 +3,7 @@
   "profiles": {
     "DebugEuterpeSourceGenerator": {
       "commandName": "DebugRoslynComponent",
-      "targetProject": "../Euterpe/Euterpe.csproj"
+      "targetProject": "../Euterpe.Desktop/Euterpe.Desktop.csproj"
     },
     "DebugEuterpeCoreSourceGenerator": {
       "commandName": "DebugRoslynComponent",

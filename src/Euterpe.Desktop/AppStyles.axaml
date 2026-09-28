@@ -1,0 +1,37 @@
+<Styles
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:e="https://github.com/Euterpe-org/Euterpe"
+    xmlns:semi="https://irihi.tech/semi">
+
+    <Styles.Resources>
+        <!--  Bitmaps  -->
+        <Bitmap
+            x:Key="BackgroundImage">
+            avares://Euterpe.Desktop/Assets/Background.webp
+        </Bitmap>
+        <Bitmap
+            x:Key="TitleImage">
+            avares://Euterpe.Desktop/Assets/MuseDash_Title.webp
+        </Bitmap>
+
+        <!--  Home Page  -->
+        <!--  Fades the background out to nothing at both ends so it meets the nav rail without a seam  -->
+        <LinearGradientBrush x:Key="HomeBackgroundMask" StartPoint="0%,0%" EndPoint="100%,0%">
+            <GradientStop Offset="0" Color="#00FFFFFF" />
+            <GradientStop Offset="0.10" Color="#29FFFFFF" />
+            <GradientStop Offset="0.20" Color="#69FFFFFF" />
+            <GradientStop Offset="0.30" Color="#D6FFFFFF" />
+            <GradientStop Offset="0.35" Color="#FFFFFFFF" />
+            <GradientStop Offset="0.88" Color="#FFFFFFFF" />
+            <GradientStop Offset="0.94" Color="#6BFFFFFF" />
+            <GradientStop Offset="1" Color="#00FFFFFF" />
+        </LinearGradientBrush>
+    </Styles.Resources>
+
+    <e:EuterpeTheme />
+    <semi:SemiTheme />
+    <semi:SemiPopupAnimations />
+    <semi:UrsaSemiTheme />
+
+</Styles>

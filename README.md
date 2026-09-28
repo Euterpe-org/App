@@ -82,7 +82,7 @@ This project is licensed under the [GNU General Public License v3.0](LICENSE).
 | [Autofac](https://github.com/autofac/Autofac)                                            | [MIT](https://github.com/autofac/Autofac/blob/develop/LICENSE)                      |
 | [Avalonia](https://github.com/AvaloniaUI/Avalonia)                                       | [MIT](https://github.com/AvaloniaUI/Avalonia/blob/master/licence.md)                |
 | [Avalonia.Labs](https://github.com/AvaloniaUI/Avalonia.Labs)                             | [MIT](https://github.com/AvaloniaUI/Avalonia.Labs/blob/main/LICENSE)                |
-| [Cake](https://github.com/cake-build/cake)                                             | [MIT](https://github.com/cake-build/cake/blob/develop/LICENSE)                     |
+| [Cake](https://github.com/cake-build/cake)                                               | [MIT](https://github.com/cake-build/cake/blob/develop/LICENSE)                      |
 | [CliWrap](https://github.com/Tyrrrz/CliWrap)                                             | [MIT](https://github.com/Tyrrrz/CliWrap/blob/master/License.txt)                    |
 | [CommunityToolkit.Mvvm](https://github.com/CommunityToolkit/dotnet)                      | [MIT](https://github.com/CommunityToolkit/dotnet/blob/main/License.md)              |
 | [dotNext](https://github.com/dotnet/dotNext)                                             | [MIT](https://github.com/dotnet/dotNext/blob/master/LICENSE)                        |

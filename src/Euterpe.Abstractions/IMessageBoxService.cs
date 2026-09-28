@@ -1,5 +1,3 @@
-using Ursa.Controls;
-
 namespace Euterpe.Abstractions;
 
 public interface IMessageBoxService
@@ -7,49 +5,49 @@ public interface IMessageBoxService
     #region Confirm
 
     // Normal
-    Task<MessageBoxResult> WarningConfirmAsync(string message);
-    Task<MessageBoxResult> WarningConfirmAsync(string message, params ReadOnlySpan<object> args);
-    Task<MessageBoxResult> NoticeConfirmAsync(string message);
-    Task<MessageBoxResult> NoticeConfirmAsync(string message, params ReadOnlySpan<object> args);
+    Task<bool> WarningConfirmAsync(string message);
+    Task<bool> WarningConfirmAsync(string message, params ReadOnlySpan<object> args);
+    Task<bool> NoticeConfirmAsync(string message);
+    Task<bool> NoticeConfirmAsync(string message, params ReadOnlySpan<object> args);
 
     // Overlay
-    Task<MessageBoxResult> NoticeConfirmOverlayAsync(string message);
-    Task<MessageBoxResult> NoticeConfirmOverlayAsync(string message, params ReadOnlySpan<object> args);
+    Task<bool> NoticeConfirmOverlayAsync(string message);
+    Task<bool> NoticeConfirmOverlayAsync(string message, params ReadOnlySpan<object> args);
 
     #endregion
 
     #region Error
 
     // Normal
-    Task<MessageBoxResult> ErrorAsync(string message);
-    Task<MessageBoxResult> ErrorAsync(string message, params ReadOnlySpan<object> args);
+    Task ErrorAsync(string message);
+    Task ErrorAsync(string message, params ReadOnlySpan<object> args);
 
     // Overlay
-    Task<MessageBoxResult> ErrorOverlayAsync(string message);
-    Task<MessageBoxResult> ErrorOverlayAsync(string message, params ReadOnlySpan<object> args);
+    Task ErrorOverlayAsync(string message);
+    Task ErrorOverlayAsync(string message, params ReadOnlySpan<object> args);
 
     #endregion
 
     #region Notice
 
     // Normal
-    Task<MessageBoxResult> NoticeAsync(string message);
-    Task<MessageBoxResult> NoticeAsync(string message, params ReadOnlySpan<object> args);
+    Task NoticeAsync(string message);
+    Task NoticeAsync(string message, params ReadOnlySpan<object> args);
 
     // Overlay
-    Task<MessageBoxResult> NoticeOverlayAsync(string message);
+    Task NoticeOverlayAsync(string message);
 
     #endregion
 
     #region Success
 
     // Normal
-    Task<MessageBoxResult> SuccessAsync(string message);
-    Task<MessageBoxResult> SuccessAsync(string message, params ReadOnlySpan<object> args);
+    Task SuccessAsync(string message);
+    Task SuccessAsync(string message, params ReadOnlySpan<object> args);
 
     // Overlay
-    Task<MessageBoxResult> SuccessOverlayAsync(string message);
-    Task<MessageBoxResult> SuccessOverlayAsync(string message, params ReadOnlySpan<object> args);
+    Task SuccessOverlayAsync(string message);
+    Task SuccessOverlayAsync(string message, params ReadOnlySpan<object> args);
 
     #endregion
 }

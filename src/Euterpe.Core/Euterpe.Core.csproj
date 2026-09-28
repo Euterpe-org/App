@@ -1,12 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <ItemGroup>
+        <EmbeddedResource Include="Assets\classdata.tpk" LogicalName="classdata.tpk"/>
+    </ItemGroup>
+
+    <ItemGroup>
         <PackageReference Include="AsmResolver.DotNet"/>
         <PackageReference Include="AssetsTools.NET"/>
         <PackageReference Include="AsyncAwaitBestPractices"/>
-        <PackageReference Include="CliWrap"/>
         <PackageReference Include="Autofac"/>
-
+        <PackageReference Include="CliWrap"/>
         <PackageReference Include="Microsoft.Extensions.Http"/>
         <PackageReference Include="Microsoft.Extensions.Http.Resilience"/>
         <PackageReference Include="NLog"/>
@@ -17,15 +20,7 @@
         <PackageReference Include="Refit.HttpClientFactory"/>
         <PackageReference Include="Semver"/>
         <PackageReference Include="SoundFlow"/>
-        <PackageReference Include="System.Security.Cryptography.ProtectedData"/>
-        <PackageReference Include="Tmds.DBus.Generator"/>
-        <PackageReference Include="Tmds.DBus.Protocol"/>
         <PackageReference Include="ValveKeyValue"/>
-        <PackageReference Include="Velopack"/>
-    </ItemGroup>
-
-    <ItemGroup>
-        <AdditionalFiles Include="DBusXml\*.xml" DBusGeneratorMode="Proxy" Namespace="$(RootNamespace).DBus"/>
     </ItemGroup>
 
     <ItemGroup>

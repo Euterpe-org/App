@@ -7,10 +7,10 @@ namespace Euterpe.Releaser;
 
 public sealed partial class ReleaseContext : FrostingContext
 {
-    public const string ApplicationProject = "src/Euterpe/Euterpe.csproj";
-    public const string PackageIconPath = "src/Euterpe/Assets/Icon.ico";
+    public const string PackageIconPath = "src/Euterpe.Desktop/Assets/Icon.ico";
     public const string PackageId = "Euterpe";
 
+    public string ApplicationProject { get; }
     public string Rid { get; }
     public SemVersion Version { get; init; }
     public string InstallerFileSuffix { get; }
@@ -25,10 +25,12 @@ public sealed partial class ReleaseContext : FrostingContext
         switch (separatorIndex < 0 ? rid : rid[..separatorIndex])
         {
             case "win":
+                ApplicationProject = "src/Platforms/Euterpe.Windows/Euterpe.Windows.csproj";
                 InstallerFileSuffix = "-Setup.exe";
                 PlatformVpkArguments = ["--noPortable", "--icon", PackageIconPath];
                 break;
             case "linux":
+                ApplicationProject = "src/Platforms/Euterpe.Linux/Euterpe.Linux.csproj";
                 InstallerFileSuffix = ".AppImage";
                 PlatformVpkArguments = [];
                 break;

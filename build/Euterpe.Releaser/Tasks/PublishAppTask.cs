@@ -12,7 +12,7 @@ public sealed class PublishAppTask : FrostingTask<ReleaseContext>
 
     public override void Run(ReleaseContext context)
     {
-        context.DotNetPublish(ApplicationProject, new DotNetPublishSettings
+        context.DotNetPublish(context.ApplicationProject, new DotNetPublishSettings
         {
             Configuration = "Release",
             Runtime = context.Rid,

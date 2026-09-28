@@ -5,7 +5,6 @@ using Euterpe.Features.Charting;
 using Euterpe.Features.Share;
 using Euterpe.Models;
 using Euterpe.Models.Progress;
-using Euterpe.Services;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Abstractions;
 using R3;

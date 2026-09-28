@@ -60,18 +60,12 @@ public sealed class GenerateTheme : Task
             new XElement(AvaloniaNamespace + "ResourceDictionary",
                 new XElement(AvaloniaNamespace + "ResourceDictionary.ThemeDictionaries",
                     CreateThemeInclude("Light"),
-                    CreateThemeInclude("Dark")),
-                new XElement(AvaloniaNamespace + "ResourceDictionary.MergedDictionaries",
-                    CreateResourceInclude("Shared"))));
+                    CreateThemeInclude("Dark"))));
 
     private XElement CreateThemeInclude(string themeName) =>
         new(AvaloniaNamespace + "ResourceInclude",
             new XAttribute(XamlNamespace + "Key", themeName),
             new XAttribute("Source", $"/Themes/Resources/{themeName}Resource.axaml"));
-
-    private XElement CreateResourceInclude(string resourceName) =>
-        new(AvaloniaNamespace + "ResourceInclude",
-            new XAttribute("Source", $"/Themes/Resources/{resourceName}Resource.axaml"));
 
     private void ProcessResourceFiles()
     {

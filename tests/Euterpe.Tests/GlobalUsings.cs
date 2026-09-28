@@ -1,5 +1,6 @@
 global using Euterpe.Abstractions;
 global using Euterpe.Core;
+global using Euterpe.Services;
 global using Euterpe.Models;
 global using Euterpe.Models.Auth;
 global using Euterpe.Models.Charts;

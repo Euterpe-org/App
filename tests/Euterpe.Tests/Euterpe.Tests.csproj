@@ -15,8 +15,19 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\src\Euterpe\Euterpe.csproj"/>
         <ProjectReference Include="..\..\src\Euterpe.Core\Euterpe.Core.csproj"/>
+        <ProjectReference Include="..\..\src\Euterpe.Desktop\Euterpe.Desktop.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup Condition="$([MSBuild]::IsOSPlatform('Windows'))">
+        <ProjectReference Include="..\..\src\Platforms\Euterpe.Windows\Euterpe.Windows.csproj"/>
+    </ItemGroup>
+    <ItemGroup Condition="$([MSBuild]::IsOSPlatform('Linux'))">
+        <ProjectReference Include="..\..\src\Platforms\Euterpe.Linux\Euterpe.Linux.csproj"/>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Remove="Platforms\Windows\**\*.cs" Condition="!$([MSBuild]::IsOSPlatform('Windows'))"/>
+        <Compile Remove="Platforms\Linux\**\*.cs" Condition="!$([MSBuild]::IsOSPlatform('Linux'))"/>
     </ItemGroup>
 
     <ItemGroup>

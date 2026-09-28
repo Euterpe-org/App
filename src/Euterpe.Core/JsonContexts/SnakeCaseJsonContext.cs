@@ -27,4 +27,4 @@ namespace Euterpe.Core.JsonContexts;
 [JsonSerializable(typeof(SessionEvent))]
 [JsonSerializable(typeof(TokenPayload))]
 [JsonSerializable(typeof(UserInfo))]
-internal sealed partial class SnakeCaseJsonContext : JsonSerializerContext;
+public sealed partial class SnakeCaseJsonContext : JsonSerializerContext;

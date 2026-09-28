@@ -1,8 +1,12 @@
 using Cake.Core;
+using Cake.Core.Diagnostics;
+using Cake.Core.IO;
 using Euterpe.Contracts.Distribution;
+using Euterpe.Shared;
 using Semver;
 using DirectoryPath = Cake.Core.IO.DirectoryPath;
 using static Euterpe.Releaser.ReleaseContext;
+using Path = System.IO.Path;
 
 namespace Euterpe.Releaser.Tests;
 
@@ -22,6 +26,9 @@ public sealed class ReleaseContextTest
     {
         var context = CreateContext(rid: rid);
 
+        await Assert.That(context.ApplicationProject).IsEqualTo(expectedDisablePortable
+            ? "src/Platforms/Euterpe.Windows/Euterpe.Windows.csproj"
+            : "src/Platforms/Euterpe.Linux/Euterpe.Linux.csproj");
         await Assert.That(context.InstallerFileSuffix).IsEqualTo(expectedInstallerFileSuffix);
         await Assert.That(context.PlatformVpkArguments.SequenceEqual(
                 expectedDisablePortable
@@ -150,12 +157,12 @@ public sealed class ReleaseContextTest
         var cakeContext = ICakeContext.Mock();
         cakeContext.Arguments.Returns(arguments.Object);
         cakeContext.Environment.Returns(environment.Object);
-        cakeContext.FileSystem.Returns(Cake.Core.IO.IFileSystem.Mock().Object);
-        cakeContext.ProcessRunner.Returns(Cake.Core.IO.IProcessRunner.Mock().Object);
-        cakeContext.Log.Returns(Cake.Core.Diagnostics.ICakeLog.Mock().Object);
+        cakeContext.FileSystem.Returns(IFileSystem.Mock().Object);
+        cakeContext.ProcessRunner.Returns(IProcessRunner.Mock().Object);
+        cakeContext.Log.Returns(ICakeLog.Mock().Object);
         return new ReleaseContext(cakeContext.Object)
         {
-            Version = SemVersion.Parse(version ?? Euterpe.Shared.BuildInfo.AppVersion, SemVersionStyles.Strict)
+            Version = SemVersion.Parse(version ?? BuildInfo.AppVersion, SemVersionStyles.Strict)
         };
     }
 }

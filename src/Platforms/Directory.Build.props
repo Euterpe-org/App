@@ -1,0 +1,38 @@
+<Project>
+    <Import Project="..\..\Directory.Build.props"/>
+    <Import Condition="'$(IsPublishing)' == 'true'" Project="..\..\Publish.props"/>
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <AssemblyName>Euterpe</AssemblyName>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="$(MSBuildThisFileDirectory)AssemblyInfo.cs" Link="Properties\AssemblyInfo.cs"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="$(MSBuildThisFileDirectory)..\Euterpe.CodeAnalysis\Euterpe.CodeAnalysis.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false"/>
+        <ProjectReference Include="$(MSBuildThisFileDirectory)..\Euterpe.Desktop\Euterpe.Desktop.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Using Include="System.Diagnostics"/>
+        <Using Include="System.Diagnostics.CodeAnalysis"/>
+        <Using Include="System.Runtime.InteropServices"/>
+        <Using Include="System.Runtime.Versioning"/>
+        <Using Include="Autofac"/>
+        <Using Include="Euterpe.Abstractions"/>
+        <Using Include="Euterpe.Models"/>
+        <Using Include="Euterpe.Models.Charts"/>
+        <Using Include="Euterpe.Models.Games"/>
+        <Using Include="Euterpe.Proxies"/>
+        <Using Include="Euterpe.Shared"/>
+        <Using Include="Euterpe.Shared.Extensions"/>
+        <Using Include="Microsoft.Extensions.Logging"/>
+        <Using Include="Euterpe.Localization.Interaction" Static="true"/>
+        <Using Include="Euterpe.Shared.BuildInfo" Static="true"/>
+        <Using Include="Euterpe.Shared.PathConstants" Static="true"/>
+    </ItemGroup>
+</Project>

@@ -2,10 +2,6 @@
     <Import Project="NativeAot.props"/>
 
     <PropertyGroup>
-        <DefineConstants Condition="'$(IsPublishing)' == 'true'">$(DefineConstants);PUBLISH</DefineConstants>
-    </PropertyGroup>
-
-    <PropertyGroup>
         <DebuggerSupport>false</DebuggerSupport>
     </PropertyGroup>
 

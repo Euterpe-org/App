@@ -19,22 +19,15 @@
         <IsPublishing Condition="'$(_IsPublishing)' != '' And '$(IsPublishing)' == ''">$(_IsPublishing)</IsPublishing>
     </PropertyGroup>
 
+    <PropertyGroup Condition="'$(IsPublishing)' == 'true'">
+        <DefineConstants>$(DefineConstants);PUBLISH</DefineConstants>
+    </PropertyGroup>
+
     <!-- Third Party Library Properties-->
     <PropertyGroup>
         <EnumGenerator_EnableUsageAnalyzers>true</EnumGenerator_EnableUsageAnalyzers>
         <MeziantouAnalysisMode>None</MeziantouAnalysisMode>
         <MvvmToolkitEnableINotifyPropertyChangingSupport>false</MvvmToolkitEnableINotifyPropertyChangingSupport>
-    </PropertyGroup>
-
-    <!-- Platform Properties -->
-    <PropertyGroup>
-        <IsWindows Condition="'$([System.OperatingSystem]::IsWindows())' == 'true'">true</IsWindows>
-        <IsLinux Condition="'$([System.OperatingSystem]::IsLinux())' == 'true'">true</IsLinux>
-        <IsMacOS Condition="'$([System.OperatingSystem]::IsMacOS())' == 'true'">true</IsMacOS>
-
-        <DefineConstants Condition="'$(IsWindows)' == 'true'">$(DefineConstants);WINDOWS</DefineConstants>
-        <DefineConstants Condition="'$(IsLinux)' == 'true'">$(DefineConstants);LINUX</DefineConstants>
-        <DefineConstants Condition="'$(IsMacOS)' == 'true'">$(DefineConstants);MACOS</DefineConstants>
     </PropertyGroup>
 
     <Import Condition="'$(Configuration)' == 'Release'" Project="Release.props"/>
