@@ -7,7 +7,8 @@ namespace Euterpe.Releaser;
 
 public sealed partial class ReleaseContext : FrostingContext
 {
-    public const string PackageIconPath = "src/Euterpe.Desktop/Assets/Icon.ico";
+    public const string WindowsPackageIconPath = "src/Euterpe.Desktop/Assets/Icon.ico";
+    public const string LinuxPackageIconPath = "src/Euterpe.Desktop/Assets/Icon.png";
     public const string PackageId = "Euterpe";
 
     public string ApplicationProject { get; }
@@ -27,12 +28,12 @@ public sealed partial class ReleaseContext : FrostingContext
             case "win":
                 ApplicationProject = "src/Platforms/Euterpe.Windows/Euterpe.Windows.csproj";
                 InstallerFileSuffix = "-Setup.exe";
-                PlatformVpkArguments = ["--noPortable", "--icon", PackageIconPath];
+                PlatformVpkArguments = ["--noPortable", "--icon", WindowsPackageIconPath];
                 break;
             case "linux":
                 ApplicationProject = "src/Platforms/Euterpe.Linux/Euterpe.Linux.csproj";
                 InstallerFileSuffix = ".AppImage";
-                PlatformVpkArguments = [];
+                PlatformVpkArguments = ["--icon", LinuxPackageIconPath];
                 break;
             default:
                 throw new InvalidOperationException($"Unsupported release RID: {Rid}");

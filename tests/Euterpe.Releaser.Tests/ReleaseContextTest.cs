@@ -32,8 +32,8 @@ public sealed class ReleaseContextTest
         await Assert.That(context.InstallerFileSuffix).IsEqualTo(expectedInstallerFileSuffix);
         await Assert.That(context.PlatformVpkArguments.SequenceEqual(
                 expectedDisablePortable
-                    ? ["--noPortable", "--icon", PackageIconPath]
-                    : []))
+                    ? ["--noPortable", "--icon", WindowsPackageIconPath]
+                    : ["--icon", LinuxPackageIconPath]))
             .IsTrue();
         await Assert.That(context.StableChannel).IsEqualTo($"{rid}-stable");
         await Assert.That(context.BetaChannel).IsEqualTo($"{rid}-beta");
