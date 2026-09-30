@@ -10,7 +10,7 @@ public static class RefitExtensions
         where T : class
     {
         var builder = services
-            .AddRefitGeneratedClient<T>(SnakeCaseJsonContext.Default, null, name)
+            .AddRefitGeneratedClient<T>(RefitSettings.ForJsonContext(SnakeCaseJsonContext.Default), name)
             .ConfigureHttpClient(c => c.BaseAddress = new Uri($"{EuterpeApi.BaseUrl}{basePath}"))
             .AddHttpMessageHandler<XRequestIdHandler>();
 
