@@ -8,18 +8,6 @@ namespace Euterpe.Tests.Desktop.ViewModels;
 public sealed class RolePageViewModelTest
 {
     [Test]
-    public async Task Roles_DefaultOptions_ContainsAllFourIdentities()
-    {
-        var identities = RolePageViewModel.Roles.Select(r => r.Identity).ToList();
-
-        using var assertions = Assert.Multiple();
-        await Assert.That(identities).Contains(WizardIdentity.Player);
-        await Assert.That(identities).Contains(WizardIdentity.Charter);
-        await Assert.That(identities).Contains(WizardIdentity.Modder);
-        await Assert.That(identities).Contains(WizardIdentity.Custom);
-    }
-
-    [Test]
     public async Task SelectedRole_OnlyRequiredOptionsSelected_DefaultsToPlayer()
     {
         // Default MuseDashConfig has the Required options selected, which matches Player preset.

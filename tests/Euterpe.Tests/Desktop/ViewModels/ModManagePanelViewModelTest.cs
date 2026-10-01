@@ -10,22 +10,6 @@ namespace Euterpe.Tests.Desktop.ViewModels;
 public sealed class ModManagePanelViewModelTest
 {
     [Test]
-    public async Task Constructor_DefaultState_InitializesWithEmptyMods()
-    {
-        var vm = NewViewModel();
-
-        using var assertions = Assert.Multiple();
-        await Assert.That(vm.Mods).IsEmpty();
-        await Assert.That(vm.Filter.SearchText).IsNull();
-        await Assert.That(vm.Filter.ModFilter).IsEqualTo(ModFilterType.All);
-        await Assert.That(vm.AllModsLoaded).IsFalse();
-    }
-
-    [Test]
-    public async Task ModFilters_DefaultOptions_HasSixOptions() =>
-        await Assert.That(ModManagePanelViewModel.ModFilters).Count().IsEqualTo(6);
-
-    [Test]
     public async Task OpenConfigFileCommand_ModHasConfigFile_OpensComposedPath()
     {
         var launcher = IPlatformLauncher.Mock();

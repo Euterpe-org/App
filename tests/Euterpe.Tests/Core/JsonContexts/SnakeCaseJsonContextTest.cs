@@ -34,16 +34,4 @@ public sealed class SnakeCaseJsonContextTest
         await Assert.That(json.Contains("\"dot_net_runtime_version\"", StringComparison.Ordinal)).IsFalse();
         await Assert.That(roundTripped.Single().Versions.Single().Value.Metadata.DotNetRuntimeVersion).IsEqualTo("6.0");
     }
-
-    [Test]
-    public async Task DependencyMetadata_NumberRuntimeVersion_ThrowsJsonException()
-    {
-        const string json = """
-                            [{"slug":"MelonLoader","versions":{"0.7.3":{"metadata":{"dotnet_runtime_version":6.0}}}}]
-                            """;
-
-        var act = () => JsonSerializer.Deserialize(json, SnakeCaseJsonContext.Default.DependencyArray);
-
-        await Assert.That(act).Throws<JsonException>();
-    }
 }

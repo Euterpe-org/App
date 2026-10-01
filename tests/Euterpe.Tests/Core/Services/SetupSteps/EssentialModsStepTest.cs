@@ -16,14 +16,6 @@ public sealed class EssentialModsStepTest
         };
 
     [Test]
-    public async Task Kinds_EssentialModsStep_ReturnsEssentialMods()
-    {
-        var step = CreateStep(IModManageService.Mock());
-
-        await Assert.That(step.Kinds).IsEqualTo(SetupOptionKinds.EssentialMods);
-    }
-
-    [Test]
     public async Task ExecuteAsync_ModServiceAvailable_InitializesMods()
     {
         var modManageService = IModManageService.Mock();

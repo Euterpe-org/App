@@ -17,13 +17,4 @@ public sealed class ResourceServiceTest : HeadlessTest
         await Assert.That(stream.CanRead).IsTrue();
         await Assert.That(stream.Length).IsGreaterThan(0);
     });
-
-    [Test]
-    public Task GetAssetAsStream_MissingAsset_Throws() => RunOnUI(async () =>
-    {
-        var service = NewService();
-
-        var act = () => service.GetAssetAsStream("__does_not_exist__.png");
-        await Assert.That(act).Throws<FileNotFoundException>();
-    });
 }

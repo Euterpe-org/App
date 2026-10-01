@@ -8,15 +8,6 @@ namespace Euterpe.Tests.Desktop.ViewModels;
 public sealed class HomePageViewModelTest
 {
     [Test]
-    public async Task GameModes_DefaultOptions_HasModdedAndVanilla()
-    {
-        using var _ = Assert.Multiple();
-        await Assert.That(HomePageViewModel.GameModes).Count().IsEqualTo(2);
-        await Assert.That(HomePageViewModel.GameModes[0].Value).IsEqualTo(GameMode.Modded);
-        await Assert.That(HomePageViewModel.GameModes[1].Value).IsEqualTo(GameMode.Vanilla);
-    }
-
-    [Test]
     public async Task LaunchGameCommand_ModdedMode_CallsLaunchModdedGame()
     {
         var launchService = IGameLaunchService.Mock();

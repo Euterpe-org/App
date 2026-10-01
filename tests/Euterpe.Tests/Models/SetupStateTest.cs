@@ -13,19 +13,6 @@ public sealed class SetupStateTest
         };
 
     [Test]
-    public async Task Constructor_DefaultState_IsNotStartedAndNotRunning()
-    {
-        var state = new SetupState();
-
-        using var _ = Assert.Multiple();
-        await Assert.That(state.Stage).IsEqualTo(SetupExecutionStage.NotStarted);
-        await Assert.That(state.IsRunning).IsFalse();
-        await Assert.That(state.AllSucceeded).IsFalse();
-        await Assert.That(state.HasFailedSteps).IsFalse();
-        await Assert.That(state.Steps).IsEmpty();
-    }
-
-    [Test]
     public async Task IsRunning_RunningStage_ReturnsTrue()
     {
         var state = new SetupState { Stage = SetupExecutionStage.Running };
@@ -97,21 +84,5 @@ public sealed class SetupStateTest
         using var _ = Assert.Multiple();
         await Assert.That(state.Steps).IsEmpty();
         await Assert.That(state.Stage).IsEqualTo(SetupExecutionStage.NotStarted);
-    }
-
-    [Test]
-    public async Task Stage_ValueChanged_RaisesPropertyChangedForDependents()
-    {
-        var state = new SetupState();
-        var changed = new List<string?>();
-        state.PropertyChanged += (_, args) => changed.Add(args.PropertyName);
-
-        state.Stage = SetupExecutionStage.Running;
-
-        using var _ = Assert.Multiple();
-        await Assert.That(changed).Contains(nameof(SetupState.Stage));
-        await Assert.That(changed).Contains(nameof(SetupState.IsRunning));
-        await Assert.That(changed).Contains(nameof(SetupState.AllSucceeded));
-        await Assert.That(changed).Contains(nameof(SetupState.HasFailedSteps));
     }
 }

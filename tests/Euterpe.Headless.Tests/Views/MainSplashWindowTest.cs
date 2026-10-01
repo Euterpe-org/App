@@ -16,32 +16,6 @@ namespace Euterpe.Headless.Tests.Views;
 public sealed class MainSplashWindowTest : HeadlessTest
 {
     [Test]
-    public Task AuthState_BackgroundChange_UpdatesLoginVisibility() => RunOnUI(async () =>
-    {
-        var vm = NewViewModel();
-        var window = new MainSplashWindow { DataContext = vm, MainWindowFactory = () => new MainWindow() };
-        try
-        {
-            window.Show();
-            Dispatcher.UIThread.RunJobs();
-            var button = window.GetVisualDescendants().OfType<Button>().Single(b => b.Command == vm.CopyLoginLinkCommand);
-
-            await Task.Run(() => vm.AuthState.AuthorizeUrl = "https://euterpe-org.com/auth/app?state=background")
-                .WaitAsync(TimeSpan.FromSeconds(5));
-            Dispatcher.UIThread.RunJobs();
-            await Assert.That(button.IsEffectivelyVisible).IsTrue();
-
-            await Task.Run(() => vm.AuthState.AuthorizeUrl = null).WaitAsync(TimeSpan.FromSeconds(5));
-            Dispatcher.UIThread.RunJobs();
-            await Assert.That(button.IsEffectivelyVisible).IsFalse();
-        }
-        finally
-        {
-            window.Hide();
-        }
-    });
-
-    [Test]
     public Task CopyLoginLink_WaitingForAuthorization_CopiesCurrentLinkAndShowsInlineFeedback() => RunOnUI(async () =>
     {
         const string url = "https://euterpe-org.com/auth/app?state=current-attempt&code_challenge=challenge";

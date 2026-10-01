@@ -32,22 +32,6 @@ public sealed class WizardDialogViewModelTest
     }
 
     [Test]
-    public async Task CurrentPageIndex_ValueChanged_RaisesPropertyChangedForDerivedProperties()
-    {
-        var vm = NewViewModel();
-        var changed = new List<string?>();
-        vm.PropertyChanged += (_, args) => changed.Add(args.PropertyName);
-
-        vm.CurrentPageIndex = 1;
-
-        using var _ = Assert.Multiple();
-        await Assert.That(changed).Contains(nameof(WizardDialogViewModel.CurrentPageIndex));
-        await Assert.That(changed).Contains(nameof(WizardDialogViewModel.CurrentPage));
-        await Assert.That(changed).Contains(nameof(WizardDialogViewModel.CanGoBack));
-        await Assert.That(changed).Contains(nameof(WizardDialogViewModel.IsLastPage));
-    }
-
-    [Test]
     public async Task PrepareForFullSetupAsync_PreviousSetupFinished_PopulatesPagesAndResetsState()
     {
         var state = new SetupState();

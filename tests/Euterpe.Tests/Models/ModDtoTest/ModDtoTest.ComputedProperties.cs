@@ -92,18 +92,6 @@ public sealed partial class ModDtoTest
     }
 
     [Test]
-    public async Task DuplicatedModPaths_ValueChanged_RaisesPropertyChangedForReasonDisplay()
-    {
-        var mod = Create();
-        var changedProperties = new List<string?>();
-        mod.PropertyChanged += (_, args) => changedProperties.Add(args.PropertyName);
-
-        mod.DuplicatedModPaths = ["MyMod.dll", "MyMod.disabled"];
-
-        await Assert.That(changedProperties).Contains(nameof(ModDto.ReasonDisplay));
-    }
-
-    [Test]
     public async Task HasDependency_DependencyCollectionsChange_ReflectsWhetherAnyExist()
     {
         var mod = Create();

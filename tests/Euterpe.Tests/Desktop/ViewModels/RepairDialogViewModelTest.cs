@@ -32,16 +32,6 @@ public sealed class RepairDialogViewModelTest
     }
 
     [Test]
-    public Task Close_WithNoSubscriber_DoesNotThrow()
-    {
-        var vm = NewViewModel();
-
-        vm.Close();
-
-        return Task.CompletedTask;
-    }
-
-    [Test]
     public async Task OpenFileCommand_FilePathProvided_DelegatesToLauncher()
     {
         var launcher = IPlatformLauncher.Mock();

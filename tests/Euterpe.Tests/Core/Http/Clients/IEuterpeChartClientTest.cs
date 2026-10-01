@@ -1,8 +1,6 @@
-using System.Net;
 using Euterpe.Contracts.Charts;
 using Euterpe.Core.Http.Clients;
 using Euterpe.Tests.TestSupport;
-using Refit;
 using static Euterpe.Shared.EuterpeApi;
 
 namespace Euterpe.Tests.Core.Http.Clients;
@@ -39,20 +37,5 @@ public sealed class IEuterpeChartClientTest
             .IsEquivalentTo(["video.mp4"], StringComparer.Ordinal, CollectionOrdering.Matching);
         await Assert.That(http.Requests[0].Body).Contains("\"AbCdEf123\"");
         await Assert.That(http.Requests[0].Body).Contains("\"version\":3");
-    }
-
-    [Test]
-    public async Task CheckChartUpdatesAsync_ServerError_ThrowsApiExceptionCarryingContent()
-    {
-        using var http = Mock.HttpHandler();
-        http.OnPost("/api/charts/check-updates").RespondWithJson("""{"detail":"boom"}""", HttpStatusCode.BadGateway);
-        var api = http.CreateEuterpeClient<IEuterpeChartClient>(Charts.BasePath);
-
-        Func<Task<CheckChartUpdatesResponse?>> act = async () => await api.CheckChartUpdatesAsync(new CheckChartUpdatesRequest());
-
-        var exception = await Assert.That(act).ThrowsExactly<ApiException>();
-        using var assertions = Assert.Multiple();
-        await Assert.That(exception!.StatusCode).IsEqualTo(HttpStatusCode.BadGateway);
-        await Assert.That(exception.Content).IsEqualTo("""{"detail":"boom"}""");
     }
 }

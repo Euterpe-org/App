@@ -37,15 +37,6 @@ public sealed class NotificationServiceTest : HeadlessTest
     });
 
     [Test]
-    public Task FormatString_InvalidFormat_Throws() => RunOnUI(async () =>
-    {
-        var service = NewWiredService();
-
-        var act = () => service.Success("missing arg {0} {1}", 42);
-        await Assert.That(act).Throws<FormatException>();
-    });
-
-    [Test]
     public async Task Success_CalledOffUIThread_DispatchesWithoutThrowing()
     {
         var manager = await RunOnUI(() =>

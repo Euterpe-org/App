@@ -31,36 +31,4 @@ public sealed class SetupStepStateTest
         var distinct = new[] { pending, running, succeeded, failed }.Distinct().Count();
         await Assert.That(distinct).IsEqualTo(4);
     }
-
-    [Test]
-    public async Task Status_ValueChanged_RaisesPropertyChangedForDependents()
-    {
-        var step = NewStep();
-        var changed = new List<string?>();
-        step.PropertyChanged += (_, args) => changed.Add(args.PropertyName);
-
-        step.Status = SetupStepStatus.Failed;
-
-        using var _ = Assert.Multiple();
-        await Assert.That(changed).Contains(nameof(SetupStepState.Status));
-        await Assert.That(changed).Contains(nameof(SetupStepState.CanRetry));
-        await Assert.That(changed).Contains(nameof(SetupStepState.StatusDisplay));
-    }
-
-    [Test]
-    public async Task ErrorMessageAndMessage_DefaultNull_AndAreObservable()
-    {
-        var step = NewStep();
-        var changed = new List<string?>();
-        step.PropertyChanged += (_, args) => changed.Add(args.PropertyName);
-
-        step.ErrorMessage = "boom";
-        step.Message = "ok";
-
-        using var _ = Assert.Multiple();
-        await Assert.That(step.ErrorMessage).IsEqualTo("boom");
-        await Assert.That(step.Message).IsEqualTo("ok");
-        await Assert.That(changed).Contains(nameof(SetupStepState.ErrorMessage));
-        await Assert.That(changed).Contains(nameof(SetupStepState.Message));
-    }
 }

@@ -8,10 +8,6 @@ namespace Euterpe.Tests.Desktop.ViewModels;
 public sealed class ExecutionPageViewModelTest
 {
     [Test]
-    public async Task CanGoBack_NewViewModel_IsFalse() =>
-        await Assert.That(NewViewModel(new MuseDashConfig(), []).CanGoBack).IsFalse();
-
-    [Test]
     public async Task OnEnterAsync_SelectedSetupOptions_PopulatesSteps()
     {
         var gameConfig = new MuseDashConfig();

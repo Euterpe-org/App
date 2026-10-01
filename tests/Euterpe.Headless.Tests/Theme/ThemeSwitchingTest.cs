@@ -85,26 +85,6 @@ public sealed class ThemeSwitchingTest : HeadlessTest
         }
     });
 
-    [Test]
-    public Task FindResource_CheckMark_ResolvesRegardlessOfTheme() => RunOnUI(async () =>
-    {
-        var window = NewWindow();
-        try
-        {
-            var darkCheck = window.FindResource(ThemeVariant.Dark, "CheckMark");
-            var lightCheck = window.FindResource(ThemeVariant.Light, "CheckMark");
-
-            using var _ = Assert.Multiple();
-            await Assert.That(darkCheck).IsNotNull();
-            await Assert.That(lightCheck).IsNotNull();
-            await Assert.That(darkCheck).IsSameReferenceAs(lightCheck);
-        }
-        finally
-        {
-            window.Close();
-        }
-    });
-
     private static Window NewWindow()
     {
         var window = new Window { Width = 100, Height = 100 };

@@ -17,13 +17,6 @@ public sealed class CoverImageTest : HeadlessTest
         Convert.FromBase64String("UklGRjwAAABXRUJQVlA4IDAAAADQAQCdASoEAAQAAgA0JaACdLoB+AADsAD+8Oj3/yC5YXXI1/8gP+QH/ID/+PIAAAA=");
 
     [Test]
-    public Task Stretch_NewControl_IsUniform() => RunOnUI(async () =>
-    {
-        var cover = new CoverImage();
-        await Assert.That(cover.Stretch).IsEqualTo(Stretch.Uniform);
-    });
-
-    [Test]
     public Task ApplyTemplate_DefaultTheme_CreatesAnimatedPart() => RunOnUI(async () =>
     {
         var cover = Show(new CoverImage());

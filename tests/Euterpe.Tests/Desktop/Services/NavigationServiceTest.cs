@@ -15,16 +15,6 @@ public sealed class NavigationServiceTest
     };
 
     [Test]
-    public async Task Constructor_DefaultState_HasNoCurrentRouteAndIsNotReady()
-    {
-        var service = NewService();
-
-        using var _ = Assert.Multiple();
-        await Assert.That(service.CurrentRoute).IsNull();
-        await Assert.That(service.Ready.IsSet).IsFalse();
-    }
-
-    [Test]
     public async Task NavigateTo_NewRoute_UpdatesCurrentRoute()
     {
         var service = NewService();

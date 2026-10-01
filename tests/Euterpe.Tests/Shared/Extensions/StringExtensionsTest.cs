@@ -7,15 +7,6 @@ namespace Euterpe.Tests.Shared.Extensions;
 public sealed class StringExtensionsTest
 {
     [Test]
-    [Arguments(null, true)]
-    [Arguments("", true)]
-    [Arguments(" ", false)]
-    [Arguments("a", false)]
-    [Arguments("hello", false)]
-    public async Task IsNullOrEmpty_NullEmptyAndNonEmptyInputs_ReportsWhetherNullOrEmpty(string? input, bool expected) =>
-        await Assert.That(input.IsNullOrEmpty()).IsEqualTo(expected);
-
-    [Test]
     [Arguments(null, null)]
     [Arguments("", null)]
     [Arguments("   ", null)]

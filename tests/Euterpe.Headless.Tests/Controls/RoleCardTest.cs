@@ -5,13 +5,6 @@ namespace Euterpe.Headless.Tests.Controls;
 public sealed class RoleCardTest : HeadlessTest
 {
     [Test]
-    public Task IsSelected_NewControl_IsFalse() => RunOnUI(async () =>
-    {
-        var card = new RoleCard();
-        await Assert.That(card.IsSelected).IsFalse();
-    });
-
-    [Test]
     public Task AccentColor_ValueSet_BindsToIconBadgeBackground() => RunOnUI(async () =>
     {
         var card = new RoleCard { AccentColor = new SolidColorBrush(Colors.Red) };

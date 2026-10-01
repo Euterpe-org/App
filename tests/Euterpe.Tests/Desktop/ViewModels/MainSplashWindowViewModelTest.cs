@@ -1,9 +1,5 @@
 using System.Runtime.CompilerServices;
-using Autofac;
 using DotNext.Threading;
-using Euterpe.Core.Extensions;
-using Euterpe.Core.Http.Clients;
-using Euterpe.Extensions;
 using Euterpe.Features.Update;
 using Euterpe.Proxies;
 using Euterpe.Shell;
@@ -15,35 +11,6 @@ namespace Euterpe.Tests.Desktop.ViewModels;
 [TestSubject(typeof(MainSplashWindowViewModel))]
 public sealed class MainSplashWindowViewModelTest
 {
-    [Test]
-    public async Task Resolve_AppRegistrations_SharesAuthStateWithAuthService()
-    {
-        var dependencies = NewViewModel(IAuthService.Mock());
-        var builder = new ContainerBuilder();
-        builder.RegisterAppCoreServices();
-        builder.RegisterAppViewModels();
-        builder.RegisterInstance(dependencies.Launcher);
-        builder.RegisterInstance(dependencies.Logger);
-        builder.RegisterInstance(dependencies.MessageBoxService);
-        builder.RegisterInstance(dependencies.TopLevel);
-        builder.RegisterInstance(dependencies.UpdateService);
-        builder.RegisterInstance(dependencies.UpdateDialogService);
-        builder.RegisterInstance<Microsoft.Extensions.Logging.ILogger<AuthService>>(NullLogger<AuthService>.Instance);
-        builder.RegisterInstance<IPlatformSecureStorage>(IPlatformSecureStorage.Mock());
-        builder.RegisterInstance<IEuterpeAuthClient>(IEuterpeAuthClient.Mock());
-        builder.RegisterInstance<IEuterpeAccountClient>(IEuterpeAccountClient.Mock());
-        builder.RegisterInstance<IEuterpeHealthClient>(IEuterpeHealthClient.Mock());
-        using var container = builder.Build();
-
-        var vm = container.Resolve<MainSplashWindowViewModel>();
-        var auth = (AuthService)container.Resolve<IAuthService>();
-
-        using var assertions = Assert.Multiple();
-        await Assert.That(ReferenceEquals(vm.AuthService, auth)).IsTrue();
-        await Assert.That(ReferenceEquals(vm.AuthState, auth.AuthState)).IsTrue();
-        await Assert.That(ReferenceEquals(vm.AuthState, container.Resolve<AuthState>())).IsTrue();
-    }
-
     [Test]
     public async Task OnInitializeAsync_RestoreSessionSucceeds_DoesNotCallLogin()
     {

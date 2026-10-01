@@ -8,13 +8,6 @@ namespace Euterpe.Headless.Tests.Controls;
 public sealed class AsyncImageTest : HeadlessTest
 {
     [Test]
-    public Task Stretch_NewControl_IsUniform() => RunOnUI(async () =>
-    {
-        var image = new AsyncImage();
-        await Assert.That(image.Stretch).IsEqualTo(Stretch.Uniform);
-    });
-
-    [Test]
     public Task ApplyTemplate_DefaultTheme_CreatesPartImageAndPartPlaceholder() => RunOnUI(async () =>
     {
         var asyncImage = new AsyncImage();

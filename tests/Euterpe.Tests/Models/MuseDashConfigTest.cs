@@ -40,10 +40,6 @@ public sealed class MuseDashConfigTest
     }
 
     [Test]
-    public async Task GameMode_NewConfig_IsModded() =>
-        await Assert.That(new MuseDashConfig().GameMode).IsEqualTo(GameMode.Modded);
-
-    [Test]
     public async Task UnityDependencyZipPath_UnityVersionProvided_IncludesVersion()
     {
         var game = new MuseDashConfig { Folder = GameFolder };

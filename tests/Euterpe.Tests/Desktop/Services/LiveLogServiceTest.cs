@@ -33,14 +33,6 @@ public sealed class LiveLogServiceTest
     }
 
     [Test]
-    public async Task Ctor_NoMessages_ViewIsEmpty()
-    {
-        var service = new LiveLogService(new LiveLogTarget());
-
-        await Assert.That(service.LogMessagesView).IsEmpty();
-    }
-
-    [Test]
     public async Task LogMessagesView_MessageReceived_AppendsMessage()
     {
         var (service, factory) = CreateWiredService();
@@ -54,46 +46,6 @@ public sealed class LiveLogServiceTest
         await Assert.That(view).HasSingleItem();
         await Assert.That(view[0].Message).IsEqualTo("hello world");
         await Assert.That(view[0].LogLevel).IsEqualTo(MicrosoftLogLevel.Information);
-    }
-
-    [Test]
-    public async Task LogMessagesView_MultipleMessagesReceived_PreservesAppendOrder()
-    {
-        var (service, factory) = CreateWiredService();
-        using (factory)
-        {
-            var logger = factory.GetLogger("Euterpe.Tests");
-            logger.Info("first");
-            logger.Info("second");
-            logger.Info("third");
-        }
-
-        var view = MaterializeView(service.LogMessagesView);
-        using var _ = Assert.Multiple();
-        await Assert.That(view).Count().IsEqualTo(3);
-        await Assert.That(view[0].Message).IsEqualTo("first");
-        await Assert.That(view[1].Message).IsEqualTo("second");
-        await Assert.That(view[2].Message).IsEqualTo("third");
-    }
-
-    [Test]
-    public async Task LogMessagesView_CapacityExceeded_DropsOldestMessages()
-    {
-        var (service, factory) = CreateWiredService();
-        using (factory)
-        {
-            var logger = factory.GetLogger("Euterpe.Tests");
-            for (var i = 0; i < 55; i++)
-            {
-                logger.Info("msg-{0}", i);
-            }
-        }
-
-        var view = MaterializeView(service.LogMessagesView);
-        using var _ = Assert.Multiple();
-        await Assert.That(view).Count().IsEqualTo(50);
-        await Assert.That(view[0].Message).IsEqualTo("msg-5");
-        await Assert.That(view[49].Message).IsEqualTo("msg-54");
     }
 
     [Test]

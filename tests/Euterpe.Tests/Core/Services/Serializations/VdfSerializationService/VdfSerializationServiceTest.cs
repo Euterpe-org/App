@@ -5,7 +5,7 @@ namespace Euterpe.Tests.Core;
 
 [Category("VdfSerializationServiceTests")]
 [TestSubject(typeof(VdfSerializationService))]
-public sealed partial class VdfSerializationServiceTest
+public sealed class VdfSerializationServiceTest
 {
     private readonly VdfSerializationService _service = new();
 

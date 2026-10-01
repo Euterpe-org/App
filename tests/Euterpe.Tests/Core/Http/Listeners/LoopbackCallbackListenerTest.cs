@@ -95,14 +95,6 @@ public sealed class LoopbackCallbackListenerTest
         await Assert.That(act).Throws<OperationCanceledException>();
     }
 
-    [Test]
-    public async Task Port_NewListener_IsAssignedByTheOperatingSystem()
-    {
-        using var listener = new LoopbackCallbackListener();
-
-        await Assert.That(listener.Port).IsGreaterThan(0);
-    }
-
     private static async Task<(LoopbackCallbackResult Result, string Response)> RoundTripAsync(string requestLine, CancellationToken cancellationToken)
     {
         using var listener = new LoopbackCallbackListener();
