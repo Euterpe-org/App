@@ -22,45 +22,24 @@ internal sealed partial class AuthService : IAuthService
         using var listener = ListenerFactory();
         var redirectUri = $"http://127.0.0.1:{listener.Port}/callback";
 
-        await Launcher.OpenUriAsync(BuildAuthorizeUrl(redirectUri, challenge, state)).ConfigureAwait(false);
-
-        using var cts = new CancellationTokenSource(CallbackTimeout);
-        LoopbackCallbackResult callback;
+        var authorizeUrl = BuildAuthorizeUrl(redirectUri, challenge, state);
         try
         {
-            callback = await listener.WaitForCallbackAsync(cts.Token).ConfigureAwait(false);
-        }
-        catch (OperationCanceledException)
-        {
-            Logger.LogWarning("Login timed out waiting for the authorization callback");
-            return;
-        }
+            AuthState.AuthorizeUrl = authorizeUrl;
+            try
+            {
+                await Launcher.OpenUriAsync(authorizeUrl).ConfigureAwait(false);
+            }
+            catch (Exception ex)
+            {
+                Logger.LogWarning(ex, "Failed to open the authorization page in the browser");
+            }
 
-        if (callback.State != state)
-        {
-            Logger.LogWarning("Login rejected: state mismatch");
-            return;
+            await CompleteBrowserLoginAsync(listener, state, verifier, redirectUri).ConfigureAwait(false);
         }
-
-        if (!callback.Error.IsNullOrEmpty())
+        finally
         {
-            Logger.LogWarning("Login failed with error: {Error}", callback.Error);
-            return;
-        }
-
-        if (callback.Code.IsNullOrEmpty())
-        {
-            Logger.LogWarning("Login callback missing authorization code");
-            return;
-        }
-
-        try
-        {
-            await ExchangeCodeAsync(callback.Code, verifier, redirectUri).ConfigureAwait(false);
-        }
-        catch (Exception ex)
-        {
-            Logger.LogError(ex, "Login failed during token exchange");
+            AuthState.AuthorizeUrl = null;
         }
     }
 

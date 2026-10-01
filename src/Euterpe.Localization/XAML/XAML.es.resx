@@ -775,6 +775,24 @@
   <data name="Share_Title" xml:space="preserve">
     <value>Compartir</value>
   </data>
+  <data name="Splash_BrowserNotOpened" xml:space="preserve">
+    <value>¿El navegador no se abrió automáticamente?</value>
+  </data>
+  <data name="Splash_CopyLoginLink" xml:space="preserve">
+    <value>Copiar enlace de inicio de sesión</value>
+  </data>
+  <data name="Splash_CopyLoginLinkHint" xml:space="preserve">
+    <value>Copia el enlace y pégalo en la barra de direcciones de cualquier navegador de este equipo.</value>
+  </data>
+  <data name="Splash_CopyLoginLink_Failed" xml:space="preserve">
+    <value>No se pudo copiar el enlace. Inténtalo de nuevo.</value>
+  </data>
+  <data name="Splash_CopyLoginLink_Success" xml:space="preserve">
+    <value>Copiado</value>
+  </data>
+  <data name="Splash_Loading" xml:space="preserve">
+    <value>Iniciando Euterpe…</value>
+  </data>
   <data name="Splash_LoginPrompt" xml:space="preserve">
     <value>Inicia sesión en tu navegador y autoriza el acceso de Euterpe</value>
   </data>

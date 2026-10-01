@@ -8,7 +8,7 @@
     x:Class="Euterpe.Shell.MainSplashWindow"
     x:DataType="vm:MainSplashWindowViewModel"
     CanResize="False"
-    Height="280"
+    Height="360"
     Icon="/Assets/Icon.ico"
     Title="Euterpe"
     Width="420"
@@ -50,13 +50,55 @@
             IsIndeterminate="True"
             Margin="24,0" />
 
-        <TextBlock
+        <StackPanel
             Grid.Row="2"
-            FontSize="12"
-            Foreground="{DynamicResource SemiColorText3}"
-            HorizontalAlignment="Center"
-            Margin="0,12,0,20"
-            Text="{Localize {x:Static loc:XAMLLiteral.Splash_LoginPrompt}}" />
+            Margin="24,12,24,20"
+            Spacing="12">
+            <TextBlock
+                FontSize="12"
+                Foreground="{DynamicResource SemiColorText2}"
+                IsVisible="{Binding AuthState.AuthorizeUrl, Converter={x:Static StringConverters.IsNullOrEmpty}}"
+                Text="{Localize {x:Static loc:XAMLLiteral.Splash_Loading}}"
+                TextAlignment="Center" />
+            <StackPanel
+                IsVisible="{Binding AuthState.AuthorizeUrl, Converter={x:Static StringConverters.IsNotNullOrEmpty}}"
+                Spacing="12">
+                <TextBlock
+                    FontSize="12"
+                    Foreground="{DynamicResource SemiColorText2}"
+                    Text="{Localize {x:Static loc:XAMLLiteral.Splash_LoginPrompt}}"
+                    TextAlignment="Center"
+                    TextWrapping="Wrap" />
+                <StackPanel Spacing="4">
+                    <TextBlock
+                        FontSize="12"
+                        Foreground="{DynamicResource SemiColorText2}"
+                        Text="{Localize {x:Static loc:XAMLLiteral.Splash_BrowserNotOpened}}"
+                        TextAlignment="Center" />
+                    <TextBlock
+                        FontSize="12"
+                        Foreground="{DynamicResource SemiColorText3}"
+                        Text="{Localize {x:Static loc:XAMLLiteral.Splash_CopyLoginLinkHint}}"
+                        TextAlignment="Center"
+                        TextWrapping="Wrap" />
+                </StackPanel>
+                <StackPanel Spacing="4">
+                    <Button
+                        Classes="Small"
+                        Command="{Binding CopyLoginLinkCommand}"
+                        Content="{Localize {x:Static loc:XAMLLiteral.Splash_CopyLoginLink}}"
+                        HorizontalAlignment="Center"
+                        Theme="{DynamicResource OutlineButton}" />
+                    <TextBlock
+                        FontSize="12"
+                        Foreground="{DynamicResource SemiColorText2}"
+                        MinHeight="18"
+                        Text="{Binding CopyLoginLinkStatus}"
+                        TextAlignment="Center"
+                        TextWrapping="Wrap" />
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
 
     </Grid>
 

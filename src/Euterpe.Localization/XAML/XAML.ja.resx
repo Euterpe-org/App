@@ -775,6 +775,24 @@
   <data name="Share_Title" xml:space="preserve">
     <value>共有</value>
   </data>
+  <data name="Splash_BrowserNotOpened" xml:space="preserve">
+    <value>ブラウザが自動で開きませんでしたか？</value>
+  </data>
+  <data name="Splash_CopyLoginLink" xml:space="preserve">
+    <value>ログインリンクをコピー</value>
+  </data>
+  <data name="Splash_CopyLoginLinkHint" xml:space="preserve">
+    <value>リンクをコピーし、このパソコンの任意のブラウザのアドレスバーに貼り付けて開いてください。</value>
+  </data>
+  <data name="Splash_CopyLoginLink_Failed" xml:space="preserve">
+    <value>リンクをコピーできませんでした。もう一度お試しください。</value>
+  </data>
+  <data name="Splash_CopyLoginLink_Success" xml:space="preserve">
+    <value>コピーしました</value>
+  </data>
+  <data name="Splash_Loading" xml:space="preserve">
+    <value>Euterpe を起動中…</value>
+  </data>
   <data name="Splash_LoginPrompt" xml:space="preserve">
     <value>ブラウザでログインして Euterpe を承認してください</value>
   </data>

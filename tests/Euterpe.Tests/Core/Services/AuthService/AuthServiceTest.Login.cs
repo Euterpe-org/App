@@ -26,6 +26,54 @@ public sealed partial class AuthServiceTest
     }
 
     [Test]
+    public async Task LoginAsync_BrowserLaunchFails_ExposesLinkAndCompletesManualLogin()
+    {
+        var authState = new AuthState();
+        string? urlAtLaunch = null;
+        var authClient = IEuterpeAuthClient.Mock();
+        authClient.ExchangeAppTokenAsync(Any<AppTokenRequest>(), Any<CancellationToken>())
+            .Returns(new AppTokenResponse(ValidAccessToken, ValidRefreshToken, TestUser));
+        var launcher = IPlatformLauncher.Mock();
+        launcher.OpenUriAsync(Any<string>()).Callback(url =>
+        {
+            urlAtLaunch = authState.AuthorizeUrl;
+            throw new InvalidOperationException("No default browser");
+        });
+        var listener = ILoopbackCallbackListener.Mock();
+        listener.WaitForCallbackAsync(Any<CancellationToken>()).Returns(() =>
+            new LoopbackCallbackResult(AuthCode, HttpUtility.ParseQueryString(new Uri(authState.AuthorizeUrl!).Query)["state"], null));
+        var sut = CreateAuthService(authClient, authState: authState, launcher: launcher, listenerFactory: () => listener);
+
+        await sut.LoginAsync();
+
+        using var assertions = Assert.Multiple();
+        await Assert.That(urlAtLaunch).IsNotNull();
+        await Assert.That(authState.AuthorizeUrl).IsNull();
+        await Assert.That(sut.Ready.IsSet).IsTrue();
+        await Assert.That(sut.AuthState.AccessToken).IsEqualTo(ValidAccessToken);
+        launcher.OpenUriAsync(urlAtLaunch!).WasCalled(Times.Once);
+    }
+
+    [Test]
+    public async Task LoginAsync_WaitingForAuthorization_PublishesLinkUntilAttemptEnds()
+    {
+        var callback = new TaskCompletionSource<LoopbackCallbackResult>(TaskCreationOptions.RunContinuationsAsynchronously);
+        var listener = ILoopbackCallbackListener.Mock();
+        listener.WaitForCallbackAsync(Any<CancellationToken>()).Returns(() => callback.Task);
+        var sut = CreateAuthService(listenerFactory: () => listener);
+
+        var login = sut.LoginAsync();
+
+        using var assertions = Assert.Multiple();
+        await Assert.That(sut.AuthState.AuthorizeUrl).StartsWith("https://euterpe-org.com/auth/app?");
+
+        callback.SetResult(new LoopbackCallbackResult(null, "invalid-state", null));
+        await login;
+
+        await Assert.That(sut.AuthState.AuthorizeUrl).IsNull();
+    }
+
+    [Test]
     public async Task LoginAsync_WhenCallbackSucceeds_ShouldSetReadyAndUpdateState()
     {
         var authClientMock = IEuterpeAuthClient.Mock();
@@ -71,6 +119,7 @@ public sealed partial class AuthServiceTest
 
         using var _ = Assert.Multiple();
         await Assert.That(sut.Ready.IsSet).IsFalse();
+        await Assert.That(sut.AuthState.AuthorizeUrl).IsNull();
         authClientMock.ExchangeAppTokenAsync(Any<AppTokenRequest>(), Any<CancellationToken>()).WasNeverCalled();
     }
 

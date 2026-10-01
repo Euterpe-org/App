@@ -5,6 +5,9 @@ namespace Euterpe.Models.Auth;
 public sealed partial class AuthState : ObservableObject
 {
     [ObservableProperty]
+    public partial string? AuthorizeUrl { get; set; }
+
+    [ObservableProperty]
     [NotifyPropertyChangedFor(nameof(AvatarUrl))]
     public partial UserInfo? CurrentUser { get; set; }
 

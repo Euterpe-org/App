@@ -1,14 +1,45 @@
+using Avalonia.Input.Platform;
 using Irihi.Avalonia.Shared.Contracts;
 
 namespace Euterpe.Shell;
 
 [Register]
 [AppSingleton]
-public sealed class MainSplashWindowViewModel : ViewModelBase, IDialogContext
+public sealed partial class MainSplashWindowViewModel : ViewModelBase, IDialogContext
 {
     public const string DialogHostId = "SplashDialogHost";
 
     public AsyncManualResetEvent Ready { get; } = new(false);
+
+    [ObservableProperty]
+    public partial string? CopyLoginLinkStatus { get; set; }
+
+    [RelayCommand]
+    private async Task CopyLoginLinkAsync()
+    {
+        var url = AuthState.AuthorizeUrl;
+        if (url is null)
+        {
+            return;
+        }
+
+        string status;
+        try
+        {
+            await TopLevel.Clipboard.SetTextAsync(url).ConfigureAwait(true);
+            status = XAML.Splash_CopyLoginLink_Success;
+        }
+        catch (Exception ex)
+        {
+            Logger.LogWarning(ex, "Failed to copy the login link");
+            status = XAML.Splash_CopyLoginLink_Failed;
+        }
+
+        if (AuthState.AuthorizeUrl == url)
+        {
+            CopyLoginLinkStatus = status;
+        }
+    }
 
     public void Close()
     {
@@ -54,6 +85,8 @@ public sealed class MainSplashWindowViewModel : ViewModelBase, IDialogContext
         while (true)
         {
             await AuthService.LoginAsync().ConfigureAwait(true);
+            CopyLoginLinkStatus = null;
+
             if (AuthService.Ready.IsSet)
             {
                 return;
@@ -103,9 +136,11 @@ public sealed class MainSplashWindowViewModel : ViewModelBase, IDialogContext
 
     public required UpdateDialogService UpdateDialogService { get; init; }
     public required IAuthService AuthService { get; init; }
+    public required AuthState AuthState { get; init; }
     public required ILogger<MainSplashWindowViewModel> Logger { get; init; }
     public required IMessageBoxService MessageBoxService { get; init; }
     public required IUpdateService UpdateService { get; init; }
+    public required TopLevelProxy TopLevel { get; init; }
 
     #endregion Injections
 }

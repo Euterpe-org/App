@@ -1,6 +1,11 @@
 using System.Runtime.CompilerServices;
+using Autofac;
 using DotNext.Threading;
+using Euterpe.Core.Extensions;
+using Euterpe.Core.Http.Clients;
+using Euterpe.Extensions;
 using Euterpe.Features.Update;
+using Euterpe.Proxies;
 using Euterpe.Shell;
 using Microsoft.Extensions.Logging.Abstractions;
 
@@ -10,6 +15,35 @@ namespace Euterpe.Tests.Desktop.ViewModels;
 [TestSubject(typeof(MainSplashWindowViewModel))]
 public sealed class MainSplashWindowViewModelTest
 {
+    [Test]
+    public async Task Resolve_AppRegistrations_SharesAuthStateWithAuthService()
+    {
+        var dependencies = NewViewModel(IAuthService.Mock());
+        var builder = new ContainerBuilder();
+        builder.RegisterAppCoreServices();
+        builder.RegisterAppViewModels();
+        builder.RegisterInstance(dependencies.Launcher);
+        builder.RegisterInstance(dependencies.Logger);
+        builder.RegisterInstance(dependencies.MessageBoxService);
+        builder.RegisterInstance(dependencies.TopLevel);
+        builder.RegisterInstance(dependencies.UpdateService);
+        builder.RegisterInstance(dependencies.UpdateDialogService);
+        builder.RegisterInstance<Microsoft.Extensions.Logging.ILogger<AuthService>>(NullLogger<AuthService>.Instance);
+        builder.RegisterInstance<IPlatformSecureStorage>(IPlatformSecureStorage.Mock());
+        builder.RegisterInstance<IEuterpeAuthClient>(IEuterpeAuthClient.Mock());
+        builder.RegisterInstance<IEuterpeAccountClient>(IEuterpeAccountClient.Mock());
+        builder.RegisterInstance<IEuterpeHealthClient>(IEuterpeHealthClient.Mock());
+        using var container = builder.Build();
+
+        var vm = container.Resolve<MainSplashWindowViewModel>();
+        var auth = (AuthService)container.Resolve<IAuthService>();
+
+        using var assertions = Assert.Multiple();
+        await Assert.That(ReferenceEquals(vm.AuthService, auth)).IsTrue();
+        await Assert.That(ReferenceEquals(vm.AuthState, auth.AuthState)).IsTrue();
+        await Assert.That(ReferenceEquals(vm.AuthState, container.Resolve<AuthState>())).IsTrue();
+    }
+
     [Test]
     public async Task OnInitializeAsync_RestoreSessionSucceeds_DoesNotCallLogin()
     {
@@ -30,6 +64,39 @@ public sealed class MainSplashWindowViewModelTest
         await vm.InitializeAsync();
 
         await Assert.That(loginCount.Value).IsEqualTo(1);
+    }
+
+    [Test]
+    public async Task OnInitializeAsync_LoginFails_ClearsCopyFeedbackBeforeRetry()
+    {
+        var ready = new AsyncManualResetEvent(false);
+        var auth = IAuthService.Mock();
+        auth.Ready.Returns(ready);
+        auth.RestoreSessionAsync().Returns(false);
+        auth.IsServerHealthyAsync().Returns(true);
+        MainSplashWindowViewModel? vm = null;
+        var attempts = 0;
+        auth.LoginAsync().Callback(() =>
+        {
+            vm!.CopyLoginLinkStatus = "Copied";
+            if (++attempts is 2)
+            {
+                ready.Set();
+            }
+        });
+        string? feedbackAtRetryPrompt = "not-cleared";
+        var messageBox = IMessageBoxService.Mock();
+        messageBox.WarningConfirmAsync(Any<string>())
+            .Callback(_ => feedbackAtRetryPrompt = vm!.CopyLoginLinkStatus)
+            .Returns(true);
+        vm = NewViewModel(auth, messageBox);
+
+        await vm.InitializeAsync();
+
+        using var assertions = Assert.Multiple();
+        await Assert.That(feedbackAtRetryPrompt).IsNull();
+        await Assert.That(attempts).IsEqualTo(2);
+        await Assert.That(vm.CopyLoginLinkStatus).IsNull();
     }
 
     [Test]
@@ -109,6 +176,7 @@ public sealed class MainSplashWindowViewModelTest
             Launcher = IPlatformLauncher.Mock(),
             Logger = NullLogger<MainSplashWindowViewModel>.Instance,
             AuthService = authService,
+            AuthState = new AuthState(),
             MessageBoxService = messageBoxService ?? IMessageBoxService.Mock(),
             UpdateDialogService = new UpdateDialogService
             {
@@ -118,7 +186,8 @@ public sealed class MainSplashWindowViewModelTest
                 UpdateService = updateService,
                 UpdateDialogViewModelFactory = static version => new UpdateDialogViewModel(version)
             },
-            UpdateService = updateService
+            UpdateService = updateService,
+            TopLevel = new TopLevelProxy { Logger = NullLogger<TopLevelProxy>.Instance }
         };
     }
 }

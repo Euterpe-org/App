@@ -775,6 +775,24 @@
   <data name="Share_Title" xml:space="preserve">
     <value>Dijeli</value>
   </data>
+  <data name="Splash_BrowserNotOpened" xml:space="preserve">
+    <value>Preglednik se nije automatski otvorio?</value>
+  </data>
+  <data name="Splash_CopyLoginLink" xml:space="preserve">
+    <value>Kopiraj poveznicu za prijavu</value>
+  </data>
+  <data name="Splash_CopyLoginLinkHint" xml:space="preserve">
+    <value>Kopiraj poveznicu i zalijepi je u adresnu traku bilo kojeg preglednika na ovom računalu.</value>
+  </data>
+  <data name="Splash_CopyLoginLink_Failed" xml:space="preserve">
+    <value>Kopiranje poveznice nije uspjelo. Pokušaj ponovno.</value>
+  </data>
+  <data name="Splash_CopyLoginLink_Success" xml:space="preserve">
+    <value>Kopirano</value>
+  </data>
+  <data name="Splash_Loading" xml:space="preserve">
+    <value>Pokretanje aplikacije Euterpe…</value>
+  </data>
   <data name="Splash_LoginPrompt" xml:space="preserve">
     <value>Prijavi se u pregledniku i odobri pristup aplikaciji Euterpe</value>
   </data>

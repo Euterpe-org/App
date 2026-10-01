@@ -775,6 +775,24 @@
   <data name="Share_Title" xml:space="preserve">
     <value>Megosztás</value>
   </data>
+  <data name="Splash_BrowserNotOpened" xml:space="preserve">
+    <value>Nem nyílt meg automatikusan a böngésző?</value>
+  </data>
+  <data name="Splash_CopyLoginLink" xml:space="preserve">
+    <value>Bejelentkezési hivatkozás másolása</value>
+  </data>
+  <data name="Splash_CopyLoginLinkHint" xml:space="preserve">
+    <value>Másold ki a hivatkozást, és illeszd be ezen a számítógépen bármelyik böngésző címsorába.</value>
+  </data>
+  <data name="Splash_CopyLoginLink_Failed" xml:space="preserve">
+    <value>A hivatkozás másolása sikertelen. Próbáld újra.</value>
+  </data>
+  <data name="Splash_CopyLoginLink_Success" xml:space="preserve">
+    <value>Másolva</value>
+  </data>
+  <data name="Splash_Loading" xml:space="preserve">
+    <value>Az Euterpe indítása…</value>
+  </data>
   <data name="Splash_LoginPrompt" xml:space="preserve">
     <value>Jelentkezz be a böngészőben, és engedélyezd az Euterpe hozzáférését</value>
   </data>

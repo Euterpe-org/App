@@ -775,6 +775,24 @@
   <data name="Share_Title" xml:space="preserve">
     <value>Teilen</value>
   </data>
+  <data name="Splash_BrowserNotOpened" xml:space="preserve">
+    <value>Browser wurde nicht automatisch geöffnet?</value>
+  </data>
+  <data name="Splash_CopyLoginLink" xml:space="preserve">
+    <value>Anmeldelink kopieren</value>
+  </data>
+  <data name="Splash_CopyLoginLinkHint" xml:space="preserve">
+    <value>Kopiere den Link und füge ihn in die Adressleiste eines beliebigen Browsers auf diesem Computer ein.</value>
+  </data>
+  <data name="Splash_CopyLoginLink_Failed" xml:space="preserve">
+    <value>Der Link konnte nicht kopiert werden. Versuche es erneut.</value>
+  </data>
+  <data name="Splash_CopyLoginLink_Success" xml:space="preserve">
+    <value>Kopiert</value>
+  </data>
+  <data name="Splash_Loading" xml:space="preserve">
+    <value>Euterpe wird gestartet…</value>
+  </data>
   <data name="Splash_LoginPrompt" xml:space="preserve">
     <value>Im Browser anmelden und Euterpe autorisieren</value>
   </data>
