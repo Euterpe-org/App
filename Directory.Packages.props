@@ -59,7 +59,7 @@
         <PackageVersion Include="ValveKeyValue" Version="0.71.0.528"/>
         <PackageVersion Include="Velopack" Version="1.2.158"/>
         <PackageVersion Include="Xaml.Behaviors.Interactions.DragAndDrop" Version="12.0.7"/>
-        <GlobalPackageReference Include="Meziantou.Analyzer" Version="3.0.200"/>
+        <GlobalPackageReference Include="Meziantou.Analyzer" Version="3.0.291"/>
         <GlobalPackageReference Include="MinVer" Version="8.0.0"/>
         <GlobalPackageReference Include="Roslynator.Analyzers" Version="5.0.0"/>
         <GlobalPackageReference Include="Roslynator.Formatting.Analyzers" Version="5.0.0"/>
