@@ -1,11 +1,19 @@
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Interactivity;
+using Avalonia.Styling;
 using Euterpe.Controls;
+using Euterpe.Shared.Collections;
 
 namespace Euterpe;
 
 internal sealed class AppInitializer
 {
+    private static readonly FrozenBiDictionary<string, ThemeVariant> ThemeVariants = new BiDictionary<string, ThemeVariant>
+    {
+        ["Light"] = ThemeVariant.Light,
+        ["Dark"] = ThemeVariant.Dark
+    }.ToFrozenBiDictionary();
+
     public void Run(Application app)
     {
         AsyncImage.DefaultRemoteLoader = RemoteImageLoader;
@@ -14,7 +22,7 @@ internal sealed class AppInitializer
         Control.LoadedEvent.AddClassHandler<Window>(OnControlLoaded);
         AppViewModel.InitializeAsync().SafeFireAndForget();
 
-        app.RequestedThemeVariant = AvaloniaResources.ThemeVariants[Config.Theme];
+        app.RequestedThemeVariant = ThemeVariants[Config.Theme];
         LocalizationService.SetLanguage(Config.LanguageCode);
 
         SystemActivationService.SetupAsync().SafeFireAndForget(ex => Logger.LogError(ex, "Failed to register OS associations"));
@@ -43,7 +51,7 @@ internal sealed class AppInitializer
         }
 
         app.ObservePropertyChanged(x => x.ActualThemeVariant)
-            .Subscribe(Config, static (theme, config) => config.Theme = AvaloniaResources.ThemeVariants[theme]);
+            .Subscribe(Config, static (theme, config) => config.Theme = ThemeVariants[theme]);
     }
 
     private void OnControlLoaded(ContentControl control, RoutedEventArgs _)
