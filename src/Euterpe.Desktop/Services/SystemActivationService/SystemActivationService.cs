@@ -8,16 +8,6 @@ public sealed partial class SystemActivationService
         await AssociationSetup.RegisterAsync(processPath).ConfigureAwait(false);
     }
 
-    public void HandleStartupArgs(string[] args)
-    {
-        if (args is [])
-        {
-            return;
-        }
-
-        HandleActivation(args[0]);
-    }
-
     public void HandleActivation(string argument)
     {
         Logger.LogInformation("Activation received: {Argument}", argument);

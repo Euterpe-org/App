@@ -60,31 +60,6 @@ public sealed class SystemActivationServiceTest : HeadlessTest
     }
 
     [Test]
-    public Task HandleStartupArgs_Empty_DoesNothing() => RunOnUI(async () =>
-    {
-        var logger = Mock.Logger<SystemActivationService>();
-        var service = NewService(logger: logger);
-
-        service.HandleStartupArgs([]);
-
-        await Assert.That(logger.Entries).IsEmpty();
-    });
-
-    [Test]
-    public Task HandleStartupArgs_NonUri_LogsWarning() => RunOnUI(async () =>
-    {
-        var logger = Mock.Logger<SystemActivationService>();
-        var service = NewService(logger: logger);
-
-        service.HandleStartupArgs(["not-a-uri-at-all"]);
-
-        var warning = logger.Entries.SingleOrDefault(e => e.LogLevel is LogLevel.Warning);
-        using var _ = Assert.Multiple();
-        await Assert.That(warning).IsNotNull();
-        await Assert.That(warning!.Message).Contains("Unhandled activation");
-    });
-
-    [Test]
     public Task HandleActivation_NonAbsoluteUri_LogsWarning() => RunOnUI(async () =>
     {
         var logger = Mock.Logger<SystemActivationService>();

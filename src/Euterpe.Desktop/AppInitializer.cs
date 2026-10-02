@@ -31,7 +31,10 @@ internal sealed class AppInitializer
                     return window;
                 }
             };
-            SystemActivationService.HandleStartupArgs(desktop.Args!);
+            if (desktop.Args is [var argument, ..])
+            {
+                SystemActivationService.HandleActivation(argument);
+            }
         }
 
         if (app.ApplicationLifetime is IControlledApplicationLifetime controlled)
