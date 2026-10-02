@@ -58,7 +58,7 @@ internal static class ActivationPipe
             }
             catch (Exception ex)
             {
-                LogBootstrapException(ex);
+                IocContainer.Resolve<ILogger<App>>().LogError(ex, "Activation pipe listener failed");
             }
         }
     }
@@ -68,7 +68,7 @@ internal static class ActivationPipe
         try
         {
             var message = $"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] {ex}{Environment.NewLine}";
-            File.AppendAllText(Path.Combine(AppContext.BaseDirectory, BootstrapLogFile), message);
+            File.AppendAllText(Path.Combine(LocalAppDataFolder, BootstrapLogFile), message);
         }
         catch
         {
