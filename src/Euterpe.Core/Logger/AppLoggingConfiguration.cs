@@ -28,6 +28,7 @@ internal static class AppLoggingConfiguration
         {
             FileName = LogFilePath,
             KeepFileOpen = false,
+            MaxArchiveFiles = 30,
             Layout = "[${date:format=HH\\:mm\\:ss.fff zzz}] [${level}] (${logger})${newline}${message}${onexception:inner=${newline}${exception:format=tostring}}"
         };
 

@@ -29,7 +29,6 @@ public static class Bootstrapper
         }
 
         Directory.CreateDirectory(AppDataFolder);
-        CleanupLogFiles();
         ConfigureContainer<TPlatform>();
         StartActivationPipeServer();
         try
@@ -63,27 +62,6 @@ public static class Bootstrapper
     {
         ActivationPipeCts.Cancel();
         ActivationPipeCts.Dispose();
-    }
-
-    private static void CleanupLogFiles()
-    {
-        try
-        {
-            if (!Directory.Exists(AppLogsFolder))
-            {
-                return;
-            }
-
-            var logFiles = Directory.EnumerateFiles(AppLogsFolder, "*.log").OrderDescending().Skip(30);
-            foreach (var logFile in logFiles)
-            {
-                File.Delete(logFile);
-            }
-        }
-        catch (Exception ex)
-        {
-            LogBootstrapException(ex);
-        }
     }
 
     private static void SendArgsToPrimaryInstance(string[] args)
