@@ -1,7 +1,6 @@
 using Avalonia.Threading;
 using SoundFlow.Abstracts.Devices;
 using SoundFlow.Components;
-using SoundFlow.Interfaces;
 using SoundFlow.Providers;
 using SoundFlow.Structs;
 
@@ -9,9 +8,9 @@ namespace Euterpe.Core;
 
 internal sealed partial class AudioPlayerService
 {
-    private (ISoundDataProvider Source, AudioFormat Format) Prepare(string filePath)
+    private SoundPlayer CreatePlayer(byte[] audio)
     {
-        var stream = new StreamDataProvider(Engine, File.OpenRead(filePath));
+        var stream = new StreamDataProvider(Engine, new MemoryStream(audio, false));
         var format = new AudioFormat
         {
             Format = stream.SampleFormat,
@@ -20,56 +19,29 @@ internal sealed partial class AudioPlayerService
             SampleRate = stream.SampleRate
         };
 
-        return (new ResilientSoundDataProvider(stream, Logger), format);
+        return new SoundPlayer(Engine, format, new ResilientSoundDataProvider(stream, Logger));
     }
 
-    // Runs on the UI thread; cts is this play's token, so a play superseded mid-load is discarded.
-    private void Activate(ISoundDataProvider source, AudioFormat format, CancellationTokenSource cts)
+    private void Activate(SoundPlayer player)
     {
-        if (cts.IsCancellationRequested)
-        {
-            source.Dispose();
-            return;
-        }
-
-        var device = EnsureDevice(format);
-        var player = new SoundPlayer(Engine, format, source);
-
-        player.PlaybackEnded += OnPlayerPlaybackEnded;
-        device.MasterMixer.AddComponent(player);
         _player = player;
-        _playerEndedHandler = OnPlayerPlaybackEnded;
 
+        // PlaybackEnded fires on the audio render thread; a player stopped or replaced since then is ignored.
+        player.PlaybackEnded += (_, _) => Dispatcher.UIThread.Post(() =>
+        {
+            if (_player == player)
+            {
+                Stop();
+            }
+        });
+
+        EnsureDevice(player.Format).MasterMixer.AddComponent(player);
         if (PlaybackState.Status is PlaybackStatus.Playing)
         {
             player.Play();
         }
 
         Logger.LogInformation("Playing audio {PlayingKey}", PlaybackState.PlayingKey);
-        return;
-
-        // PlaybackEnded fires on the native audio render thread, so only marshal back and compare identity.
-        void OnPlayerPlaybackEnded(object? sender, EventArgs e)
-        {
-            Dispatcher.UIThread.Post(() =>
-            {
-                if (_playCts == cts)
-                {
-                    Stop();
-                }
-            });
-        }
-    }
-
-    private void Fail(CancellationTokenSource cts)
-    {
-        if (cts.IsCancellationRequested)
-        {
-            return;
-        }
-
-        PlaybackState.Set(PlaybackStatus.Idle, null);
-        NotificationService.ErrorLight(Notification_Content_Audio_Play_Failed);
     }
 
     private AudioPlaybackDevice EnsureDevice(AudioFormat format)
@@ -92,15 +64,9 @@ internal sealed partial class AudioPlayerService
             return;
         }
 
-        if (_playerEndedHandler is not null)
-        {
-            _player.PlaybackEnded -= _playerEndedHandler;
-        }
-
         _player.Stop();
         _device?.MasterMixer.RemoveComponent(_player);
         _player.Dispose();
         _player = null;
-        _playerEndedHandler = null;
     }
 }

@@ -1,4 +1,3 @@
-using Avalonia.Threading;
 using SoundFlow.Abstracts;
 using SoundFlow.Abstracts.Devices;
 using SoundFlow.Components;
@@ -10,7 +9,6 @@ internal sealed partial class AudioPlayerService : IAudioPlayerService
     private AudioPlaybackDevice? _device;
     private CancellationTokenSource? _playCts;
     private SoundPlayer? _player;
-    private EventHandler<EventArgs>? _playerEndedHandler;
 
     public async Task PlayAsync(string key, string filePath)
     {
@@ -18,12 +16,20 @@ internal sealed partial class AudioPlayerService : IAudioPlayerService
         PlaybackState.Set(PlaybackStatus.Playing, key);
 
         _playCts?.Cancel();
-        var cts = _playCts = new CancellationTokenSource();
+        var cts = new CancellationTokenSource();
+        _playCts = cts;
 
         try
         {
-            var (source, format) = await Task.Run(() => Prepare(filePath), cts.Token).ConfigureAwait(false);
-            Dispatcher.UIThread.Post(() => Activate(source, format, cts));
+            var audio = await File.ReadAllBytesAsync(filePath, cts.Token).ConfigureAwait(true);
+            var player = await Task.Run(() => CreatePlayer(audio), cts.Token).ConfigureAwait(true);
+            if (cts.IsCancellationRequested)
+            {
+                player.Dispose();
+                return;
+            }
+
+            Activate(player);
         }
         catch (OperationCanceledException)
         {
@@ -32,7 +38,11 @@ internal sealed partial class AudioPlayerService : IAudioPlayerService
         catch (Exception ex)
         {
             Logger.LogWarning(ex, "Failed to start audio playback for {FilePath}", filePath);
-            Dispatcher.UIThread.Post(() => Fail(cts));
+            if (!cts.IsCancellationRequested)
+            {
+                Stop();
+                NotificationService.ErrorLight(Notification_Content_Audio_Play_Failed);
+            }
         }
     }
 
