@@ -1,4 +1,3 @@
-using System.IO.Pipes;
 using NLog;
 using Velopack;
 using static Euterpe.CrashHandler;
@@ -8,11 +7,6 @@ namespace Euterpe;
 
 public static class Bootstrapper
 {
-    private const string PipeName = $"{AppName}-Activation";
-    private const string BootstrapLogFile = "bootstrap.log";
-
-    private static readonly CancellationTokenSource ActivationPipeCts = new();
-
     public static void Run<TPlatform>(string[] args) where TPlatform : IPlatformServices
     {
         VelopackApp.Build().Run();
@@ -20,9 +14,9 @@ public static class Bootstrapper
         using var mutex = new Mutex(true, AppName, out var createdNew);
         if (!createdNew)
         {
-            if (args is not [])
+            if (args is [var argument, ..])
             {
-                SendArgsToPrimaryInstance(args);
+                ActivationPipe.Send(argument);
             }
 
             return;
@@ -30,14 +24,14 @@ public static class Bootstrapper
 
         Directory.CreateDirectory(AppDataFolder);
         ConfigureContainer<TPlatform>();
-        StartActivationPipeServer();
+        ActivationPipe.StartListening();
         try
         {
             BuildAvaloniaApp().StartWithClassicDesktopLifetime(args);
         }
         finally
         {
-            StopActivationPipeServer();
+            ActivationPipe.StopListening();
             LogManager.Shutdown();
         }
     }
@@ -52,75 +46,4 @@ public static class Bootstrapper
 #endif
             .UseR3(ReportException)
             .HandleUIThreadException(ReportException);
-
-    private static void StartActivationPipeServer()
-    {
-        ListenForActivationPipeAsync(ActivationPipeCts.Token).SafeFireAndForget();
-    }
-
-    private static void StopActivationPipeServer()
-    {
-        ActivationPipeCts.Cancel();
-        ActivationPipeCts.Dispose();
-    }
-
-    private static void SendArgsToPrimaryInstance(string[] args)
-    {
-        try
-        {
-            var argument = args[0];
-            using var client = new NamedPipeClientStream(".", PipeName, PipeDirection.Out);
-            client.Connect(3000);
-            using var writer = new StreamWriter(client);
-            writer.Write(argument);
-            writer.Flush();
-        }
-        catch (Exception ex)
-        {
-            LogBootstrapException(ex);
-        }
-    }
-
-    private static async Task ListenForActivationPipeAsync(CancellationToken ct)
-    {
-        while (!ct.IsCancellationRequested)
-        {
-            try
-            {
-                var server = new NamedPipeServerStream(PipeName, PipeDirection.In, 1, PipeTransmissionMode.Byte, PipeOptions.Asynchronous | PipeOptions.CurrentUserOnly);
-                await using (server.ConfigureAwait(false))
-                {
-                    await server.WaitForConnectionAsync(ct).ConfigureAwait(false);
-                    using var reader = new StreamReader(server);
-                    var argument = await reader.ReadToEndAsync(ct).ConfigureAwait(false);
-
-                    if (!argument.IsNullOrEmpty())
-                    {
-                        Dispatcher.UIThread.Post(() => IocContainer.Resolve<SystemActivationService>().HandleActivation(argument));
-                    }
-                }
-            }
-            catch (OperationCanceledException)
-            {
-                break;
-            }
-            catch (Exception ex)
-            {
-                LogBootstrapException(ex);
-            }
-        }
-    }
-
-    private static void LogBootstrapException(Exception ex)
-    {
-        try
-        {
-            var message = $"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] {ex}{Environment.NewLine}";
-            File.AppendAllText(Path.Combine(AppContext.BaseDirectory, BootstrapLogFile), message);
-        }
-        catch
-        {
-            // Nothing we can do here
-        }
-    }
 }
