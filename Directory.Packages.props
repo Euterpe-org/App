@@ -45,7 +45,7 @@
         <PackageVersion Include="Refit.HttpClientFactory" Version="16.3.0"/>
         <PackageVersion Include="ResXLocalize.Avalonia.R3" Version="2.0.0"/>
         <PackageVersion Include="Riok.Mapperly" Version="4.3.1"/>
-        <PackageVersion Include="Roslynator.CodeAnalysis.Analyzers" Version="5.0.0"/>
+        <PackageVersion Include="Roslynator.CodeAnalysis.Analyzers" Version="5.0.1"/>
         <PackageVersion Include="Semi.Avalonia" Version="12.1.0.1"/>
         <PackageVersion Include="Semver" Version="3.0.0"/>
         <PackageVersion Include="SoundFlow" Version="1.4.1"/>
@@ -61,7 +61,7 @@
         <PackageVersion Include="Xaml.Behaviors.Interactions.DragAndDrop" Version="12.0.7"/>
         <GlobalPackageReference Include="Meziantou.Analyzer" Version="3.0.291"/>
         <GlobalPackageReference Include="MinVer" Version="8.0.0"/>
-        <GlobalPackageReference Include="Roslynator.Analyzers" Version="5.0.0"/>
-        <GlobalPackageReference Include="Roslynator.Formatting.Analyzers" Version="5.0.0"/>
+        <GlobalPackageReference Include="Roslynator.Analyzers" Version="5.0.1"/>
+        <GlobalPackageReference Include="Roslynator.Formatting.Analyzers" Version="5.0.1"/>
     </ItemGroup>
 </Project>
