@@ -24,7 +24,6 @@ public static class Bootstrapper
 
         Directory.CreateDirectory(AppDataFolder);
         ConfigureContainer<TPlatform>();
-        ActivationPipe.StartListening();
         try
         {
             BuildAvaloniaApp().StartWithClassicDesktopLifetime(args);

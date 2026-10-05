@@ -39,6 +39,7 @@ internal sealed class AppInitializer
                     return window;
                 }
             };
+            ActivationPipe.StartListening();
             if (desktop.Args is [var argument, ..])
             {
                 SystemActivationService.HandleActivation(argument);
