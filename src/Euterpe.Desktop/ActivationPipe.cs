@@ -45,11 +45,7 @@ internal static class ActivationPipe
                     await server.WaitForConnectionAsync(ct).ConfigureAwait(false);
                     using var reader = new StreamReader(server);
                     var argument = await reader.ReadToEndAsync(ct).ConfigureAwait(false);
-
-                    if (!argument.IsNullOrEmpty())
-                    {
-                        Dispatcher.UIThread.Post(() => IocContainer.Resolve<SystemActivationService>().HandleActivation(argument));
-                    }
+                    Dispatcher.UIThread.Post(() => IocContainer.Resolve<SystemActivationService>().HandleActivation(argument));
                 }
             }
             catch (OperationCanceledException)

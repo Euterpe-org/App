@@ -12,6 +12,12 @@ public sealed partial class SystemActivationService
     {
         Logger.LogInformation("Activation received: {Argument}", argument);
 
+        if (argument.Length is 0)
+        {
+            ActivateMainWindow(true);
+            return;
+        }
+
         if (Uri.TryCreate(argument, UriKind.Absolute, out var parsed) && parsed.Scheme is ISystemAssociationSetup.DeepLinkScheme)
         {
             HandleDeepLink(parsed);

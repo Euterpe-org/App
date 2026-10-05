@@ -1,5 +1,6 @@
 using System.Runtime.CompilerServices;
 using Autofac;
+using Avalonia.Controls.ApplicationLifetimes;
 using Euterpe.Abstractions;
 using Euterpe.Features.Charting;
 using Euterpe.Features.Share;
@@ -100,6 +101,33 @@ public sealed class SystemActivationServiceTest : HeadlessTest
         await Assert.That(info).IsNotNull();
         await Assert.That(info!.Message).Contains("Activation received");
         await Assert.That(info.Message).Contains("not-a-uri");
+    });
+
+    [Test]
+    public Task HandleActivation_EmptyArgument_RestoresHiddenMinimizedMainWindow() => RunOnUI(async () =>
+    {
+        var window = new Window();
+        var desktop = (IClassicDesktopStyleApplicationLifetime)Application.Current!.ApplicationLifetime!;
+        var previousMainWindow = desktop.MainWindow;
+        desktop.MainWindow = window;
+        try
+        {
+            window.Show();
+            window.WindowState = WindowState.Minimized;
+            window.Hide();
+
+            NewService().HandleActivation(string.Empty);
+            Dispatcher.UIThread.RunJobs();
+
+            using var _ = Assert.Multiple();
+            await Assert.That(window.IsVisible).IsTrue();
+            await Assert.That(window.WindowState).IsEqualTo(WindowState.Normal);
+        }
+        finally
+        {
+            window.Close();
+            desktop.MainWindow = previousMainWindow;
+        }
     });
 
     [UnsafeAccessor(UnsafeAccessorKind.StaticMethod, Name = "GetEpkPath")]

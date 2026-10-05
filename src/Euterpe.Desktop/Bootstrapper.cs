@@ -14,11 +14,7 @@ public static class Bootstrapper
         using var mutex = new Mutex(true, AppName, out var createdNew);
         if (!createdNew)
         {
-            if (args is [var argument, ..])
-            {
-                ActivationPipe.Send(argument);
-            }
-
+            ActivationPipe.Send(args is [var argument, ..] ? argument : string.Empty);
             return;
         }
 
