@@ -19,7 +19,7 @@
         <PackageVersion Include="Cake.Frosting" Version="6.3.0"/>
         <PackageVersion Include="CliWrap" Version="3.10.5"/>
         <PackageVersion Include="CommunityToolkit.Mvvm" Version="8.4.2"/>
-        <PackageVersion Include="DotNext.Threading" Version="6.8.0"/>
+        <PackageVersion Include="DotNext.Threading" Version="6.9.0"/>
         <PackageVersion Include="Downloader" Version="5.9.8"/>
         <PackageVersion Include="DynamicData" Version="9.4.33"/>
         <PackageVersion Include="HotAvalonia" Version="3.1.5"/>
