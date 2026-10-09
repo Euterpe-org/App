@@ -8,10 +8,10 @@
         <PackageVersion Include="AsyncAwaitBestPractices" Version="10.0.0"/>
         <PackageVersion Include="Autofac" Version="9.3.4"/>
         <PackageVersion Include="Autofac.Extensions.DependencyInjection" Version="11.0.2"/>
-        <PackageVersion Include="Avalonia" Version="12.1.3"/>
-        <PackageVersion Include="Avalonia.Desktop" Version="12.1.3"/>
-        <PackageVersion Include="Avalonia.Fonts.Inter" Version="12.1.3"/>
-        <PackageVersion Include="Avalonia.Headless" Version="12.1.3"/>
+        <PackageVersion Include="Avalonia" Version="12.1.4"/>
+        <PackageVersion Include="Avalonia.Desktop" Version="12.1.4"/>
+        <PackageVersion Include="Avalonia.Fonts.Inter" Version="12.1.4"/>
+        <PackageVersion Include="Avalonia.Headless" Version="12.1.4"/>
         <PackageVersion Include="Avalonia.Labs.AnimatedImage" Version="12.0.2"/>
         <PackageVersion Include="Avalonia.Labs.Controls" Version="12.0.2"/>
         <PackageVersion Include="AvaloniaUI.DiagnosticsSupport" Version="2.2.3"/>
