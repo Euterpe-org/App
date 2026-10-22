@@ -52,10 +52,10 @@
         <PackageVersion Include="System.Security.Cryptography.ProtectedData" Version="10.0.13"/>
         <PackageVersion Include="Tmds.DBus.Generator" Version="0.95.1"/>
         <PackageVersion Include="Tmds.DBus.Protocol" Version="0.95.1"/>
-        <PackageVersion Include="TUnit" Version="1.67.0"/>
-        <PackageVersion Include="TUnit.Mocks" Version="1.67.0"/>
-        <PackageVersion Include="TUnit.Mocks.Http" Version="1.67.0"/>
-        <PackageVersion Include="TUnit.Mocks.Logging" Version="1.67.0"/>
+        <PackageVersion Include="TUnit" Version="1.76.0"/>
+        <PackageVersion Include="TUnit.Mocks" Version="1.76.0"/>
+        <PackageVersion Include="TUnit.Mocks.Http" Version="1.76.0"/>
+        <PackageVersion Include="TUnit.Mocks.Logging" Version="1.76.0"/>
         <PackageVersion Include="ValveKeyValue" Version="0.73.0.538"/>
         <PackageVersion Include="Velopack" Version="1.2.161"/>
         <PackageVersion Include="Xaml.Behaviors.Interactions.DragAndDrop" Version="12.0.7"/>
