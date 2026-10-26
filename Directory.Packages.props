@@ -31,7 +31,7 @@
         <PackageVersion Include="Microsoft.Build.Utilities.Core" Version="18.11.0"/>
         <PackageVersion Include="Microsoft.CodeAnalysis.Analyzers" Version="5.9.0"/>
         <PackageVersion Include="Microsoft.CodeAnalysis.CSharp" Version="5.9.0"/>
-        <PackageVersion Include="Microsoft.Extensions.Http" Version="10.0.13"/>
+        <PackageVersion Include="Microsoft.Extensions.Http" Version="10.0.14"/>
         <PackageVersion Include="Microsoft.Extensions.Http.Resilience" Version="10.11.0"/>
         <PackageVersion Include="Nerdbank.MessagePack" Version="1.4.95"/>
         <PackageVersion Include="NetEscapades.EnumGenerators" Version="1.0.0-beta21"/>
@@ -49,7 +49,7 @@
         <PackageVersion Include="Semi.Avalonia" Version="12.1.0.1"/>
         <PackageVersion Include="Semver" Version="3.0.0"/>
         <PackageVersion Include="SoundFlow" Version="1.4.2"/>
-        <PackageVersion Include="System.Security.Cryptography.ProtectedData" Version="10.0.13"/>
+        <PackageVersion Include="System.Security.Cryptography.ProtectedData" Version="10.0.14"/>
         <PackageVersion Include="Tmds.DBus.Generator" Version="0.95.1"/>
         <PackageVersion Include="Tmds.DBus.Protocol" Version="0.95.1"/>
         <PackageVersion Include="TUnit" Version="1.67.0"/>
