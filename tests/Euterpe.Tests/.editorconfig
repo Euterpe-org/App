@@ -3,3 +3,8 @@ dotnet_diagnostic.CA1859.severity = none
 
 # Namespaces are managed by Rider's NamespaceProvider (.csproj.DotSettings), not by folder matching.
 dotnet_style_namespace_match_folder = false
+
+# Each test owns a short-lived handler and client, and awaits its closures before their scope disposes them.
+resharper_access_to_disposed_closure_highlighting = none
+resharper_short_lived_http_client_highlighting = none
+resharper_using_statement_resource_initialization_highlighting = none

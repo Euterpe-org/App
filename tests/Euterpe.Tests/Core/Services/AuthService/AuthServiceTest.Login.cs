@@ -34,7 +34,7 @@ public sealed partial class AuthServiceTest
         authClient.ExchangeAppTokenAsync(Any<AppTokenRequest>(), Any<CancellationToken>())
             .Returns(new AppTokenResponse(ValidAccessToken, ValidRefreshToken, TestUser));
         var launcher = IPlatformLauncher.Mock();
-        launcher.OpenUriAsync(Any<string>()).Callback(url =>
+        launcher.OpenUriAsync(Any<string>()).Callback(_ =>
         {
             urlAtLaunch = authState.AuthorizeUrl;
             throw new InvalidOperationException("No default browser");
@@ -42,7 +42,7 @@ public sealed partial class AuthServiceTest
         var listener = ILoopbackCallbackListener.Mock();
         listener.WaitForCallbackAsync(Any<CancellationToken>()).Returns(() =>
             new LoopbackCallbackResult(AuthCode, HttpUtility.ParseQueryString(new Uri(authState.AuthorizeUrl!).Query)["state"], null));
-        var sut = CreateAuthService(authClient, authState: authState, launcher: launcher, listenerFactory: () => listener);
+        var sut = CreateAuthService(authClient, authState, launcher, listenerFactory: () => listener);
 
         await sut.LoginAsync();
 

@@ -172,7 +172,7 @@ public sealed class CoverImageTest : HeadlessTest
             await WaitUntil(() => IsDisposed(first!));
 
             using var _ = Assert.Multiple();
-            await Assert.That(disposedAtSwap).IsEqualTo(false);
+            await Assert.That(disposedAtSwap).IsFalse();
             await Assert.That(IsDisposed(first!)).IsTrue();
         }
         finally

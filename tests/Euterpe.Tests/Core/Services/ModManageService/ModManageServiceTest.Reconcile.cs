@@ -151,7 +151,7 @@ public sealed partial class ModManageServiceTest
         public IEnumerable<string> GetLibFilePaths() => [];
 
         public Task<ModDto?> LoadModFromPathAsync(string filePath) =>
-            Task.FromResult<ModDto?>(_files.TryGetValue(filePath, out var template)
+            Task.FromResult(_files.TryGetValue(filePath, out var template)
                 ? new ModDto
                 {
                     Name = template.Name,

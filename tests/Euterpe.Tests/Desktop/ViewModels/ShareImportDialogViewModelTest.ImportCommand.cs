@@ -95,7 +95,7 @@ public sealed partial class ShareImportDialogViewModelTest
     {
         public string CreateChartShareLink(IReadOnlyCollection<int> chartIds) => throw new NotSupportedException();
 
-        public GameSharePackage? TryParseShareLink(string text) => package;
+        public GameSharePackage TryParseShareLink(string text) => package;
 
         public async Task<IReadOnlyList<BulkItemResult>> ImportAsync(GameSharePackage value, IProgress<BatchProgress>? progress = null,
             CancellationToken cancellationToken = default)

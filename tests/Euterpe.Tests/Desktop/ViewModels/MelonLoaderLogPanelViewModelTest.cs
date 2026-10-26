@@ -44,13 +44,10 @@ public sealed class MelonLoaderLogPanelViewModelTest
     {
         var fileSystem = IFileSystemService.Mock();
         var vm = NewViewModel(fileSystem);
-        var content = "before";
         fileSystem.TryOpenSharedReadFile(vm.GameConfig.LatestLogPath)
-            .Returns(() => LogStream(content));
+            .ReturnsSequentially(LogStream("before"), LogStream("after\nupdated"));
 
         await vm.InitializeAsync();
-        content = "after\nupdated";
-
         await vm.RefreshLogCommand.ExecuteAsync(null);
 
         using var assertions = Assert.Multiple();

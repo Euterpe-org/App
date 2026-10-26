@@ -38,25 +38,24 @@ public sealed class MainSplashWindowViewModelTest
     {
         var ready = new AsyncManualResetEvent(false);
         var auth = IAuthService.Mock();
+        var messageBox = IMessageBoxService.Mock();
+        var vm = NewViewModel(auth, messageBox);
         auth.Ready.Returns(ready);
         auth.RestoreSessionAsync().Returns(false);
         auth.IsServerHealthyAsync().Returns(true);
-        MainSplashWindowViewModel? vm = null;
         var attempts = 0;
         auth.LoginAsync().Callback(() =>
         {
-            vm!.CopyLoginLinkStatus = "Copied";
+            vm.CopyLoginLinkStatus = "Copied";
             if (++attempts is 2)
             {
                 ready.Set();
             }
         });
-        string? feedbackAtRetryPrompt = "not-cleared";
-        var messageBox = IMessageBoxService.Mock();
+        var feedbackAtRetryPrompt = "not-cleared";
         messageBox.WarningConfirmAsync(Any<string>())
-            .Callback(_ => feedbackAtRetryPrompt = vm!.CopyLoginLinkStatus)
+            .Callback(_ => feedbackAtRetryPrompt = vm.CopyLoginLinkStatus)
             .Returns(true);
-        vm = NewViewModel(auth, messageBox);
 
         await vm.InitializeAsync();
 
