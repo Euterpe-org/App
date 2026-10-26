@@ -72,15 +72,34 @@ public sealed class CoverImage : TemplatedControl
         _loadCts = new CancellationTokenSource();
         var token = _loadCts.Token;
         var bytes = await ReadSourceAsync(source, token).ConfigureAwait(false);
+        var bitmap = bytes is null ? null : await DecodeAsync(bytes, token).ConfigureAwait(false);
         await Dispatcher.UIThread.InvokeAsync(() =>
         {
-            if (token.IsCancellationRequested || _animatedPart is null)
+            if (token.IsCancellationRequested)
             {
+                bitmap?.Dispose();
                 return;
             }
 
-            _ = SetSourceAsync(bytes is null ? null : IAnimatedBitmap.Load(new MemoryStream(bytes, false), true));
+            _ = SetSourceAsync(bitmap);
         });
+    }
+
+    private static async Task<IAnimatedBitmap?> DecodeAsync(byte[] bytes, CancellationToken token)
+    {
+        var bitmap = IAnimatedBitmap.Load(new MemoryStream(bytes, false), true);
+        await using (token.Register(bitmap.Dispose).ConfigureAwait(false))
+        {
+            await Task.Run(bitmap.Init).ConfigureAwait(false);
+        }
+
+        if (bitmap.IsInitialized)
+        {
+            return bitmap;
+        }
+
+        bitmap.Dispose();
+        return null;
     }
 
     private void CancelLoad()
@@ -138,7 +157,7 @@ public sealed class CoverImage : TemplatedControl
 
         var previous = _animatedPart.Source;
         _animatedPart.Source = source;
-        if (previous is not { IsInitialized: true })
+        if (previous is null)
         {
             return;
         }
@@ -148,9 +167,6 @@ public sealed class CoverImage : TemplatedControl
             await compositor.RequestCommitAsync().ConfigureAwait(false);
         }
 
-        foreach (var frame in previous.Frames)
-        {
-            frame.Dispose();
-        }
+        previous.Dispose();
     }
 }

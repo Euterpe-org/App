@@ -25,6 +25,8 @@ public sealed class ViewSmokeTest : HeadlessTest
         Dispatcher.UIThread.RunJobs();
 
         var source = view.GetVisualDescendants().OfType<AnimatedImage>().Single().Source;
+        await WaitUntil(() => source is { IsInitialized: true });
+
         using var _ = Assert.Multiple();
         await Assert.That(view.IsLoaded).IsTrue();
         await Assert.That(source).IsNotNull();

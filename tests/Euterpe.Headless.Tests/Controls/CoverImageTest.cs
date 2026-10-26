@@ -151,6 +151,38 @@ public sealed class CoverImageTest : HeadlessTest
     });
 
     [Test]
+    public Task Source_AnimatedSourceChanged_KeepsPreviousAliveUntilSwapIsCommitted() => RunOnUI(async () =>
+    {
+        var pathA = CreateTempWebp(MinimalAnimatedWebp);
+        var pathB = CreateTempWebp(MinimalAnimatedWebp);
+        try
+        {
+            var cover = Show(new CoverImage { Source = new Uri(pathA).AbsoluteUri });
+            var first = await WaitForAnimatedSource(cover);
+            bool? disposedAtSwap = null;
+            AnimatedPart(cover).PropertyChanged += (_, e) =>
+            {
+                if (e.Property == AnimatedImage.SourceProperty)
+                {
+                    Dispatcher.UIThread.Post(() => disposedAtSwap = IsDisposed(first!), DispatcherPriority.Send);
+                }
+            };
+
+            cover.Source = new Uri(pathB).AbsoluteUri;
+            await WaitUntil(() => IsDisposed(first!));
+
+            using var _ = Assert.Multiple();
+            await Assert.That(disposedAtSwap).IsEqualTo(false);
+            await Assert.That(IsDisposed(first!)).IsTrue();
+        }
+        finally
+        {
+            DeleteTempWebp(pathA);
+            DeleteTempWebp(pathB);
+        }
+    });
+
+    [Test]
     public Task DetachFromVisualTree_LoadedAnimation_DisposesAnimatedSourceAndClearsSource() => RunOnUI(async () =>
     {
         var path = CreateTempWebp(MinimalAnimatedWebp);
@@ -314,37 +346,7 @@ public sealed class CoverImageTest : HeadlessTest
         return animatedPart.Source;
     }
 
-    private static async Task WaitUntil(Func<bool> condition)
-    {
-        for (var attempt = 0; attempt < 200; attempt++)
-        {
-            Dispatcher.UIThread.RunJobs();
-            AvaloniaHeadlessPlatform.ForceRenderTimerTick();
-            if (condition())
-            {
-                return;
-            }
-
-            await Task.Delay(5);
-        }
-    }
-
-    private static bool IsDisposed(IAnimatedBitmap source)
-    {
-        foreach (var frame in source.Frames)
-        {
-            try
-            {
-                _ = frame.PixelSize;
-                return false;
-            }
-            catch (ObjectDisposedException)
-            {
-            }
-        }
-
-        return true;
-    }
+    private static bool IsDisposed(IAnimatedBitmap source) => !source.IsInitialized;
 
     private static string CreateTempWebp(byte[] bytes)
     {
