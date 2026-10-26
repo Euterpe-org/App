@@ -16,6 +16,7 @@
         <PackageReference Include="Avalonia.Desktop"/>
         <PackageReference Include="Avalonia.Fonts.Inter"/>
         <PackageReference Include="Avalonia.Labs.AnimatedImage"/>
+        <PackageReference Include="Avalonia.Labs.Panels"/>
         <PackageReference Include="CommunityToolkit.Mvvm"/>
         <PackageReference Include="Irihi.Ursa"/>
         <PackageReference Include="Irihi.Ursa.Themes.Semi"/>

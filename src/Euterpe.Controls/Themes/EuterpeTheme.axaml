@@ -37,8 +37,6 @@
         Source="/Themes/Controls/PlayButton.axaml" />
     <StyleInclude
         Source="/Themes/Controls/RoleCard.axaml" />
-    <StyleInclude
-        Source="/Themes/Controls/WrapVirtualizer.axaml" />
     <!--  Control Styles  -->
     <StyleInclude
         Source="/Themes/ControlStyles/BorderStyles.axaml" />

@@ -4,6 +4,7 @@
     xmlns:converters="using:Euterpe.Converters"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:e="https://github.com/Euterpe-org/Euterpe"
+    xmlns:labs="using:Avalonia.Labs.Controls"
     xmlns:loc="https://github.com/Euterpe-org/Euterpe/Localization"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:models="using:Euterpe.Models.Charts"
@@ -360,7 +361,7 @@
                 </Grid>
             </Border>
 
-            <!--  Chart grid: fixed-width cards wrap, so the column count flows with window width  -->
+            <!--  Chart grid: the panel sizes every card like the first one, so card content must never collapse  -->
             <u:LoadingContainer
                 Grid.Column="1"
                 HorizontalContentAlignment="Stretch"
@@ -368,318 +369,325 @@
                 LoadingMessage="{Localize {x:Static loc:XAMLLiteral.LoadingMessage}}"
                 VerticalAlignment="Stretch"
                 VerticalContentAlignment="Stretch">
-                <e:WrapVirtualizer
-                    ItemsSource="{Binding Charts}"
-                    ItemWidth="192">
-                    <e:WrapVirtualizer.ItemTemplate>
-                        <DataTemplate
-                            x:DataType="vm:ChartManageItemViewModel">
-                            <Border
-                                Background="{DynamicResource SecondaryCardColor}"
-                                CornerRadius="10"
-                                Margin="0,0,12,12"
-                                Padding="8"
-                                Width="180">
-                                <Border.Styles>
-                                    <!--  A local Opacity would outrank the :pointerover setter, so both live here  -->
-                                    <Style
-                                        Selector="TextBlock.sizeText">
-                                        <Setter Property="Opacity" Value="0.55" />
-                                    </Style>
-                                    <Style
-                                        Selector="Border:pointerover TextBlock.sizeText">
-                                        <Setter Property="Opacity" Value="0" />
-                                    </Style>
-                                </Border.Styles>
-                                <StackPanel
-                                    Spacing="6">
-                                    <!--  Cover: click toggles play/pause  -->
-                                    <Button
-                                        Classes="Transparent"
-                                        Command="{Binding $parent[UserControl].DataContext.ActivateChartCommand}"
-                                        CommandParameter="{Binding}"
-                                        Focusable="False"
-                                        HorizontalContentAlignment="Stretch"
-                                        Padding="0"
-                                        VerticalContentAlignment="Stretch">
-                                        <Classes.Playing>
-                                            <MultiBinding
-                                                Converter="{x:Static converters:FuncValueConverters.TileIsPlaying}">
-                                                <Binding
-                                                    Path="$parent[UserControl].DataContext.Playback.PlayingKey" />
-                                                <Binding
-                                                    Path="$parent[UserControl].DataContext.Playback.Status" />
-                                                <Binding
-                                                    Path="Chart.FolderPath" />
-                                            </MultiBinding>
-                                        </Classes.Playing>
-                                        <Button.Styles>
-                                            <!--  A local RenderTransform would outrank the :pointerover setter, so both live here  -->
-                                            <Style
-                                                Selector="Border.playDisc">
-                                                <Setter Property="RenderTransform" Value="scale(1)" />
-                                            </Style>
-                                            <Style
-                                                Selector="Button:pointerover Border.playDisc">
-                                                <Setter Property="RenderTransform" Value="scale(1.12)" />
-                                            </Style>
-                                            <Style
-                                                Selector="Border.playOverlay">
-                                                <Setter Property="Opacity" Value="1" />
-                                            </Style>
-                                            <Style
-                                                Selector="Button.Playing:not(:pointerover) Border.playOverlay">
-                                                <Setter Property="Opacity" Value="0" />
-                                            </Style>
-                                            <Style
-                                                Selector="PathIcon.playPauseIcon">
-                                                <Setter Property="Data" Value="{StaticResource SemiIconPlay}" />
-                                            </Style>
-                                            <Style
-                                                Selector="Button.Playing PathIcon.playPauseIcon">
-                                                <Setter Property="Data" Value="{StaticResource SemiIconPause}" />
-                                            </Style>
-                                        </Button.Styles>
+                <ScrollViewer
+                    HorizontalScrollBarVisibility="Disabled">
+                    <ItemsControl
+                        ItemsSource="{Binding Charts}">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <labs:VirtualizingWrapPanel
+                                    SpacingMode="None" />
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate
+                                x:DataType="vm:ChartManageItemViewModel">
+                                <Border
+                                    Background="{DynamicResource SecondaryCardColor}"
+                                    CornerRadius="10"
+                                    Margin="0,0,12,12"
+                                    Padding="8"
+                                    Width="180">
+                                    <Border.Styles>
+                                        <!--  A local Opacity would outrank the :pointerover setter, so both live here  -->
+                                        <Style
+                                            Selector="TextBlock.sizeText">
+                                            <Setter Property="Opacity" Value="0.55" />
+                                        </Style>
+                                        <Style
+                                            Selector="Border:pointerover TextBlock.sizeText">
+                                            <Setter Property="Opacity" Value="0" />
+                                        </Style>
+                                    </Border.Styles>
+                                    <StackPanel
+                                        Spacing="6">
+                                        <!--  Cover: click toggles play/pause  -->
+                                        <Button
+                                            Classes="Transparent"
+                                            Command="{Binding $parent[UserControl].DataContext.ActivateChartCommand}"
+                                            CommandParameter="{Binding}"
+                                            Focusable="False"
+                                            HorizontalContentAlignment="Stretch"
+                                            Padding="0"
+                                            VerticalContentAlignment="Stretch">
+                                            <Classes.Playing>
+                                                <MultiBinding
+                                                    Converter="{x:Static converters:FuncValueConverters.TileIsPlaying}">
+                                                    <Binding
+                                                        Path="$parent[UserControl].DataContext.Playback.PlayingKey" />
+                                                    <Binding
+                                                        Path="$parent[UserControl].DataContext.Playback.Status" />
+                                                    <Binding
+                                                        Path="Chart.FolderPath" />
+                                                </MultiBinding>
+                                            </Classes.Playing>
+                                            <Button.Styles>
+                                                <!--  A local RenderTransform would outrank the :pointerover setter, so both live here  -->
+                                                <Style
+                                                    Selector="Border.playDisc">
+                                                    <Setter Property="RenderTransform" Value="scale(1)" />
+                                                </Style>
+                                                <Style
+                                                    Selector="Button:pointerover Border.playDisc">
+                                                    <Setter Property="RenderTransform" Value="scale(1.12)" />
+                                                </Style>
+                                                <Style
+                                                    Selector="Border.playOverlay">
+                                                    <Setter Property="Opacity" Value="1" />
+                                                </Style>
+                                                <Style
+                                                    Selector="Button.Playing:not(:pointerover) Border.playOverlay">
+                                                    <Setter Property="Opacity" Value="0" />
+                                                </Style>
+                                                <Style
+                                                    Selector="PathIcon.playPauseIcon">
+                                                    <Setter Property="Data" Value="{StaticResource SemiIconPlay}" />
+                                                </Style>
+                                                <Style
+                                                    Selector="Button.Playing PathIcon.playPauseIcon">
+                                                    <Setter Property="Data" Value="{StaticResource SemiIconPause}" />
+                                                </Style>
+                                            </Button.Styles>
 
-                                        <!--  1:1 square cover; the card width is fixed so the cover is a constant 164  -->
-                                        <Panel
-                                            Height="164"
-                                            Width="164">
-                                            <Border
-                                                ClipToBounds="True"
-                                                CornerRadius="8">
-                                                <e:CoverImage
-                                                    Background="{Binding Chart.Manifest.Meta.CoverDominantColor, Converter={x:Static converters:FuncValueConverters.HexColorToBrushConverter}}"
-                                                    Source="{Binding Chart.CoverPath}"
-                                                    Stretch="UniformToFill" />
-                                            </Border>
-
-                                            <!--  Play overlay: mask + play/pause button  -->
-                                            <Border
-                                                Background="#40000000"
-                                                Classes="playOverlay"
-                                                CornerRadius="8"
-                                                IsHitTestVisible="False">
-                                                <Border.Transitions>
-                                                    <Transitions>
-                                                        <DoubleTransition
-                                                            Property="Opacity"
-                                                            Duration="0:0:0.3" />
-                                                    </Transitions>
-                                                </Border.Transitions>
-
+                                            <!--  1:1 square cover; the card width is fixed so the cover is a constant 164  -->
+                                            <Panel
+                                                Height="164"
+                                                Width="164">
                                                 <Border
-                                                    Background="#26FFFFFF"
-                                                    Classes="playDisc"
-                                                    CornerRadius="20"
-                                                    Height="40"
-                                                    HorizontalAlignment="Center"
-                                                    RenderTransformOrigin="50%,50%"
-                                                    VerticalAlignment="Center"
-                                                    Width="40">
+                                                    ClipToBounds="True"
+                                                    CornerRadius="8">
+                                                    <e:CoverImage
+                                                        Background="{Binding Chart.Manifest.Meta.CoverDominantColor, Converter={x:Static converters:FuncValueConverters.HexColorToBrushConverter}}"
+                                                        Source="{Binding Chart.CoverPath}"
+                                                        Stretch="UniformToFill" />
+                                                </Border>
+
+                                                <!--  Play overlay: mask + play/pause button  -->
+                                                <Border
+                                                    Background="#40000000"
+                                                    Classes="playOverlay"
+                                                    CornerRadius="8"
+                                                    IsHitTestVisible="False">
                                                     <Border.Transitions>
                                                         <Transitions>
-                                                            <TransformOperationsTransition
-                                                                Property="RenderTransform"
-                                                                Duration="0:0:0.2" />
+                                                            <DoubleTransition
+                                                                Property="Opacity"
+                                                                Duration="0:0:0.3" />
                                                         </Transitions>
                                                     </Border.Transitions>
-                                                    <PathIcon
-                                                        Classes="playPauseIcon"
-                                                        Foreground="White"
-                                                        Height="14"
-                                                        Width="14" />
+
+                                                    <Border
+                                                        Background="#26FFFFFF"
+                                                        Classes="playDisc"
+                                                        CornerRadius="20"
+                                                        Height="40"
+                                                        HorizontalAlignment="Center"
+                                                        RenderTransformOrigin="50%,50%"
+                                                        VerticalAlignment="Center"
+                                                        Width="40">
+                                                        <Border.Transitions>
+                                                            <Transitions>
+                                                                <TransformOperationsTransition
+                                                                    Property="RenderTransform"
+                                                                    Duration="0:0:0.2" />
+                                                            </Transitions>
+                                                        </Border.Transitions>
+                                                        <PathIcon
+                                                            Classes="playPauseIcon"
+                                                            Foreground="White"
+                                                            Height="14"
+                                                            Width="14" />
+                                                    </Border>
                                                 </Border>
-                                            </Border>
 
-                                            <!--  Difficulty + rating badges  -->
-                                            <ItemsControl
-                                                HorizontalAlignment="Right"
-                                                IsHitTestVisible="False"
-                                                ItemsSource="{Binding Chart.DifficultyBadges}"
-                                                Margin="6"
-                                                VerticalAlignment="Top">
-                                                <ItemsControl.ItemsPanel>
-                                                    <ItemsPanelTemplate>
-                                                        <StackPanel
-                                                            Orientation="Horizontal"
-                                                            Spacing="3" />
-                                                    </ItemsPanelTemplate>
-                                                </ItemsControl.ItemsPanel>
-                                                <ItemsControl.ItemTemplate>
-                                                    <DataTemplate
-                                                        x:DataType="models:DifficultyBadge">
-                                                        <Panel
-                                                            ClipToBounds="True"
-                                                            Height="30"
-                                                            Width="30">
-                                                            <e:DifficultyStar
-                                                                Difficulty="{Binding Difficulty}"
+                                                <!--  Difficulty + rating badges  -->
+                                                <ItemsControl
+                                                    HorizontalAlignment="Right"
+                                                    IsHitTestVisible="False"
+                                                    ItemsSource="{Binding Chart.DifficultyBadges}"
+                                                    Margin="6"
+                                                    VerticalAlignment="Top">
+                                                    <ItemsControl.ItemsPanel>
+                                                        <ItemsPanelTemplate>
+                                                            <StackPanel
+                                                                Orientation="Horizontal"
+                                                                Spacing="3" />
+                                                        </ItemsPanelTemplate>
+                                                    </ItemsControl.ItemsPanel>
+                                                    <ItemsControl.ItemTemplate>
+                                                        <DataTemplate
+                                                            x:DataType="models:DifficultyBadge">
+                                                            <Panel
+                                                                ClipToBounds="True"
                                                                 Height="30"
-                                                                Width="30" />
-                                                            <Border
-                                                                Background="#99000000"
-                                                                CornerRadius="4"
-                                                                HorizontalAlignment="Center"
-                                                                Padding="3,0"
-                                                                VerticalAlignment="Center">
-                                                                <TextBlock
-                                                                    FontSize="11"
-                                                                    FontWeight="Bold"
-                                                                    Foreground="White"
+                                                                Width="30">
+                                                                <e:DifficultyStar
+                                                                    Difficulty="{Binding Difficulty}"
+                                                                    Height="30"
+                                                                    Width="30" />
+                                                                <Border
+                                                                    Background="#99000000"
+                                                                    CornerRadius="4"
                                                                     HorizontalAlignment="Center"
-                                                                    Text="{Binding Rating}"
-                                                                    VerticalAlignment="Center" />
-                                                            </Border>
-                                                        </Panel>
-                                                    </DataTemplate>
-                                                </ItemsControl.ItemTemplate>
-                                            </ItemsControl>
+                                                                    Padding="3,0"
+                                                                    VerticalAlignment="Center">
+                                                                    <TextBlock
+                                                                        FontSize="11"
+                                                                        FontWeight="Bold"
+                                                                        Foreground="White"
+                                                                        HorizontalAlignment="Center"
+                                                                        Text="{Binding Rating}"
+                                                                        VerticalAlignment="Center" />
+                                                                </Border>
+                                                            </Panel>
+                                                        </DataTemplate>
+                                                    </ItemsControl.ItemTemplate>
+                                                </ItemsControl>
 
-                                            <!--  Selection indicator  -->
-                                            <CheckBox
-                                                Focusable="False"
-                                                HorizontalAlignment="Left"
-                                                IsHitTestVisible="False"
-                                                IsChecked="{Binding IsSelected}"
-                                                IsVisible="{Binding $parent[UserControl].DataContext.IsSelectionMode}"
-                                                Margin="4"
-                                                VerticalAlignment="Top" />
-                                        </Panel>
-                                    </Button>
+                                                <!--  Selection indicator  -->
+                                                <CheckBox
+                                                    Focusable="False"
+                                                    HorizontalAlignment="Left"
+                                                    IsHitTestVisible="False"
+                                                    IsChecked="{Binding IsSelected}"
+                                                    IsVisible="{Binding $parent[UserControl].DataContext.IsSelectionMode}"
+                                                    Margin="4"
+                                                    VerticalAlignment="Top" />
+                                            </Panel>
+                                        </Button>
 
-                                    <!--  Author / title / charters  -->
-                                    <StackPanel
-                                        Spacing="2">
-                                        <TextBlock
-                                            FontSize="11"
-                                            MaxLines="1"
-                                            Opacity="0.5"
-                                            Text="{Binding Chart.Manifest.Meta.Author}"
-                                            TextTrimming="CharacterEllipsis" />
-
-                                        <!--  Title -> web chart detail page (online charts only)  -->
-                                        <Button
-                                            Classes="Transparent Link"
-                                            Command="{Binding $parent[UserControl].DataContext.OpenUrlCommand}"
-                                            CommandParameter="{Binding Chart.DetailUrl}"
-                                            Cursor="Hand"
-                                            HorizontalAlignment="Left"
-                                            IsHitTestVisible="{Binding Chart.IsOnline}"
-                                            MinHeight="0"
-                                            MinWidth="0"
-                                            Padding="0"
-                                            ToolTip.Tip="{Binding Chart.Manifest.Meta.Name}">
+                                        <!--  Author / title / charters  -->
+                                        <StackPanel
+                                            Spacing="2">
                                             <TextBlock
-                                                FontWeight="SemiBold"
+                                                FontSize="11"
                                                 MaxLines="1"
-                                                Text="{Binding Chart.Manifest.Meta.Name}"
+                                                Opacity="0.5"
+                                                Text="{Binding Chart.Manifest.Meta.Author}"
                                                 TextTrimming="CharacterEllipsis" />
-                                        </Button>
-                                        <TextBlock
-                                            FontSize="12"
-                                            IsVisible="{Binding $self.Text, Converter={x:Static StringConverters.IsNotNullOrEmpty}}"
-                                            MaxLines="1"
-                                            Opacity="0.7"
-                                            Text="{Binding Chart.CharterDisplay}"
-                                            TextTrimming="CharacterEllipsis"
-                                            ToolTip.Tip="{Binding $self.Text}" />
-                                    </StackPanel>
 
-                                    <!--  Meta row: bpm + video tag  -->
-                                    <StackPanel
-                                        Orientation="Horizontal"
-                                        Spacing="8">
-                                        <TextBlock
-                                            FontSize="12"
-                                            Opacity="0.85"
-                                            Text="{Binding Chart.BpmDisplay, StringFormat='♪ {0}'}" />
-                                        <Border
-                                            Background="#40808080"
-                                            CornerRadius="3"
-                                            IsVisible="{Binding Chart.HasVideo}"
-                                            Padding="5,1"
-                                            VerticalAlignment="Center">
-                                            <TextBlock
-                                                FontSize="10"
-                                                FontWeight="SemiBold"
-                                                Opacity="0.85"
-                                                Text="{Localize {x:Static loc:XAMLLiteral.ChartManage_Tag_Video}}" />
-                                        </Border>
-                                    </StackPanel>
-
-                                    <!--  Uploader + right slot: size when idle, delete on card hover  -->
-                                    <Grid
-                                        ColumnDefinitions="*,Auto"
-                                        MinHeight="18">
-                                        <Button
-                                            Grid.Column="0"
-                                            Classes="Transparent Link"
-                                            Command="{Binding $parent[UserControl].DataContext.OpenUrlCommand}"
-                                            CommandParameter="{Binding Chart.UploaderPageUrl}"
-                                            Cursor="Hand"
-                                            HorizontalAlignment="Left"
-                                            IsHitTestVisible="{Binding Chart.IsOnline}"
-                                            IsVisible="{Binding Chart.Manifest.Meta.Uploader, Converter={x:Static ObjectConverters.IsNotNull}}"
-                                            MinHeight="0"
-                                            MinWidth="0"
-                                            Padding="0"
-                                            VerticalAlignment="Center">
-                                            <TextBlock
-                                                FontSize="11"
-                                                FontWeight="Normal"
-                                                Foreground="{DynamicResource SemiColorText0}"
-                                                Opacity="0.55"
-                                                Text="{Binding Chart.UploaderDisplay}"
-                                                TextTrimming="CharacterEllipsis" />
-                                        </Button>
-                                        <Panel
-                                            Grid.Column="1"
-                                            VerticalAlignment="Center">
-                                            <!--  Opacity, not IsVisible: keeps the slot width stable  -->
-                                            <TextBlock
-                                                Classes="sizeText"
-                                                FontSize="11"
-                                                HorizontalAlignment="Right"
-                                                Text="{Binding Chart.SizeDisplay}"
-                                                VerticalAlignment="Center" />
+                                            <!--  Title -> web chart detail page (online charts only)  -->
                                             <Button
-                                                Classes="Transparent"
-                                                Command="{Binding $parent[UserControl].DataContext.RemoveChartCommand}"
-                                                CommandParameter="{Binding Chart}"
-                                                Focusable="False"
-                                                Height="18"
-                                                HorizontalAlignment="Right"
-                                                IsVisible="{Binding $parent[Border].IsPointerOver}"
+                                                Classes="Transparent Link"
+                                                Command="{Binding $parent[UserControl].DataContext.OpenUrlCommand}"
+                                                CommandParameter="{Binding Chart.DetailUrl}"
+                                                Cursor="Hand"
+                                                HorizontalAlignment="Left"
+                                                IsHitTestVisible="{Binding Chart.IsOnline}"
                                                 MinHeight="0"
                                                 MinWidth="0"
                                                 Padding="0"
-                                                ToolTip.Tip="{Localize {x:Static loc:XAMLLiteral.ChartManage_Delete}}"
-                                                VerticalAlignment="Center"
-                                                Width="22">
-                                                <Button.Styles>
-                                                    <Style
-                                                        Selector="PathIcon">
-                                                        <Setter Property="Opacity" Value="0.5" />
-                                                    </Style>
-                                                    <Style
-                                                        Selector="Button:pointerover PathIcon">
-                                                        <Setter Property="Foreground" Value="{DynamicResource SemiColorDanger}" />
-                                                        <Setter Property="Opacity" Value="1" />
-                                                    </Style>
-                                                </Button.Styles>
-                                                <PathIcon
-                                                    Data="{StaticResource SemiIconDelete}"
-                                                    Height="13"
-                                                    Width="13" />
+                                                ToolTip.Tip="{Binding Chart.Manifest.Meta.Name}">
+                                                <TextBlock
+                                                    FontWeight="SemiBold"
+                                                    MaxLines="1"
+                                                    Text="{Binding Chart.Manifest.Meta.Name}"
+                                                    TextTrimming="CharacterEllipsis" />
                                             </Button>
-                                        </Panel>
-                                    </Grid>
-                                </StackPanel>
-                            </Border>
-                        </DataTemplate>
-                    </e:WrapVirtualizer.ItemTemplate>
-                </e:WrapVirtualizer>
+                                            <TextBlock
+                                                FontSize="12"
+                                                MaxLines="1"
+                                                Opacity="0.7"
+                                                Text="{Binding Chart.CharterDisplay}"
+                                                TextTrimming="CharacterEllipsis"
+                                                ToolTip.Tip="{Binding $self.Text}" />
+                                        </StackPanel>
+
+                                        <!--  Meta row: bpm + video tag  -->
+                                        <StackPanel
+                                            Orientation="Horizontal"
+                                            Spacing="8">
+                                            <TextBlock
+                                                FontSize="12"
+                                                Opacity="0.85"
+                                                Text="{Binding Chart.BpmDisplay, StringFormat='♪ {0}'}" />
+                                            <Border
+                                                Background="#40808080"
+                                                CornerRadius="3"
+                                                IsVisible="{Binding Chart.HasVideo}"
+                                                Padding="5,1"
+                                                VerticalAlignment="Center">
+                                                <TextBlock
+                                                    FontSize="10"
+                                                    FontWeight="SemiBold"
+                                                    Opacity="0.85"
+                                                    Text="{Localize {x:Static loc:XAMLLiteral.ChartManage_Tag_Video}}" />
+                                            </Border>
+                                        </StackPanel>
+
+                                        <!--  Uploader + right slot: size when idle, delete on card hover  -->
+                                        <Grid
+                                            ColumnDefinitions="*,Auto"
+                                            MinHeight="18">
+                                            <Button
+                                                Grid.Column="0"
+                                                Classes="Transparent Link"
+                                                Command="{Binding $parent[UserControl].DataContext.OpenUrlCommand}"
+                                                CommandParameter="{Binding Chart.UploaderPageUrl}"
+                                                Cursor="Hand"
+                                                HorizontalAlignment="Left"
+                                                IsHitTestVisible="{Binding Chart.IsOnline}"
+                                                IsVisible="{Binding Chart.Manifest.Meta.Uploader, Converter={x:Static ObjectConverters.IsNotNull}}"
+                                                MinHeight="0"
+                                                MinWidth="0"
+                                                Padding="0"
+                                                VerticalAlignment="Center">
+                                                <TextBlock
+                                                    FontSize="11"
+                                                    FontWeight="Normal"
+                                                    Foreground="{DynamicResource SemiColorText0}"
+                                                    Opacity="0.55"
+                                                    Text="{Binding Chart.UploaderDisplay}"
+                                                    TextTrimming="CharacterEllipsis" />
+                                            </Button>
+                                            <Panel
+                                                Grid.Column="1"
+                                                VerticalAlignment="Center">
+                                                <!--  Opacity, not IsVisible: keeps the slot width stable  -->
+                                                <TextBlock
+                                                    Classes="sizeText"
+                                                    FontSize="11"
+                                                    HorizontalAlignment="Right"
+                                                    Text="{Binding Chart.SizeDisplay}"
+                                                    VerticalAlignment="Center" />
+                                                <Button
+                                                    Classes="Transparent"
+                                                    Command="{Binding $parent[UserControl].DataContext.RemoveChartCommand}"
+                                                    CommandParameter="{Binding Chart}"
+                                                    Focusable="False"
+                                                    Height="18"
+                                                    HorizontalAlignment="Right"
+                                                    IsVisible="{Binding $parent[Border].IsPointerOver}"
+                                                    MinHeight="0"
+                                                    MinWidth="0"
+                                                    Padding="0"
+                                                    ToolTip.Tip="{Localize {x:Static loc:XAMLLiteral.ChartManage_Delete}}"
+                                                    VerticalAlignment="Center"
+                                                    Width="22">
+                                                    <Button.Styles>
+                                                        <Style
+                                                            Selector="PathIcon">
+                                                            <Setter Property="Opacity" Value="0.5" />
+                                                        </Style>
+                                                        <Style
+                                                            Selector="Button:pointerover PathIcon">
+                                                            <Setter Property="Foreground" Value="{DynamicResource SemiColorDanger}" />
+                                                            <Setter Property="Opacity" Value="1" />
+                                                        </Style>
+                                                    </Button.Styles>
+                                                    <PathIcon
+                                                        Data="{StaticResource SemiIconDelete}"
+                                                        Height="13"
+                                                        Width="13" />
+                                                </Button>
+                                            </Panel>
+                                        </Grid>
+                                    </StackPanel>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </ScrollViewer>
             </u:LoadingContainer>
         </Grid>
     </Grid>
