@@ -28,7 +28,7 @@
         <PackageVersion Include="Irihi.Ursa.Themes.Semi" Version="2.2.0"/>
         <PackageVersion Include="JetBrains.Annotations" Version="2026.2.0"/>
         <PackageVersion Include="JetBrains.dotCover.Framework" Version="1.0.2"/>
-        <PackageVersion Include="Meziantou.Framework.SnapshotTesting.Roslyn" Version="1.0.16"/>
+        <PackageVersion Include="Meziantou.Framework.SnapshotTesting.Roslyn" Version="1.0.17"/>
         <PackageVersion Include="Microsoft.Build.Utilities.Core" Version="18.11.0"/>
         <PackageVersion Include="Microsoft.CodeAnalysis.Analyzers" Version="5.9.0"/>
         <PackageVersion Include="Microsoft.CodeAnalysis.CSharp" Version="5.9.0"/>
