@@ -4,6 +4,53 @@
     xmlns:e="https://github.com/Euterpe-org/Euterpe"
     xmlns:models="using:Euterpe.Controls.Models">
 
+    <Styles.Resources>
+
+        <!--  ContributorCard's box, so the grid keeps its place when the data lands  -->
+        <ControlTheme
+            x:Key="ContributorSkeletonCard"
+            TargetType="ContentControl">
+            <Setter Property="Height" Value="140" />
+            <Setter Property="Margin" Value="8" />
+            <Setter Property="Width" Value="320" />
+            <Setter Property="Template">
+                <ControlTemplate>
+                    <Border
+                        Padding="36,0,0,0"
+                        Theme="{DynamicResource CardBorder}">
+                        <StackPanel
+                            Orientation="Horizontal"
+                            Spacing="10"
+                            VerticalAlignment="Center">
+                            <Border
+                                Classes="Skeleton"
+                                CornerRadius="32"
+                                Height="64"
+                                Width="64" />
+                            <StackPanel
+                                Spacing="9"
+                                VerticalAlignment="Center">
+                                <Border
+                                    Classes="Skeleton"
+                                    Height="14"
+                                    Width="104" />
+                                <Border
+                                    Classes="Skeleton"
+                                    Height="9"
+                                    Width="150" />
+                                <Border
+                                    Classes="Skeleton"
+                                    Height="9"
+                                    Width="96" />
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+                </ControlTemplate>
+            </Setter>
+        </ControlTheme>
+
+    </Styles.Resources>
+
     <Design.PreviewWith>
         <e:ContributorCard />
     </Design.PreviewWith>

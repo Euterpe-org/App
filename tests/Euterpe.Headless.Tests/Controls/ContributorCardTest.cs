@@ -1,3 +1,4 @@
+using Avalonia.Styling;
 using Euterpe.Controls.Models;
 
 namespace Euterpe.Headless.Tests.Controls;
@@ -106,4 +107,32 @@ public sealed class ContributorCardTest : HeadlessTest
         Dispatcher.UIThread.RunJobs();
         await Assert.That(receivedUrls).Contains("https://github.com");
     });
+
+    [Test]
+    public Task ContributorSkeletonCard_Applied_MatchesContributorCardSize() => RunOnUI(async () =>
+    {
+        var skeleton = CreateSkeletonCard();
+        var card = new ContributorCard { ContributorName = "test", ContributorDescription = "the maintainer" };
+        var window = new Window { Content = new StackPanel { Children = { skeleton, card } }, Width = 900, Height = 700 };
+        window.Show();
+        Dispatcher.UIThread.RunJobs();
+
+        await Assert.That(skeleton.Bounds.Size).IsEqualTo(card.Bounds.Size);
+    });
+
+    [Test]
+    public Task ContributorSkeletonCard_Applied_FillsPlaceholdersWithThemeBrushes() => RunOnUI(async () =>
+    {
+        var skeleton = CreateSkeletonCard();
+        var window = new Window { Content = skeleton, Width = 400, Height = 200 };
+        window.Show();
+        Dispatcher.UIThread.RunJobs();
+
+        var unpainted = skeleton.GetVisualDescendants().OfType<Border>().Where(static border => border.Background is null);
+
+        await Assert.That(unpainted).IsEmpty();
+    });
+
+    private static ContentControl CreateSkeletonCard() =>
+        new() { Theme = (ControlTheme)Application.Current!.FindResource("ContributorSkeletonCard")! };
 }

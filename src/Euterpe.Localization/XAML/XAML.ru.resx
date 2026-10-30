@@ -373,9 +373,6 @@
   <data name="HyperlinkButton_Visit" xml:space="preserve">
     <value>Перейти</value>
   </data>
-  <data name="LoadingMessage" xml:space="preserve">
-    <value>Загрузка...</value>
-  </data>
   <data name="MelonLoaderLog_Analyze" xml:space="preserve">
     <value>Анализировать</value>
   </data>

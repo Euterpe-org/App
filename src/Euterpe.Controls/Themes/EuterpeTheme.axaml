@@ -22,8 +22,6 @@
     <StyleInclude
         Source="/Themes/Controls/ContributorCard.axaml" />
     <StyleInclude
-        Source="/Themes/Controls/ContributorSkeleton.axaml" />
-    <StyleInclude
         Source="/Themes/Controls/CoverImage.axaml" />
     <StyleInclude
         Source="/Themes/Controls/DifficultyStar.axaml" />
@@ -37,6 +35,8 @@
         Source="/Themes/Controls/PlayButton.axaml" />
     <StyleInclude
         Source="/Themes/Controls/RoleCard.axaml" />
+    <StyleInclude
+        Source="/Themes/Controls/SkeletonList.axaml" />
     <!--  Control Styles  -->
     <StyleInclude
         Source="/Themes/ControlStyles/BorderStyles.axaml" />

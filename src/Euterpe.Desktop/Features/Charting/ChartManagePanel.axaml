@@ -361,14 +361,68 @@
                 </Grid>
             </Border>
 
-            <!--  Chart grid: the panel sizes every card like the first one, so card content must never collapse  -->
-            <u:LoadingContainer
-                Grid.Column="1"
-                HorizontalContentAlignment="Stretch"
-                IsLoading="{Binding !AllChartsLoaded, Mode=OneWay}"
-                LoadingMessage="{Localize {x:Static loc:XAMLLiteral.LoadingMessage}}"
-                VerticalAlignment="Stretch"
-                VerticalContentAlignment="Stretch">
+            <Panel
+                Grid.Column="1">
+                <e:SkeletonList
+                    Count="16"
+                    IsVisible="{Binding !AllChartsLoaded, Mode=OneWay}">
+                    <e:SkeletonList.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel />
+                        </ItemsPanelTemplate>
+                    </e:SkeletonList.ItemsPanel>
+                    <e:SkeletonList.ItemTemplate>
+                        <DataTemplate
+                            x:DataType="x:Int32">
+                            <Border
+                                Background="{DynamicResource SecondaryCardColor}"
+                                CornerRadius="10"
+                                Margin="0,0,12,12"
+                                Padding="8"
+                                Width="180">
+                                <StackPanel
+                                    Spacing="10">
+                                    <Border
+                                        Classes="Skeleton"
+                                        CornerRadius="8"
+                                        Height="164"
+                                        Width="164" />
+                                    <Border
+                                        Classes="Skeleton"
+                                        Height="8"
+                                        Width="64" />
+                                    <Border
+                                        Classes="Skeleton"
+                                        Height="12"
+                                        Width="128" />
+                                    <Border
+                                        Classes="Skeleton"
+                                        Height="9"
+                                        Width="96" />
+                                    <Border
+                                        Classes="Skeleton"
+                                        Height="9"
+                                        Width="48" />
+                                    <Grid
+                                        ColumnDefinitions="*,Auto">
+                                        <Border
+                                            Grid.Column="0"
+                                            Classes="Skeleton"
+                                            Height="8"
+                                            Width="72" />
+                                        <Border
+                                            Grid.Column="1"
+                                            Classes="Skeleton"
+                                            Height="8"
+                                            Width="36" />
+                                    </Grid>
+                                </StackPanel>
+                            </Border>
+                        </DataTemplate>
+                    </e:SkeletonList.ItemTemplate>
+                </e:SkeletonList>
+
+                <!--  Chart grid: the panel sizes every card like the first one, so card content must never collapse  -->
                 <ScrollViewer
                     HorizontalScrollBarVisibility="Disabled">
                     <ItemsControl
@@ -688,7 +742,7 @@
                         </ItemsControl.ItemTemplate>
                     </ItemsControl>
                 </ScrollViewer>
-            </u:LoadingContainer>
+            </Panel>
         </Grid>
     </Grid>
 

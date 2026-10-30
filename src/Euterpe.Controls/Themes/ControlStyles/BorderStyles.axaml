@@ -1,6 +1,7 @@
 <Styles
     xmlns="https://github.com/avaloniaui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:u="https://irihi.tech/ursa">
 
     <Style
         Selector="Border">
@@ -42,6 +43,14 @@
             <Setter Property="Margin" Value="0,0,20,10" />
             <Setter Property="Padding" Value="12,4" />
             <Setter Property="Theme" Value="{DynamicResource CardBorder}" />
+        </Style>
+
+        <Style
+            Selector="^.Skeleton">
+            <Setter Property="CornerRadius" Value="4" />
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="u:Shimmer.BaseColor" Value="{DynamicResource SkeletonBaseColor}" />
+            <Setter Property="u:Shimmer.HighlightColor" Value="{DynamicResource SkeletonHighlightColor}" />
         </Style>
 
     </Style>

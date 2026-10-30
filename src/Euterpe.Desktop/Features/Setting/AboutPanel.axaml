@@ -182,8 +182,33 @@
 
                 <!--  Contributors  -->
                 <Panel>
-                    <e:ContributorSkeleton
-                        IsVisible="{Binding !AllContributorsLoaded, Mode=OneWay}" />
+                    <!--  One placeholder group shaped like the template below  -->
+                    <e:SkeletonList
+                        Count="1"
+                        IsVisible="{Binding !AllContributorsLoaded, Mode=OneWay}">
+                        <e:SkeletonList.ItemTemplate>
+                            <DataTemplate
+                                x:DataType="x:Int32">
+                                <StackPanel
+                                    Margin="0,16">
+
+                                    <!--  Group heading; 4 + 16 + 5 is the H4 line box  -->
+                                    <Border
+                                        Classes="Skeleton"
+                                        Height="16"
+                                        Margin="0,4,0,5"
+                                        Width="132" />
+
+                                    <WrapPanel>
+                                        <ContentControl
+                                            Theme="{StaticResource ContributorSkeletonCard}" />
+                                        <ContentControl
+                                            Theme="{StaticResource ContributorSkeletonCard}" />
+                                    </WrapPanel>
+                                </StackPanel>
+                            </DataTemplate>
+                        </e:SkeletonList.ItemTemplate>
+                    </e:SkeletonList>
                     <ItemsControl
                         ItemsSource="{Binding ContributorGroups, Mode=OneWay}">
 

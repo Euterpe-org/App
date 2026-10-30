@@ -104,4 +104,13 @@
         #1A365D
     </Color>
 
+    <Color
+        x:Key="SkeletonBaseColor">
+        #212E3238
+    </Color>
+    <Color
+        x:Key="SkeletonHighlightColor">
+        #0D2E3238
+    </Color>
+
 </ResourceDictionary>

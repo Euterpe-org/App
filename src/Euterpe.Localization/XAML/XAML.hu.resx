@@ -373,9 +373,6 @@
   <data name="HyperlinkButton_Visit" xml:space="preserve">
     <value>Megtekintés</value>
   </data>
-  <data name="LoadingMessage" xml:space="preserve">
-    <value>Betöltés...</value>
-  </data>
   <data name="MelonLoaderLog_Analyze" xml:space="preserve">
     <value>Elemzés</value>
   </data>

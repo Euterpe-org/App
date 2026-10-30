@@ -104,4 +104,13 @@
         #FAFAFA
     </Color>
 
+    <Color
+        x:Key="SkeletonBaseColor">
+        #1FFFFFFF
+    </Color>
+    <Color
+        x:Key="SkeletonHighlightColor">
+        #33FFFFFF
+    </Color>
+
 </ResourceDictionary>

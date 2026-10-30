@@ -88,12 +88,46 @@
                 </Grid>
 
                 <!--  Mod List  -->
-                <u:LoadingContainer
-                    Grid.Row="1"
-                    IsLoading="{Binding !AllModsLoaded, Mode=OneWay}"
-                    LoadingMessage="{Localize {x:Static loc:XAMLLiteral.LoadingMessage}}"
-                    VerticalAlignment="Stretch"
-                    VerticalContentAlignment="Top">
+                <Panel
+                    Grid.Row="1">
+                    <e:SkeletonList
+                        Count="8"
+                        IsVisible="{Binding !AllModsLoaded, Mode=OneWay}"
+                        Margin="12,0,12,12">
+                        <e:SkeletonList.ItemTemplate>
+                            <DataTemplate
+                                x:DataType="x:Int32">
+                                <Grid
+                                    ColumnDefinitions="*,60"
+                                    Height="70"
+                                    Margin="8"
+                                    Width="320">
+                                    <StackPanel
+                                        Margin="8,0"
+                                        Spacing="12"
+                                        VerticalAlignment="Center">
+                                        <Border
+                                            Classes="Skeleton"
+                                            Height="12"
+                                            Width="160" />
+                                        <Border
+                                            Classes="Skeleton"
+                                            Height="18"
+                                            Width="56" />
+                                    </StackPanel>
+                                    <Border
+                                        Grid.Column="1"
+                                        Classes="Skeleton"
+                                        CornerRadius="11"
+                                        Height="22"
+                                        HorizontalAlignment="Right"
+                                        Margin="0,0,4,0"
+                                        Width="40" />
+                                </Grid>
+                            </DataTemplate>
+                        </e:SkeletonList.ItemTemplate>
+                    </e:SkeletonList>
+
                     <ScrollViewer
                         AllowAutoHide="{Binding !Config.AlwaysShowScrollBar, Mode=OneWay}"
                         Margin="12,0,12,12">
@@ -218,7 +252,7 @@
                             </u:SelectionList.ItemTemplate>
                         </u:SelectionList>
                     </ScrollViewer>
-                </u:LoadingContainer>
+                </Panel>
             </Grid>
         </Border>
 

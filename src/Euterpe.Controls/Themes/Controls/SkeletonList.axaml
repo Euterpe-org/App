@@ -1,0 +1,24 @@
+<Styles
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:e="https://github.com/Euterpe-org/Euterpe"
+    xmlns:u="https://irihi.tech/ursa">
+
+    <Style
+        Selector="e|SkeletonList[IsVisible=False] Border.Skeleton">
+        <Setter Property="u:Shimmer.IsActive" Value="False" />
+    </Style>
+
+    <Style
+        Selector="e|SkeletonList">
+        <Setter Property="ClipToBounds" Value="True" />
+        <Setter Property="IsTabStop" Value="False" />
+        <Setter Property="Template">
+            <ControlTemplate>
+                <ItemsPresenter
+                    ItemsPanel="{TemplateBinding ItemsPanel}" />
+            </ControlTemplate>
+        </Setter>
+    </Style>
+
+</Styles>
