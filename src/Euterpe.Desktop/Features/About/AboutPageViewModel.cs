@@ -1,11 +1,11 @@
 using Euterpe.Contracts.Credits;
 using Euterpe.Core.Http.Clients;
 
-namespace Euterpe.Features.Setting;
+namespace Euterpe.Features.About;
 
-[Route("/setting/about", DisplayName = Panel_Setting_About, Order = 0)]
+[Route("/about", DisplayName = Page_About, Icon = "InfoCircle", Order = 5)]
 [AppSingleton]
-public sealed partial class AboutPanelViewModel : ViewModelBase
+public sealed partial class AboutPageViewModel : ViewModelBase
 {
     [ObservableProperty]
     public partial ContributorGroup[] ContributorGroups { get; private set; } = [];
@@ -19,7 +19,7 @@ public sealed partial class AboutPanelViewModel : ViewModelBase
 
         await LoadContributorsAsync().ConfigureAwait(false);
 
-        Logger.LogInformation("{ViewModel} Initialized", nameof(AboutPanelViewModel));
+        Logger.LogInformation("{ViewModel} Initialized", nameof(AboutPageViewModel));
     }
 
     private async Task LoadContributorsAsync()
@@ -82,7 +82,7 @@ public sealed partial class AboutPanelViewModel : ViewModelBase
     public required Config Config { get; init; }
     public required UpdateDialogService UpdateDialogService { get; init; }
     public required IEuterpeCreditsClient CreditsClient { get; init; }
-    public required ILogger<AboutPanelViewModel> Logger { get; init; }
+    public required ILogger<AboutPageViewModel> Logger { get; init; }
     public required IMessageBoxService MessageBoxService { get; init; }
     public required IUpdateService UpdateService { get; init; }
 

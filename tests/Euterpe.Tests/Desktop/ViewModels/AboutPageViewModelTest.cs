@@ -1,14 +1,14 @@
 using Euterpe.Contracts.Credits;
 using Euterpe.Core.Http.Clients;
-using Euterpe.Features.Setting;
+using Euterpe.Features.About;
 using Euterpe.Features.Update;
 using Ursa.Controls;
 
 namespace Euterpe.Tests.Desktop.ViewModels;
 
-[Category("AboutPanelViewModelTests")]
-[TestSubject(typeof(AboutPanelViewModel))]
-public sealed class AboutPanelViewModelTest
+[Category("AboutPageViewModelTests")]
+[TestSubject(typeof(AboutPageViewModel))]
+public sealed class AboutPageViewModelTest
 {
     [Test]
     public async Task InitializeAsync_CreditsResponse_MapsContributorGroups()
@@ -84,7 +84,7 @@ public sealed class AboutPanelViewModelTest
         ])
     ]);
 
-    private static AboutPanelViewModel NewViewModel(
+    private static AboutPageViewModel NewViewModel(
         IUpdateService? update = null,
         IMessageBoxService? msgBox = null,
         IEuterpeCreditsClient? creditsClient = null,
@@ -95,12 +95,12 @@ public sealed class AboutPanelViewModelTest
         dialogService.ShowOverlayAsync<UpdateDialog, UpdateDialogViewModel>(
             Any<UpdateDialogViewModel>(), Any<OverlayDialogOptions?>(), Any<string?>(), Any<CancellationToken?>());
 
-        return new AboutPanelViewModel
+        return new AboutPageViewModel
         {
             Config = new Config { LanguageCode = languageCode },
             CreditsClient = creditsClient ?? IEuterpeCreditsClient.Mock(),
             Launcher = IPlatformLauncher.Mock(),
-            Logger = Mock.Logger<AboutPanelViewModel>(),
+            Logger = Mock.Logger<AboutPageViewModel>(),
             MessageBoxService = msgBox ?? IMessageBoxService.Mock(),
             UpdateDialogService = new UpdateDialogService
             {

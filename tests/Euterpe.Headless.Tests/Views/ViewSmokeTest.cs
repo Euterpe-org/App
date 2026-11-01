@@ -1,4 +1,5 @@
 using Avalonia.Labs.AnimatedImage;
+using Euterpe.Features.About;
 using Euterpe.Features.Charting;
 using Euterpe.Features.Home;
 using Euterpe.Features.Logging;
@@ -44,6 +45,9 @@ public sealed class ViewSmokeTest : HeadlessTest
     public Task Show_SettingPage_LoadsIntoVisualTree() => Smoke(() => new SettingPage());
 
     [Test]
+    public Task Show_AboutPage_LoadsIntoVisualTree() => Smoke(() => new AboutPage());
+
+    [Test]
     public Task Show_RepairDialog_LoadsIntoVisualTree() => Smoke(() => new RepairDialog());
 
     [Test]
@@ -81,9 +85,6 @@ public sealed class ViewSmokeTest : HeadlessTest
 
     [Test]
     public Task Show_ModManagePanel_LoadsIntoVisualTree() => Smoke(() => new ModManagePanel());
-
-    [Test]
-    public Task Show_AboutPanel_LoadsIntoVisualTree() => Smoke(() => new AboutPanel());
 
     [Test]
     public Task Show_AdvancedPanel_LoadsIntoVisualTree() => Smoke(() => new AdvancedPanel());

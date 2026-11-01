@@ -1,6 +1,7 @@
 <u:UrsaWindow
     xmlns="https://github.com/avaloniaui"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:about="using:Euterpe.Features.About"
     xmlns:charting="using:Euterpe.Features.Charting"
     xmlns:constants="using:Euterpe.Shared"
     xmlns:converters="using:Euterpe.Converters"
@@ -179,6 +180,9 @@
             <setting:SettingPage
                 DataContext="{Binding SettingPageHost.Content}"
                 IsVisible="{Binding $parent[Window].DataContext.SettingPageHost.IsActive}" />
+            <about:AboutPage
+                DataContext="{Binding AboutPageHost.Content}"
+                IsVisible="{Binding $parent[Window].DataContext.AboutPageHost.IsActive}" />
         </Panel>
     </Grid>
 

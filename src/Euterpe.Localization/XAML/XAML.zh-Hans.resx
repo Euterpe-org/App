@@ -499,6 +499,9 @@
   <data name="ModState_Outdated" xml:space="preserve">
     <value>有新版</value>
   </data>
+  <data name="Page_About" xml:space="preserve">
+    <value>关于</value>
+  </data>
   <data name="Page_Charting" xml:space="preserve">
     <value>谱面</value>
   </data>
@@ -534,9 +537,6 @@
   </data>
   <data name="Panel_Modding_ModManage" xml:space="preserve">
     <value>模组管理</value>
-  </data>
-  <data name="Panel_Setting_About" xml:space="preserve">
-    <value>关于</value>
   </data>
   <data name="Panel_Setting_Advanced" xml:space="preserve">
     <value>高级</value>

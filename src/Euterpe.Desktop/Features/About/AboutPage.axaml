@@ -8,18 +8,19 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:models="using:Euterpe.Controls.Models"
     xmlns:u="https://irihi.tech/ursa"
-    xmlns:vm="using:Euterpe.Features.Setting"
-    x:Class="Euterpe.Features.Setting.AboutPanel"
-    x:DataType="vm:AboutPanelViewModel"
+    xmlns:vm="using:Euterpe.Features.About"
+    x:Class="Euterpe.Features.About.AboutPage"
+    x:DataType="vm:AboutPageViewModel"
     d:DesignHeight="700"
     d:DesignWidth="1000"
     mc:Ignorable="d">
 
     <Design.DataContext>
-        <vm:AboutPanelViewModel />
+        <vm:AboutPageViewModel />
     </Design.DataContext>
 
-    <ScrollViewer>
+    <ScrollViewer
+        Margin="0,10,10,10">
         <DockPanel
             Margin="20">
 
@@ -182,7 +183,6 @@
 
                 <!--  Contributors  -->
                 <Panel>
-                    <!--  One placeholder group shaped like the template below  -->
                     <e:SkeletonList
                         Count="1"
                         IsVisible="{Binding !AllContributorsLoaded, Mode=OneWay}">

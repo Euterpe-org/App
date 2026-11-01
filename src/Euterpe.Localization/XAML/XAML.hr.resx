@@ -499,6 +499,9 @@
   <data name="ModState_Outdated" xml:space="preserve">
     <value>Dostupno ažuriranje</value>
   </data>
+  <data name="Page_About" xml:space="preserve">
+    <value>O programu</value>
+  </data>
   <data name="Page_Charting" xml:space="preserve">
     <value>Chartovi</value>
   </data>
@@ -534,9 +537,6 @@
   </data>
   <data name="Panel_Modding_ModManage" xml:space="preserve">
     <value>Upravljanje modovima</value>
-  </data>
-  <data name="Panel_Setting_About" xml:space="preserve">
-    <value>O programu</value>
   </data>
   <data name="Panel_Setting_Advanced" xml:space="preserve">
     <value>Napredno</value>

@@ -499,6 +499,9 @@
   <data name="ModState_Outdated" xml:space="preserve">
     <value>Mise à jour disponible</value>
   </data>
+  <data name="Page_About" xml:space="preserve">
+    <value>À propos</value>
+  </data>
   <data name="Page_Charting" xml:space="preserve">
     <value>Charts</value>
   </data>
@@ -534,9 +537,6 @@
   </data>
   <data name="Panel_Modding_ModManage" xml:space="preserve">
     <value>Gestion des mods</value>
-  </data>
-  <data name="Panel_Setting_About" xml:space="preserve">
-    <value>À propos</value>
   </data>
   <data name="Panel_Setting_Advanced" xml:space="preserve">
     <value>Avancé</value>
