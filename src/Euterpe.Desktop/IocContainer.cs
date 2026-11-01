@@ -35,18 +35,25 @@ public static class IocContainer
 
         builder.Register(static _ => GameScopeSubject).AsSelf().As<Observable<ILifetimeScope>>().SingleInstance();
 
+        builder.Register<Func<GameId, IGameLocalService>>(static _ => static game => GetOrBuildGameScope(game).Resolve<IGameLocalService>())
+            .SingleInstance();
+
         builder.Populate(services);
         Root = builder.Build();
 
         Root.Resolve<IAppSettingService>().Load();
 
-        var activeGame = Root.Resolve<Config>().ActiveGame;
-        var activeGameScope = BuildGameScope(activeGame);
-        GameScopes[activeGame] = activeGameScope;
+        var activeGameScope = GetOrBuildGameScope(Root.Resolve<Config>().ActiveGame);
         GameScopeSubject = new BehaviorSubject<ILifetimeScope>(activeGameScope);
     }
 
     public static void ActivateGame(GameId game)
+    {
+        var scope = GetOrBuildGameScope(game);
+        Dispatcher.UIThread.Post(() => GameScopeSubject.OnNext(scope));
+    }
+
+    private static ILifetimeScope GetOrBuildGameScope(GameId game)
     {
         if (!GameScopes.TryGetValue(game, out var scope))
         {
@@ -54,7 +61,7 @@ public static class IocContainer
             GameScopes[game] = scope;
         }
 
-        Dispatcher.UIThread.Post(() => GameScopeSubject.OnNext(scope));
+        return scope;
     }
 
     private static ILifetimeScope BuildGameScope(GameId game) =>

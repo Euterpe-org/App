@@ -7,9 +7,9 @@ using Microsoft.Extensions.Logging.Abstractions;
 
 namespace Euterpe.Headless.Tests.Views;
 
-[Category("DownloadPanelTests")]
-[TestSubject(typeof(DownloadPanel))]
-public sealed class DownloadPanelTest : HeadlessTest
+[Category("SettingPageTests")]
+[TestSubject(typeof(SettingPage))]
+public sealed class SettingPageTest : HeadlessTest
 {
     [Test]
     public Task UpdateChannel_SelectionChanges_StaysSynchronizedWithConfig() => RunOnUI(async () =>
@@ -20,18 +20,23 @@ public sealed class DownloadPanelTest : HeadlessTest
             MuseDash2 = new MuseDash2Config(),
             UpdateChannel = UpdateChannel.Beta
         };
-        var viewModel = new DownloadPanelViewModel
+        var viewModel = new SettingPageViewModel
         {
             Config = config,
+            LocalizationService = new LocalizationService { Config = config, Logger = NullLogger<LocalizationService>.Instance },
+            AppLocalService = IAppLocalService.Mock(),
+            GameLocalServiceFor = static _ => IGameLocalService.Mock(),
             Launcher = IPlatformLauncher.Mock(),
-            Logger = NullLogger<DownloadPanelViewModel>.Instance
+            Logger = NullLogger<SettingPageViewModel>.Instance
         };
-        var view = new DownloadPanel { DataContext = viewModel };
+        var view = new SettingPage { DataContext = viewModel };
         var window = new Window { Content = view, Width = 800, Height = 600 };
         window.Show();
         Dispatcher.UIThread.RunJobs();
 
-        var comboBox = view.GetVisualDescendants().OfType<ComboBox>().Single();
+        var comboBox = view.GetVisualDescendants()
+            .OfType<ComboBox>()
+            .Single(static comboBox => ReferenceEquals(comboBox.ItemsSource, SettingPageViewModel.UpdateChannels));
 
         using var _ = Assert.Multiple();
         await Assert.That(comboBox.SelectedValue).IsEqualTo(UpdateChannel.Beta);

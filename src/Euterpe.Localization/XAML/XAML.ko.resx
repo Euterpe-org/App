@@ -538,21 +538,6 @@
   <data name="Panel_Modding_ModManage" xml:space="preserve">
     <value>모드 관리</value>
   </data>
-  <data name="Panel_Setting_Advanced" xml:space="preserve">
-    <value>고급</value>
-  </data>
-  <data name="Panel_Setting_Appearance" xml:space="preserve">
-    <value>외관</value>
-  </data>
-  <data name="Panel_Setting_Download" xml:space="preserve">
-    <value>다운로드</value>
-  </data>
-  <data name="Panel_Setting_Experience" xml:space="preserve">
-    <value>사용 환경</value>
-  </data>
-  <data name="Panel_Setting_FileManagement" xml:space="preserve">
-    <value>파일 관리</value>
-  </data>
   <data name="SearchBarPlaceholder_Chart" xml:space="preserve">
     <value>채보 검색  (곡명, 작곡가, 채보 제작자, 태그)</value>
   </data>
@@ -585,6 +570,21 @@
   </data>
   <data name="Setting_Description_UpdateChannel" xml:space="preserve">
     <value>Euterpe 업데이트 채널</value>
+  </data>
+  <data name="Setting_Group_Advanced" xml:space="preserve">
+    <value>고급</value>
+  </data>
+  <data name="Setting_Group_Appearance" xml:space="preserve">
+    <value>외관</value>
+  </data>
+  <data name="Setting_Group_Download" xml:space="preserve">
+    <value>다운로드</value>
+  </data>
+  <data name="Setting_Group_Experience" xml:space="preserve">
+    <value>사용 환경</value>
+  </data>
+  <data name="Setting_Group_FileManagement" xml:space="preserve">
+    <value>파일 관리</value>
   </data>
   <data name="Setting_Title_AlwaysShowScrollBar" xml:space="preserve">
     <value>스크롤바 항상 표시</value>

@@ -538,21 +538,6 @@
   <data name="Panel_Modding_ModManage" xml:space="preserve">
     <value>Upravljanje modovima</value>
   </data>
-  <data name="Panel_Setting_Advanced" xml:space="preserve">
-    <value>Napredno</value>
-  </data>
-  <data name="Panel_Setting_Appearance" xml:space="preserve">
-    <value>Izgled</value>
-  </data>
-  <data name="Panel_Setting_Download" xml:space="preserve">
-    <value>Preuzimanje</value>
-  </data>
-  <data name="Panel_Setting_Experience" xml:space="preserve">
-    <value>Iskustvo</value>
-  </data>
-  <data name="Panel_Setting_FileManagement" xml:space="preserve">
-    <value>Upravljanje datotekama</value>
-  </data>
   <data name="SearchBarPlaceholder_Chart" xml:space="preserve">
     <value>Pretraži chartove (naslov, izvođač, charter, oznaka)</value>
   </data>
@@ -585,6 +570,21 @@
   </data>
   <data name="Setting_Description_UpdateChannel" xml:space="preserve">
     <value>Kanal ažuriranja za Euterpe</value>
+  </data>
+  <data name="Setting_Group_Advanced" xml:space="preserve">
+    <value>Napredno</value>
+  </data>
+  <data name="Setting_Group_Appearance" xml:space="preserve">
+    <value>Izgled</value>
+  </data>
+  <data name="Setting_Group_Download" xml:space="preserve">
+    <value>Preuzimanje</value>
+  </data>
+  <data name="Setting_Group_Experience" xml:space="preserve">
+    <value>Iskustvo</value>
+  </data>
+  <data name="Setting_Group_FileManagement" xml:space="preserve">
+    <value>Upravljanje datotekama</value>
   </data>
   <data name="Setting_Title_AlwaysShowScrollBar" xml:space="preserve">
     <value>Uvijek prikaži traku za pomicanje</value>

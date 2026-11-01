@@ -2,8 +2,9 @@
     xmlns="https://github.com/avaloniaui"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:e="https://github.com/Euterpe-org/Euterpe"
+    xmlns:loc="https://github.com/Euterpe-org/Euterpe/Localization"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:u="https://irihi.tech/ursa"
     xmlns:vm="using:Euterpe.Features.Setting"
     x:Class="Euterpe.Features.Setting.SettingPage"
     x:DataType="vm:SettingPageViewModel"
@@ -15,39 +16,157 @@
         <vm:SettingPageViewModel />
     </Design.DataContext>
 
-    <Grid
-        RowDefinitions="Auto, *">
-        <Border
-            Grid.Row="0"
-            Classes="WinMainNav">
-            <Panel>
-                <e:NavPanelList
-                    ItemsSource="{Binding NavItems, Mode=OneTime}"
-                    SelectedItem="{Binding SelectedItem, Mode=TwoWay}" />
-            </Panel>
-        </Border>
-        <ContentControl
-            Grid.Row="1"
-            Content="{Binding Content, Mode=OneWay}"
-            Margin="0,10,10,10">
-            <ContentControl.DataTemplates>
-                <DataTemplate DataType="{x:Type vm:AppearancePanelViewModel}">
-                    <vm:AppearancePanel />
-                </DataTemplate>
-                <DataTemplate DataType="{x:Type vm:ExperiencePanelViewModel}">
-                    <vm:ExperiencePanel />
-                </DataTemplate>
-                <DataTemplate DataType="{x:Type vm:FileManagementPanelViewModel}">
-                    <vm:FileManagementPanel />
-                </DataTemplate>
-                <DataTemplate DataType="{x:Type vm:DownloadPanelViewModel}">
-                    <vm:DownloadPanel />
-                </DataTemplate>
-                <DataTemplate DataType="{x:Type vm:AdvancedPanelViewModel}">
-                    <vm:AdvancedPanel />
-                </DataTemplate>
-            </ContentControl.DataTemplates>
-        </ContentControl>
-    </Grid>
+    <ScrollViewer
+        Margin="0,10,10,10">
+        <StackPanel
+            Margin="30"
+            Spacing="24">
+
+            <u:SettingsCardGroup
+                Header="{Localize {x:Static loc:XAMLLiteral.Setting_Group_Appearance}}">
+
+                <!--  Language  -->
+                <u:SettingsCard
+                    Content="{Localize {x:Static loc:XAMLLiteral.Setting_Title_Language}}"
+                    Description="{Localize {x:Static loc:XAMLLiteral.Setting_Description_Language}}">
+                    <u:SettingsCard.RightContent>
+                        <StackPanel
+                            Classes="ControlsHorizontal">
+                            <ComboBox
+                                ItemsSource="{Binding AvailableLanguages, Mode=OneTime}"
+                                MinWidth="200"
+                                SelectedItem="{Binding CurrentLanguage, Mode=TwoWay}" />
+                            <Button
+                                Command="{Binding ApplyLanguageCommand}"
+                                Content="{Localize {x:Static loc:XAMLLiteral.Button_Apply}}" />
+                        </StackPanel>
+                    </u:SettingsCard.RightContent>
+                </u:SettingsCard>
+
+            </u:SettingsCardGroup>
+
+            <u:SettingsCardGroup
+                Header="{Localize {x:Static loc:XAMLLiteral.Setting_Group_Experience}}">
+
+                <!--  Show Console  -->
+                <u:SettingsCard
+                    Content="{Localize {x:Static loc:XAMLLiteral.Setting_Title_ShowConsole}}"
+                    Description="{Localize {x:Static loc:XAMLLiteral.Setting_Description_ShowConsole}}">
+                    <u:SettingsCard.RightContent>
+                        <ToggleSwitch
+                            IsChecked="{Binding Config.ShowConsole, Mode=TwoWay}" />
+                    </u:SettingsCard.RightContent>
+                </u:SettingsCard>
+
+                <!--  Show Start Screen  -->
+                <u:SettingsCard
+                    Content="{Localize {x:Static loc:XAMLLiteral.Setting_Title_ShowStartScreen}}"
+                    Description="{Localize {x:Static loc:XAMLLiteral.Setting_Description_ShowStartScreen}}">
+                    <u:SettingsCard.RightContent>
+                        <ToggleSwitch
+                            IsChecked="{Binding Config.ShowStartScreen, Mode=TwoWay}" />
+                    </u:SettingsCard.RightContent>
+                </u:SettingsCard>
+
+                <!--  Always Show ScrollBar  -->
+                <u:SettingsCard
+                    Content="{Localize {x:Static loc:XAMLLiteral.Setting_Title_AlwaysShowScrollBar}}"
+                    Description="{Localize {x:Static loc:XAMLLiteral.Setting_Description_AlwaysShowScrollBar}}">
+                    <u:SettingsCard.RightContent>
+                        <ToggleSwitch
+                            IsChecked="{Binding Config.AlwaysShowScrollBar, Mode=TwoWay}" />
+                    </u:SettingsCard.RightContent>
+                </u:SettingsCard>
+
+                <!--  Minimize To Tray On Close  -->
+                <u:SettingsCard
+                    Content="{Localize {x:Static loc:XAMLLiteral.Setting_Title_MinimizeToTrayOnClose}}"
+                    Description="{Localize {x:Static loc:XAMLLiteral.Setting_Description_MinimizeToTrayOnClose}}">
+                    <u:SettingsCard.RightContent>
+                        <ToggleSwitch
+                            IsChecked="{Binding Config.MinimizeToTrayOnClose, Mode=TwoWay}" />
+                    </u:SettingsCard.RightContent>
+                </u:SettingsCard>
+
+            </u:SettingsCardGroup>
+
+            <u:SettingsCardGroup
+                Header="{Localize {x:Static loc:XAMLLiteral.Setting_Group_FileManagement}}">
+
+                <!--  MuseDash Folder  -->
+                <u:SettingsCard
+                    Content="{Localize {x:Static loc:XAMLLiteral.Setting_Title_MuseDashFolder}}"
+                    Description="{Localize {x:Static loc:XAMLLiteral.Setting_Description_MuseDashFolder}}">
+                    <u:SettingsCard.RightContent>
+                        <StackPanel
+                            Classes="ControlsHorizontal">
+                            <TextBox
+                                Classes="Desc"
+                                Text="{Binding Config.MuseDash.Folder, Mode=OneWay}"
+                                Width="320" />
+                            <Button
+                                Command="{Binding ChangeGameFolderCommand}"
+                                CommandParameter="{Binding Config.MuseDash, Mode=OneTime}"
+                                Content="{Localize {x:Static loc:XAMLLiteral.Button_Reselect}}"
+                                Theme="{DynamicResource OutlineButton}" />
+                        </StackPanel>
+                    </u:SettingsCard.RightContent>
+                </u:SettingsCard>
+
+                <!--  Cache Folder  -->
+                <u:SettingsCard
+                    Content="{Localize {x:Static loc:XAMLLiteral.Setting_Title_CacheFolder}}"
+                    Description="{Localize {x:Static loc:XAMLLiteral.Setting_Description_CacheFolder}}">
+                    <u:SettingsCard.RightContent>
+                        <StackPanel
+                            Classes="ControlsHorizontal">
+                            <TextBox
+                                Classes="Desc"
+                                Text="{Binding Config.CacheFolder, Mode=OneWay}"
+                                Width="320" />
+                            <Button
+                                Command="{Binding ChangeCacheFolderCommand}"
+                                Content="{Localize {x:Static loc:XAMLLiteral.Button_Reselect}}"
+                                Theme="{DynamicResource OutlineButton}" />
+                        </StackPanel>
+                    </u:SettingsCard.RightContent>
+                </u:SettingsCard>
+
+            </u:SettingsCardGroup>
+
+            <u:SettingsCardGroup
+                Header="{Localize {x:Static loc:XAMLLiteral.Setting_Group_Download}}">
+
+                <!--  Update Channel  -->
+                <u:SettingsCard
+                    Content="{Localize {x:Static loc:XAMLLiteral.Setting_Title_UpdateChannel}}"
+                    Description="{Localize {x:Static loc:XAMLLiteral.Setting_Description_UpdateChannel}}">
+                    <u:SettingsCard.RightContent>
+                        <ComboBox
+                            DisplayMemberBinding="{Binding Display.Value}"
+                            ItemsSource="{Binding UpdateChannels, Mode=OneTime}"
+                            SelectedValue="{Binding Config.UpdateChannel, Mode=TwoWay}"
+                            SelectedValueBinding="{Binding Value}" />
+                    </u:SettingsCard.RightContent>
+                </u:SettingsCard>
+
+            </u:SettingsCardGroup>
+
+            <u:SettingsCardGroup
+                Header="{Localize {x:Static loc:XAMLLiteral.Setting_Group_Advanced}}">
+
+                <u:SettingsCard
+                    Content="{Localize {x:Static loc:XAMLLiteral.Setting_Title_IgnoreException}}"
+                    Description="{Localize {x:Static loc:XAMLLiteral.Setting_Description_IgnoreException}}">
+                    <u:SettingsCard.RightContent>
+                        <ToggleSwitch
+                            IsChecked="{Binding Config.IgnoreException, Mode=TwoWay}" />
+                    </u:SettingsCard.RightContent>
+                </u:SettingsCard>
+
+            </u:SettingsCardGroup>
+
+        </StackPanel>
+    </ScrollViewer>
 
 </UserControl>

@@ -87,21 +87,6 @@ public sealed class ViewSmokeTest : HeadlessTest
     public Task Show_ModManagePanel_LoadsIntoVisualTree() => Smoke(() => new ModManagePanel());
 
     [Test]
-    public Task Show_AdvancedPanel_LoadsIntoVisualTree() => Smoke(() => new AdvancedPanel());
-
-    [Test]
-    public Task Show_AppearancePanel_LoadsIntoVisualTree() => Smoke(() => new AppearancePanel());
-
-    [Test]
-    public Task Show_DownloadPanel_LoadsIntoVisualTree() => Smoke(() => new DownloadPanel());
-
-    [Test]
-    public Task Show_ExperiencePanel_LoadsIntoVisualTree() => Smoke(() => new ExperiencePanel());
-
-    [Test]
-    public Task Show_FileManagementPanel_LoadsIntoVisualTree() => Smoke(() => new FileManagementPanel());
-
-    [Test]
     public Task Show_MainWindow_LoadsIntoVisualTree() => RunOnUI(async () =>
     {
         var window = new MainWindow();

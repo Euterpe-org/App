@@ -2,18 +2,49 @@ namespace Euterpe.Features.Setting;
 
 [Route("/setting", DisplayName = Page_Setting, Icon = "Setting", Order = 4)]
 [AppSingleton]
-public sealed partial class SettingPageViewModel : NavViewModelBase
+public sealed partial class SettingPageViewModel : ViewModelBase
 {
-    #region Injections
+    public static IReadOnlyList<EnumOption<UpdateChannel>> UpdateChannels { get; } =
+    [
+        .. UpdateChannelExtensions.GetValues().Select(static channel =>
+            new EnumOption<UpdateChannel>(channel, $"{nameof(UpdateChannel)}_{channel.ToStringFast()}"))
+    ];
 
-    public required ILogger<SettingPageViewModel> Logger { get; init; }
+    [ObservableProperty]
+    [NotifyCanExecuteChangedFor(nameof(ApplyLanguageCommand))]
+    public partial Language? CurrentLanguage { get; set; }
 
-    #endregion Injections
+    public Language[] AvailableLanguages => LocalizationService.AvailableLanguages;
 
     protected override async Task OnInitializeAsync()
     {
         await base.OnInitializeAsync().ConfigureAwait(false);
 
+        CurrentLanguage = LocalizationService.GetCurrentLanguage();
+
         Logger.LogInformation("{ViewModel} Initialized", nameof(SettingPageViewModel));
     }
+
+    [RelayCommand(CanExecute = nameof(CanExecuteApplyLanguage))]
+    private void ApplyLanguage() => LocalizationService.SetLanguage(CurrentLanguage!.Name);
+
+    private bool CanExecuteApplyLanguage() => CurrentLanguage is not null;
+
+    [RelayCommand]
+    private async Task ChangeGameFolderAsync(GameConfig game) =>
+        game.Folder = await GameLocalServiceFor(game.Id).GetGameFolderAsync().ConfigureAwait(false);
+
+    [RelayCommand]
+    private async Task ChangeCacheFolderAsync() =>
+        Config.CacheFolder = await AppLocalService.GetCacheFolderAsync().ConfigureAwait(false);
+
+    #region Injections
+
+    public required Config Config { get; init; }
+    public required LocalizationService LocalizationService { get; init; }
+    public required IAppLocalService AppLocalService { get; init; }
+    public required Func<GameId, IGameLocalService> GameLocalServiceFor { get; init; }
+    public required ILogger<SettingPageViewModel> Logger { get; init; }
+
+    #endregion Injections
 }
