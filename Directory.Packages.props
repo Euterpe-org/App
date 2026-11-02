@@ -16,7 +16,7 @@
         <PackageVersion Include="Avalonia.Labs.Controls" Version="12.1.0"/>
         <PackageVersion Include="Avalonia.Labs.Panels" Version="12.1.0"/>
         <PackageVersion Include="AvaloniaUI.DiagnosticsSupport" Version="2.2.3"/>
-        <PackageVersion Include="Basic.Reference.Assemblies.Net100" Version="1.8.13"/>
+        <PackageVersion Include="Basic.Reference.Assemblies.Net100" Version="1.8.14"/>
         <PackageVersion Include="Cake.Frosting" Version="6.3.0"/>
         <PackageVersion Include="CliWrap" Version="3.10.5"/>
         <PackageVersion Include="CommunityToolkit.Mvvm" Version="8.4.2"/>
