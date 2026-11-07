@@ -34,7 +34,7 @@
         <PackageVersion Include="Microsoft.CodeAnalysis.CSharp" Version="5.9.0"/>
         <PackageVersion Include="Microsoft.Extensions.Http" Version="10.0.14"/>
         <PackageVersion Include="Microsoft.Extensions.Http.Resilience" Version="10.11.0"/>
-        <PackageVersion Include="Nerdbank.MessagePack" Version="1.4.95"/>
+        <PackageVersion Include="Nerdbank.MessagePack" Version="1.4.104"/>
         <PackageVersion Include="NetEscapades.EnumGenerators" Version="1.0.0-beta21"/>
         <PackageVersion Include="NLog" Version="6.2.2"/>
         <PackageVersion Include="NLog.Extensions.Logging" Version="6.2.2"/>
