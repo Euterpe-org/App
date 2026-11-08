@@ -7,7 +7,6 @@ global using Euterpe.Models.Auth;
 global using Euterpe.Models.Charts;
 global using Euterpe.Models.Common;
 global using Euterpe.Models.Games;
-global using Euterpe.Models.Migrations;
 global using Euterpe.Models.Mods;
 global using Euterpe.Models.Progress;
 global using Euterpe.Models.Setup;

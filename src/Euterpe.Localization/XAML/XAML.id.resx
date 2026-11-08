@@ -127,15 +127,6 @@
   <data name="ChartManage_GetCharts_Title" xml:space="preserve">
     <value>Dapatkan chart</value>
   </data>
-  <data name="ChartManage_MigrateMdm" xml:space="preserve">
-    <value>Migrasikan chart MDM</value>
-  </data>
-  <data name="ChartManage_Migrating" xml:space="preserve">
-    <value>Memigrasikan chart</value>
-  </data>
-  <data name="ChartManage_MigratingHint" xml:space="preserve">
-    <value>Migrasi sedang berlangsung. Tunggu sebentar dan jangan tutup aplikasi.</value>
-  </data>
   <data name="ChartManage_Rating" xml:space="preserve">
     <value>Level</value>
   </data>
@@ -655,9 +646,6 @@
   <data name="Setup_Progress_InstallingModTemplate" xml:space="preserve">
     <value>Menginstal template mod ...</value>
   </data>
-  <data name="Setup_Progress_MigratingCharts" xml:space="preserve">
-    <value>Memigrasikan chart CustomAlbums ...</value>
-  </data>
   <data name="Setup_Progress_SettingEnvVariable" xml:space="preserve">
     <value>Mengatur variabel lingkungan ...</value>
   </data>
@@ -714,12 +702,6 @@
   </data>
   <data name="Setup_Task_MelonLoader_Description" xml:space="preserve">
     <value>Framework mod loader yang diperlukan</value>
-  </data>
-  <data name="Setup_Task_Migration" xml:space="preserve">
-    <value>Migrasi data lama</value>
-  </data>
-  <data name="Setup_Task_Migration_Description" xml:space="preserve">
-    <value>Konversi chart dari mod lama seperti CustomAlbums ke format Euterpe</value>
   </data>
   <data name="Setup_Task_ModTemplate" xml:space="preserve">
     <value>Template mod</value>

@@ -16,17 +16,11 @@
   <data name="FileDialog_Title_ChooseEpkFile" xml:space="preserve">
     <value>選擇 EPK 檔案</value>
   </data>
-  <data name="FileDialog_Title_ChooseMdmFiles" xml:space="preserve">
-    <value>選擇 MDM 檔案</value>
-  </data>
   <data name="FileDialog_Title_ChooseSteamExec" xml:space="preserve">
     <value>選擇 Steam 執行檔</value>
   </data>
   <data name="FilePickerFileType_AllFiles" xml:space="preserve">
     <value>所有檔案</value>
-  </data>
-  <data name="FilePickerFileType_MdmFiles" xml:space="preserve">
-    <value>MDM 檔案</value>
   </data>
   <data name="FolderDialog_Title_ChooseCacheFolder" xml:space="preserve">
     <value>選擇快取資料夾</value>
@@ -165,11 +159,8 @@
   <data name="Notification_Content_Chart_Import_Success" xml:space="preserve">
     <value>譜面 {0} 匯入成功</value>
   </data>
-  <data name="Notification_Content_Chart_Import_Unmigratable" xml:space="preserve">
-    <value>譜面 {0} 無法移轉</value>
-  </data>
   <data name="Notification_Content_Chart_Import_Unsupported" xml:space="preserve">
-    <value>{0} 不是受支援的譜面檔案或資料夾</value>
+    <value>{0} 不是受支援的譜面檔案</value>
   </data>
   <data name="Notification_Content_Chart_Remove_Failed" xml:space="preserve">
     <value>譜面 {0} 移除失敗</value>
@@ -221,15 +212,6 @@
   </data>
   <data name="Notification_Content_Lib_Import_Success" xml:space="preserve">
     <value>相依程式庫 {0} 匯入成功</value>
-  </data>
-  <data name="Notification_Content_Migration_None" xml:space="preserve">
-    <value>沒有可移轉的 MDM 譜面</value>
-  </data>
-  <data name="Notification_Content_Migration_Partial" xml:space="preserve">
-    <value>已移轉 {0} 張 CustomAlbums 譜面，{1} 張無法移轉</value>
-  </data>
-  <data name="Notification_Content_Migration_Success" xml:space="preserve">
-    <value>已移轉 {0} 張 CustomAlbums 譜面</value>
   </data>
   <data name="Notification_Content_Mod_Import_Duplicated" xml:space="preserve">
     <value>模組 {0} 已匯入</value>

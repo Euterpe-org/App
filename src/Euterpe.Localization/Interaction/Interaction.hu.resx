@@ -16,17 +16,11 @@
   <data name="FileDialog_Title_ChooseEpkFile" xml:space="preserve">
     <value>EPK-fájl kiválasztása</value>
   </data>
-  <data name="FileDialog_Title_ChooseMdmFiles" xml:space="preserve">
-    <value>MDM-fájlok kiválasztása</value>
-  </data>
   <data name="FileDialog_Title_ChooseSteamExec" xml:space="preserve">
     <value>A Steam futtatható fájljának kiválasztása</value>
   </data>
   <data name="FilePickerFileType_AllFiles" xml:space="preserve">
     <value>Minden fájl</value>
-  </data>
-  <data name="FilePickerFileType_MdmFiles" xml:space="preserve">
-    <value>MDM-fájlok</value>
   </data>
   <data name="FolderDialog_Title_ChooseCacheFolder" xml:space="preserve">
     <value>Gyorsítótár-mappa kiválasztása</value>
@@ -165,11 +159,8 @@
   <data name="Notification_Content_Chart_Import_Success" xml:space="preserve">
     <value>{0} chart importálva</value>
   </data>
-  <data name="Notification_Content_Chart_Import_Unmigratable" xml:space="preserve">
-    <value>{0} chart nem migrálható</value>
-  </data>
   <data name="Notification_Content_Chart_Import_Unsupported" xml:space="preserve">
-    <value>{0} nem támogatott chartfájl vagy -mappa</value>
+    <value>{0} nem támogatott chartfájl</value>
   </data>
   <data name="Notification_Content_Chart_Remove_Failed" xml:space="preserve">
     <value>{0} chart eltávolítása sikertelen</value>
@@ -221,15 +212,6 @@
   </data>
   <data name="Notification_Content_Lib_Import_Success" xml:space="preserve">
     <value>{0} könyvtár importálva</value>
-  </data>
-  <data name="Notification_Content_Migration_None" xml:space="preserve">
-    <value>Nincs migrálható MDM-chart</value>
-  </data>
-  <data name="Notification_Content_Migration_Partial" xml:space="preserve">
-    <value>{0} CustomAlbums-chart migrálva, {1} nem migrálható</value>
-  </data>
-  <data name="Notification_Content_Migration_Success" xml:space="preserve">
-    <value>{0} CustomAlbums-chart migrálva</value>
   </data>
   <data name="Notification_Content_Mod_Import_Duplicated" xml:space="preserve">
     <value>{0} mod már importálva van</value>

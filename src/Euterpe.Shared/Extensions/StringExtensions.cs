@@ -22,16 +22,6 @@ public static class StringExtensions
     /// <returns></returns>
     public static bool IsNullOrWhiteSpace([NotNullWhen(false)] this string? str) => string.IsNullOrWhiteSpace(str);
 
-    /// <summary>
-    ///     Return null when the string is null, empty or white-space; otherwise the string itself
-    /// </summary>
-    public static string? NullIfWhiteSpace(this string? str) => string.IsNullOrWhiteSpace(str) ? null : str;
-
-    /// <summary>
-    ///     Return <paramref name="fallback" /> when the string is null, empty or white-space; otherwise the string itself
-    /// </summary>
-    public static string DefaultIfWhiteSpace(this string? str, string fallback) => str.NullIfWhiteSpace() ?? fallback;
-
     extension(string str)
     {
         /// <summary>

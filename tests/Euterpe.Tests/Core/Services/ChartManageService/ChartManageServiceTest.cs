@@ -1,5 +1,4 @@
 using DynamicData;
-using Euterpe.Models.Charts.CustomAlbums;
 
 namespace Euterpe.Tests.Core;
 
@@ -43,8 +42,7 @@ public sealed partial class ChartManageServiceTest
     private static ChartManageService CreateService(
         IChartLocalService localService,
         IGameDownloadManager? gameDownloadManager = null,
-        IFileSystemService? fileSystemService = null,
-        IMigrationService? migrationService = null) =>
+        IFileSystemService? fileSystemService = null) =>
         new()
         {
             GameConfig = new MuseDashConfig(),
@@ -53,8 +51,7 @@ public sealed partial class ChartManageServiceTest
             FileSystemService = fileSystemService ?? IFileSystemService.Mock(),
             GameDownloadManager = gameDownloadManager ?? IGameDownloadManager.Mock(),
             Logger = Mock.Logger<ChartManageService>(),
-            NotificationService = INotificationService.Mock(),
-            MigrationService = migrationService ?? IMigrationService.Mock()
+            NotificationService = INotificationService.Mock()
         };
 
     private static ChartDto CreateChart(string name, ChartSource source = ChartSource.Offline, string folderPath = ChartFolder) =>
@@ -80,10 +77,6 @@ public sealed partial class ChartManageServiceTest
 
         public Task<ChartDto?> LoadChartFromPathAsync(string chartFolder, ChartSource source) =>
             Task.FromResult(_charts.GetValueOrDefault(chartFolder));
-
-        public CustomAlbumSource CreateCustomAlbumSource(string path) => throw new NotSupportedException();
-
-        public CustomAlbumSource[] GetCustomAlbumSources() => throw new NotSupportedException();
 
         public void Set(ChartDto chart) => _charts[chart.FolderPath] = chart;
 

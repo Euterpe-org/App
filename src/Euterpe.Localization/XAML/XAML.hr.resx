@@ -127,15 +127,6 @@
   <data name="ChartManage_GetCharts_Title" xml:space="preserve">
     <value>Nabavi chartove</value>
   </data>
-  <data name="ChartManage_MigrateMdm" xml:space="preserve">
-    <value>Migriraj MDM chartove</value>
-  </data>
-  <data name="ChartManage_Migrating" xml:space="preserve">
-    <value>Migriranje chartova</value>
-  </data>
-  <data name="ChartManage_MigratingHint" xml:space="preserve">
-    <value>Migracija u tijeku. Ne zatvaraj aplikaciju.</value>
-  </data>
   <data name="ChartManage_Rating" xml:space="preserve">
     <value>Razina</value>
   </data>
@@ -655,9 +646,6 @@
   <data name="Setup_Progress_InstallingModTemplate" xml:space="preserve">
     <value>Instaliranje predloška moda ...</value>
   </data>
-  <data name="Setup_Progress_MigratingCharts" xml:space="preserve">
-    <value>Migriranje chartova iz moda CustomAlbums ...</value>
-  </data>
   <data name="Setup_Progress_SettingEnvVariable" xml:space="preserve">
     <value>Postavljanje varijable okruženja ...</value>
   </data>
@@ -714,12 +702,6 @@
   </data>
   <data name="Setup_Task_MelonLoader_Description" xml:space="preserve">
     <value>Potreban alat za učitavanje modova</value>
-  </data>
-  <data name="Setup_Task_Migration" xml:space="preserve">
-    <value>Migriraj starije podatke</value>
-  </data>
-  <data name="Setup_Task_Migration_Description" xml:space="preserve">
-    <value>Pretvori chartove iz starijih modova poput moda CustomAlbums u Euterpeov format</value>
   </data>
   <data name="Setup_Task_ModTemplate" xml:space="preserve">
     <value>Predložak moda</value>

@@ -127,15 +127,6 @@
   <data name="ChartManage_GetCharts_Title" xml:space="preserve">
     <value>Charts holen</value>
   </data>
-  <data name="ChartManage_MigrateMdm" xml:space="preserve">
-    <value>MDM-Charts migrieren</value>
-  </data>
-  <data name="ChartManage_Migrating" xml:space="preserve">
-    <value>Charts werden migriert</value>
-  </data>
-  <data name="ChartManage_MigratingHint" xml:space="preserve">
-    <value>Migration läuft. App nicht schließen.</value>
-  </data>
   <data name="ChartManage_Rating" xml:space="preserve">
     <value>Level</value>
   </data>
@@ -655,9 +646,6 @@
   <data name="Setup_Progress_InstallingModTemplate" xml:space="preserve">
     <value>Mod-Vorlage wird installiert ...</value>
   </data>
-  <data name="Setup_Progress_MigratingCharts" xml:space="preserve">
-    <value>CustomAlbums-Charts werden migriert ...</value>
-  </data>
   <data name="Setup_Progress_SettingEnvVariable" xml:space="preserve">
     <value>Umgebungsvariable wird gesetzt ...</value>
   </data>
@@ -714,12 +702,6 @@
   </data>
   <data name="Setup_Task_MelonLoader_Description" xml:space="preserve">
     <value>Erforderliches Mod-Loader-Framework</value>
-  </data>
-  <data name="Setup_Task_Migration" xml:space="preserve">
-    <value>Altdaten migrieren</value>
-  </data>
-  <data name="Setup_Task_Migration_Description" xml:space="preserve">
-    <value>Charts aus älteren Mods wie CustomAlbums in das Euterpe-Format konvertieren</value>
   </data>
   <data name="Setup_Task_ModTemplate" xml:space="preserve">
     <value>Mod-Vorlage</value>

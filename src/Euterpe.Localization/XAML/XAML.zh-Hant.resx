@@ -127,15 +127,6 @@
   <data name="ChartManage_GetCharts_Title" xml:space="preserve">
     <value>取得譜面</value>
   </data>
-  <data name="ChartManage_MigrateMdm" xml:space="preserve">
-    <value>移轉 MDM 譜面</value>
-  </data>
-  <data name="ChartManage_Migrating" xml:space="preserve">
-    <value>正在移轉譜面</value>
-  </data>
-  <data name="ChartManage_MigratingHint" xml:space="preserve">
-    <value>正在移轉，請勿關閉程式，耐心等待…</value>
-  </data>
   <data name="ChartManage_Rating" xml:space="preserve">
     <value>定數</value>
   </data>
@@ -655,9 +646,6 @@
   <data name="Setup_Progress_InstallingModTemplate" xml:space="preserve">
     <value>正在安裝模組範本……</value>
   </data>
-  <data name="Setup_Progress_MigratingCharts" xml:space="preserve">
-    <value>正在移轉 CustomAlbums 譜面……</value>
-  </data>
   <data name="Setup_Progress_SettingEnvVariable" xml:space="preserve">
     <value>正在設定環境變數……</value>
   </data>
@@ -714,12 +702,6 @@
   </data>
   <data name="Setup_Task_MelonLoader_Description" xml:space="preserve">
     <value>必需的模組載入器框架</value>
-  </data>
-  <data name="Setup_Task_Migration" xml:space="preserve">
-    <value>移轉舊版資料</value>
-  </data>
-  <data name="Setup_Task_Migration_Description" xml:space="preserve">
-    <value>將 CustomAlbums 等舊版模組中的譜面轉換為 Euterpe 格式</value>
   </data>
   <data name="Setup_Task_ModTemplate" xml:space="preserve">
     <value>模組範本</value>

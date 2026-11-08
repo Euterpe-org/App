@@ -45,9 +45,6 @@ public abstract partial class GameConfig
     public string TempModsFolder => Path.Combine(TempFolder, "Mods");
 
     [JsonIgnore]
-    public string CustomAlbumsChartsFolder => Path.Combine(Folder, "Custom_Albums");
-
-    [JsonIgnore]
     public string MelonLoaderFolder => Path.Combine(Folder, "MelonLoader");
 
     [JsonIgnore]

@@ -9,10 +9,6 @@ internal sealed class MessagePackSerializationService : IMessagePackSerializatio
         PropertyNamingPolicy = MessagePackNamingPolicy.SnakeLowerCase
     };
 
-    public Manifest DeserializeManifest(Stream stream) =>
-        Serializer.Deserialize<Manifest>(stream)
-        ?? throw new InvalidDataException("The MessagePack payload did not contain a manifest.");
-
     public async ValueTask<Manifest> DeserializeManifestAsync(Stream stream, CancellationToken cancellationToken = default) =>
         await Serializer.DeserializeAsync<Manifest>(stream, cancellationToken).ConfigureAwait(false)
         ?? throw new InvalidDataException("The MessagePack payload did not contain a manifest.");
@@ -28,12 +24,6 @@ internal sealed class MessagePackSerializationService : IMessagePackSerializatio
 
     public byte[] SerializeManifest(Manifest value) =>
         Serializer.Serialize(value);
-
-    public void SerializeManifest(Stream stream, Manifest value) =>
-        Serializer.Serialize(stream, value);
-
-    public Task SerializeManifestAsync(Stream stream, Manifest value, CancellationToken cancellationToken = default) =>
-        Serializer.SerializeAsync(stream, value, cancellationToken).AsTask();
 
     public byte[] SerializeGameSharePackage(GameSharePackage value) =>
         Serializer.Serialize(value);

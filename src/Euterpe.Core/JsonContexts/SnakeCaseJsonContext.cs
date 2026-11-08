@@ -5,7 +5,6 @@ using Euterpe.Contracts.Credits;
 using Euterpe.Contracts.Distribution;
 using Euterpe.Contracts.Mods;
 using Euterpe.Contracts.Telemetry;
-using Euterpe.Models.Charts.CustomAlbums;
 
 namespace Euterpe.Core.JsonContexts;
 
@@ -15,7 +14,6 @@ namespace Euterpe.Core.JsonContexts;
 [JsonSerializable(typeof(Chart[]))]
 [JsonSerializable(typeof(CheckChartUpdatesRequest))]
 [JsonSerializable(typeof(CheckChartUpdatesResponse))]
-[JsonSerializable(typeof(Cinema))]
 [JsonSerializable(typeof(CreditsResponse))]
 [JsonSerializable(typeof(CurrentUserResponse))]
 [JsonSerializable(typeof(Dependency[]))]

@@ -8,7 +8,6 @@ public enum SetupOptionKinds
     DotNetRuntime = 1 << 1,
     EssentialMods = 1 << 2,
     UninstallConflicts = 1 << 3,
-    Migration = 1 << 4,
     ChartingTool = 1 << 5,
     DotNetSdk = 1 << 6,
     ModTemplate = 1 << 7,

@@ -42,7 +42,6 @@ public sealed class MuseDashConfig : GameConfig
         new(SetupOptionKinds.DotNetRuntime, Setup_Task_DotNetRuntime, Setup_Task_DotNetRuntime_Description) { IsSelected = true, IsRequired = true },
         new(SetupOptionKinds.EssentialMods, Setup_Task_EssentialMods, Setup_Task_EssentialMods_Description) { IsSelected = true, IsRequired = true },
         new(SetupOptionKinds.UninstallConflicts, Setup_Task_UninstallConflicts, Setup_Task_UninstallConflicts_Description) { IsSelected = true, IsRequired = true },
-        new(SetupOptionKinds.Migration, Setup_Task_Migration, Setup_Task_Migration_Description),
         new(SetupOptionKinds.ChartingTool, Setup_Task_ChartingTool, Setup_Task_ChartingTool_Description),
         new(SetupOptionKinds.DotNetSdk, Setup_Task_DotNetSdk, Setup_Task_DotNetSdk_Description),
         new(SetupOptionKinds.ModTemplate, Setup_Task_ModTemplate, Setup_Task_ModTemplate_Description),

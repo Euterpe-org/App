@@ -127,15 +127,6 @@
   <data name="ChartManage_GetCharts_Title" xml:space="preserve">
     <value>Получить чарты</value>
   </data>
-  <data name="ChartManage_MigrateMdm" xml:space="preserve">
-    <value>Перенести чарты MDM</value>
-  </data>
-  <data name="ChartManage_Migrating" xml:space="preserve">
-    <value>Перенос чартов</value>
-  </data>
-  <data name="ChartManage_MigratingHint" xml:space="preserve">
-    <value>Идёт перенос, не закрывай приложение.</value>
-  </data>
   <data name="ChartManage_Rating" xml:space="preserve">
     <value>Уровень</value>
   </data>
@@ -655,9 +646,6 @@
   <data name="Setup_Progress_InstallingModTemplate" xml:space="preserve">
     <value>Установка шаблона мода...</value>
   </data>
-  <data name="Setup_Progress_MigratingCharts" xml:space="preserve">
-    <value>Перенос чартов CustomAlbums...</value>
-  </data>
   <data name="Setup_Progress_SettingEnvVariable" xml:space="preserve">
     <value>Настройка переменной среды...</value>
   </data>
@@ -714,12 +702,6 @@
   </data>
   <data name="Setup_Task_MelonLoader_Description" xml:space="preserve">
     <value>Обязательный загрузчик модов</value>
-  </data>
-  <data name="Setup_Task_Migration" xml:space="preserve">
-    <value>Перенести старые данные</value>
-  </data>
-  <data name="Setup_Task_Migration_Description" xml:space="preserve">
-    <value>Конвертировать чарты из старых модов (например, CustomAlbums) в формат Euterpe</value>
   </data>
   <data name="Setup_Task_ModTemplate" xml:space="preserve">
     <value>Шаблон мода</value>

@@ -127,15 +127,6 @@
   <data name="ChartManage_GetCharts_Title" xml:space="preserve">
     <value>譜面を入手</value>
   </data>
-  <data name="ChartManage_MigrateMdm" xml:space="preserve">
-    <value>MDM 譜面を移行</value>
-  </data>
-  <data name="ChartManage_Migrating" xml:space="preserve">
-    <value>譜面を移行中</value>
-  </data>
-  <data name="ChartManage_MigratingHint" xml:space="preserve">
-    <value>移行中です。アプリを閉じずにお待ちください。</value>
-  </data>
   <data name="ChartManage_Rating" xml:space="preserve">
     <value>レベル</value>
   </data>
@@ -655,9 +646,6 @@
   <data name="Setup_Progress_InstallingModTemplate" xml:space="preserve">
     <value>Mod テンプレートをインストールしています…</value>
   </data>
-  <data name="Setup_Progress_MigratingCharts" xml:space="preserve">
-    <value>CustomAlbums 譜面を移行しています…</value>
-  </data>
   <data name="Setup_Progress_SettingEnvVariable" xml:space="preserve">
     <value>環境変数を設定しています…</value>
   </data>
@@ -714,12 +702,6 @@
   </data>
   <data name="Setup_Task_MelonLoader_Description" xml:space="preserve">
     <value>必須の Mod ローダー</value>
-  </data>
-  <data name="Setup_Task_Migration" xml:space="preserve">
-    <value>旧データを移行</value>
-  </data>
-  <data name="Setup_Task_Migration_Description" xml:space="preserve">
-    <value>CustomAlbums など旧 Mod の譜面を Euterpe 形式に変換</value>
   </data>
   <data name="Setup_Task_ModTemplate" xml:space="preserve">
     <value>Mod テンプレート</value>

@@ -16,17 +16,11 @@
   <data name="FileDialog_Title_ChooseEpkFile" xml:space="preserve">
     <value>EPK ファイルを選択</value>
   </data>
-  <data name="FileDialog_Title_ChooseMdmFiles" xml:space="preserve">
-    <value>MDM ファイルを選択</value>
-  </data>
   <data name="FileDialog_Title_ChooseSteamExec" xml:space="preserve">
     <value>Steam 実行ファイルを選択</value>
   </data>
   <data name="FilePickerFileType_AllFiles" xml:space="preserve">
     <value>すべてのファイル</value>
-  </data>
-  <data name="FilePickerFileType_MdmFiles" xml:space="preserve">
-    <value>MDM ファイル</value>
   </data>
   <data name="FolderDialog_Title_ChooseCacheFolder" xml:space="preserve">
     <value>キャッシュフォルダーを選択</value>
@@ -165,11 +159,8 @@
   <data name="Notification_Content_Chart_Import_Success" xml:space="preserve">
     <value>譜面 {0} のインポートが完了しました</value>
   </data>
-  <data name="Notification_Content_Chart_Import_Unmigratable" xml:space="preserve">
-    <value>譜面 {0} を移行できません</value>
-  </data>
   <data name="Notification_Content_Chart_Import_Unsupported" xml:space="preserve">
-    <value>{0} はサポートされていない譜面ファイルまたはフォルダーです</value>
+    <value>{0} はサポートされていない譜面ファイルです</value>
   </data>
   <data name="Notification_Content_Chart_Remove_Failed" xml:space="preserve">
     <value>譜面 {0} の削除に失敗しました</value>
@@ -221,15 +212,6 @@
   </data>
   <data name="Notification_Content_Lib_Import_Success" xml:space="preserve">
     <value>ライブラリ {0} のインポートが完了しました</value>
-  </data>
-  <data name="Notification_Content_Migration_None" xml:space="preserve">
-    <value>移行する MDM 譜面はありません</value>
-  </data>
-  <data name="Notification_Content_Migration_Partial" xml:space="preserve">
-    <value>{0} 件の CustomAlbums 譜面を移行しました（{1} 件失敗）</value>
-  </data>
-  <data name="Notification_Content_Migration_Success" xml:space="preserve">
-    <value>{0} 件の CustomAlbums 譜面を移行しました</value>
   </data>
   <data name="Notification_Content_Mod_Import_Duplicated" xml:space="preserve">
     <value>Mod {0} はすでにインポートされています</value>

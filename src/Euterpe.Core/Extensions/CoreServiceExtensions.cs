@@ -131,7 +131,6 @@ public static class CoreServiceExtensions
 
             builder.RegisterType<ChartLocalService>().As<IChartLocalService>().PropertiesAutowired().InstancePerLifetimeScope();
             builder.RegisterType<ChartManageService>().As<IChartManageService>().PropertiesAutowired().InstancePerLifetimeScope();
-            builder.RegisterType<MigrationService>().As<IMigrationService>().PropertiesAutowired().InstancePerLifetimeScope();
             builder.RegisterType<DependencyAcquireService>().As<IDependencyAcquireService>().PropertiesAutowired().InstancePerLifetimeScope();
             builder.RegisterType<GameDownloadManager>().As<IGameDownloadManager>().PropertiesAutowired().InstancePerLifetimeScope();
             builder.RegisterType<GameLaunchService>().As<IGameLaunchService>().PropertiesAutowired().InstancePerLifetimeScope();
@@ -144,7 +143,6 @@ public static class CoreServiceExtensions
 
             // Setup Steps
             builder.RegisterType<ChartingToolStep>().As<ISetupStep>().PropertiesAutowired().InstancePerLifetimeScope();
-            builder.RegisterType<MigrationStep>().As<ISetupStep>().PropertiesAutowired().InstancePerLifetimeScope();
             builder.RegisterType<DotNetRuntimeStep>().As<ISetupStep>().PropertiesAutowired().InstancePerLifetimeScope();
             builder.RegisterType<DotNetSdkStep>().As<ISetupStep>().PropertiesAutowired().InstancePerLifetimeScope();
             builder.RegisterType<EnvVariableStep>().As<ISetupStep>().PropertiesAutowired().InstancePerLifetimeScope();

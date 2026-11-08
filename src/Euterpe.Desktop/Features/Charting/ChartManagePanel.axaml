@@ -327,10 +327,6 @@
                                 Content="{Localize ChartManage_UpdateAll}"
                                 HorizontalAlignment="Stretch" />
                             <Button
-                                Command="{Binding MigrateCustomAlbumsCommand}"
-                                Content="{Localize ChartManage_MigrateMdm}"
-                                HorizontalAlignment="Stretch" />
-                            <Button
                                 Command="{Binding ImportShareCommand}"
                                 Content="{Localize Share_Import_Header}"
                                 HorizontalAlignment="Stretch" />

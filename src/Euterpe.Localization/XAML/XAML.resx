@@ -127,15 +127,6 @@
   <data name="ChartManage_GetCharts_Title" xml:space="preserve">
     <value>Get Charts</value>
   </data>
-  <data name="ChartManage_MigrateMdm" xml:space="preserve">
-    <value>Migrate MDM Charts</value>
-  </data>
-  <data name="ChartManage_Migrating" xml:space="preserve">
-    <value>Migrating Charts</value>
-  </data>
-  <data name="ChartManage_MigratingHint" xml:space="preserve">
-    <value>Migration is in progress. Please wait and do not close the app.</value>
-  </data>
   <data name="ChartManage_Rating" xml:space="preserve">
     <value>Rating</value>
   </data>
@@ -655,9 +646,6 @@
   <data name="Setup_Progress_InstallingModTemplate" xml:space="preserve">
     <value>Installing mod template ...</value>
   </data>
-  <data name="Setup_Progress_MigratingCharts" xml:space="preserve">
-    <value>Migrating CustomAlbums Charts ...</value>
-  </data>
   <data name="Setup_Progress_SettingEnvVariable" xml:space="preserve">
     <value>Setting environment variable ...</value>
   </data>
@@ -714,12 +702,6 @@
   </data>
   <data name="Setup_Task_MelonLoader_Description" xml:space="preserve">
     <value>Required mod loader framework</value>
-  </data>
-  <data name="Setup_Task_Migration" xml:space="preserve">
-    <value>Migrate Legacy Data</value>
-  </data>
-  <data name="Setup_Task_Migration_Description" xml:space="preserve">
-    <value>Convert charts from older mods like CustomAlbums to Euterpe's format</value>
   </data>
   <data name="Setup_Task_ModTemplate" xml:space="preserve">
     <value>Mod Template</value>

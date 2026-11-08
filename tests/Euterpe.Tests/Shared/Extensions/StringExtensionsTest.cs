@@ -7,23 +7,6 @@ namespace Euterpe.Tests.Shared.Extensions;
 public sealed class StringExtensionsTest
 {
     [Test]
-    [Arguments(null, null)]
-    [Arguments("", null)]
-    [Arguments("   ", null)]
-    [Arguments("a", "a")]
-    [Arguments("hello", "hello")]
-    public async Task NullIfWhiteSpace_BlankAndNonBlankInputs_ReturnsNullOnlyWhenBlank(string? input, string? expected) =>
-        await Assert.That(input.NullIfWhiteSpace()).IsEqualTo(expected);
-
-    [Test]
-    [Arguments(null, "fallback", "fallback")]
-    [Arguments("", "fallback", "fallback")]
-    [Arguments("   ", "fallback", "fallback")]
-    [Arguments("value", "fallback", "value")]
-    public async Task DefaultIfWhiteSpace_BlankAndNonBlankInputs_ReturnsFallbackOnlyWhenBlank(string? input, string fallback, string expected) =>
-        await Assert.That(input.DefaultIfWhiteSpace(fallback)).IsEqualTo(expected);
-
-    [Test]
     [Arguments(@"C:\\Program Files\\App", @"C:\Program Files\App")]
     [Arguments(@"no\\slashes\\here", @"no\slashes\here")]
     [Arguments("nothing-to-replace", "nothing-to-replace")]

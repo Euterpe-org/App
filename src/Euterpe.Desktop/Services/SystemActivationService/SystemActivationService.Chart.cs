@@ -8,10 +8,6 @@ public sealed partial class SystemActivationService
 
         switch (segments)
         {
-            case ["convert"]:
-                await MigrateAllCustomAlbumsAsync().ConfigureAwait(false);
-                break;
-
             case ["download", var cid]:
                 await DownloadChartAsync(cid).ConfigureAwait(false);
                 break;
@@ -27,19 +23,6 @@ public sealed partial class SystemActivationService
             default:
                 Logger.LogWarning("Unknown chart deep link path: {Path}", path);
                 break;
-        }
-    }
-
-    private async Task MigrateAllCustomAlbumsAsync()
-    {
-        var processedCount = await ProgressDialogService.ExecuteAsync(
-            XAML.ChartManage_Migrating,
-            XAML.ChartManage_MigratingHint,
-            false,
-            progress => ChartManageService.MigrateCustomAlbumsAsync(progress)).ConfigureAwait(true);
-        if (processedCount is 0)
-        {
-            NotificationService.NoticeLight(Notification_Content_Migration_None);
         }
     }
 

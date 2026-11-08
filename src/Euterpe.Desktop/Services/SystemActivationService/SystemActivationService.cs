@@ -37,7 +37,6 @@ public sealed partial class SystemActivationService
 
     public required BehaviorSubject<ILifetimeScope> GameScope { get; init; }
     public required NavigationService NavigationService { get; init; }
-    public required INotificationService NotificationService { get; init; }
     public required ILogger<SystemActivationService> Logger { get; init; }
     public required ISystemAssociationSetup AssociationSetup { get; init; }
 

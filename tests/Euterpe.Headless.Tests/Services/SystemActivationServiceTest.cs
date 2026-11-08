@@ -21,24 +21,12 @@ public sealed class SystemActivationServiceTest : HeadlessTest
         ISystemAssociationSetup? setup = null,
         MockLogger<SystemActivationService>? logger = null,
         IModManageService? modManageService = null,
-        IChartManageService? chartManageService = null,
-        ProgressDialogService? progressDialogService = null,
         ShareImportDialogService? shareImportDialogService = null)
     {
         var builder = new ContainerBuilder();
         if (modManageService is not null)
         {
             builder.RegisterInstance(modManageService).As<IModManageService>();
-        }
-
-        if (chartManageService is not null)
-        {
-            builder.RegisterInstance(chartManageService).As<IChartManageService>();
-        }
-
-        if (progressDialogService is not null)
-        {
-            builder.RegisterInstance(progressDialogService).AsSelf();
         }
 
         if (shareImportDialogService is not null)
@@ -53,7 +41,6 @@ public sealed class SystemActivationServiceTest : HeadlessTest
             {
                 Logger = NullLogger<NavigationService>.Instance
             },
-            NotificationService = INotificationService.Mock(),
             Logger = logger ?? Mock.Logger<SystemActivationService>(),
             AssociationSetup = setup ?? ISystemAssociationSetup.Mock(),
             GameScope = new BehaviorSubject<ILifetimeScope>(container)
@@ -266,25 +253,6 @@ public sealed class SystemActivationServiceTest : HeadlessTest
 
         mods.UninstallModByNameAsync("Euterpe").WasCalled(Times.Once);
     }
-
-    [Test]
-    public Task HandleChartAction_Convert_MigratesCustomAlbums() => RunOnUI(async () =>
-    {
-        var logger = Mock.Logger<SystemActivationService>();
-        var charts = IChartManageService.Mock();
-        var progressDialogService = new ProgressDialogService
-        {
-            DialogService = IDialogService.Mock(),
-            ProgressDialogViewModel = new ProgressDialogViewModel { Launcher = IPlatformLauncher.Mock() }
-        };
-        var service = NewService(logger: logger, chartManageService: charts, progressDialogService: progressDialogService);
-
-        await InvokeChartAction(service, "convert");
-
-        using var _ = Assert.Multiple();
-        charts.MigrateCustomAlbumsAsync(Any<IProgress<BatchProgress>?>(), Any<CancellationToken>()).WasCalled(Times.Once);
-        await Assert.That(logger.Entries.Any(e => e.LogLevel is LogLevel.Warning)).IsFalse();
-    });
 
     [Test]
     public async Task HandleChartAction_UnknownPath_LogsWarning()

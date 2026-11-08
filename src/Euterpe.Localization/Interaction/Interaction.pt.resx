@@ -16,17 +16,11 @@
   <data name="FileDialog_Title_ChooseEpkFile" xml:space="preserve">
     <value>Escolher arquivo EPK</value>
   </data>
-  <data name="FileDialog_Title_ChooseMdmFiles" xml:space="preserve">
-    <value>Escolher arquivos MDM</value>
-  </data>
   <data name="FileDialog_Title_ChooseSteamExec" xml:space="preserve">
     <value>Escolher executável do Steam</value>
   </data>
   <data name="FilePickerFileType_AllFiles" xml:space="preserve">
     <value>Todos os arquivos</value>
-  </data>
-  <data name="FilePickerFileType_MdmFiles" xml:space="preserve">
-    <value>Arquivos MDM</value>
   </data>
   <data name="FolderDialog_Title_ChooseCacheFolder" xml:space="preserve">
     <value>Escolher pasta de cache</value>
@@ -165,11 +159,8 @@
   <data name="Notification_Content_Chart_Import_Success" xml:space="preserve">
     <value>Chart {0} importado com sucesso</value>
   </data>
-  <data name="Notification_Content_Chart_Import_Unmigratable" xml:space="preserve">
-    <value>O chart {0} não pode ser migrado</value>
-  </data>
   <data name="Notification_Content_Chart_Import_Unsupported" xml:space="preserve">
-    <value>{0} não é um arquivo ou pasta de chart compatível</value>
+    <value>{0} não é um arquivo de chart compatível</value>
   </data>
   <data name="Notification_Content_Chart_Remove_Failed" xml:space="preserve">
     <value>Falha ao remover o chart {0}</value>
@@ -221,15 +212,6 @@
   </data>
   <data name="Notification_Content_Lib_Import_Success" xml:space="preserve">
     <value>Biblioteca {0} importada com sucesso</value>
-  </data>
-  <data name="Notification_Content_Migration_None" xml:space="preserve">
-    <value>Nenhum chart MDM para migrar</value>
-  </data>
-  <data name="Notification_Content_Migration_Partial" xml:space="preserve">
-    <value>Charts do CustomAlbums migrados: {0}; não migrados: {1}</value>
-  </data>
-  <data name="Notification_Content_Migration_Success" xml:space="preserve">
-    <value>Charts do CustomAlbums migrados: {0}</value>
   </data>
   <data name="Notification_Content_Mod_Import_Duplicated" xml:space="preserve">
     <value>Mod {0} já foi importado</value>

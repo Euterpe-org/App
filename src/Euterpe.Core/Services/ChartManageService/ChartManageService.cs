@@ -129,7 +129,6 @@ internal sealed partial class ChartManageService : IChartManageService, IDisposa
     public required IGameDownloadManager GameDownloadManager { get; init; }
     public required ILogger<ChartManageService> Logger { get; init; }
     public required INotificationService NotificationService { get; init; }
-    public required IMigrationService MigrationService { get; init; }
 
     #endregion Injections
 }

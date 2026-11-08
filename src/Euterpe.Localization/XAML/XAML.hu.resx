@@ -127,15 +127,6 @@
   <data name="ChartManage_GetCharts_Title" xml:space="preserve">
     <value>Chartok beszerzése</value>
   </data>
-  <data name="ChartManage_MigrateMdm" xml:space="preserve">
-    <value>MDM-chartok migrálása</value>
-  </data>
-  <data name="ChartManage_Migrating" xml:space="preserve">
-    <value>Chartok migrálása</value>
-  </data>
-  <data name="ChartManage_MigratingHint" xml:space="preserve">
-    <value>Migrálás folyamatban. Ne zárd be az alkalmazást.</value>
-  </data>
   <data name="ChartManage_Rating" xml:space="preserve">
     <value>Szint</value>
   </data>
@@ -655,9 +646,6 @@
   <data name="Setup_Progress_InstallingModTemplate" xml:space="preserve">
     <value>Modsablon telepítése ...</value>
   </data>
-  <data name="Setup_Progress_MigratingCharts" xml:space="preserve">
-    <value>CustomAlbums-chartok migrálása ...</value>
-  </data>
   <data name="Setup_Progress_SettingEnvVariable" xml:space="preserve">
     <value>Környezeti változó beállítása ...</value>
   </data>
@@ -714,12 +702,6 @@
   </data>
   <data name="Setup_Task_MelonLoader_Description" xml:space="preserve">
     <value>Szükséges modbetöltő keretrendszer</value>
-  </data>
-  <data name="Setup_Task_Migration" xml:space="preserve">
-    <value>Régi adatok migrálása</value>
-  </data>
-  <data name="Setup_Task_Migration_Description" xml:space="preserve">
-    <value>Régebbi modok (pl. CustomAlbums) chartjainak átalakítása Euterpe-formátumba</value>
   </data>
   <data name="Setup_Task_ModTemplate" xml:space="preserve">
     <value>Modsablon</value>
