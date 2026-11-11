@@ -8,7 +8,7 @@ internal static class GeneratorTestHelper
         var compilation = CSharpCompilation.Create(
             "Tests",
             [CSharpSyntaxTree.ParseText(source)],
-            Net100.References.All,
+            Net110.References.All,
             new CSharpCompilationOptions(OutputKind.DynamicallyLinkedLibrary));
 
         return CSharpGeneratorDriver.Create(new TGenerator().AsSourceGenerator()).RunGenerators(compilation).GetRunResult();

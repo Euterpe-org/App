@@ -5,7 +5,7 @@
     <ItemGroup>
         <PackageVersion Include="AsmResolver.DotNet" Version="6.1.0"/>
         <PackageVersion Include="AssetsTools.NET" Version="3.0.5"/>
-        <PackageVersion Include="AsyncAwaitBestPractices" Version="10.0.0"/>
+        <PackageVersion Include="AsyncAwaitBestPractices" Version="11.0.0"/>
         <PackageVersion Include="Autofac" Version="9.3.4"/>
         <PackageVersion Include="Autofac.Extensions.DependencyInjection" Version="11.0.2"/>
         <PackageVersion Include="Avalonia" Version="12.1.6"/>
@@ -16,8 +16,8 @@
         <PackageVersion Include="Avalonia.Labs.Controls" Version="12.1.0"/>
         <PackageVersion Include="Avalonia.Labs.Panels" Version="12.1.0"/>
         <PackageVersion Include="AvaloniaUI.DiagnosticsSupport" Version="2.2.3"/>
-        <PackageVersion Include="Basic.Reference.Assemblies.Net100" Version="1.8.14"/>
-        <PackageVersion Include="Cake.Frosting" Version="6.3.0"/>
+        <PackageVersion Include="Basic.Reference.Assemblies.Net110" Version="1.8.15"/>
+        <PackageVersion Include="Cake.Frosting" Version="7.0.0"/>
         <PackageVersion Include="CliWrap" Version="3.10.5"/>
         <PackageVersion Include="CommunityToolkit.Mvvm" Version="8.4.2"/>
         <PackageVersion Include="DotNext.Threading" Version="6.12.1"/>
@@ -32,12 +32,12 @@
         <PackageVersion Include="Microsoft.Build.Utilities.Core" Version="18.11.0"/>
         <PackageVersion Include="Microsoft.CodeAnalysis.Analyzers" Version="5.9.0"/>
         <PackageVersion Include="Microsoft.CodeAnalysis.CSharp" Version="5.9.0"/>
-        <PackageVersion Include="Microsoft.Extensions.Http" Version="10.0.14"/>
-        <PackageVersion Include="Microsoft.Extensions.Http.Resilience" Version="10.11.0"/>
+        <PackageVersion Include="Microsoft.Extensions.Http" Version="11.0.0"/>
+        <PackageVersion Include="Microsoft.Extensions.Http.Resilience" Version="11.0.0"/>
         <PackageVersion Include="Nerdbank.MessagePack" Version="1.4.104"/>
         <PackageVersion Include="NetEscapades.EnumGenerators" Version="1.0.0-beta21"/>
         <PackageVersion Include="NLog" Version="6.2.2"/>
-        <PackageVersion Include="NLog.Extensions.Logging" Version="6.2.2"/>
+        <PackageVersion Include="NLog.Extensions.Logging" Version="6.3.0"/>
         <PackageVersion Include="NVorbis" Version="1.0.0-rc.2"/>
         <PackageVersion Include="ObservableCollections" Version="3.3.4"/>
         <PackageVersion Include="R3" Version="1.3.1"/>
@@ -50,7 +50,7 @@
         <PackageVersion Include="Semi.Avalonia" Version="12.1.0.1"/>
         <PackageVersion Include="Semver" Version="3.0.0"/>
         <PackageVersion Include="SoundFlow" Version="1.4.2"/>
-        <PackageVersion Include="System.Security.Cryptography.ProtectedData" Version="10.0.14"/>
+        <PackageVersion Include="System.Security.Cryptography.ProtectedData" Version="11.0.0"/>
         <PackageVersion Include="Tmds.DBus.Generator" Version="0.95.2"/>
         <PackageVersion Include="Tmds.DBus.Protocol" Version="0.95.2"/>
         <PackageVersion Include="TUnit" Version="1.67.0"/>

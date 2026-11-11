@@ -8,7 +8,7 @@ internal static class AnalyzerTestHelper
         var compilation = CSharpCompilation.Create(
             assemblyName,
             sources.Select(static source => CSharpSyntaxTree.ParseText(source)),
-            Net100.References.All,
+            Net110.References.All,
             new CSharpCompilationOptions(OutputKind.DynamicallyLinkedLibrary));
         var compilationErrors = compilation.GetDiagnostics()
             .Where(static diagnostic => diagnostic.Severity == DiagnosticSeverity.Error)
