@@ -21,8 +21,8 @@ public sealed partial class ModManageServiceTest
         await Assert.That(mod.IsLocal).IsTrue();
         await Assert.That(mod.LocalVersion).IsEqualTo("1.0.0");
         await Assert.That(mod.IsDisabled).IsFalse();
-        notificationServiceMock.SuccessLight(Any<string>(), RefStructArg<ReadOnlySpan<object>>.Any).WasCalled(Times.Once);
-        notificationServiceMock.ErrorLight(Any<string>(), RefStructArg<ReadOnlySpan<object>>.Any).WasCalled(Times.Never);
+        notificationServiceMock.SuccessLight(Any<string>(), Any<TimeSpan?>()).WasCalled(Times.Once);
+        notificationServiceMock.ErrorLight(Any<string>(), Any<TimeSpan?>()).WasCalled(Times.Never);
     }
 
     [Test]
@@ -44,8 +44,8 @@ public sealed partial class ModManageServiceTest
         using var _ = Assert.Multiple();
         await Assert.That(mod.IsLocal).IsFalse();
         await Assert.That(mod.LocalVersion).IsEmpty();
-        notificationServiceMock.ErrorLight(Any<string>(), RefStructArg<ReadOnlySpan<object>>.Any).WasCalled(Times.Once);
-        notificationServiceMock.SuccessLight(Any<string>(), RefStructArg<ReadOnlySpan<object>>.Any).WasCalled(Times.Never);
+        notificationServiceMock.ErrorLight(Any<string>(), Any<TimeSpan?>()).WasCalled(Times.Once);
+        notificationServiceMock.SuccessLight(Any<string>(), Any<TimeSpan?>()).WasCalled(Times.Never);
     }
 
     [Test]

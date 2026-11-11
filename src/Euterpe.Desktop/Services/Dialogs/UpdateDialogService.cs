@@ -34,7 +34,7 @@ public sealed class UpdateDialogService
 
         if (!succeeded)
         {
-            await MessageBoxService.ErrorAsync(MessageBox_Content_Update_Failed, version).ConfigureAwait(false);
+            await MessageBoxService.ErrorAsync(MessageBox_Content_Update_Failed(version)).ConfigureAwait(false);
         }
 
         return succeeded;

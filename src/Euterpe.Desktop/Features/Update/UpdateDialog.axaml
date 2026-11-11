@@ -2,7 +2,6 @@
     xmlns="https://github.com/avaloniaui"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:loc="https://github.com/Euterpe-org/Euterpe/Localization"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:vm="using:Euterpe.Features.Update"
     x:Class="Euterpe.Features.Update.UpdateDialog"
@@ -40,7 +39,7 @@
                 <TextBlock
                     FontSize="18"
                     FontWeight="SemiBold"
-                    Text="{Localize {x:Static loc:XAMLLiteral.UpdateDialog_Title}}"
+                    Text="{Localize UpdateDialog_Title}"
                     Theme="{StaticResource TitleTextBlock}" />
 
                 <StackPanel
@@ -49,7 +48,7 @@
                     <TextBlock
                         FontSize="12"
                         Foreground="{DynamicResource SemiColorText2}"
-                        Text="{Localize {x:Static loc:XAMLLiteral.UpdateDialog_TargetVersion}}"
+                        Text="{Localize UpdateDialog_TargetVersion}"
                         VerticalAlignment="Center" />
                     <Label
                         Classes="Ghost Blue TagLabel"
@@ -62,7 +61,7 @@
         <TextBlock
             FontSize="13"
             Foreground="{DynamicResource SemiColorText2}"
-            Text="{Localize {x:Static loc:XAMLLiteral.UpdateDialog_Description}}"
+            Text="{Localize UpdateDialog_Description}"
             TextWrapping="Wrap" />
 
         <!--  Download Progress  -->
@@ -73,7 +72,7 @@
                 <TextBlock
                     FontSize="12"
                     Foreground="{DynamicResource SemiColorText2}"
-                    Text="{Localize {x:Static loc:XAMLLiteral.UpdateDialog_State_Downloading}}" />
+                    Text="{Localize UpdateDialog_State_Downloading}" />
                 <TextBlock
                     Grid.Column="1"
                     FontSize="12"
@@ -92,7 +91,7 @@
         <TextBlock
             FontSize="11"
             Foreground="{DynamicResource SemiColorText3}"
-            Text="{Localize {x:Static loc:XAMLLiteral.UpdateDialog_RestartHint}}"
+            Text="{Localize UpdateDialog_RestartHint}"
             TextWrapping="Wrap" />
     </StackPanel>
 </UserControl>

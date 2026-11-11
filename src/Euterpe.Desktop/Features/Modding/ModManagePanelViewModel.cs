@@ -5,7 +5,7 @@ using DynamicData.Binding;
 
 namespace Euterpe.Features.Modding;
 
-[Route("/modding/manage", DisplayName = Panel_Modding_ModManage, Order = 0)]
+[Route("/modding/manage", DisplayName = nameof(Panel_Modding_ModManage), Order = 0)]
 public sealed partial class ModManagePanelViewModel : ViewModelBase
 {
     private readonly SourceCache<ModDto, string> _sourceCache = new(x => x.Name);
@@ -13,7 +13,7 @@ public sealed partial class ModManagePanelViewModel : ViewModelBase
     public static IReadOnlyList<EnumOption<ModFilterType>> ModFilters { get; } =
     [
         .. ModFilterTypeExtensions.GetValues().Select(static filter =>
-            new EnumOption<ModFilterType>(filter, $"{nameof(ModFilterType)}_{filter.ToStringFast()}"))
+            new EnumOption<ModFilterType>(filter))
     ];
 
     [ObservableProperty]

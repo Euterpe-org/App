@@ -45,11 +45,11 @@ public sealed partial class ShareImportDialogViewModel : ViewModelBase, IDialogC
         if (package.GameId != Config.ActiveGame)
         {
             var gameName = Config.Games.FirstOrDefault(game => game.Id == package.GameId)?.DisplayName ?? package.GameId.ToString();
-            SetStatus(string.Format(CultureInfo.CurrentCulture, XAML.Share_Import_WrongGame, gameName), true);
+            SetStatus(XAML.Share_Import_WrongGame(gameName), true);
             return;
         }
 
-        SetStatus(string.Format(CultureInfo.CurrentCulture, XAML.Share_Import_Preview, package.ChartIds.Length), false,
+        SetStatus(XAML.Share_Import_Preview(package.ChartIds.Length), false,
             package);
     }
 
@@ -109,10 +109,10 @@ public sealed partial class ShareImportDialogViewModel : ViewModelBase, IDialogC
 
         return string.Join(" · ", phrases.Where(static phrase => phrase.Length > 0));
 
-        string Phrase(BulkItemOutcome outcome, string format)
+        string Phrase(BulkItemOutcome outcome, Func<object?, LocalizedString> format)
         {
             var count = result.Count(item => item.Outcome == outcome);
-            return count is 0 ? string.Empty : string.Format(CultureInfo.CurrentCulture, format, count);
+            return count is 0 ? string.Empty : format(count);
         }
     }
 

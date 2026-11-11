@@ -1,4 +1,5 @@
 using Euterpe.Features.Charting;
+using Euterpe.Localization;
 using Ursa.Controls;
 
 namespace Euterpe.Tests.Desktop.Services;
@@ -22,7 +23,7 @@ public sealed class ProgressDialogServiceTest
             });
         var service = CreateService(dialog);
 
-        var result = await service.ExecuteAsync("Title", "Hint", true, _ => Task.FromResult(42));
+        var result = await service.ExecuteAsync("Title", LocalizedString.FromText("Hint"), true, _ => Task.FromResult(42));
 
         using var assertions = Assert.Multiple();
         await Assert.That(result).IsEqualTo(42);
@@ -38,7 +39,7 @@ public sealed class ProgressDialogServiceTest
         var executed = false;
         var service = CreateService();
 
-        await service.ExecuteAsync("Title", "Hint", false, _ =>
+        await service.ExecuteAsync("Title", LocalizedString.FromText("Hint"), false, _ =>
         {
             executed = true;
             return Task.CompletedTask;

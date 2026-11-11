@@ -45,13 +45,13 @@ internal sealed partial class ChartManageService
             case ([], []):
                 break;
             case ([var addedChart], []):
-                NotificationService.SuccessLight(Notification_Content_Chart_Sync_Added, addedChart.Manifest.Meta.Name);
+                NotificationService.SuccessLight(Notification_Content_Chart_Sync_Added(addedChart.Manifest.Meta.Name));
                 break;
             case ([], [var removedChart]):
-                NotificationService.NoticeLight(Notification_Content_Chart_Sync_Removed, removedChart.Manifest.Meta.Name);
+                NotificationService.NoticeLight(Notification_Content_Chart_Sync_Removed(removedChart.Manifest.Meta.Name));
                 break;
             default:
-                NotificationService.NoticeLight(Notification_Content_Chart_Sync_Summary, addedCharts.Length, removedCharts.Length);
+                NotificationService.NoticeLight(Notification_Content_Chart_Sync_Summary(addedCharts.Length, removedCharts.Length));
                 break;
         }
     }

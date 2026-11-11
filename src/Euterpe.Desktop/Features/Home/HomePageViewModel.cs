@@ -2,13 +2,13 @@ using Euterpe.Core.Http.Clients;
 
 namespace Euterpe.Features.Home;
 
-[Route("/home", DisplayName = Page_Home, Icon = "Home", Order = 0)]
+[Route("/home", DisplayName = nameof(Page_Home), Icon = "Home", Order = 0)]
 public sealed partial class HomePageViewModel : ViewModelBase
 {
     public static IReadOnlyList<EnumOption<GameMode>> GameModes { get; } =
     [
         .. GameModeExtensions.GetValues().Select(static mode =>
-            new EnumOption<GameMode>(mode, $"{nameof(GameMode)}_{mode.ToStringFast()}"))
+            new EnumOption<GameMode>(mode))
     ];
 
     protected override async Task OnInitializeAsync()
@@ -60,7 +60,7 @@ public sealed partial class HomePageViewModel : ViewModelBase
         catch (Exception ex)
         {
             Logger.LogCritical(ex, "Read game information failed; aborting startup");
-            await MessageBoxService.ErrorAsync(MessageBox_Content_ReadGameInformation_Failed, GameConfig.GlobalGameManagersPath).ConfigureAwait(true);
+            await MessageBoxService.ErrorAsync(MessageBox_Content_ReadGameInformation_Failed(GameConfig.GlobalGameManagersPath)).ConfigureAwait(true);
             Environment.Exit(1);
             return;
         }

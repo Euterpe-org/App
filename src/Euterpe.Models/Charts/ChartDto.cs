@@ -43,9 +43,9 @@ public sealed class ChartDto
     public long SizeBytes => _sizeBytes ??= Manifest.Files.Values.Sum(static file => file.Size);
 
     // Display Strings
-    public string? UploaderDisplay =>
+    public LocalizedString? UploaderDisplay =>
         Manifest.Meta.Uploader is { } uploader
-            ? string.Format(XAML.ChartManage_UploadedBy, uploader.Nickname)
+            ? XAML.ChartManage_UploadedBy(uploader.Nickname)
             : null;
 
     public string SizeDisplay => SizeBytes.ToReadableSize();

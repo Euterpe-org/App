@@ -4,7 +4,6 @@
     xmlns:constants="using:Euterpe.Shared"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:e="https://github.com/Euterpe-org/Euterpe"
-    xmlns:loc="https://github.com/Euterpe-org/Euterpe/Localization"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:models="using:Euterpe.Controls.Models"
     xmlns:u="https://irihi.tech/ursa"
@@ -160,17 +159,17 @@
 
                             <u:IconButton
                                 Command="{Binding CheckUpdateCommand, Mode=OneTime}"
-                                Content="{Localize {x:Static loc:XAMLLiteral.Button_CheckUpdate}}"
+                                Content="{Localize Button_CheckUpdate}"
                                 Icon="{StaticResource SemiIconRefresh}" />
 
                             <u:IconButton
                                 CommandParameter="https://github.com/Euterpe-org/Euterpe"
-                                Content="{Localize {x:Static loc:XAMLLiteral.Button_SourceCode}}"
+                                Content="{Localize Button_SourceCode}"
                                 Icon="{StaticResource SemiIconCode}" />
 
                             <u:IconButton
                                 CommandParameter="https://translate.euterpe-org.com"
-                                Content="{Localize {x:Static loc:XAMLLiteral.Button_HelpTranslate}}"
+                                Content="{Localize Button_HelpTranslate}"
                                 Icon="{StaticResource SemiIconLanguage}" />
 
                             <u:IconButton

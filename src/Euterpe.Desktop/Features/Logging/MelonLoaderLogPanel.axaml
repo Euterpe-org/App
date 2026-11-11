@@ -2,7 +2,6 @@
     xmlns="https://github.com/avaloniaui"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:loc="using:Euterpe.Localization"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:vm="using:Euterpe.Features.Logging"
     x:Class="Euterpe.Features.Logging.MelonLoaderLogPanel"
@@ -40,7 +39,7 @@
                         Height="14"
                         Width="14" />
                     <TextBlock
-                        Text="{Localize {x:Static loc:XAMLLiteral.MelonLoaderLog_Analyze}}" />
+                        Text="{Localize MelonLoaderLog_Analyze}" />
                 </StackPanel>
             </Button>
             <Button
@@ -55,7 +54,7 @@
                         Height="14"
                         Width="14" />
                     <TextBlock
-                        Text="{Localize {x:Static loc:XAMLLiteral.MelonLoaderLog_Refresh}}" />
+                        Text="{Localize MelonLoaderLog_Refresh}" />
                 </StackPanel>
             </Button>
         </StackPanel>
@@ -84,7 +83,7 @@
                 <TextBlock
                     HorizontalAlignment="Center"
                     IsVisible="{Binding !HasLogLines}"
-                    Text="{Localize {x:Static loc:XAMLLiteral.MelonLoaderLog_Empty}}"
+                    Text="{Localize MelonLoaderLog_Empty}"
                     TextAlignment="Center"
                     VerticalAlignment="Center" />
             </Grid>

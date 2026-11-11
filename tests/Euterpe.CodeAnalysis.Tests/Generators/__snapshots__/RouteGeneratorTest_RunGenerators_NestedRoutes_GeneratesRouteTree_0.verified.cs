@@ -23,8 +23,8 @@ partial class RootViewModel
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Euterpe.SourceGenerators.RouteGenerator", "1.0.0")]
     public override global::System.Collections.Generic.IReadOnlyList<global::Euterpe.Controls.Models.NavItem> NavItems { get; } =
     [
-        new(global::Euterpe.Localization.XAMLLiteral.Home, "/home") { IconResourceKey = "house" },
-        new(global::Euterpe.Localization.XAMLLiteral.Settings, "/settings") { IconResourceKey = "gear" },
+        new(global::Euterpe.Localization.XAML.Home, "/home") { IconResourceKey = "house" },
+        new(global::Euterpe.Localization.XAML.Settings, "/settings") { IconResourceKey = "gear" },
     ];
 
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Euterpe.SourceGenerators.RouteGenerator", "1.0.0")]

@@ -134,6 +134,6 @@ public sealed partial class RouteGenerator
     private static string BuildNavItem(RouteData route)
     {
         var icon = string.IsNullOrEmpty(route.Icon) ? string.Empty : $$""" { IconResourceKey = "{{route.Icon}}" }""";
-        return $"""new(global::Euterpe.Localization.XAMLLiteral.{route.DisplayName}, "{route.Path}"){icon},""";
+        return $"""new(global::Euterpe.Localization.XAML.{route.DisplayName}, "{route.Path}"){icon},""";
     }
 }

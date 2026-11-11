@@ -1,6 +1,6 @@
 namespace Euterpe.Features.Modding;
 
-[Route("/modding/melonloader", DisplayName = Panel_Modding_MelonLoader, Order = 1)]
+[Route("/modding/melonloader", DisplayName = nameof(Panel_Modding_MelonLoader), Order = 1)]
 public sealed partial class MelonLoaderPanelViewModel : ViewModelBase
 {
     [ObservableProperty]
@@ -70,7 +70,7 @@ public sealed partial class MelonLoaderPanelViewModel : ViewModelBase
     {
         var fileName = Path.GetFileName(args.FileName);
         var mbSize = args.TotalBytesToReceive / (1024d * 1024d);
-        DownloadText = string.Format(XAML.MelonLoader_State_Downloading, fileName, $"{mbSize:F2}");
+        DownloadText = XAML.MelonLoader_State_Downloading(fileName, $"{mbSize:F2}");
         Logger.LogInformation("Downloading {FileName}: {TotalBytes}B", fileName, args.TotalBytesToReceive);
     }
 

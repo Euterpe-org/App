@@ -43,14 +43,14 @@ public sealed partial class ModDto : ObservableObject
     [NotifyPropertyChangedFor(nameof(ReasonDisplay))]
     public partial string[] ConflictingModNames { get; set; } = [];
 
-    public string? ReasonDisplay => State switch
+    public LocalizedString? ReasonDisplay => State switch
     {
-        ModState.Duplicated => string.Format(XAML.ModState_Duplicated_Reason, string.Join(", ", DuplicatedModPaths)),
+        ModState.Duplicated => XAML.ModState_Duplicated_Reason(string.Join(", ", DuplicatedModPaths)),
         ModState.Incompatible => IncompatibleReason switch
         {
-            ModIncompatibleReason.MelonLoader => string.Format(XAML.ModIncompatibleReason_MelonLoader, MelonVersion),
-            ModIncompatibleReason.GameVersion => string.Format(XAML.ModIncompatibleReason_GameVersion, GameVersion),
-            ModIncompatibleReason.ConflictingMod => string.Format(XAML.ModIncompatibleReason_ConflictingMod, string.Join(", ", ConflictingModNames)),
+            ModIncompatibleReason.MelonLoader => XAML.ModIncompatibleReason_MelonLoader(MelonVersion),
+            ModIncompatibleReason.GameVersion => XAML.ModIncompatibleReason_GameVersion(GameVersion),
+            ModIncompatibleReason.ConflictingMod => XAML.ModIncompatibleReason_ConflictingMod(string.Join(", ", ConflictingModNames)),
             _ => null
         },
         _ => null
@@ -103,7 +103,7 @@ public sealed partial class ModDto : ObservableObject
     public bool HasIncompatibleMods => IncompatibleMods is not [];
 
     // LocalizedStrings
-    public LocalizedString LocalizedCompatibleGameVersion => GameVersion is "*" ? AllGameVersionCompatible : GameVersion;
+    public LocalizedString LocalizedCompatibleGameVersion => GameVersion is "*" ? AllGameVersionCompatible : LocalizedString.FromText(GameVersion);
 
     #endregion Dto Properties
 

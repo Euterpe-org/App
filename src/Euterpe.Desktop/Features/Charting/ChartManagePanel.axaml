@@ -5,7 +5,6 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:e="https://github.com/Euterpe-org/Euterpe"
     xmlns:labs="using:Avalonia.Labs.Controls"
-    xmlns:loc="https://github.com/Euterpe-org/Euterpe/Localization"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:models="using:Euterpe.Models.Charts"
     xmlns:u="https://irihi.tech/ursa"
@@ -99,7 +98,7 @@
                 Classes="ClearButton"
                 Margin="12,0"
                 MaxLength="30"
-                PlaceholderText="{Localize {x:Static loc:XAMLLiteral.SearchBarPlaceholder_Chart}}"
+                PlaceholderText="{Localize SearchBarPlaceholder_Chart}"
                 Text="{Binding Filter.SearchText}">
                 <TextBox.InnerLeftContent>
                     <PathIcon
@@ -115,13 +114,13 @@
                 MinWidth="140"
                 SelectedValue="{Binding SortField}"
                 SelectedValueBinding="{Binding Value}"
-                ToolTip.Tip="{Localize {x:Static loc:XAMLLiteral.ChartManage_SortBy}}" />
+                ToolTip.Tip="{Localize ChartManage_SortBy}" />
 
             <u:IconToggleButton
                 Grid.Column="3"
                 IsChecked="{Binding SortDescending}"
                 Margin="8,0,0,0"
-                ToolTip.Tip="{Localize {x:Static loc:XAMLLiteral.ChartManage_Descending}}"
+                ToolTip.Tip="{Localize ChartManage_Descending}"
                 Width="40">
                 <u:IconToggleButton.IconTemplate>
                     <DataTemplate
@@ -148,12 +147,12 @@
             <Button
                 Grid.Column="4"
                 Command="{Binding ResetFiltersCommand}"
-                Content="{Localize {x:Static loc:XAMLLiteral.ChartManage_Reset}}"
+                Content="{Localize ChartManage_Reset}"
                 Margin="8,0,0,0" />
 
             <ToggleButton
                 Grid.Column="5"
-                Content="{Localize {x:Static loc:XAMLLiteral.ChartManage_Select}}"
+                Content="{Localize ChartManage_Select}"
                 IsChecked="{Binding IsSelectionMode}"
                 Margin="8,0,0,0" />
         </Grid>
@@ -197,7 +196,7 @@
                                         <TextBlock
                                             Classes="CardTitle"
                                             FontSize="20"
-                                            Text="{Localize {x:Static loc:XAMLLiteral.ChartManage_GetCharts_Title}}">
+                                            Text="{Localize ChartManage_GetCharts_Title}">
                                             <TextBlock.Foreground>
                                                 <LinearGradientBrush StartPoint="0%,0%" EndPoint="100%,100%">
                                                     <GradientStop Offset="0" Color="#FF9966" />
@@ -208,7 +207,7 @@
                                         <TextBlock
                                             Classes="CardDesc"
                                             Margin="0,3,0,0"
-                                            Text="{Localize {x:Static loc:XAMLLiteral.ChartManage_GetCharts_Description}}" />
+                                            Text="{Localize ChartManage_GetCharts_Description}" />
                                     </StackPanel>
                                 </Border>
                             </Button>
@@ -217,35 +216,35 @@
                                 Spacing="6">
                                 <TextBlock
                                     FontWeight="SemiBold"
-                                    Text="{Localize {x:Static loc:XAMLLiteral.ChartManage_Filter_Difficulty}}" />
+                                    Text="{Localize ChartManage_Filter_Difficulty}" />
                                 <StackPanel
                                     Orientation="Horizontal"
                                     Spacing="2">
                                     <ToggleButton
                                         Classes="DifficultyFilter"
                                         IsChecked="{Binding Filter.ShowEasy}"
-                                        ToolTip.Tip="{Localize {x:Static loc:XAMLLiteral.ChartDifficulty_Easy}}">
+                                        ToolTip.Tip="{Localize ChartDifficulty_Easy}">
                                         <e:DifficultyStar
                                             Difficulty="Easy" />
                                     </ToggleButton>
                                     <ToggleButton
                                         Classes="DifficultyFilter"
                                         IsChecked="{Binding Filter.ShowHard}"
-                                        ToolTip.Tip="{Localize {x:Static loc:XAMLLiteral.ChartDifficulty_Hard}}">
+                                        ToolTip.Tip="{Localize ChartDifficulty_Hard}">
                                         <e:DifficultyStar
                                             Difficulty="Hard" />
                                     </ToggleButton>
                                     <ToggleButton
                                         Classes="DifficultyFilter"
                                         IsChecked="{Binding Filter.ShowMaster}"
-                                        ToolTip.Tip="{Localize {x:Static loc:XAMLLiteral.ChartDifficulty_Master}}">
+                                        ToolTip.Tip="{Localize ChartDifficulty_Master}">
                                         <e:DifficultyStar
                                             Difficulty="Master" />
                                     </ToggleButton>
                                     <ToggleButton
                                         Classes="DifficultyFilter"
                                         IsChecked="{Binding Filter.ShowHidden}"
-                                        ToolTip.Tip="{Localize {x:Static loc:XAMLLiteral.ChartDifficulty_Hidden}}">
+                                        ToolTip.Tip="{Localize ChartDifficulty_Hidden}">
                                         <e:DifficultyStar
                                             Difficulty="Hidden" />
                                     </ToggleButton>
@@ -256,7 +255,7 @@
                                 Spacing="6">
                                 <TextBlock
                                     FontWeight="SemiBold"
-                                    Text="{Localize {x:Static loc:XAMLLiteral.ChartManage_Rating}}" />
+                                    Text="{Localize ChartManage_Rating}" />
                                 <Grid
                                     ColumnDefinitions="*,Auto,*">
                                     <u:NumericIntUpDown
@@ -281,7 +280,7 @@
                                 Spacing="6">
                                 <TextBlock
                                     FontWeight="SemiBold"
-                                    Text="{Localize {x:Static loc:XAMLLiteral.ChartManage_Bpm}}" />
+                                    Text="{Localize ChartManage_Bpm}" />
                                 <Grid
                                     ColumnDefinitions="*,Auto,*">
                                     <u:NumericIntUpDown
@@ -307,10 +306,10 @@
                             <StackPanel
                                 Spacing="6">
                                 <CheckBox
-                                    Content="{Localize {x:Static loc:XAMLLiteral.ChartManage_Filter_StreamerSafe}}"
+                                    Content="{Localize ChartManage_Filter_StreamerSafe}"
                                     IsChecked="{Binding Filter.StreamerSafeOnly}" />
                                 <CheckBox
-                                    Content="{Localize {x:Static loc:XAMLLiteral.ChartManage_Filter_HasVideo}}"
+                                    Content="{Localize ChartManage_Filter_HasVideo}"
                                     IsChecked="{Binding Filter.HasVideoOnly}" />
                             </StackPanel>
                         </StackPanel>
@@ -325,15 +324,15 @@
                             Spacing="6">
                             <Button
                                 Command="{Binding UpdateAllChartsCommand}"
-                                Content="{Localize {x:Static loc:XAMLLiteral.ChartManage_UpdateAll}}"
+                                Content="{Localize ChartManage_UpdateAll}"
                                 HorizontalAlignment="Stretch" />
                             <Button
                                 Command="{Binding MigrateCustomAlbumsCommand}"
-                                Content="{Localize {x:Static loc:XAMLLiteral.ChartManage_MigrateMdm}}"
+                                Content="{Localize ChartManage_MigrateMdm}"
                                 HorizontalAlignment="Stretch" />
                             <Button
                                 Command="{Binding ImportShareCommand}"
-                                Content="{Localize {x:Static loc:XAMLLiteral.Share_Import_Header}}"
+                                Content="{Localize Share_Import_Header}"
                                 HorizontalAlignment="Stretch" />
                         </StackPanel>
                         <StackPanel
@@ -345,15 +344,15 @@
                             <Button
                                 Classes="Primary"
                                 Command="{Binding ShareSelectedCommand}"
-                                Content="{Localize {x:Static loc:XAMLLiteral.Share_Title}}"
+                                Content="{Localize Share_Title}"
                                 HorizontalAlignment="Stretch"
                                 IsEnabled="{Binding CanShareSelection}"
                                 IsVisible="{Binding Filter.IsOnlineSource}"
-                                ToolTip.Tip="{Localize {x:Static loc:XAMLLiteral.ChartManage_ShareHint}}" />
+                                ToolTip.Tip="{Localize ChartManage_ShareHint}" />
                             <Button
                                 Classes="Danger"
                                 Command="{Binding DeleteSelectedCommand}"
-                                Content="{Localize {x:Static loc:XAMLLiteral.ChartManage_Delete}}"
+                                Content="{Localize ChartManage_Delete}"
                                 HorizontalAlignment="Stretch"
                                 IsEnabled="{Binding HasSelection}" />
                         </StackPanel>
@@ -665,7 +664,7 @@
                                                     FontSize="10"
                                                     FontWeight="SemiBold"
                                                     Opacity="0.85"
-                                                    Text="{Localize {x:Static loc:XAMLLiteral.ChartManage_Tag_Video}}" />
+                                                    Text="{Localize ChartManage_Tag_Video}" />
                                             </Border>
                                         </StackPanel>
 
@@ -691,7 +690,7 @@
                                                     FontWeight="Normal"
                                                     Foreground="{DynamicResource SemiColorText0}"
                                                     Opacity="0.55"
-                                                    Text="{Binding Chart.UploaderDisplay}"
+                                                    Text="{Binding Chart.UploaderDisplay.Value}"
                                                     TextTrimming="CharacterEllipsis" />
                                             </Button>
                                             <Panel
@@ -715,7 +714,7 @@
                                                     MinHeight="0"
                                                     MinWidth="0"
                                                     Padding="0"
-                                                    ToolTip.Tip="{Localize {x:Static loc:XAMLLiteral.ChartManage_Delete}}"
+                                                    ToolTip.Tip="{Localize ChartManage_Delete}"
                                                     VerticalAlignment="Center"
                                                     Width="22">
                                                     <Button.Styles>

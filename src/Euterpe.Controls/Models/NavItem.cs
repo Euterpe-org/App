@@ -1,6 +1,6 @@
 namespace Euterpe.Controls.Models;
 
-public sealed class NavItem(string displayName, string navigateKey, string iconResourceKey = "") : ObservableObject
+public sealed class NavItem(LocalizedString displayName, string navigateKey, string iconResourceKey = "") : ObservableObject
 {
     public NavItem[] Children { get; init; } = [];
     public LocalizedString DisplayName { get; set; } = displayName;

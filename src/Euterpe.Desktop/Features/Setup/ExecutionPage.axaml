@@ -2,7 +2,6 @@
     xmlns="https://github.com/avaloniaui"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:loc="https://github.com/Euterpe-org/Euterpe/Localization"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:setup="using:Euterpe.Models.Setup"
     xmlns:shared="using:Euterpe.Shared"
@@ -36,7 +35,7 @@
                 FontSize="20"
                 FontWeight="Bold"
                 HorizontalAlignment="Center"
-                Text="{Localize {x:Static loc:XAMLLiteral.Setup_Title_SettingUp}}"
+                Text="{Localize Setup_Title_SettingUp}"
                 Theme="{StaticResource TitleTextBlock}" />
         </StackPanel>
 
@@ -86,7 +85,7 @@
                                     Grid.Column="2"
                                     Command="{Binding $parent[UserControl].DataContext.RetryCommand}"
                                     CommandParameter="{Binding}"
-                                    Content="{Localize {x:Static loc:XAMLLiteral.Button_Retry}}"
+                                    Content="{Localize Button_Retry}"
                                     IsEnabled="{Binding !$parent[UserControl].DataContext.State.IsRunning}"
                                     IsVisible="{Binding CanRetry}"
                                     VerticalAlignment="Center" />
@@ -113,7 +112,7 @@
             <Button
                 Command="{Binding RevealFileCommand}"
                 CommandParameter="{x:Static shared:PathConstants.LogFilePath}"
-                Content="{Localize {x:Static loc:XAMLLiteral.Button_OpenLog}}"
+                Content="{Localize Button_OpenLog}"
                 HorizontalAlignment="Center"
                 IsVisible="{Binding State.HasFailedSteps}" />
         </StackPanel>

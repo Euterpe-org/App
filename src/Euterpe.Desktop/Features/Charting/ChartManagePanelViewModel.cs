@@ -3,7 +3,7 @@ using System.Reactive.Linq;
 
 namespace Euterpe.Features.Charting;
 
-[Route("/charting/manage", DisplayName = Panel_Charting_ChartManage, Order = 0)]
+[Route("/charting/manage", DisplayName = nameof(Panel_Charting_ChartManage), Order = 0)]
 public sealed partial class ChartManagePanelViewModel : ViewModelBase
 {
     private readonly SourceCache<ChartManageItemViewModel, string> _sourceCache = new(x => x.Chart.FolderPath);
@@ -11,7 +11,7 @@ public sealed partial class ChartManagePanelViewModel : ViewModelBase
     public static IReadOnlyList<EnumOption<ChartSource>> ChartSources { get; } =
     [
         .. ChartSourceExtensions.GetValues().Select(static source =>
-            new EnumOption<ChartSource>(source, $"{nameof(ChartSource)}_{source.ToStringFast()}"))
+            new EnumOption<ChartSource>(source))
     ];
 
     [ObservableProperty]

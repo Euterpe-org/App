@@ -17,17 +17,17 @@ internal sealed partial class ChartManageService
             var folderPath = await GameDownloadManager.DownloadChartAsync(cid, progress, cancellationToken).ConfigureAwait(false);
             if (await CacheLocalChartAsync(folderPath, ChartSource.Online).ConfigureAwait(false) is not { } chart)
             {
-                NotificationService.ErrorLight(Notification_Content_Chart_Download_Failed, cid);
+                NotificationService.ErrorLight(Notification_Content_Chart_Download_Failed(cid));
                 return;
             }
 
             Logger.LogInformation("Chart {Cid} downloaded and added to cache", cid);
-            NotificationService.SuccessLight(Notification_Content_Chart_Download_Success, chart.Manifest.Meta.Name);
+            NotificationService.SuccessLight(Notification_Content_Chart_Download_Success(chart.Manifest.Meta.Name));
         }
         catch (Exception ex)
         {
             Logger.LogError(ex, "Failed to download chart {Cid}", cid);
-            NotificationService.ErrorLight(Notification_Content_Chart_Download_Failed, cid);
+            NotificationService.ErrorLight(Notification_Content_Chart_Download_Failed(cid));
         }
     }
 
@@ -79,12 +79,12 @@ internal sealed partial class ChartManageService
         if (RemoveLocalChart(folderPath))
         {
             Logger.LogInformation("Chart at {FolderPath} removed", folderPath);
-            NotificationService.SuccessLight(Notification_Content_Chart_Remove_Success, name);
+            NotificationService.SuccessLight(Notification_Content_Chart_Remove_Success(name));
         }
         else
         {
             Logger.LogError("Failed to remove chart at {FolderPath}", folderPath);
-            NotificationService.ErrorLight(Notification_Content_Chart_Remove_Failed, name);
+            NotificationService.ErrorLight(Notification_Content_Chart_Remove_Failed(name));
         }
 
         return Task.CompletedTask;

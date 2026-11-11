@@ -3,7 +3,7 @@ using Euterpe.Core.Http.Clients;
 
 namespace Euterpe.Features.About;
 
-[Route("/about", DisplayName = Page_About, Icon = "InfoCircle", Order = 5)]
+[Route("/about", DisplayName = nameof(Page_About), Icon = "InfoCircle", Order = 5)]
 [AppSingleton]
 public sealed partial class AboutPageViewModel : ViewModelBase
 {

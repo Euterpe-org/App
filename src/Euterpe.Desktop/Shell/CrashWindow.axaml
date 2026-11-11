@@ -1,7 +1,6 @@
 <u:UrsaWindow
     xmlns="https://github.com/avaloniaui"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:loc="https://github.com/Euterpe-org/Euterpe/Localization"
     xmlns:shared="using:Euterpe.Shared"
     xmlns:u="https://irihi.tech/ursa"
     xmlns:vm="using:Euterpe.Shell"
@@ -12,7 +11,7 @@
     Icon="/Assets/Icon.ico"
     MinHeight="380"
     MinWidth="520"
-    Title="{Localize {x:Static loc:XAMLLiteral.CrashDialog_Title}}"
+    Title="{Localize CrashDialog_Title}"
     Width="680"
     WindowStartupLocation="CenterOwner">
 
@@ -35,7 +34,7 @@
                     FontSize="18"
                     FontWeight="SemiBold"
                     Foreground="{DynamicResource SemiRed5}"
-                    Text="{Localize {x:Static loc:XAMLLiteral.CrashDialog_Header}}" />
+                    Text="{Localize CrashDialog_Header}" />
                 <TextBlock
                     FontFamily="Cascadia Code,Consolas,Menlo,monospace"
                     FontSize="12"
@@ -93,11 +92,11 @@
                     Spacing="8">
                     <Button
                         Command="{Binding ContinueCommand}"
-                        Content="{Localize {x:Static loc:XAMLLiteral.CrashDialog_Button_Continue}}" />
+                        Content="{Localize CrashDialog_Button_Continue}" />
                     <Button
                         Classes="Danger"
                         Command="{Binding ExitCommand}"
-                        Content="{Localize {x:Static loc:XAMLLiteral.CrashDialog_Button_Exit}}" />
+                        Content="{Localize CrashDialog_Button_Exit}" />
                 </StackPanel>
 
                 <StackPanel
@@ -106,15 +105,15 @@
                     Spacing="8">
                     <Button
                         Command="{Binding CopyCommand}"
-                        Content="{Localize {x:Static loc:XAMLLiteral.CrashDialog_Button_Copy}}" />
+                        Content="{Localize CrashDialog_Button_Copy}" />
                     <Button
                         Command="{Binding RevealFileCommand}"
                         CommandParameter="{x:Static shared:PathConstants.LogFilePath}"
-                        Content="{Localize {x:Static loc:XAMLLiteral.Button_OpenLog}}" />
+                        Content="{Localize Button_OpenLog}" />
                     <Button
                         Command="{Binding OpenUrlCommand}"
                         CommandParameter="https://github.com/Euterpe-org/Euterpe/issues/new/choose"
-                        Content="{Localize {x:Static loc:XAMLLiteral.CrashDialog_Button_Feedback}}" />
+                        Content="{Localize CrashDialog_Button_Feedback}" />
                 </StackPanel>
             </DockPanel>
         </Border>

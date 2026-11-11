@@ -56,13 +56,13 @@ internal sealed partial class ChartManageService
         var notMigrated = failed + unsupported;
         if (notMigrated > 0)
         {
-            NotificationService.WarningLight(Notification_Content_Migration_Partial, migrated, notMigrated);
+            NotificationService.WarningLight(Notification_Content_Migration_Partial(migrated, notMigrated));
             return migrated + notMigrated;
         }
 
         if (migrated > 0)
         {
-            NotificationService.SuccessLight(Notification_Content_Migration_Success, migrated);
+            NotificationService.SuccessLight(Notification_Content_Migration_Success(migrated));
         }
 
         return migrated;

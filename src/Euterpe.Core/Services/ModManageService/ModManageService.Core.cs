@@ -69,12 +69,12 @@ internal sealed partial class ModManageService
         catch (Exception ex)
         {
             Logger.LogError(ex, "Failed to install mod {ModName}", mod.Name);
-            NotificationService.ErrorLight(Notification_Content_Mod_Install_Failed, mod.Name);
+            NotificationService.ErrorLight(Notification_Content_Mod_Install_Failed(mod.Name));
             return;
         }
 
         Logger.LogInformation("Mod {ModName} successfully installed", mod.Name);
-        NotificationService.SuccessLight(Notification_Content_Mod_Install_Success, mod.Name);
+        NotificationService.SuccessLight(Notification_Content_Mod_Install_Success(mod.Name));
     }
 
     private async Task<bool> UpdateModCoreAsync(ModDto mod)
@@ -106,12 +106,12 @@ internal sealed partial class ModManageService
         catch (Exception ex)
         {
             Logger.LogError(ex, "Failed to reinstall mod {ModName}", mod.Name);
-            NotificationService.ErrorLight(Notification_Content_Mod_Reinstall_Failed, mod.Name);
+            NotificationService.ErrorLight(Notification_Content_Mod_Reinstall_Failed(mod.Name));
             return;
         }
 
         Logger.LogInformation("Mod {ModName} successfully reinstalled", mod.Name);
-        NotificationService.SuccessLight(Notification_Content_Mod_Reinstall_Success, mod.Name);
+        NotificationService.SuccessLight(Notification_Content_Mod_Reinstall_Success(mod.Name));
     }
 
     private async Task UninstallModCoreAsync(ModDto mod)
@@ -121,7 +121,7 @@ internal sealed partial class ModManageService
         if (!FileSystemService.TryDeleteFile(Path.Combine(GameConfig.ModsFolder, mod.LocalFileName)))
         {
             Logger.LogError("Failed to uninstall mod {ModName}: could not delete file {ModLocalFileName}", mod.Name, mod.LocalFileName);
-            NotificationService.ErrorLight(Notification_Content_Mod_Uninstall_Failed, mod.Name);
+            NotificationService.ErrorLight(Notification_Content_Mod_Uninstall_Failed(mod.Name));
             return;
         }
 
@@ -129,7 +129,7 @@ internal sealed partial class ModManageService
         mod.RemoveLocalInfo();
 
         Logger.LogInformation("Mod {ModName} successfully uninstalled", mod.Name);
-        NotificationService.SuccessLight(Notification_Content_Mod_Uninstall_Success, mod.Name);
+        NotificationService.SuccessLight(Notification_Content_Mod_Uninstall_Success(mod.Name));
     }
 
     private async Task ToggleModCoreAsync(ModDto mod)
@@ -142,7 +142,7 @@ internal sealed partial class ModManageService
 
         if (!success)
         {
-            NotificationService.ErrorLight(Notification_Content_Mod_Toggle_Failed, mod.Name);
+            NotificationService.ErrorLight(Notification_Content_Mod_Toggle_Failed(mod.Name));
         }
     }
 

@@ -1,13 +1,13 @@
 namespace Euterpe.Features.Setting;
 
-[Route("/setting", DisplayName = Page_Setting, Icon = "Setting", Order = 4)]
+[Route("/setting", DisplayName = nameof(Page_Setting), Icon = "Setting", Order = 4)]
 [AppSingleton]
 public sealed partial class SettingPageViewModel : ViewModelBase
 {
     public static IReadOnlyList<EnumOption<UpdateChannel>> UpdateChannels { get; } =
     [
         .. UpdateChannelExtensions.GetValues().Select(static channel =>
-            new EnumOption<UpdateChannel>(channel, $"{nameof(UpdateChannel)}_{channel.ToStringFast()}"))
+            new EnumOption<UpdateChannel>(channel))
     ];
 
     [ObservableProperty]

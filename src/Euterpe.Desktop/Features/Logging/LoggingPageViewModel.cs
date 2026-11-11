@@ -1,6 +1,6 @@
 namespace Euterpe.Features.Logging;
 
-[Route("/logging", DisplayName = Page_Logging, Icon = "Terminal", Order = 3)]
+[Route("/logging", DisplayName = nameof(Page_Logging), Icon = "Terminal", Order = 3)]
 public sealed partial class LoggingPageViewModel : NavViewModelBase
 {
     public IReadOnlyList<DropDownButtonItem> DropDownButtons => field ??=

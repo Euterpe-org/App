@@ -2,7 +2,6 @@
     xmlns="https://github.com/avaloniaui"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:loc="https://github.com/Euterpe-org/Euterpe/Localization"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:vm="using:Euterpe.Features.Share"
     x:Class="Euterpe.Features.Share.ShareImportDialog"
@@ -53,14 +52,14 @@
             <Button
                 Classes="Primary"
                 Command="{Binding ImportCommand, Mode=OneTime}"
-                Content="{Localize {x:Static loc:XAMLLiteral.Share_Import_Start}}"
+                Content="{Localize Share_Import_Start}"
                 HorizontalAlignment="Stretch"
                 IsEnabled="{Binding CanImport, Mode=OneWay}" />
             <Button
                 Grid.Column="1"
                 Command="{Binding RefreshCommand, Mode=OneTime}"
                 Margin="8,0,0,0"
-                ToolTip.Tip="{Localize {x:Static loc:XAMLLiteral.Share_Import_Refresh}}">
+                ToolTip.Tip="{Localize Share_Import_Refresh}">
                 <PathIcon
                     Data="{StaticResource SemiIconRefresh}"
                     Height="14"
@@ -82,7 +81,7 @@
                 Text="{Binding ProgressLabel, Mode=OneWay}" />
             <Button
                 Command="{Binding CancelImportCommand, Mode=OneTime}"
-                Content="{Localize {x:Static loc:XAMLLiteral.Share_Import_Cancel}}"
+                Content="{Localize Share_Import_Cancel}"
                 HorizontalAlignment="Stretch" />
         </StackPanel>
     </StackPanel>

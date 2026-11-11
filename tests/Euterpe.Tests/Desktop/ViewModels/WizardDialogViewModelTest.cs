@@ -1,5 +1,6 @@
 using Euterpe.Features.Setup;
 using Euterpe.Features.Wizard;
+using Euterpe.Localization;
 using Microsoft.Extensions.Logging.Abstractions;
 
 namespace Euterpe.Tests.Desktop.ViewModels;
@@ -35,7 +36,7 @@ public sealed class WizardDialogViewModelTest
     public async Task PrepareForFullSetupAsync_PreviousSetupFinished_PopulatesPagesAndResetsState()
     {
         var state = new SetupState();
-        state.Steps.Add(new SetupStepState { Kinds = SetupOptionKinds.MelonLoader, DisplayName = "stale" });
+        state.Steps.Add(new SetupStepState { Kinds = SetupOptionKinds.MelonLoader, DisplayName = LocalizedString.FromText("stale") });
         state.Stage = SetupExecutionStage.Finished;
 
         var gameConfig = new MuseDashConfig();

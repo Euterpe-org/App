@@ -30,24 +30,24 @@ internal sealed partial class ChartManageService : IChartManageService, IDisposa
         if (FindOnlineChartByCid(cid) is not { } chart)
         {
             Logger.LogWarning("Update requested for unknown online chart {Cid}", cid);
-            NotificationService.ErrorLight(Notification_Content_Chart_Update_Failed, cid);
+            NotificationService.ErrorLight(Notification_Content_Chart_Update_Failed(cid));
             return;
         }
 
         var results = await CheckAndApplyUpdatesAsync([chart], cancellationToken).ConfigureAwait(false);
         if (results is not [var (success, displayName)])
         {
-            NotificationService.NoticeLight(Notification_Content_Chart_Update_UpToDate, chart.Manifest.Meta.Name);
+            NotificationService.NoticeLight(Notification_Content_Chart_Update_UpToDate(chart.Manifest.Meta.Name));
             return;
         }
 
         if (success)
         {
-            NotificationService.SuccessLight(Notification_Content_Chart_Update_Success, displayName);
+            NotificationService.SuccessLight(Notification_Content_Chart_Update_Success(displayName));
         }
         else
         {
-            NotificationService.ErrorLight(Notification_Content_Chart_Update_Failed, displayName);
+            NotificationService.ErrorLight(Notification_Content_Chart_Update_Failed(displayName));
         }
     }
 
@@ -65,11 +65,11 @@ internal sealed partial class ChartManageService : IChartManageService, IDisposa
 
         if (failed > 0)
         {
-            NotificationService.WarningLight(Notification_Content_Chart_UpdateAll_Partial, updated, failed);
+            NotificationService.WarningLight(Notification_Content_Chart_UpdateAll_Partial(updated, failed));
         }
         else if (updated > 0)
         {
-            NotificationService.SuccessLight(Notification_Content_Chart_UpdateAll_Success, updated);
+            NotificationService.SuccessLight(Notification_Content_Chart_UpdateAll_Success(updated));
         }
 
         return results.Count;
@@ -110,11 +110,11 @@ internal sealed partial class ChartManageService : IChartManageService, IDisposa
         var failed = folderPaths.Count - succeeded;
         if (failed > 0)
         {
-            NotificationService.WarningLight(Notification_Content_Chart_BulkDelete_Partial, succeeded, failed);
+            NotificationService.WarningLight(Notification_Content_Chart_BulkDelete_Partial(succeeded, failed));
         }
         else if (succeeded > 0)
         {
-            NotificationService.SuccessLight(Notification_Content_Chart_BulkDelete_Success, succeeded);
+            NotificationService.SuccessLight(Notification_Content_Chart_BulkDelete_Success(succeeded));
         }
 
         return succeeded;

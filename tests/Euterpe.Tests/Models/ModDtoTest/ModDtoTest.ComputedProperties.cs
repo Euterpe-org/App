@@ -75,9 +75,7 @@ public sealed partial class ModDtoTest
         mod.DuplicatedModPaths = ["MyMod.dll", "MyMod.disabled"];
         mod.State = ModState.Duplicated;
 
-        await Assert.That(mod.ReasonDisplay).IsEqualTo(string.Format(
-            XAML.ModState_Duplicated_Reason,
-            "MyMod.dll, MyMod.disabled"));
+        await Assert.That(mod.ReasonDisplay?.Value).IsEqualTo(XAML.ModState_Duplicated_Reason("MyMod.dll, MyMod.disabled"));
     }
 
     [Test]
@@ -88,7 +86,7 @@ public sealed partial class ModDtoTest
         mod.IncompatibleReason = ModIncompatibleReason.GameVersion;
         mod.State = ModState.Incompatible;
 
-        await Assert.That(mod.ReasonDisplay).IsEqualTo(string.Format(XAML.ModIncompatibleReason_GameVersion, "5.0.0"));
+        await Assert.That(mod.ReasonDisplay?.Value).IsEqualTo(XAML.ModIncompatibleReason_GameVersion("5.0.0"));
     }
 
     [Test]

@@ -6,7 +6,7 @@ public sealed class ProgressDialogService
 {
     public Task ExecuteAsync(
         string title,
-        string hint,
+        LocalizedString hint,
         bool isIndeterminate,
         Func<IProgress<BatchProgress>, Task> operation) =>
         ExecuteCoreAsync(title, hint, isIndeterminate, async progress =>
@@ -17,14 +17,14 @@ public sealed class ProgressDialogService
 
     public Task<TResult> ExecuteAsync<TResult>(
         string title,
-        string hint,
+        LocalizedString hint,
         bool isIndeterminate,
         Func<IProgress<BatchProgress>, Task<TResult>> operation) =>
         ExecuteCoreAsync(title, hint, isIndeterminate, operation);
 
     private async Task<TResult> ExecuteCoreAsync<TResult>(
         string title,
-        string hint,
+        LocalizedString hint,
         bool isIndeterminate,
         Func<IProgress<BatchProgress>, Task<TResult>> operation)
     {

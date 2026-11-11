@@ -6,7 +6,7 @@ public sealed partial class DifficultyEditViewModel : ObservableObject
 {
     public ChartDifficulty Difficulty { get; }
 
-    public LocalizedString DifficultyName => $"ChartDifficulty_{Difficulty.ToStringFast()}";
+    public LocalizedString DifficultyName => XAML.Get($"ChartDifficulty_{Difficulty.ToStringFast()}");
 
     [ObservableProperty]
     public partial string Rating { get; set; }

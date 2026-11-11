@@ -1,13 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <XmlnsDefinitionNamespace>https://github.com/Euterpe-org/Euterpe/Localization</XmlnsDefinitionNamespace>
         <DefaultLocalizationProvider>XAML</DefaultLocalizationProvider>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="Avalonia"/>
-        <PackageReference Include="ResXLocalize.Avalonia.R3"/>
+        <PackageReference Include="ResXLocalize.Avalonia"/>
     </ItemGroup>
 
 </Project>

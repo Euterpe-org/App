@@ -19,7 +19,7 @@ public sealed partial class ModManageServiceTest
         using var _ = Assert.Multiple();
         await Assert.That(mod.IsDisabled).IsFalse();
         fileSystemServiceMock.TryMoveFile(Any<string>(), Any<string>(), Any<bool>()).WasCalled(Times.Once);
-        notificationServiceMock.ErrorLight(Any<string>(), RefStructArg<ReadOnlySpan<object>>.Any).WasCalled(Times.Never);
+        notificationServiceMock.ErrorLight(Any<string>(), Any<TimeSpan?>()).WasCalled(Times.Never);
     }
 
     [Test]
@@ -39,7 +39,7 @@ public sealed partial class ModManageServiceTest
         using var _ = Assert.Multiple();
         await Assert.That(mod.IsDisabled).IsTrue();
         fileSystemServiceMock.TryMoveFile(Any<string>(), Any<string>(), Any<bool>()).WasCalled(Times.Once);
-        notificationServiceMock.ErrorLight(Any<string>(), RefStructArg<ReadOnlySpan<object>>.Any).WasCalled(Times.Never);
+        notificationServiceMock.ErrorLight(Any<string>(), Any<TimeSpan?>()).WasCalled(Times.Never);
     }
 
     [Test]
@@ -60,7 +60,7 @@ public sealed partial class ModManageServiceTest
 
         using var _ = Assert.Multiple();
         await Assert.That(mod.IsDisabled).IsEqualTo(initiallyDisabled);
-        notificationServiceMock.ErrorLight(Any<string>(), RefStructArg<ReadOnlySpan<object>>.Any).WasCalled(Times.Once);
+        notificationServiceMock.ErrorLight(Any<string>(), Any<TimeSpan?>()).WasCalled(Times.Once);
     }
 
     [Test]

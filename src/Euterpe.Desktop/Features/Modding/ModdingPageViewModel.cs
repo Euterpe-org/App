@@ -1,6 +1,6 @@
 namespace Euterpe.Features.Modding;
 
-[Route("/modding", DisplayName = Page_Modding, Icon = "Wrench", Order = 1)]
+[Route("/modding", DisplayName = nameof(Page_Modding), Icon = "Wrench", Order = 1)]
 public sealed partial class ModdingPageViewModel : NavViewModelBase
 {
     public IReadOnlyList<DropDownButtonItem> DropDownButtons => field ??=

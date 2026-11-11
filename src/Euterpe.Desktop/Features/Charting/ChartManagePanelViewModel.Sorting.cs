@@ -5,7 +5,7 @@ public sealed partial class ChartManagePanelViewModel
     public static IReadOnlyList<EnumOption<ChartSortField>> SortFields { get; } =
     [
         .. ChartSortFieldExtensions.GetValues().Select(static field =>
-            new EnumOption<ChartSortField>(field, $"{nameof(ChartSortField)}_{field.ToStringFast()}"))
+            new EnumOption<ChartSortField>(field))
     ];
 
     [ObservableProperty]

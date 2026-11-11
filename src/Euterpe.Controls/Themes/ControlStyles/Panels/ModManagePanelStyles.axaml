@@ -1,29 +1,28 @@
 <Styles
     xmlns="https://github.com/avaloniaui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:loc="https://github.com/Euterpe-org/Euterpe/Localization">
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
     <Style
         Selector="Label">
         <Style
             Selector="^.Orange">
-            <Setter Property="Content" Value="{Localize {x:Static loc:XAMLLiteral.ModState_Duplicated}}" />
+            <Setter Property="Content" Value="{Localize ModState_Duplicated}" />
         </Style>
         <Style
             Selector="^.Yellow">
-            <Setter Property="Content" Value="{Localize {x:Static loc:XAMLLiteral.ModState_Modified}}" />
+            <Setter Property="Content" Value="{Localize ModState_Modified}" />
         </Style>
         <Style
             Selector="^.Red">
-            <Setter Property="Content" Value="{Localize {x:Static loc:XAMLLiteral.ModState_Incompatible}}" />
+            <Setter Property="Content" Value="{Localize ModState_Incompatible}" />
         </Style>
         <Style
             Selector="^.Purple">
-            <Setter Property="Content" Value="{Localize {x:Static loc:XAMLLiteral.ModState_Newer}}" />
+            <Setter Property="Content" Value="{Localize ModState_Newer}" />
         </Style>
         <Style
             Selector="^.Green">
-            <Setter Property="Content" Value="{Localize {x:Static loc:XAMLLiteral.ModState_Outdated}}" />
+            <Setter Property="Content" Value="{Localize ModState_Outdated}" />
         </Style>
     </Style>
 

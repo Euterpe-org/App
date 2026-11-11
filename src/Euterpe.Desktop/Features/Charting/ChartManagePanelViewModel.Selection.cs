@@ -16,7 +16,7 @@ public sealed partial class ChartManagePanelViewModel
     public partial bool CanShareSelection { get; set; }
 
     public bool HasSelection => SelectedCount > 0;
-    public string SelectedCountDisplay => string.Format(CultureInfo.CurrentCulture, XAML.ChartManage_SelectedCount, SelectedCount);
+    public string SelectedCountDisplay => XAML.ChartManage_SelectedCount(SelectedCount);
 
     private void ObserveSelection()
     {
@@ -66,7 +66,7 @@ public sealed partial class ChartManagePanelViewModel
             return;
         }
 
-        var result = await MessageBoxService.WarningConfirmAsync(MessageBox_Content_Chart_BulkDelete_Confirm, folderPaths.Length).ConfigureAwait(true);
+        var result = await MessageBoxService.WarningConfirmAsync(MessageBox_Content_Chart_BulkDelete_Confirm(folderPaths.Length)).ConfigureAwait(true);
         if (!result)
         {
             return;

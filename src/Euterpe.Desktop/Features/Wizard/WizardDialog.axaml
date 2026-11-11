@@ -2,7 +2,6 @@
     xmlns="https://github.com/avaloniaui"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:loc="https://github.com/Euterpe-org/Euterpe/Localization"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:setup="using:Euterpe.Features.Setup"
     xmlns:svm="using:Euterpe.Features.Setup"
@@ -60,7 +59,7 @@
                 <Button
                     DockPanel.Dock="Right"
                     Command="{Binding BackCommand}"
-                    Content="{Localize {x:Static loc:XAMLLiteral.Button_Back}}"
+                    Content="{Localize Button_Back}"
                     IsVisible="{Binding CanGoBack}"
                     Margin="0,0,8,0" />
 

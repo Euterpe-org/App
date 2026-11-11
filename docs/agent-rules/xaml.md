@@ -14,7 +14,7 @@
 
 ## Localization
 
-- All user-facing text via `{Localize {x:Static loc:XAMLLiteral.Key}}` — never hardcoded strings.
+- All user-facing text via `{Localize Key}` — never hardcoded strings.
 
 ## Styling
 

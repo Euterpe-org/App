@@ -3,7 +3,6 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:e="https://github.com/Euterpe-org/Euterpe"
-    xmlns:loc="https://github.com/Euterpe-org/Euterpe/Localization"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:models="using:Euterpe.Models.Charts"
     xmlns:u="https://irihi.tech/ursa"
@@ -79,7 +78,7 @@
                             Height="16"
                             Width="16" />
                         <TextBlock
-                            Text="{Localize {x:Static loc:XAMLLiteral.EpkEditor_Back}}" />
+                            Text="{Localize EpkEditor_Back}" />
                     </StackPanel>
                 </Button>
 
@@ -140,7 +139,7 @@
                     CommandParameter="{Binding FolderPath}"
                     Grid.Column="3"
                     Padding="8"
-                    ToolTip.Tip="{Localize {x:Static loc:XAMLLiteral.EpkEditor_OpenFolder}}"
+                    ToolTip.Tip="{Localize EpkEditor_OpenFolder}"
                     VerticalAlignment="Center">
                     <PathIcon
                         Data="{StaticResource SemiIconFolderOpen}"
@@ -182,7 +181,7 @@
                                 Spacing="16">
                                 <TextBlock
                                     Classes="SectionTitle"
-                                    Text="{Localize {x:Static loc:XAMLLiteral.EpkEditor_Section_Identity}}" />
+                                    Text="{Localize EpkEditor_Section_Identity}" />
                                 <StackPanel
                                     Classes="Field">
                                     <StackPanel
@@ -190,7 +189,7 @@
                                         Spacing="2">
                                         <TextBlock
                                             Classes="FieldLabel"
-                                            Text="{Localize {x:Static loc:XAMLLiteral.EpkEditor_Field_Name}}" />
+                                            Text="{Localize EpkEditor_Field_Name}" />
                                         <TextBlock
                                             Foreground="{DynamicResource SemiColorDanger}"
                                             Text="*" />
@@ -205,7 +204,7 @@
                                         Spacing="2">
                                         <TextBlock
                                             Classes="FieldLabel"
-                                            Text="{Localize {x:Static loc:XAMLLiteral.EpkEditor_Field_Author}}" />
+                                            Text="{Localize EpkEditor_Field_Author}" />
                                         <TextBlock
                                             Foreground="{DynamicResource SemiColorDanger}"
                                             Text="*" />
@@ -217,7 +216,7 @@
                                     Classes="Field">
                                     <TextBlock
                                         Classes="FieldLabel"
-                                        Text="{Localize {x:Static loc:XAMLLiteral.EpkEditor_Field_NameRomanized}}" />
+                                        Text="{Localize EpkEditor_Field_NameRomanized}" />
                                     <TextBox
                                         Text="{Binding NameRomanized}" />
                                 </StackPanel>
@@ -231,12 +230,12 @@
                                 Spacing="16">
                                 <TextBlock
                                     Classes="SectionTitle"
-                                    Text="{Localize {x:Static loc:XAMLLiteral.EpkEditor_Section_Discovery}}" />
+                                    Text="{Localize EpkEditor_Section_Discovery}" />
                                 <StackPanel
                                     Classes="Field">
                                     <TextBlock
                                         Classes="FieldLabel"
-                                        Text="{Localize {x:Static loc:XAMLLiteral.EpkEditor_Field_Description}}" />
+                                        Text="{Localize EpkEditor_Field_Description}" />
                                     <TextBox
                                         AcceptsReturn="True"
                                         Height="104"
@@ -250,7 +249,7 @@
                                     <TextBlock
                                         Classes="FieldLabel"
                                         Grid.Column="0"
-                                        Text="{Localize {x:Static loc:XAMLLiteral.EpkEditor_Field_SafeForStreamer}}"
+                                        Text="{Localize EpkEditor_Field_SafeForStreamer}"
                                         VerticalAlignment="Center" />
                                     <ToggleSwitch
                                         Grid.Column="1"
@@ -260,10 +259,10 @@
                                     Classes="Field">
                                     <TextBlock
                                         Classes="FieldLabel"
-                                        Text="{Localize {x:Static loc:XAMLLiteral.EpkEditor_Field_SearchKeywords}}" />
+                                        Text="{Localize EpkEditor_Field_SearchKeywords}" />
                                     <u:TagInput
                                         LostFocusBehavior="Add"
-                                        PlaceholderText="{Localize {x:Static loc:XAMLLiteral.EpkEditor_Keywords_Watermark}}"
+                                        PlaceholderText="{Localize EpkEditor_Keywords_Watermark}"
                                         Separator=","
                                         Tags="{Binding SearchKeywords}" />
                                 </StackPanel>
@@ -280,7 +279,7 @@
                                     <TextBlock
                                         Classes="SectionTitle"
                                         Grid.Column="0"
-                                        Text="{Localize {x:Static loc:XAMLLiteral.EpkEditor_Field_Files}}"
+                                        Text="{Localize EpkEditor_Field_Files}"
                                         VerticalAlignment="Center" />
                                     <Button
                                         Classes="Transparent"
@@ -295,7 +294,7 @@
                                                 Height="14"
                                                 Width="14" />
                                             <TextBlock
-                                                Text="{Localize {x:Static loc:XAMLLiteral.EpkEditor_Files_Refresh}}" />
+                                                Text="{Localize EpkEditor_Files_Refresh}" />
                                         </StackPanel>
                                     </Button>
                                 </Grid>
@@ -337,7 +336,7 @@
                                 Spacing="16">
                                 <TextBlock
                                     Classes="SectionTitle"
-                                    Text="{Localize {x:Static loc:XAMLLiteral.EpkEditor_Section_ChartInfo}}" />
+                                    Text="{Localize EpkEditor_Section_ChartInfo}" />
                                 <StackPanel
                                     Classes="Field">
                                     <StackPanel
@@ -345,7 +344,7 @@
                                         Spacing="2">
                                         <TextBlock
                                             Classes="FieldLabel"
-                                            Text="{Localize {x:Static loc:XAMLLiteral.EpkEditor_Field_Scene}}" />
+                                            Text="{Localize EpkEditor_Field_Scene}" />
                                         <TextBlock
                                             Foreground="{DynamicResource SemiColorDanger}"
                                             Text="*" />
@@ -357,7 +356,7 @@
                                     Classes="Field">
                                     <TextBlock
                                         Classes="FieldLabel"
-                                        Text="{Localize {x:Static loc:XAMLLiteral.EpkEditor_Field_SceneEgg}}" />
+                                        Text="{Localize EpkEditor_Field_SceneEgg}" />
                                     <TextBox
                                         Text="{Binding SceneEgg}" />
                                 </StackPanel>
@@ -370,7 +369,7 @@
                                             Spacing="2">
                                             <TextBlock
                                                 Classes="FieldLabel"
-                                                Text="{Localize {x:Static loc:XAMLLiteral.EpkEditor_Field_Bpm}}" />
+                                                Text="{Localize EpkEditor_Field_Bpm}" />
                                             <TextBlock
                                                 Foreground="{DynamicResource SemiColorDanger}"
                                                 Text="*" />
@@ -385,7 +384,7 @@
                                         <TextBlock
                                             Classes="FieldLabel"
                                             Grid.Column="0"
-                                            Text="{Localize {x:Static loc:XAMLLiteral.EpkEditor_Field_TempoVariable}}"
+                                            Text="{Localize EpkEditor_Field_TempoVariable}"
                                             VerticalAlignment="Center" />
                                         <ToggleSwitch
                                             Grid.Column="1"
@@ -398,7 +397,7 @@
                                             Grid.Column="0"
                                             Maximum="999"
                                             Minimum="0"
-                                            PlaceholderText="{Localize {x:Static loc:XAMLLiteral.EpkEditor_Field_BpmMin}}"
+                                            PlaceholderText="{Localize EpkEditor_Field_BpmMin}"
                                             Value="{Binding BpmMin}" />
                                         <TextBlock
                                             Grid.Column="1"
@@ -409,7 +408,7 @@
                                             Grid.Column="2"
                                             Maximum="999"
                                             Minimum="0"
-                                            PlaceholderText="{Localize {x:Static loc:XAMLLiteral.EpkEditor_Field_BpmMax}}"
+                                            PlaceholderText="{Localize EpkEditor_Field_BpmMax}"
                                             Value="{Binding BpmMax}" />
                                     </Grid>
                                 </StackPanel>
@@ -418,7 +417,7 @@
                                     IsVisible="{Binding HasVideo}">
                                     <TextBlock
                                         Classes="FieldLabel"
-                                        Text="{Localize {x:Static loc:XAMLLiteral.EpkEditor_Field_BackgroundVideoOpacity}}" />
+                                        Text="{Localize EpkEditor_Field_BackgroundVideoOpacity}" />
                                     <u:NumericFloatUpDown
                                         HorizontalAlignment="Left"
                                         Maximum="1"
@@ -437,7 +436,7 @@
                                 Spacing="12">
                                 <TextBlock
                                     Classes="SectionTitle"
-                                    Text="{Localize {x:Static loc:XAMLLiteral.EpkEditor_Section_Maps}}" />
+                                    Text="{Localize EpkEditor_Section_Maps}" />
                                 <ItemsControl
                                     ItemsSource="{Binding Maps}">
                                     <ItemsControl.ItemsPanel>
@@ -464,14 +463,14 @@
                                                     VerticalAlignment="Center" />
                                                 <TextBox
                                                     Grid.Column="2"
-                                                    PlaceholderText="{Localize {x:Static loc:XAMLLiteral.EpkEditor_Map_Rating}}"
+                                                    PlaceholderText="{Localize EpkEditor_Map_Rating}"
                                                     Text="{Binding Rating}"
                                                     VerticalAlignment="Center" />
                                                 <u:TagInput
                                                     Grid.Column="3"
                                                     LostFocusBehavior="Add"
                                                     Margin="10,0,0,0"
-                                                    PlaceholderText="{Localize {x:Static loc:XAMLLiteral.EpkEditor_Charters_Watermark}}"
+                                                    PlaceholderText="{Localize EpkEditor_Charters_Watermark}"
                                                     Separator=","
                                                     Tags="{Binding Charters}"
                                                     VerticalAlignment="Center" />
@@ -490,12 +489,12 @@
                                 Spacing="16">
                                 <TextBlock
                                     Classes="SectionTitle"
-                                    Text="{Localize {x:Static loc:XAMLLiteral.EpkEditor_Section_HiddenMode}}" />
+                                    Text="{Localize EpkEditor_Section_HiddenMode}" />
                                 <StackPanel
                                     Classes="Field">
                                     <TextBlock
                                         Classes="FieldLabel"
-                                        Text="{Localize {x:Static loc:XAMLLiteral.EpkEditor_Field_HideMode}}" />
+                                        Text="{Localize EpkEditor_Field_HideMode}" />
                                     <TextBox
                                         Text="{Binding HideMode}" />
                                 </StackPanel>
@@ -503,7 +502,7 @@
                                     Classes="Field">
                                     <TextBlock
                                         Classes="FieldLabel"
-                                        Text="{Localize {x:Static loc:XAMLLiteral.EpkEditor_Field_HideRatingOverride}}" />
+                                        Text="{Localize EpkEditor_Field_HideRatingOverride}" />
                                     <TextBox
                                         Text="{Binding HideRatingOverride}" />
                                 </StackPanel>
@@ -511,7 +510,7 @@
                                     Classes="Field">
                                     <TextBlock
                                         Classes="FieldLabel"
-                                        Text="{Localize {x:Static loc:XAMLLiteral.EpkEditor_Field_HideMessage}}" />
+                                        Text="{Localize EpkEditor_Field_HideMessage}" />
                                     <TextBox
                                         Text="{Binding HideMessage}" />
                                 </StackPanel>
@@ -545,18 +544,18 @@
                     <TextBlock
                         Foreground="{DynamicResource SemiColorText2}"
                         IsVisible="{Binding BpmRangeInvalid}"
-                        Text="{Localize {x:Static loc:XAMLLiteral.EpkEditor_Hint_TempoRange}}"
+                        Text="{Localize EpkEditor_Hint_TempoRange}"
                         VerticalAlignment="Center" />
                     <TextBlock
                         Foreground="{DynamicResource SemiColorText2}"
                         IsVisible="{Binding !BpmRangeInvalid}"
-                        Text="{Localize {x:Static loc:XAMLLiteral.EpkEditor_Hint_Required}}"
+                        Text="{Localize EpkEditor_Hint_Required}"
                         VerticalAlignment="Center" />
                 </StackPanel>
                 <Button
                     Classes="Primary"
                     Command="{Binding SaveCommand}"
-                    Content="{Localize {x:Static loc:XAMLLiteral.EpkEditor_Save}}"
+                    Content="{Localize EpkEditor_Save}"
                     Grid.Column="1"
                     MinWidth="96" />
             </Grid>

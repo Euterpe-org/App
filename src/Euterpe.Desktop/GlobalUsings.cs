@@ -51,6 +51,6 @@ global using R3;
 global using Ursa.Controls;
 global using static Euterpe.Utils.DesktopUtils;
 global using static Euterpe.Localization.Interaction;
-global using static Euterpe.Localization.XAMLLiteral;
+global using static Euterpe.Localization.XAML;
 global using static Euterpe.Shared.BuildInfo;
 global using static Euterpe.Shared.PathConstants;

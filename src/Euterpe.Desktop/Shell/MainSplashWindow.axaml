@@ -2,7 +2,6 @@
     xmlns="https://github.com/avaloniaui"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:constants="using:Euterpe.Shared"
-    xmlns:loc="https://github.com/Euterpe-org/Euterpe/Localization"
     xmlns:u="https://irihi.tech/ursa"
     xmlns:vm="using:Euterpe.Shell"
     x:Class="Euterpe.Shell.MainSplashWindow"
@@ -58,7 +57,7 @@
                 FontSize="12"
                 Foreground="{DynamicResource SemiColorText2}"
                 IsVisible="{Binding AuthState.AuthorizeUrl, Converter={x:Static StringConverters.IsNullOrEmpty}}"
-                Text="{Localize {x:Static loc:XAMLLiteral.Splash_Loading}}"
+                Text="{Localize Splash_Loading}"
                 TextAlignment="Center" />
             <StackPanel
                 IsVisible="{Binding AuthState.AuthorizeUrl, Converter={x:Static StringConverters.IsNotNullOrEmpty}}"
@@ -66,19 +65,19 @@
                 <TextBlock
                     FontSize="12"
                     Foreground="{DynamicResource SemiColorText2}"
-                    Text="{Localize {x:Static loc:XAMLLiteral.Splash_LoginPrompt}}"
+                    Text="{Localize Splash_LoginPrompt}"
                     TextAlignment="Center"
                     TextWrapping="Wrap" />
                 <StackPanel Spacing="4">
                     <TextBlock
                         FontSize="12"
                         Foreground="{DynamicResource SemiColorText2}"
-                        Text="{Localize {x:Static loc:XAMLLiteral.Splash_BrowserNotOpened}}"
+                        Text="{Localize Splash_BrowserNotOpened}"
                         TextAlignment="Center" />
                     <TextBlock
                         FontSize="12"
                         Foreground="{DynamicResource SemiColorText3}"
-                        Text="{Localize {x:Static loc:XAMLLiteral.Splash_CopyLoginLinkHint}}"
+                        Text="{Localize Splash_CopyLoginLinkHint}"
                         TextAlignment="Center"
                         TextWrapping="Wrap" />
                 </StackPanel>
@@ -86,7 +85,7 @@
                     <Button
                         Classes="Small"
                         Command="{Binding CopyLoginLinkCommand}"
-                        Content="{Localize {x:Static loc:XAMLLiteral.Splash_CopyLoginLink}}"
+                        Content="{Localize Splash_CopyLoginLink}"
                         HorizontalAlignment="Center"
                         Theme="{DynamicResource OutlineButton}" />
                     <TextBlock

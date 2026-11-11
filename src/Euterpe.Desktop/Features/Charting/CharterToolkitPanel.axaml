@@ -3,7 +3,6 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:e="https://github.com/Euterpe-org/Euterpe"
-    xmlns:loc="https://github.com/Euterpe-org/Euterpe/Localization"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:vm="using:Euterpe.Features.Charting"
     x:Class="Euterpe.Features.Charting.CharterToolkitPanel"
@@ -22,8 +21,8 @@
             Classes="ContentListRoot"
             IsVisible="{Binding ActiveTool, Converter={x:Static ObjectConverters.IsNull}}">
             <e:LabeledSection
-                Description="{Localize {x:Static loc:XAMLLiteral.CharterToolkit_Offline_Description}}"
-                Title="{Localize {x:Static loc:XAMLLiteral.CharterToolkit_Offline_Title}}">
+                Description="{Localize CharterToolkit_Offline_Description}"
+                Title="{Localize CharterToolkit_Offline_Title}">
                 <Grid
                     ColumnDefinitions="*,16,*"
                     MaxWidth="820">
@@ -44,7 +43,7 @@
                             <StackPanel>
                                 <TextBlock
                                     Classes="CardTitle"
-                                    Text="{Localize {x:Static loc:XAMLLiteral.EpkEditor_NewFile}}">
+                                    Text="{Localize EpkEditor_NewFile}">
                                     <TextBlock.Foreground>
                                         <LinearGradientBrush StartPoint="0%,0%" EndPoint="100%,100%">
                                             <GradientStop Offset="0" Color="#34D399" />
@@ -54,7 +53,7 @@
                                 </TextBlock>
                                 <TextBlock
                                     Classes="CardDesc"
-                                    Text="{Localize {x:Static loc:XAMLLiteral.EpkEditor_New_Description}}" />
+                                    Text="{Localize EpkEditor_New_Description}" />
                             </StackPanel>
                         </Border>
                     </Button>
@@ -76,7 +75,7 @@
                             <StackPanel>
                                 <TextBlock
                                     Classes="CardTitle"
-                                    Text="{Localize {x:Static loc:XAMLLiteral.EpkEditor_OpenFile}}">
+                                    Text="{Localize EpkEditor_OpenFile}">
                                     <TextBlock.Foreground>
                                         <LinearGradientBrush StartPoint="0%,0%" EndPoint="100%,100%">
                                             <GradientStop Offset="0" Color="#818CF8" />
@@ -86,7 +85,7 @@
                                 </TextBlock>
                                 <TextBlock
                                     Classes="CardDesc"
-                                    Text="{Localize {x:Static loc:XAMLLiteral.EpkEditor_Launcher_Description}}" />
+                                    Text="{Localize EpkEditor_Launcher_Description}" />
                             </StackPanel>
                         </Border>
                     </Button>
@@ -95,8 +94,8 @@
 
             <!--  Online tools open the Euterpe website in the browser  -->
             <e:LabeledSection
-                Description="{Localize {x:Static loc:XAMLLiteral.CharterToolkit_Online_Description}}"
-                Title="{Localize {x:Static loc:XAMLLiteral.CharterToolkit_Online_Title}}">
+                Description="{Localize CharterToolkit_Online_Description}"
+                Title="{Localize CharterToolkit_Online_Title}">
                 <Grid
                     ColumnDefinitions="*,16,*"
                     MaxWidth="820">
@@ -119,7 +118,7 @@
                             <StackPanel>
                                 <TextBlock
                                     Classes="CardTitle"
-                                    Text="{Localize {x:Static loc:XAMLLiteral.ChartAnalyzer_Title}}">
+                                    Text="{Localize ChartAnalyzer_Title}">
                                     <TextBlock.Foreground>
                                         <LinearGradientBrush StartPoint="0%,0%" EndPoint="100%,100%">
                                             <GradientStop Offset="0" Color="#FB923C" />
@@ -129,7 +128,7 @@
                                 </TextBlock>
                                 <TextBlock
                                     Classes="CardDesc"
-                                    Text="{Localize {x:Static loc:XAMLLiteral.ChartAnalyzer_Description}}" />
+                                    Text="{Localize ChartAnalyzer_Description}" />
                             </StackPanel>
                         </Border>
                     </Button>
@@ -153,7 +152,7 @@
                             <StackPanel>
                                 <TextBlock
                                     Classes="CardTitle"
-                                    Text="{Localize {x:Static loc:XAMLLiteral.ChartSubmit_Title}}">
+                                    Text="{Localize ChartSubmit_Title}">
                                     <TextBlock.Foreground>
                                         <LinearGradientBrush StartPoint="0%,0%" EndPoint="100%,100%">
                                             <GradientStop Offset="0" Color="#FB7185" />
@@ -163,7 +162,7 @@
                                 </TextBlock>
                                 <TextBlock
                                     Classes="CardDesc"
-                                    Text="{Localize {x:Static loc:XAMLLiteral.ChartSubmit_Description}}" />
+                                    Text="{Localize ChartSubmit_Description}" />
                             </StackPanel>
                         </Border>
                     </Button>

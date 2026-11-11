@@ -4,7 +4,6 @@
     xmlns:converters="using:Euterpe.Converters"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:e="https://github.com/Euterpe-org/Euterpe"
-    xmlns:loc="https://github.com/Euterpe-org/Euterpe/Localization"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:models="using:Euterpe.Controls.Models"
     xmlns:setup="using:Euterpe.Models.Setup"
@@ -39,14 +38,14 @@
                 <TextBlock
                     FontSize="22"
                     FontWeight="Bold"
-                    Text="{Localize {x:Static loc:XAMLLiteral.Wizard_Title_Welcome}}"
+                    Text="{Localize Wizard_Title_Welcome}"
                     Theme="{StaticResource TitleTextBlock}"
                     VerticalAlignment="Center" />
             </StackPanel>
             <TextBlock
                 Foreground="{DynamicResource SecondaryTextColor}"
                 Margin="48,0,0,0"
-                Text="{Localize {x:Static loc:XAMLLiteral.Wizard_Description_Welcome}}" />
+                Text="{Localize Wizard_Description_Welcome}" />
         </StackPanel>
 
         <!--  Left: Role Cards  -->
@@ -86,7 +85,7 @@
                     FontSize="15"
                     FontWeight="SemiBold"
                     Margin="0,0,0,12"
-                    Text="{Localize {x:Static loc:XAMLLiteral.Wizard_Section_Tasks}}"
+                    Text="{Localize Wizard_Section_Tasks}"
                     Theme="{StaticResource TitleTextBlock}" />
 
                 <ScrollViewer>

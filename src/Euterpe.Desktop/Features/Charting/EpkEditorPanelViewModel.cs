@@ -118,7 +118,7 @@ public sealed partial class EpkEditorPanelViewModel : ViewModelBase
 
     public bool HasMissingFiles => MissingFileCount > 0;
 
-    public string MissingFilesMessage => string.Format(XAML.EpkEditor_MissingFiles, MissingFileCount);
+    public string MissingFilesMessage => XAML.EpkEditor_MissingFiles(MissingFileCount);
 
     public EpkEditorPanelViewModel() => SearchKeywords.CollectionChanged += OnChildEdited;
 
@@ -184,12 +184,12 @@ public sealed partial class EpkEditorPanelViewModel : ViewModelBase
         if (await FileSystemService.TryWriteFileAtomicAsync(FilePath, bytes).ConfigureAwait(true))
         {
             IsDirty = false;
-            NotificationService.SuccessLight(Notification_Content_Epk_Save_Success, Name);
+            NotificationService.SuccessLight(Notification_Content_Epk_Save_Success(Name));
             Saved?.Invoke(FolderPath);
         }
         else
         {
-            NotificationService.ErrorLight(Notification_Content_Epk_Save_Failed, Name);
+            NotificationService.ErrorLight(Notification_Content_Epk_Save_Failed(Name));
         }
     }
 
@@ -308,7 +308,7 @@ public sealed partial class EpkEditorPanelViewModel : ViewModelBase
 
         HasVideo = _files.ContainsKey(ChartFiles.VideoFileName);
         var totalSize = _files.Values.Sum(static entry => entry.Size);
-        FilesSummary = string.Format(XAML.EpkEditor_Files_Summary, Files.Count, totalSize.ToReadableSize());
+        FilesSummary = XAML.EpkEditor_Files_Summary(Files.Count, totalSize.ToReadableSize());
 
         var present = FileSystemService.GetFileSizes(FolderPath);
         MissingFileCount = _files.Keys.Count(name => !present.ContainsKey(name));

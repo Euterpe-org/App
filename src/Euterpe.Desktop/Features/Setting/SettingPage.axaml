@@ -2,7 +2,6 @@
     xmlns="https://github.com/avaloniaui"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:loc="https://github.com/Euterpe-org/Euterpe/Localization"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:u="https://irihi.tech/ursa"
     xmlns:vm="using:Euterpe.Features.Setting"
@@ -23,12 +22,12 @@
             Spacing="24">
 
             <u:SettingsCardGroup
-                Header="{Localize {x:Static loc:XAMLLiteral.Setting_Group_Appearance}}">
+                Header="{Localize Setting_Group_Appearance}">
 
                 <!--  Language  -->
                 <u:SettingsCard
-                    Content="{Localize {x:Static loc:XAMLLiteral.Setting_Title_Language}}"
-                    Description="{Localize {x:Static loc:XAMLLiteral.Setting_Description_Language}}">
+                    Content="{Localize Setting_Title_Language}"
+                    Description="{Localize Setting_Description_Language}">
                     <u:SettingsCard.RightContent>
                         <StackPanel
                             Classes="ControlsHorizontal">
@@ -38,7 +37,7 @@
                                 SelectedItem="{Binding CurrentLanguage, Mode=TwoWay}" />
                             <Button
                                 Command="{Binding ApplyLanguageCommand}"
-                                Content="{Localize {x:Static loc:XAMLLiteral.Button_Apply}}" />
+                                Content="{Localize Button_Apply}" />
                         </StackPanel>
                     </u:SettingsCard.RightContent>
                 </u:SettingsCard>
@@ -46,12 +45,12 @@
             </u:SettingsCardGroup>
 
             <u:SettingsCardGroup
-                Header="{Localize {x:Static loc:XAMLLiteral.Setting_Group_Experience}}">
+                Header="{Localize Setting_Group_Experience}">
 
                 <!--  Show Console  -->
                 <u:SettingsCard
-                    Content="{Localize {x:Static loc:XAMLLiteral.Setting_Title_ShowConsole}}"
-                    Description="{Localize {x:Static loc:XAMLLiteral.Setting_Description_ShowConsole}}">
+                    Content="{Localize Setting_Title_ShowConsole}"
+                    Description="{Localize Setting_Description_ShowConsole}">
                     <u:SettingsCard.RightContent>
                         <ToggleSwitch
                             IsChecked="{Binding Config.ShowConsole, Mode=TwoWay}" />
@@ -60,8 +59,8 @@
 
                 <!--  Show Start Screen  -->
                 <u:SettingsCard
-                    Content="{Localize {x:Static loc:XAMLLiteral.Setting_Title_ShowStartScreen}}"
-                    Description="{Localize {x:Static loc:XAMLLiteral.Setting_Description_ShowStartScreen}}">
+                    Content="{Localize Setting_Title_ShowStartScreen}"
+                    Description="{Localize Setting_Description_ShowStartScreen}">
                     <u:SettingsCard.RightContent>
                         <ToggleSwitch
                             IsChecked="{Binding Config.ShowStartScreen, Mode=TwoWay}" />
@@ -70,8 +69,8 @@
 
                 <!--  Always Show ScrollBar  -->
                 <u:SettingsCard
-                    Content="{Localize {x:Static loc:XAMLLiteral.Setting_Title_AlwaysShowScrollBar}}"
-                    Description="{Localize {x:Static loc:XAMLLiteral.Setting_Description_AlwaysShowScrollBar}}">
+                    Content="{Localize Setting_Title_AlwaysShowScrollBar}"
+                    Description="{Localize Setting_Description_AlwaysShowScrollBar}">
                     <u:SettingsCard.RightContent>
                         <ToggleSwitch
                             IsChecked="{Binding Config.AlwaysShowScrollBar, Mode=TwoWay}" />
@@ -80,8 +79,8 @@
 
                 <!--  Minimize To Tray On Close  -->
                 <u:SettingsCard
-                    Content="{Localize {x:Static loc:XAMLLiteral.Setting_Title_MinimizeToTrayOnClose}}"
-                    Description="{Localize {x:Static loc:XAMLLiteral.Setting_Description_MinimizeToTrayOnClose}}">
+                    Content="{Localize Setting_Title_MinimizeToTrayOnClose}"
+                    Description="{Localize Setting_Description_MinimizeToTrayOnClose}">
                     <u:SettingsCard.RightContent>
                         <ToggleSwitch
                             IsChecked="{Binding Config.MinimizeToTrayOnClose, Mode=TwoWay}" />
@@ -91,12 +90,12 @@
             </u:SettingsCardGroup>
 
             <u:SettingsCardGroup
-                Header="{Localize {x:Static loc:XAMLLiteral.Setting_Group_FileManagement}}">
+                Header="{Localize Setting_Group_FileManagement}">
 
                 <!--  MuseDash Folder  -->
                 <u:SettingsCard
-                    Content="{Localize {x:Static loc:XAMLLiteral.Setting_Title_MuseDashFolder}}"
-                    Description="{Localize {x:Static loc:XAMLLiteral.Setting_Description_MuseDashFolder}}">
+                    Content="{Localize Setting_Title_MuseDashFolder}"
+                    Description="{Localize Setting_Description_MuseDashFolder}">
                     <u:SettingsCard.RightContent>
                         <StackPanel
                             Classes="ControlsHorizontal">
@@ -107,7 +106,7 @@
                             <Button
                                 Command="{Binding ChangeGameFolderCommand}"
                                 CommandParameter="{Binding Config.MuseDash, Mode=OneTime}"
-                                Content="{Localize {x:Static loc:XAMLLiteral.Button_Reselect}}"
+                                Content="{Localize Button_Reselect}"
                                 Theme="{DynamicResource OutlineButton}" />
                         </StackPanel>
                     </u:SettingsCard.RightContent>
@@ -115,8 +114,8 @@
 
                 <!--  Cache Folder  -->
                 <u:SettingsCard
-                    Content="{Localize {x:Static loc:XAMLLiteral.Setting_Title_CacheFolder}}"
-                    Description="{Localize {x:Static loc:XAMLLiteral.Setting_Description_CacheFolder}}">
+                    Content="{Localize Setting_Title_CacheFolder}"
+                    Description="{Localize Setting_Description_CacheFolder}">
                     <u:SettingsCard.RightContent>
                         <StackPanel
                             Classes="ControlsHorizontal">
@@ -126,7 +125,7 @@
                                 Width="320" />
                             <Button
                                 Command="{Binding ChangeCacheFolderCommand}"
-                                Content="{Localize {x:Static loc:XAMLLiteral.Button_Reselect}}"
+                                Content="{Localize Button_Reselect}"
                                 Theme="{DynamicResource OutlineButton}" />
                         </StackPanel>
                     </u:SettingsCard.RightContent>
@@ -135,12 +134,12 @@
             </u:SettingsCardGroup>
 
             <u:SettingsCardGroup
-                Header="{Localize {x:Static loc:XAMLLiteral.Setting_Group_Download}}">
+                Header="{Localize Setting_Group_Download}">
 
                 <!--  Update Channel  -->
                 <u:SettingsCard
-                    Content="{Localize {x:Static loc:XAMLLiteral.Setting_Title_UpdateChannel}}"
-                    Description="{Localize {x:Static loc:XAMLLiteral.Setting_Description_UpdateChannel}}">
+                    Content="{Localize Setting_Title_UpdateChannel}"
+                    Description="{Localize Setting_Description_UpdateChannel}">
                     <u:SettingsCard.RightContent>
                         <ComboBox
                             DisplayMemberBinding="{Binding Display.Value}"
@@ -153,11 +152,11 @@
             </u:SettingsCardGroup>
 
             <u:SettingsCardGroup
-                Header="{Localize {x:Static loc:XAMLLiteral.Setting_Group_Advanced}}">
+                Header="{Localize Setting_Group_Advanced}">
 
                 <u:SettingsCard
-                    Content="{Localize {x:Static loc:XAMLLiteral.Setting_Title_IgnoreException}}"
-                    Description="{Localize {x:Static loc:XAMLLiteral.Setting_Description_IgnoreException}}">
+                    Content="{Localize Setting_Title_IgnoreException}"
+                    Description="{Localize Setting_Description_IgnoreException}">
                     <u:SettingsCard.RightContent>
                         <ToggleSwitch
                             IsChecked="{Binding Config.IgnoreException, Mode=TwoWay}" />

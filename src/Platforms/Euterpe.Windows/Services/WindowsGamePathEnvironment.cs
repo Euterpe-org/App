@@ -15,7 +15,7 @@ internal sealed class WindowsGamePathEnvironment : IGamePathEnvironment
         {
             Logger.LogInformation("Set {VariableName} environment variable to: {GameFolder}", GameConfig.PathEnvironmentVariableName, GameConfig.Folder);
             Environment.SetEnvironmentVariable(GameConfig.PathEnvironmentVariableName, GameConfig.Folder, EnvironmentVariableTarget.User);
-            MessageBoxService.SuccessOverlayAsync(MessageBox_Content_SetPathEnvironment_Windows, GameConfig.Folder).ConfigureAwait(false);
+            MessageBoxService.SuccessOverlayAsync(MessageBox_Content_SetPathEnvironment_Windows(GameConfig.Folder)).ConfigureAwait(false);
             return true;
         }
         catch (Exception ex)

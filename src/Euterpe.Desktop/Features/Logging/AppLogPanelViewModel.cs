@@ -2,7 +2,7 @@ using ObservableCollections;
 
 namespace Euterpe.Features.Logging;
 
-[Route("/logging/app", DisplayName = Panel_Logging_AppLog, Order = 0)]
+[Route("/logging/app", DisplayName = nameof(Panel_Logging_AppLog), Order = 0)]
 [AppSingleton]
 public sealed class AppLogPanelViewModel : ViewModelBase
 {

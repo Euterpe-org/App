@@ -2,7 +2,6 @@
     xmlns="https://github.com/avaloniaui"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:loc="https://github.com/Euterpe-org/Euterpe/Localization"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:u="https://irihi.tech/ursa"
     xmlns:vm="using:Euterpe.Features.Setup"
@@ -35,14 +34,14 @@
                 <TextBlock
                     FontSize="22"
                     FontWeight="Bold"
-                    Text="{Localize {x:Static loc:XAMLLiteral.Setup_GamePath_WelcomeTitle}}"
+                    Text="{Localize Setup_GamePath_WelcomeTitle}"
                     Theme="{StaticResource TitleTextBlock}"
                     VerticalAlignment="Center" />
             </StackPanel>
             <TextBlock
                 Foreground="{DynamicResource SecondaryTextColor}"
                 Margin="48,0,0,0"
-                Text="{Localize {x:Static loc:XAMLLiteral.Setup_GamePath_WelcomeSubtitle}}" />
+                Text="{Localize Setup_GamePath_WelcomeSubtitle}" />
         </StackPanel>
 
         <!--  Body  -->
@@ -57,16 +56,16 @@
             <u:Banner
                 CanClose="False"
                 CornerRadius="8"
-                Header="{Localize {x:Static loc:XAMLLiteral.Setup_GamePath_MdmcWarning_Title}}"
+                Header="{Localize Setup_GamePath_MdmcWarning_Title}"
                 Type="Warning">
                 <StackPanel
                     Spacing="8">
                     <TextBlock
-                        Text="{Localize {x:Static loc:XAMLLiteral.Setup_GamePath_MdmcWarning}}"
+                        Text="{Localize Setup_GamePath_MdmcWarning}"
                         TextWrapping="Wrap" />
                     <HyperlinkButton
                         Classes="WithIcon Underline"
-                        Content="{Localize {x:Static loc:XAMLLiteral.HyperlinkButton_LearnMore}}"
+                        Content="{Localize HyperlinkButton_LearnMore}"
                         HorizontalAlignment="Left"
                         NavigateUri="https://euterpe-org.com/docs/ecosystem/from-mdmc" />
                 </StackPanel>
@@ -77,7 +76,7 @@
                 Spacing="6">
                 <TextBlock
                     FontWeight="SemiBold"
-                    Text="{Localize {x:Static loc:XAMLLiteral.Setting_Title_MuseDashFolder}}" />
+                    Text="{Localize Setting_Title_MuseDashFolder}" />
                 <Grid
                     ColumnDefinitions="*,Auto">
                     <Border
@@ -96,7 +95,7 @@
                     <Button
                         Grid.Column="1"
                         Command="{Binding BrowseCommand}"
-                        Content="{Localize {x:Static loc:XAMLLiteral.Button_Browse}}" />
+                        Content="{Localize Button_Browse}" />
                 </Grid>
 
                 <!--  Validation message  -->
@@ -104,7 +103,7 @@
                     FontSize="12"
                     Foreground="{DynamicResource SemiColorDanger}"
                     IsVisible="{Binding ShowInvalidMessage}"
-                    Text="{Localize {x:Static loc:XAMLLiteral.Setup_GamePath_Invalid}}" />
+                    Text="{Localize Setup_GamePath_Invalid}" />
             </StackPanel>
         </StackPanel>
     </Grid>

@@ -5,7 +5,6 @@
     xmlns:converters="using:Euterpe.Converters"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:e="https://github.com/Euterpe-org/Euterpe"
-    xmlns:loc="https://github.com/Euterpe-org/Euterpe/Localization"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:mods="using:Euterpe.Models.Mods"
     xmlns:u="https://irihi.tech/ursa"
@@ -68,7 +67,7 @@
                         Classes="ClearButton"
                         Margin="0,0,10,0"
                         MaxLength="30"
-                        PlaceholderText="{Localize {x:Static loc:XAMLLiteral.SearchBarPlaceholder_Mod}}"
+                        PlaceholderText="{Localize SearchBarPlaceholder_Mod}"
                         Text="{Binding Filter.SearchText, Mode=OneWayToSource}">
                         <TextBox.InnerLeftContent>
                             <PathIcon
@@ -209,7 +208,7 @@
                                                     Classes.Purple="{Binding State, Converter={x:Static ObjectConverters.Equal}, ConverterParameter={x:Static mods:ModState.Newer}, Mode=OneWay}"
                                                     Classes.Red="{Binding State, Converter={x:Static ObjectConverters.Equal}, ConverterParameter={x:Static mods:ModState.Incompatible}, Mode=OneWay}"
                                                     Classes.Yellow="{Binding State, Converter={x:Static ObjectConverters.Equal}, ConverterParameter={x:Static mods:ModState.Modified}, Mode=OneWay}"
-                                                    ToolTip.Tip="{Binding ReasonDisplay, Mode=OneWay}">
+                                                    ToolTip.Tip="{Binding ReasonDisplay.Value, Mode=OneWay}">
                                                     <Label.IsVisible>
                                                         <MultiBinding
                                                             Converter="{x:Static BoolConverters.And}">
@@ -349,7 +348,7 @@
                                 <Button
                                     Command="{Binding OpenConfigFileCommand, Mode=OneTime}"
                                     Theme="{StaticResource GhostButton}"
-                                    ToolTip.Tip="{Localize {x:Static loc:XAMLLiteral.ToolTip_EditModConfig}}">
+                                    ToolTip.Tip="{Localize ToolTip_EditModConfig}">
                                     <PathIcon
                                         Data="{StaticResource SemiIconSetting}"
                                         Height="18" />
@@ -376,7 +375,7 @@
                                         Height="15"
                                         IsVisible="{Binding !SelectedMod.IsProcessing, Mode=OneWay}" />
                                     <TextBlock
-                                        Text="{Localize {x:Static loc:XAMLLiteral.Button_Update}}" />
+                                        Text="{Localize Button_Update}" />
                                 </StackPanel>
                             </Button>
 
@@ -392,7 +391,7 @@
                                         Classes="Small"
                                         IsVisible="{Binding SelectedMod.IsProcessing, Mode=OneWay}" />
                                     <TextBlock
-                                        Text="{Localize {x:Static loc:XAMLLiteral.Button_Install}}" />
+                                        Text="{Localize Button_Install}" />
                                 </StackPanel>
                             </Button>
 
@@ -408,7 +407,7 @@
                                         Classes="Small"
                                         IsVisible="{Binding SelectedMod.IsProcessing, Mode=OneWay}" />
                                     <TextBlock
-                                        Text="{Localize {x:Static loc:XAMLLiteral.Button_Reinstall}}" />
+                                        Text="{Localize Button_Reinstall}" />
                                 </StackPanel>
                             </Button>
 
@@ -425,7 +424,7 @@
                                         Classes="Small"
                                         IsVisible="{Binding SelectedMod.IsProcessing, Mode=OneWay}" />
                                     <TextBlock
-                                        Text="{Localize {x:Static loc:XAMLLiteral.Button_Uninstall}}" />
+                                        Text="{Localize Button_Uninstall}" />
                                 </StackPanel>
                             </Button>
                         </StackPanel>
@@ -451,7 +450,7 @@
                             <!--  Status Labels  -->
                             <Label
                                 Classes="Ghost Blue TagLabel"
-                                Content="{Localize {x:Static loc:XAMLLiteral.ModState_Normal}}"
+                                Content="{Localize ModState_Normal}"
                                 IsVisible="{Binding SelectedMod.IsLocal, Mode=OneWay}" />
 
                             <!--  Version Label  -->
@@ -490,8 +489,8 @@
                             Classes="StateReason"
                             Classes.Danger="{Binding SelectedMod.State, Converter={x:Static ObjectConverters.Equal}, ConverterParameter={x:Static mods:ModState.Incompatible}, Mode=OneWay}"
                             Classes.Warning="{Binding SelectedMod.State, Converter={x:Static ObjectConverters.Equal}, ConverterParameter={x:Static mods:ModState.Duplicated}, Mode=OneWay}"
-                            IsVisible="{Binding SelectedMod.ReasonDisplay, Converter={x:Static StringConverters.IsNotNullOrEmpty}, Mode=OneWay}"
-                            Text="{Binding SelectedMod.ReasonDisplay, Mode=OneWay}" />
+                            IsVisible="{Binding SelectedMod.ReasonDisplay, Converter={x:Static ObjectConverters.IsNotNull}, Mode=OneWay}"
+                            Text="{Binding SelectedMod.ReasonDisplay.Value, Mode=OneWay}" />
 
                         <!--  Description  -->
                         <TextBlock
@@ -508,7 +507,7 @@
                         HorizontalAlignment="Left">
                         <TextBlock
                             Classes="SectionTitle"
-                            Text="{Localize {x:Static loc:XAMLLiteral.ModInfo_Details}}" />
+                            Text="{Localize ModInfo_Details}" />
 
                         <u:Descriptions
                             ItemAlignment="Left"
@@ -518,11 +517,11 @@
                             <!--  Author  -->
                             <u:DescriptionsItem
                                 Content="{Binding SelectedMod.Author}"
-                                Label="{Localize {x:Static loc:XAMLLiteral.ModInfo_Author}}" />
+                                Label="{Localize ModInfo_Author}" />
 
                             <!--  Game Version  -->
                             <u:DescriptionsItem
-                                Label="{Localize {x:Static loc:XAMLLiteral.ModInfo_SupportedGameVersion}}">
+                                Label="{Localize ModInfo_SupportedGameVersion}">
                                 <Label
                                     Classes="Ghost TagLabel"
                                     Content="{Binding SelectedMod.LocalizedCompatibleGameVersion}" />
@@ -530,7 +529,7 @@
 
                             <!--  MelonLoader Version  -->
                             <u:DescriptionsItem
-                                Label="{Localize {x:Static loc:XAMLLiteral.ModInfo_RequiredMelonLoaderVersion}}">
+                                Label="{Localize ModInfo_RequiredMelonLoaderVersion}">
                                 <Label
                                     Classes="Ghost TagLabel"
                                     Content="{Binding SelectedMod.MelonVersion}" />
@@ -539,10 +538,10 @@
                             <!--  Repository  -->
                             <u:DescriptionsItem
                                 IsVisible="{Binding SelectedMod.HasRepository, Mode=OneWay}"
-                                Label="{Localize {x:Static loc:XAMLLiteral.ModInfo_Repository}}">
+                                Label="{Localize ModInfo_Repository}">
                                 <HyperlinkButton
                                     Classes="WithIcon Underline"
-                                    Content="{Localize {x:Static loc:XAMLLiteral.HyperlinkButton_Visit}}"
+                                    Content="{Localize HyperlinkButton_Visit}"
                                     NavigateUri="{Binding SelectedMod.RepoPageUrl}" />
                             </u:DescriptionsItem>
                         </u:Descriptions>
@@ -553,7 +552,7 @@
                         IsVisible="{Binding SelectedMod.HasDependency, Mode=OneWay}">
                         <TextBlock
                             Classes="SectionTitle"
-                            Text="{Localize {x:Static loc:XAMLLiteral.ModInfo_Dependencies}}" />
+                            Text="{Localize ModInfo_Dependencies}" />
                         <ItemsControl
                             ItemsSource="{Binding SelectedMod.DependencyNames, Mode=OneWay}">
                             <ItemsControl.ItemTemplate>
@@ -572,7 +571,7 @@
                         IsVisible="{Binding SelectedMod.HasIncompatibleMods, Mode=OneWay}">
                         <TextBlock
                             Classes="SectionTitle"
-                            Text="{Localize {x:Static loc:XAMLLiteral.ModInfo_IncompatibleMods}}" />
+                            Text="{Localize ModInfo_IncompatibleMods}" />
                         <ItemsControl
                             ItemsSource="{Binding SelectedMod.IncompatibleMods, Mode=OneWay}">
                             <ItemsControl.ItemsPanel>

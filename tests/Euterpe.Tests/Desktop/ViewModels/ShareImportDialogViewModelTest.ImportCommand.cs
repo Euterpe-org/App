@@ -1,4 +1,3 @@
-using System.Globalization;
 using Euterpe.Localization;
 using Euterpe.Models.Progress;
 
@@ -25,7 +24,7 @@ public sealed partial class ShareImportDialogViewModelTest
         await Assert.That(viewModel.IsStatusWarning).IsFalse();
         await Assert.That(viewModel.CanImport).IsFalse();
         await Assert.That(viewModel.StatusMessage)
-            .IsEqualTo(string.Format(CultureInfo.CurrentCulture, XAML.Share_Import_Result_Added, 1));
+            .IsEqualTo(XAML.Share_Import_Result_Added(1));
     }
 
     [Test]
@@ -47,8 +46,8 @@ public sealed partial class ShareImportDialogViewModelTest
         await viewModel.ImportCommand.ExecuteAsync(null);
 
         var expected = string.Join(" · ",
-            string.Format(CultureInfo.CurrentCulture, XAML.Share_Import_Result_Added, 1),
-            string.Format(CultureInfo.CurrentCulture, XAML.Share_Import_Result_Present, 2));
+            XAML.Share_Import_Result_Added(1),
+            XAML.Share_Import_Result_Present(2));
 
         using var _ = Assert.Multiple();
         await Assert.That(viewModel.StatusMessage).IsEqualTo(expected);
@@ -71,7 +70,7 @@ public sealed partial class ShareImportDialogViewModelTest
         using var _ = Assert.Multiple();
         await Assert.That(viewModel.IsStatusWarning).IsTrue();
         await Assert.That(viewModel.StatusMessage)
-            .Contains(string.Format(CultureInfo.CurrentCulture, XAML.Share_Import_Result_Failed, 1));
+            .Contains(XAML.Share_Import_Result_Failed(1));
     }
 
     [Test]

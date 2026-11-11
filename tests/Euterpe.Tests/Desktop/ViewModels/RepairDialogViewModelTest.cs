@@ -1,4 +1,5 @@
 using Euterpe.Features.Setup;
+using Euterpe.Localization;
 using Microsoft.Extensions.Logging.Abstractions;
 
 namespace Euterpe.Tests.Desktop.ViewModels;
@@ -57,7 +58,7 @@ public sealed class RepairDialogViewModelTest
     public async Task PrepareForGamePathAsync_PreviousSetupFinished_ResetsStateAndPresentsGamePathPage()
     {
         var state = new SetupState();
-        state.Steps.Add(new SetupStepState { Kinds = SetupOptionKinds.MelonLoader, DisplayName = "stale" });
+        state.Steps.Add(new SetupStepState { Kinds = SetupOptionKinds.MelonLoader, DisplayName = LocalizedString.FromText("stale") });
         state.Stage = SetupExecutionStage.Finished;
 
         var gamePathPage = NewGamePathPage();

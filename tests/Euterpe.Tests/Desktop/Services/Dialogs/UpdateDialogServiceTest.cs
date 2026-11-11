@@ -77,6 +77,6 @@ public sealed class UpdateDialogServiceTest
 
         await Assert.That(result).IsFalse();
         await Assert.That(closed).IsTrue();
-        messageBox.ErrorAsync(Any<string>(), RefStructArg<ReadOnlySpan<object>>.Any).WasCalled(Times.Once);
+        messageBox.ErrorAsync(Any<string>()).WasCalled(Times.Once);
     }
 }

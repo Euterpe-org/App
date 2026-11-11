@@ -1,4 +1,5 @@
 using Euterpe.Features.Setup;
+using Euterpe.Localization;
 using Microsoft.Extensions.Logging.Abstractions;
 
 namespace Euterpe.Tests.Desktop.ViewModels;
@@ -90,7 +91,7 @@ public sealed class ExecutionPageViewModelTest
         var failedStep = new SetupStepState
         {
             Kinds = firstKinds,
-            DisplayName = "test",
+            DisplayName = LocalizedString.FromText("test"),
             Status = SetupStepStatus.Failed,
             ErrorMessage = "previous failure"
         };

@@ -194,13 +194,13 @@ internal sealed partial class ModManageService
             case ([], []):
                 break;
             case ([var addedMod], []):
-                NotificationService.SuccessLight(Notification_Content_Mod_Sync_Added, addedMod.Name);
+                NotificationService.SuccessLight(Notification_Content_Mod_Sync_Added(addedMod.Name));
                 break;
             case ([], [var removedMod]):
-                NotificationService.NoticeLight(Notification_Content_Mod_Sync_Removed, removedMod.Name);
+                NotificationService.NoticeLight(Notification_Content_Mod_Sync_Removed(removedMod.Name));
                 break;
             default:
-                NotificationService.NoticeLight(Notification_Content_Mod_Sync_Summary, addedMods.Length, removedMods.Length);
+                NotificationService.NoticeLight(Notification_Content_Mod_Sync_Summary(addedMods.Length, removedMods.Length));
                 break;
         }
     }

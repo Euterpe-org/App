@@ -8,5 +8,6 @@ global using Avalonia.Media;
 global using Avalonia.Metadata;
 global using CommunityToolkit.Mvvm.ComponentModel;
 global using Euterpe.Abstractions;
-global using static Euterpe.Localization.XAMLLiteral;
+global using Euterpe.Localization;
+global using static Euterpe.Localization.XAML;
 global using static Euterpe.Shared.BuildInfo;

@@ -31,11 +31,11 @@ internal sealed partial class ModManageService : IModManageService, IDisposable
         await RefreshModStatesAsync().ConfigureAwait(false);
         if (success)
         {
-            NotificationService.SuccessLight(Notification_Content_Mod_Update_Success, mod.Name);
+            NotificationService.SuccessLight(Notification_Content_Mod_Update_Success(mod.Name));
         }
         else
         {
-            NotificationService.ErrorLight(Notification_Content_Mod_Update_Failed, mod.Name);
+            NotificationService.ErrorLight(Notification_Content_Mod_Update_Failed(mod.Name));
         }
     }
 
@@ -51,21 +51,21 @@ internal sealed partial class ModManageService : IModManageService, IDisposable
         if (mod is null)
         {
             Logger.LogWarning("Install requested for unknown mod {Name}", name);
-            NotificationService.NoticeLight(Notification_Content_Mod_NotFound, name);
+            NotificationService.NoticeLight(Notification_Content_Mod_NotFound(name));
             return;
         }
 
         if (mod.IsLocal)
         {
             Logger.LogInformation("Install requested for already-installed mod {Name}", name);
-            NotificationService.NoticeLight(Notification_Content_Mod_Install_AlreadyInstalled, name);
+            NotificationService.NoticeLight(Notification_Content_Mod_Install_AlreadyInstalled(name));
             return;
         }
 
         if (mod.State is ModState.Incompatible)
         {
             Logger.LogInformation("Install requested for incompatible mod {Name}", name);
-            NotificationService.ErrorLight(Notification_Content_Mod_Install_Incompatible, name);
+            NotificationService.ErrorLight(Notification_Content_Mod_Install_Incompatible(name));
             return;
         }
 
@@ -78,21 +78,21 @@ internal sealed partial class ModManageService : IModManageService, IDisposable
         if (mod is null)
         {
             Logger.LogWarning("Update requested for unknown mod {Name}", name);
-            NotificationService.NoticeLight(Notification_Content_Mod_NotFound, name);
+            NotificationService.NoticeLight(Notification_Content_Mod_NotFound(name));
             return;
         }
 
         if (!mod.IsLocal)
         {
             Logger.LogInformation("Update requested for not-installed mod {Name}", name);
-            NotificationService.ErrorLight(Notification_Content_Mod_NotInstalled, name);
+            NotificationService.ErrorLight(Notification_Content_Mod_NotInstalled(name));
             return;
         }
 
         if (mod.State is not ModState.Outdated)
         {
             Logger.LogInformation("Update requested for up-to-date mod {Name}", name);
-            NotificationService.NoticeLight(Notification_Content_Mod_Update_UpToDate, name);
+            NotificationService.NoticeLight(Notification_Content_Mod_Update_UpToDate(name));
             return;
         }
 
@@ -105,14 +105,14 @@ internal sealed partial class ModManageService : IModManageService, IDisposable
         if (mod is null)
         {
             Logger.LogWarning("Uninstall requested for unknown mod {Name}", name);
-            NotificationService.NoticeLight(Notification_Content_Mod_NotFound, name);
+            NotificationService.NoticeLight(Notification_Content_Mod_NotFound(name));
             return;
         }
 
         if (!mod.IsLocal)
         {
             Logger.LogInformation("Uninstall requested for not installed mod {Name}", name);
-            NotificationService.NoticeLight(Notification_Content_Mod_NotInstalled, name);
+            NotificationService.NoticeLight(Notification_Content_Mod_NotInstalled(name));
             return;
         }
 
@@ -141,11 +141,11 @@ internal sealed partial class ModManageService : IModManageService, IDisposable
         var failed = outdatedMods.Length - updated;
         if (failed > 0)
         {
-            NotificationService.WarningLight(Notification_Content_Mod_UpdateAll_Partial, updated, failed);
+            NotificationService.WarningLight(Notification_Content_Mod_UpdateAll_Partial(updated, failed));
         }
         else if (updated > 0)
         {
-            NotificationService.SuccessLight(Notification_Content_Mod_UpdateAll_Success, updated);
+            NotificationService.SuccessLight(Notification_Content_Mod_UpdateAll_Success(updated));
         }
 
         return outdatedMods.Length;

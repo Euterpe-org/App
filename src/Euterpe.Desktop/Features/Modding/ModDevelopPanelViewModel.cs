@@ -1,6 +1,6 @@
 namespace Euterpe.Features.Modding;
 
-[Route("/modding/develop", DisplayName = Panel_Modding_ModDevelop, Order = 2)]
+[Route("/modding/develop", DisplayName = nameof(Panel_Modding_ModDevelop), Order = 2)]
 public sealed partial class ModDevelopPanelViewModel : ViewModelBase
 {
     [ObservableProperty]

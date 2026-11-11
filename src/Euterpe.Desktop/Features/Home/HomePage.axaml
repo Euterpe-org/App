@@ -3,7 +3,6 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:animated="using:Avalonia.Labs.AnimatedImage"
     xmlns:e="https://github.com/Euterpe-org/Euterpe"
-    xmlns:loc="https://github.com/Euterpe-org/Euterpe/Localization"
     xmlns:m="using:Euterpe.Markup"
     xmlns:u="https://irihi.tech/ursa"
     xmlns:vm="using:Euterpe.Features.Home"
@@ -63,7 +62,7 @@
             <!--  Play Button  -->
             <e:PlayButton
                 Command="{Binding LaunchGameCommand, Mode=OneTime}"
-                Content="{Localize {x:Static loc:XAMLLiteral.Button_LaunchGame}}"
+                Content="{Localize Button_LaunchGame}"
                 HorizontalAlignment="Right"
                 ItemsSource="{Binding GameModes, Mode=OneTime}"
                 SelectedValue="{Binding GameConfig.GameMode, Mode=TwoWay}"
@@ -104,7 +103,7 @@
                     <TextBlock
                         Grid.Column="1"
                         Classes="SupportTitle"
-                        Text="{Localize {x:Static loc:XAMLLiteral.HomePage_SupportTitle}}"
+                        Text="{Localize HomePage_SupportTitle}"
                         VerticalAlignment="Center" />
 
                     <!--  Right: Close Button  -->
@@ -125,7 +124,7 @@
                 <!--  Support Description  -->
                 <TextBlock
                     Classes="SupportDescription"
-                    Text="{Localize {x:Static loc:XAMLLiteral.HomePage_SupportDescription}}"
+                    Text="{Localize HomePage_SupportDescription}"
                     TextAlignment="Center"
                     TextWrapping="Wrap" />
 
@@ -140,7 +139,7 @@
                             <Run
                                 Text="★ " />
                             <Run
-                                Text="{Localize {x:Static loc:XAMLLiteral.HomePage_Button_GitHubStar}}" />
+                                Text="{Localize HomePage_Button_GitHubStar}" />
                         </TextBlock>
                     </u:IconButton>
 
@@ -150,7 +149,7 @@
                             <Run
                                 Text="♥ " />
                             <Run
-                                Text="{Localize {x:Static loc:XAMLLiteral.HomePage_Button_Sponsor}}" />
+                                Text="{Localize HomePage_Button_Sponsor}" />
                         </TextBlock>
                     </u:IconButton>
                 </StackPanel>

@@ -1,3 +1,5 @@
+using Euterpe.Localization;
+
 namespace Euterpe.Tests.Models;
 
 [Category("SetupStepStateTests")]
@@ -8,7 +10,7 @@ public sealed class SetupStepStateTest
         new()
         {
             Kinds = SetupOptionKinds.MelonLoader,
-            DisplayName = "step",
+            DisplayName = LocalizedString.FromText("step"),
             Status = status
         };
 

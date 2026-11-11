@@ -1,6 +1,6 @@
 namespace Euterpe.Features.Logging;
 
-[Route("/logging/melonloader", DisplayName = Panel_Logging_MelonLoaderLog, Order = 1)]
+[Route("/logging/melonloader", DisplayName = nameof(Panel_Logging_MelonLoaderLog), Order = 1)]
 public sealed partial class MelonLoaderLogPanelViewModel : ViewModelBase
 {
     private string _logContent = string.Empty;

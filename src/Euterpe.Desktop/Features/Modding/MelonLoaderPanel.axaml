@@ -2,7 +2,6 @@
     xmlns="https://github.com/avaloniaui"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:loc="https://github.com/Euterpe-org/Euterpe/Localization"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:mods="using:Euterpe.Models.Mods"
     xmlns:vm="using:Euterpe.Features.Modding"
@@ -56,7 +55,7 @@
             <TextBlock
                 Foreground="{DynamicResource SecondaryTextColor}"
                 HorizontalAlignment="Center"
-                Text="{Localize {x:Static loc:XAMLLiteral.MelonLoader_Description}}" />
+                Text="{Localize MelonLoader_Description}" />
 
             <Border
                 Margin="30"
@@ -73,11 +72,11 @@
                         <DockPanel.Styles>
                             <Style
                                 Selector="TextBlock.Installed">
-                                <Setter Property="Text" Value="{Localize {x:Static loc:XAMLLiteral.MelonLoader_State_Installed}}" />
+                                <Setter Property="Text" Value="{Localize MelonLoader_State_Installed}" />
                             </Style>
                             <Style
                                 Selector="TextBlock.NotInstalled">
-                                <Setter Property="Text" Value="{Localize {x:Static loc:XAMLLiteral.MelonLoader_State_NotInstalled}}" />
+                                <Setter Property="Text" Value="{Localize MelonLoader_State_NotInstalled}" />
                             </Style>
                         </DockPanel.Styles>
 
@@ -118,13 +117,13 @@
                             <Button
                                 Classes="Large"
                                 Command="{Binding InstallMelonLoaderCommand}"
-                                Content="{Localize {x:Static loc:XAMLLiteral.Button_Install}}"
+                                Content="{Localize Button_Install}"
                                 IsVisible="{Binding GameConfig.MelonLoaderVersion, Converter={x:Static StringConverters.IsNullOrEmpty}, Mode=OneWay}"
                                 Width="100" />
                             <Button
                                 Classes="Large Danger"
                                 Command="{Binding UninstallMelonLoaderCommand}"
-                                Content="{Localize {x:Static loc:XAMLLiteral.Button_Uninstall}}"
+                                Content="{Localize Button_Uninstall}"
                                 IsVisible="{Binding GameConfig.MelonLoaderVersion, Converter={x:Static StringConverters.IsNotNullOrEmpty}, Mode=OneWay}"
                                 Width="100" />
                         </StackPanel>
