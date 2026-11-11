@@ -5,6 +5,7 @@
         <LangVersion>preview</LangVersion>
         <Nullable>enable</Nullable>
         <IsAotCompatible>true</IsAotCompatible>
+        <Features>$(Features);runtime-async=on</Features>
 
         <MinVerDefaultPreReleaseIdentifiers>alpha</MinVerDefaultPreReleaseIdentifiers>
 
