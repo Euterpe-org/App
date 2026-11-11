@@ -93,7 +93,7 @@ public sealed partial class EpkEditorPanelViewModel : ViewModelBase
     public partial int MissingFileCount { get; set; }
 
     [ObservableProperty]
-    public partial string FilesSummary { get; set; } = string.Empty;
+    public partial LocalizedString? FilesSummary { get; set; }
 
     [ObservableProperty]
     public partial bool IsDirty { get; set; }
@@ -118,7 +118,7 @@ public sealed partial class EpkEditorPanelViewModel : ViewModelBase
 
     public bool HasMissingFiles => MissingFileCount > 0;
 
-    public string MissingFilesMessage => XAML.EpkEditor_MissingFiles(MissingFileCount);
+    public LocalizedString MissingFilesMessage => XAML.EpkEditor_MissingFiles(MissingFileCount);
 
     public EpkEditorPanelViewModel() => SearchKeywords.CollectionChanged += OnChildEdited;
 

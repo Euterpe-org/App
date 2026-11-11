@@ -161,7 +161,7 @@
                 <!--  Files referenced by the manifest but absent from the folder  -->
                 <u:Banner
                     CanClose="False"
-                    Content="{Binding MissingFilesMessage}"
+                    Content="{Binding MissingFilesMessage.Value}"
                     CornerRadius="8"
                     IsVisible="{Binding HasMissingFiles}"
                     Type="Warning" />
@@ -300,7 +300,7 @@
                                 </Grid>
                                 <TextBlock
                                     Classes="FieldLabel"
-                                    Text="{Binding FilesSummary}" />
+                                    Text="{Binding FilesSummary.Value}" />
                                 <ItemsControl
                                     ItemsSource="{Binding Files}">
                                     <ItemsControl.ItemTemplate>

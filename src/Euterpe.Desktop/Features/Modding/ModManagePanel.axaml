@@ -524,7 +524,7 @@
                                 Label="{Localize ModInfo_SupportedGameVersion}">
                                 <Label
                                     Classes="Ghost TagLabel"
-                                    Content="{Binding SelectedMod.LocalizedCompatibleGameVersion}" />
+                                    Content="{Binding SelectedMod.LocalizedCompatibleGameVersion.Value}" />
                             </u:DescriptionsItem>
 
                             <!--  MelonLoader Version  -->

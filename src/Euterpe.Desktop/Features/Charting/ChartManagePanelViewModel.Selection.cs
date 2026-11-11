@@ -16,7 +16,7 @@ public sealed partial class ChartManagePanelViewModel
     public partial bool CanShareSelection { get; set; }
 
     public bool HasSelection => SelectedCount > 0;
-    public string SelectedCountDisplay => XAML.ChartManage_SelectedCount(SelectedCount);
+    public LocalizedString SelectedCountDisplay => XAML.ChartManage_SelectedCount(SelectedCount);
 
     private void ObserveSelection()
     {

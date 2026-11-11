@@ -340,7 +340,7 @@
                             Spacing="6">
                             <TextBlock
                                 HorizontalAlignment="Center"
-                                Text="{Binding SelectedCountDisplay}" />
+                                Text="{Binding SelectedCountDisplay.Value}" />
                             <Button
                                 Classes="Primary"
                                 Command="{Binding ShareSelectedCommand}"

@@ -126,7 +126,7 @@
                             <TextBlock
                                 FontSize="16"
                                 Margin="0,0,6,0"
-                                Text="{Binding DisplayName, Mode=OneTime}" />
+                                Text="{Binding DisplayName.Value}" />
                             <u:Badge
                                 Header="{Binding Status, Mode=OneTime}"
                                 HorizontalAlignment="Left"

@@ -53,7 +53,7 @@
                     DockPanel.Dock="Right"
                     Classes="Primary"
                     Command="{Binding NextCommand}"
-                    Content="{Binding CurrentPage.NextButtonText}"
+                    Content="{Binding CurrentPage.NextButtonText.Value}"
                     IsDefault="True"
                     IsEnabled="{Binding CurrentPage.CanGoNext}" />
                 <Button

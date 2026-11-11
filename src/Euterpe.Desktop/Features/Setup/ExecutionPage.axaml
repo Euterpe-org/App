@@ -58,7 +58,7 @@
                                 <TextBlock
                                     FontSize="12"
                                     Foreground="{DynamicResource SecondaryTextColor}"
-                                    Text="{Binding StatusDisplay}"
+                                    Text="{Binding StatusDisplay.Value}"
                                     VerticalAlignment="Center" />
                                 <StackPanel
                                     Grid.Column="1"
@@ -67,7 +67,7 @@
                                     VerticalAlignment="Center">
                                     <TextBlock
                                         FontSize="13"
-                                        Text="{Binding DisplayName, Mode=OneTime}" />
+                                        Text="{Binding DisplayName.Value}" />
                                     <TextBlock
                                         FontSize="11"
                                         Foreground="{DynamicResource SecondaryTextColor}"

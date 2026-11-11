@@ -5,11 +5,11 @@ public sealed class RoleCard : TemplatedControl
     public static readonly StyledProperty<Geometry?> IconProperty =
         AvaloniaProperty.Register<RoleCard, Geometry?>(nameof(Icon));
 
-    public static readonly StyledProperty<LocalizedString?> TitleProperty =
-        AvaloniaProperty.Register<RoleCard, LocalizedString?>(nameof(Title));
+    public static readonly StyledProperty<string?> TitleProperty =
+        AvaloniaProperty.Register<RoleCard, string?>(nameof(Title));
 
-    public static readonly StyledProperty<LocalizedString?> DescriptionProperty =
-        AvaloniaProperty.Register<RoleCard, LocalizedString?>(nameof(Description));
+    public static readonly StyledProperty<string?> DescriptionProperty =
+        AvaloniaProperty.Register<RoleCard, string?>(nameof(Description));
 
     public static readonly StyledProperty<IBrush?> AccentColorProperty =
         AvaloniaProperty.Register<RoleCard, IBrush?>(nameof(AccentColor));
@@ -23,13 +23,13 @@ public sealed class RoleCard : TemplatedControl
         set => SetValue(IconProperty, value);
     }
 
-    public LocalizedString? Title
+    public string? Title
     {
         get => GetValue(TitleProperty);
         set => SetValue(TitleProperty, value);
     }
 
-    public LocalizedString? Description
+    public string? Description
     {
         get => GetValue(DescriptionProperty);
         set => SetValue(DescriptionProperty, value);

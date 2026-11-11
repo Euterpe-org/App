@@ -21,7 +21,7 @@
             Foreground="{DynamicResource SecondaryTextColor}"
             HorizontalAlignment="Center"
             IsVisible="{Binding Hint, Converter={x:Static ObjectConverters.IsNotNull}, Mode=OneWay}"
-            Text="{Binding Hint, Mode=OneWay}"
+            Text="{Binding Hint.Value, Mode=OneWay}"
             TextAlignment="Center"
             TextWrapping="Wrap" />
         <ProgressBar

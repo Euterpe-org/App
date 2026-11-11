@@ -61,10 +61,10 @@
                     x:DataType="models:WizardRole">
                     <e:RoleCard
                         AccentColor="{Binding AccentColor, Converter={x:Static converters:FuncValueConverters.HexColorToBrushConverter}, Mode=OneTime}"
-                        Description="{Binding Description, Mode=OneTime}"
+                        Description="{Binding Description.Value}"
                         Icon="{Binding IconKey, Converter={x:Static converters:FuncValueConverters.SemiIconConverter}, Mode=OneTime}"
                         IsSelected="{Binding $parent[ListBoxItem].IsSelected, FallbackValue=False, Mode=OneWay}"
-                        Title="{Binding Title, Mode=OneTime}" />
+                        Title="{Binding Title.Value}" />
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
@@ -105,11 +105,11 @@
                                         VerticalAlignment="Center">
                                         <TextBlock
                                             FontSize="13"
-                                            Text="{Binding DisplayName, Mode=OneTime}" />
+                                            Text="{Binding DisplayName.Value}" />
                                         <TextBlock
                                             FontSize="11"
                                             Foreground="{DynamicResource SecondaryTextColor}"
-                                            Text="{Binding Description, Mode=OneTime}" />
+                                            Text="{Binding Description.Value}" />
                                     </StackPanel>
                                 </CheckBox>
                             </DataTemplate>

@@ -94,7 +94,7 @@
                             Foreground="{DynamicResource SecondaryTextColor}"
                             IsVisible="{Binding MelonLoaderInstallStatus, Converter={x:Static ObjectConverters.Equal}, ConverterParameter={x:Static mods:InstallStatus.Downloading}, Mode=OneWay}"
                             Margin="0,0,6,0"
-                            Text="{Binding DownloadText, Mode=OneWay}"
+                            Text="{Binding DownloadText.Value, Mode=OneWay}"
                             VerticalAlignment="Center" />
 
                         <Label
