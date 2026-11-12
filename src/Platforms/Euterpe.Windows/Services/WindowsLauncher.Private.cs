@@ -6,15 +6,8 @@ internal sealed partial class WindowsLauncher
     {
         try
         {
-            using var process = Process.Start(
-                new ProcessStartInfo("explorer.exe")
-                {
-                    ArgumentList = { "/select,", filePath },
-                    UseShellExecute = false,
-                    CreateNoWindow = true
-                }
-            );
-            return process is not null;
+            Process.StartAndForget("explorer.exe", ["/select,", filePath]);
+            return true;
         }
         catch (Exception ex)
         {

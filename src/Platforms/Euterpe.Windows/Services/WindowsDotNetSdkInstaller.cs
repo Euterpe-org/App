@@ -36,23 +36,10 @@ internal sealed class WindowsDotNetSdkInstaller : IDotNetSdkInstaller
             await AppDownloadManager.DownloadFileAsync(DotNetSdkUrl, tempFilePath).ConfigureAwait(false);
 
             Logger.LogInformation("Launching .NET SDK installer: {TempFilePath}", tempFilePath);
-            using var process = Process.Start(
-                new ProcessStartInfo(tempFilePath)
-                {
-                    UseShellExecute = false,
-                    CreateNoWindow = true
-                });
-
-            if (process is null)
+            var exitStatus = await Process.RunAsync(tempFilePath).ConfigureAwait(false);
+            if (exitStatus.ExitCode is not 0)
             {
-                throw new InvalidOperationException($"Failed to start .NET SDK installer process at {tempFilePath}");
-            }
-
-            await process.WaitForExitAsync().ConfigureAwait(false);
-
-            if (process.ExitCode is not 0)
-            {
-                throw new InvalidOperationException($".NET SDK installer exited with code {process.ExitCode}");
+                throw new InvalidOperationException($".NET SDK installer exited with code {exitStatus.ExitCode}");
             }
 
             Logger.LogInformation(".NET SDK installation completed successfully");
