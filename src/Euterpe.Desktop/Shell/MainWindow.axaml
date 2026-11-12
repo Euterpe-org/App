@@ -20,7 +20,7 @@
     MinHeight="600"
     MinWidth="1100"
     Title="Euterpe"
-    Width="1150"
+    Width="1180"
     WindowStartupLocation="CenterScreen">
 
     <Design.DataContext>
