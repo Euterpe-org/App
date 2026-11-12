@@ -1,102 +1,89 @@
+using System.Collections.Specialized;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Web;
-using Euterpe.Contracts.Account;
 
 namespace Euterpe.Core.Http.Listeners;
 
 internal sealed class LoopbackCallbackListener : ILoopbackCallbackListener
 {
-    private const string DonePageUrl = "https://euterpe-org.com/auth/app/done";
-    private const string NotFoundResponse = "HTTP/1.1 404 Not Found\r\nConnection: close\r\n\r\n";
+    private const string DonePageUrl = $"{EuterpeWeb.BaseUrl}/auth/app/done";
 
-    private readonly TcpListener _listener;
+    private static readonly byte[] FoundResponse = Encoding.ASCII.GetBytes($"HTTP/1.1 302 Found\r\nLocation: {DonePageUrl}\r\nConnection: close\r\n\r\n");
+    private static readonly byte[] BadRequestResponse = Encoding.ASCII.GetBytes("HTTP/1.1 400 Bad Request\r\nConnection: close\r\n\r\n");
+    private static readonly byte[] NotFoundResponse = Encoding.ASCII.GetBytes("HTTP/1.1 404 Not Found\r\nConnection: close\r\n\r\n");
+
+    private readonly TcpListener _listener = new(IPAddress.Loopback, 0);
 
     public LoopbackCallbackListener()
     {
-        _listener = new TcpListener(IPAddress.Loopback, 0);
         _listener.Start();
-
-        Port = ((IPEndPoint)_listener.LocalEndpoint).Port;
+        RedirectUri = new Uri($"{Uri.UriSchemeHttp}://{_listener.LocalEndpoint}/callback");
     }
 
-    public int Port { get; }
+    public Uri RedirectUri { get; }
 
-    public async Task<LoopbackCallbackResult> WaitForCallbackAsync(CancellationToken cancellationToken = default)
+    public async Task<string?> WaitForAuthorizationCodeAsync(string state, CancellationToken cancellationToken = default)
     {
         while (true)
         {
             using var client = await _listener.AcceptTcpClientAsync(cancellationToken).ConfigureAwait(false);
-
             var stream = client.GetStream();
-            await using (stream.ConfigureAwait(false))
+            var query = ParseQuery(await ReadRequestLineAsync(stream, cancellationToken).ConfigureAwait(false));
+
+            if (query["code"].IsNullOrEmpty() && query["error"].IsNullOrEmpty())
             {
-                var requestLine = await ReadRequestLineAsync(stream, cancellationToken).ConfigureAwait(false);
-                var result = ParseCallback(requestLine);
-
-                if (result.Code.IsNullOrEmpty() && result.Error.IsNullOrEmpty())
-                {
-                    await WriteResponseAsync(stream, NotFoundResponse, cancellationToken).ConfigureAwait(false);
-                    continue;
-                }
-
-                await WriteResponseAsync(stream, BuildResponse(result), cancellationToken).ConfigureAwait(false);
-                return result;
+                await stream.WriteAsync(NotFoundResponse, cancellationToken).ConfigureAwait(false);
+                continue;
             }
+
+            if (query["state"] != state)
+            {
+                Logger.LogWarning("Ignored a login callback with a mismatched state");
+                await stream.WriteAsync(NotFoundResponse, cancellationToken).ConfigureAwait(false);
+                continue;
+            }
+
+            if (query["error"] is { Length: > 0 } error)
+            {
+                Logger.LogWarning("Login failed with error: {Error}", error);
+                await stream.WriteAsync(BadRequestResponse, cancellationToken).ConfigureAwait(false);
+                return null;
+            }
+
+            await stream.WriteAsync(FoundResponse, cancellationToken).ConfigureAwait(false);
+            return query["code"];
         }
     }
 
     public void Dispose() => _listener.Dispose();
 
-    private static string BuildResponse(LoopbackCallbackResult result) =>
-        !result.Code.IsNullOrEmpty() && result.Error.IsNullOrEmpty()
-            ? $"HTTP/1.1 302 Found\r\nLocation: {DonePageUrl}\r\nConnection: close\r\n\r\n"
-            : "HTTP/1.1 400 Bad Request\r\nConnection: close\r\n\r\n";
-
-    private static async Task WriteResponseAsync(NetworkStream stream, string response, CancellationToken cancellationToken) =>
-        await stream.WriteAsync(Encoding.ASCII.GetBytes(response), cancellationToken).ConfigureAwait(false);
-
     private static async Task<string> ReadRequestLineAsync(NetworkStream stream, CancellationToken cancellationToken)
     {
-        var buffer = new byte[4096];
-        var total = 0;
-        while (total < buffer.Length)
+        using var reader = new StreamReader(stream, leaveOpen: true);
+        var requestLine = await reader.ReadLineAsync(cancellationToken).ConfigureAwait(false);
+
+        string? headerLine;
+        do
         {
-            var read = await stream.ReadAsync(buffer.AsMemory(total), cancellationToken).ConfigureAwait(false);
-            if (read is 0)
-            {
-                break;
-            }
+            headerLine = await reader.ReadLineAsync(cancellationToken).ConfigureAwait(false);
+        } while (!headerLine.IsNullOrEmpty());
 
-            total += read;
-            var text = Encoding.ASCII.GetString(buffer, 0, total);
-            var lineEnd = text.IndexOf("\r\n", StringComparison.Ordinal);
-            if (lineEnd >= 0)
-            {
-                return text[..lineEnd];
-            }
-        }
-
-        return Encoding.ASCII.GetString(buffer, 0, total);
+        return requestLine ?? "";
     }
 
-    private static LoopbackCallbackResult ParseCallback(string requestLine)
+    // requestLine: "GET /callback?code=...&state=... HTTP/1.1"
+    private static NameValueCollection ParseQuery(string requestLine)
     {
-        // requestLine: "GET /callback?code=...&state=... HTTP/1.1"
-        var parts = requestLine.Split(' ');
-        if (parts.Length < 2)
-        {
-            return new LoopbackCallbackResult(null, null, null);
-        }
-
-        var queryStart = parts[1].IndexOf('?');
-        if (queryStart < 0)
-        {
-            return new LoopbackCallbackResult(null, null, null);
-        }
-
-        var query = HttpUtility.ParseQueryString(parts[1][(queryStart + 1)..]);
-        return new LoopbackCallbackResult(query["code"], query["state"], query["error"]);
+        var target = requestLine.Split(' ').ElementAtOrDefault(1) ?? "";
+        var query = target.Split('?', 2).ElementAtOrDefault(1) ?? "";
+        return HttpUtility.ParseQueryString(query);
     }
+
+    #region Injections
+
+    public required ILogger<LoopbackCallbackListener> Logger { get; init; }
+
+    #endregion Injections
 }

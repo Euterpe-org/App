@@ -1,16 +1,15 @@
-using Euterpe.Contracts.Account;
-
 namespace Euterpe.Abstractions;
 
 public interface ILoopbackCallbackListener : IDisposable
 {
     /// <summary>
-    ///     The loopback port bound on 127.0.0.1, assigned by the OS.
+    ///     The OAuth redirect URI on 127.0.0.1 this listener receives the authorization response on, with a port assigned by the OS.
     /// </summary>
-    int Port { get; }
+    Uri RedirectUri { get; }
 
     /// <summary>
-    ///     Wait for the single OAuth callback request and parse its query parameters.
+    ///     Wait for the authorization response carrying <paramref name="state" />; every other request is answered with 404 and ignored.
     /// </summary>
-    Task<LoopbackCallbackResult> WaitForCallbackAsync(CancellationToken cancellationToken = default);
+    /// <returns>The authorization code, or null when the authorization was denied.</returns>
+    Task<string?> WaitForAuthorizationCodeAsync(string state, CancellationToken cancellationToken = default);
 }

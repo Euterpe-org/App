@@ -110,7 +110,7 @@ public static class CoreServiceExtensions
             builder.RegisterType<ImageCacheService>().As<IRemoteImageLoader>().PropertiesAutowired().SingleInstance();
             builder.RegisterType<JsonSerializationService>().As<IJsonSerializationService>().PropertiesAutowired().SingleInstance();
             builder.RegisterType<MessagePackSerializationService>().As<IMessagePackSerializationService>().PropertiesAutowired().SingleInstance();
-            builder.RegisterType<LoopbackCallbackListener>().As<ILoopbackCallbackListener>().InstancePerDependency();
+            builder.RegisterType<LoopbackCallbackListener>().As<ILoopbackCallbackListener>().PropertiesAutowired().InstancePerDependency().ExternallyOwned();
             builder.RegisterType<TelemetryService>().As<ITelemetryService>().PropertiesAutowired().SingleInstance();
             builder.RegisterType<VdfSerializationService>().As<IVdfSerializationService>().PropertiesAutowired().SingleInstance();
         }

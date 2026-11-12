@@ -37,11 +37,8 @@ public sealed partial class AuthServiceTest
             Logger = _logger
         };
 
-    private AuthService CreateLoginReadyService(IEuterpeAuthClient authClient)
-    {
-        var (launcher, listenerFactory) = StateEchoingLoopback(AuthCode, null);
-        return CreateAuthService(authClient, launcher: launcher, listenerFactory: listenerFactory);
-    }
+    private AuthService CreateLoginReadyService(IEuterpeAuthClient authClient) =>
+        CreateAuthService(authClient, listenerFactory: ListenerReturning(AuthCode));
 
     private static AuthState CreateLoggedInState() => new()
     {

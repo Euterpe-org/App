@@ -6,6 +6,8 @@ namespace Euterpe.Tests.Core;
 
 public sealed partial class AuthServiceTest
 {
+    private static readonly Uri RedirectUri = new("http://127.0.0.1:50000/callback");
+
     [Test]
     public async Task LoginAsync_InteractiveLogin_OpensAuthorizeUrlWithPkceChallengeAndState()
     {
@@ -13,7 +15,7 @@ public sealed partial class AuthServiceTest
         var launcher = IPlatformLauncher.Mock();
         launcher.OpenUriAsync(Any<string>()).Callback(url => capturedUrl = url);
 
-        var sut = CreateAuthService(launcher: launcher, listenerFactory: StaticListener(AuthCode, "tampered-state", null));
+        var sut = CreateAuthService(launcher: launcher, listenerFactory: ListenerReturning(null));
         await sut.LoginAsync();
 
         var query = HttpUtility.ParseQueryString(new Uri(capturedUrl!).Query);
@@ -22,7 +24,23 @@ public sealed partial class AuthServiceTest
         await Assert.That(query["code_challenge_method"]).IsEqualTo("S256");
         await Assert.That(query["code_challenge"]).IsNotNull();
         await Assert.That(query["state"]).IsNotNull();
-        await Assert.That(query["redirect_uri"]).StartsWith("http://127.0.0.1:");
+        await Assert.That(query["redirect_uri"]).IsEqualTo(RedirectUri.AbsoluteUri);
+    }
+
+    [Test]
+    public async Task LoginAsync_InteractiveLogin_WaitsForCallbackCarryingIssuedState()
+    {
+        string? capturedUrl = null;
+        var launcher = IPlatformLauncher.Mock();
+        launcher.OpenUriAsync(Any<string>()).Callback(url => capturedUrl = url);
+        var listener = ILoopbackCallbackListener.Mock();
+        listener.RedirectUri.Returns(RedirectUri);
+        var sut = CreateAuthService(launcher: launcher, listenerFactory: () => listener);
+
+        await sut.LoginAsync();
+
+        var issuedState = HttpUtility.ParseQueryString(new Uri(capturedUrl!).Query)["state"]!;
+        listener.WaitForAuthorizationCodeAsync(issuedState, Any<CancellationToken>()).WasCalled(Times.Once);
     }
 
     [Test]
@@ -39,10 +57,7 @@ public sealed partial class AuthServiceTest
             urlAtLaunch = authState.AuthorizeUrl;
             throw new InvalidOperationException("No default browser");
         });
-        var listener = ILoopbackCallbackListener.Mock();
-        listener.WaitForCallbackAsync(Any<CancellationToken>()).Returns(() =>
-            new LoopbackCallbackResult(AuthCode, HttpUtility.ParseQueryString(new Uri(authState.AuthorizeUrl!).Query)["state"], null));
-        var sut = CreateAuthService(authClient, authState, launcher, listenerFactory: () => listener);
+        var sut = CreateAuthService(authClient, authState, launcher, listenerFactory: ListenerReturning(AuthCode));
 
         await sut.LoginAsync();
 
@@ -57,9 +72,10 @@ public sealed partial class AuthServiceTest
     [Test]
     public async Task LoginAsync_WaitingForAuthorization_PublishesLinkUntilAttemptEnds()
     {
-        var callback = new TaskCompletionSource<LoopbackCallbackResult>(TaskCreationOptions.RunContinuationsAsynchronously);
+        var callback = new TaskCompletionSource<string?>(TaskCreationOptions.RunContinuationsAsynchronously);
         var listener = ILoopbackCallbackListener.Mock();
-        listener.WaitForCallbackAsync(Any<CancellationToken>()).Returns(() => callback.Task);
+        listener.RedirectUri.Returns(RedirectUri);
+        listener.WaitForAuthorizationCodeAsync(Any<string>(), Any<CancellationToken>()).Returns(() => callback.Task);
         var sut = CreateAuthService(listenerFactory: () => listener);
 
         var login = sut.LoginAsync();
@@ -67,7 +83,7 @@ public sealed partial class AuthServiceTest
         using var assertions = Assert.Multiple();
         await Assert.That(sut.AuthState.AuthorizeUrl).StartsWith("https://euterpe-org.com/auth/app?");
 
-        callback.SetResult(new LoopbackCallbackResult(null, "invalid-state", null));
+        callback.SetResult(null);
         await login;
 
         await Assert.That(sut.AuthState.AuthorizeUrl).IsNull();
@@ -79,8 +95,7 @@ public sealed partial class AuthServiceTest
         var authClientMock = IEuterpeAuthClient.Mock();
         authClientMock.ExchangeAppTokenAsync(Any<AppTokenRequest>(), Any<CancellationToken>())
             .Returns(new AppTokenResponse(ValidAccessToken, ValidRefreshToken, TestUser));
-        var (launcher, listenerFactory) = StateEchoingLoopback(AuthCode, null);
-        var sut = CreateAuthService(authClientMock, launcher: launcher, listenerFactory: listenerFactory);
+        var sut = CreateAuthService(authClientMock, listenerFactory: ListenerReturning(AuthCode));
 
         await sut.LoginAsync();
 
@@ -97,8 +112,7 @@ public sealed partial class AuthServiceTest
         var authClientMock = IEuterpeAuthClient.Mock();
         authClientMock.ExchangeAppTokenAsync(Any<AppTokenRequest>(), Any<CancellationToken>())
             .Throws(new HttpRequestException("Network error"));
-        var (launcher, listenerFactory) = StateEchoingLoopback(AuthCode, null);
-        var sut = CreateAuthService(authClientMock, launcher: launcher, listenerFactory: listenerFactory);
+        var sut = CreateAuthService(authClientMock, listenerFactory: ListenerReturning(AuthCode));
 
         await sut.LoginAsync();
 
@@ -112,7 +126,8 @@ public sealed partial class AuthServiceTest
     {
         var authClientMock = IEuterpeAuthClient.Mock();
         var listener = ILoopbackCallbackListener.Mock();
-        listener.WaitForCallbackAsync(Any<CancellationToken>()).Throws(new OperationCanceledException());
+        listener.RedirectUri.Returns(RedirectUri);
+        listener.WaitForAuthorizationCodeAsync(Any<string>(), Any<CancellationToken>()).Throws(new OperationCanceledException());
         var sut = CreateAuthService(authClientMock, listenerFactory: () => listener);
 
         await sut.LoginAsync();
@@ -124,24 +139,27 @@ public sealed partial class AuthServiceTest
     }
 
     [Test]
-    public async Task LoginAsync_WhenCodeMissing_ShouldNotExchangeNorSetReady()
+    public async Task LoginAsync_WhenCallbackConnectionFails_ShouldNotExchangeNorSetReady()
     {
         var authClientMock = IEuterpeAuthClient.Mock();
-        var (launcher, listenerFactory) = StateEchoingLoopback(null, null);
-        var sut = CreateAuthService(authClientMock, launcher: launcher, listenerFactory: listenerFactory);
+        var listener = ILoopbackCallbackListener.Mock();
+        listener.RedirectUri.Returns(RedirectUri);
+        listener.WaitForAuthorizationCodeAsync(Any<string>(), Any<CancellationToken>()).Throws(new IOException());
+        var sut = CreateAuthService(authClientMock, listenerFactory: () => listener);
 
         await sut.LoginAsync();
 
         using var _ = Assert.Multiple();
         await Assert.That(sut.Ready.IsSet).IsFalse();
+        await Assert.That(sut.AuthState.AuthorizeUrl).IsNull();
         authClientMock.ExchangeAppTokenAsync(Any<AppTokenRequest>(), Any<CancellationToken>()).WasNeverCalled();
     }
 
     [Test]
-    public async Task LoginAsync_WhenStateMismatch_ShouldNotExchangeNorSetReady()
+    public async Task LoginAsync_WhenAuthorizationDenied_ShouldNotExchangeNorSetReady()
     {
         var authClientMock = IEuterpeAuthClient.Mock();
-        var sut = CreateAuthService(authClientMock, listenerFactory: StaticListener(AuthCode, "tampered-state", null));
+        var sut = CreateAuthService(authClientMock, listenerFactory: ListenerReturning(null));
 
         await sut.LoginAsync();
 
@@ -150,39 +168,11 @@ public sealed partial class AuthServiceTest
         authClientMock.ExchangeAppTokenAsync(Any<AppTokenRequest>(), Any<CancellationToken>()).WasNeverCalled();
     }
 
-    [Test]
-    public async Task LoginAsync_WhenCallbackHasError_ShouldNotExchangeNorSetReady()
-    {
-        var authClientMock = IEuterpeAuthClient.Mock();
-        var (launcher, listenerFactory) = StateEchoingLoopback(null, "access_denied");
-        var sut = CreateAuthService(authClientMock, launcher: launcher, listenerFactory: listenerFactory);
-
-        await sut.LoginAsync();
-
-        using var _ = Assert.Multiple();
-        await Assert.That(sut.Ready.IsSet).IsFalse();
-        authClientMock.ExchangeAppTokenAsync(Any<AppTokenRequest>(), Any<CancellationToken>()).WasNeverCalled();
-    }
-
-    private static (IPlatformLauncher launcher, Func<ILoopbackCallbackListener> factory) StateEchoingLoopback(string? code, string? error)
-    {
-        string? capturedState = null;
-        var launcher = IPlatformLauncher.Mock();
-        launcher.OpenUriAsync(Any<string>())
-            .Callback(url => capturedState = HttpUtility.ParseQueryString(new Uri(url).Query)["state"]);
-
-        var listener = ILoopbackCallbackListener.Mock();
-        listener.WaitForCallbackAsync(Any<CancellationToken>())
-            .Returns(() => new LoopbackCallbackResult(code, capturedState, error));
-
-        return (launcher, () => listener);
-    }
-
-    private static Func<ILoopbackCallbackListener> StaticListener(string? code, string? state, string? error)
+    private static Func<ILoopbackCallbackListener> ListenerReturning(string? code)
     {
         var listener = ILoopbackCallbackListener.Mock();
-        listener.WaitForCallbackAsync(Any<CancellationToken>())
-            .Returns(new LoopbackCallbackResult(code, state, error));
+        listener.RedirectUri.Returns(RedirectUri);
+        listener.WaitForAuthorizationCodeAsync(Any<string>(), Any<CancellationToken>()).Returns(code);
         return () => listener;
     }
 }

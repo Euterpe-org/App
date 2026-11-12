@@ -8,7 +8,7 @@ namespace Euterpe.Core;
 internal sealed partial class AuthService : IAuthService
 {
     private const string ClientId = "euterpe-app";
-    private const string AuthorizePageUrl = "https://euterpe-org.com/auth/app";
+    private const string AuthorizePageUrl = $"{EuterpeWeb.BaseUrl}/auth/app";
     private static readonly TimeSpan CallbackTimeout = TimeSpan.FromMinutes(5);
     private readonly AsyncExclusiveLock _lock = new();
     public AsyncManualResetEvent Ready { get; } = new(false);
@@ -20,7 +20,7 @@ internal sealed partial class AuthService : IAuthService
         var state = RandomNumberGenerator.GetBytes(32).ToBase64Url();
 
         using var listener = ListenerFactory();
-        var redirectUri = $"http://127.0.0.1:{listener.Port}/callback";
+        var redirectUri = listener.RedirectUri.AbsoluteUri;
 
         var authorizeUrl = BuildAuthorizeUrl(redirectUri, challenge, state);
         try

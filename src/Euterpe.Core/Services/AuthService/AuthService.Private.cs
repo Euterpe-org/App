@@ -20,38 +20,30 @@ internal sealed partial class AuthService
     private async Task CompleteBrowserLoginAsync(ILoopbackCallbackListener listener, string state, string verifier, string redirectUri)
     {
         using var cts = new CancellationTokenSource(CallbackTimeout);
-        LoopbackCallbackResult callback;
+        string? code;
         try
         {
-            callback = await listener.WaitForCallbackAsync(cts.Token).ConfigureAwait(false);
+            code = await listener.WaitForAuthorizationCodeAsync(state, cts.Token).ConfigureAwait(false);
         }
         catch (OperationCanceledException)
         {
             Logger.LogWarning("Login timed out waiting for the authorization callback");
             return;
         }
-
-        if (callback.State != state)
+        catch (IOException ex)
         {
-            Logger.LogWarning("Login rejected: state mismatch");
+            Logger.LogWarning(ex, "Login callback connection failed");
             return;
         }
 
-        if (!callback.Error.IsNullOrEmpty())
+        if (code is null)
         {
-            Logger.LogWarning("Login failed with error: {Error}", callback.Error);
-            return;
-        }
-
-        if (callback.Code.IsNullOrEmpty())
-        {
-            Logger.LogWarning("Login callback missing authorization code");
             return;
         }
 
         try
         {
-            await ExchangeCodeAsync(callback.Code, verifier, redirectUri).ConfigureAwait(false);
+            await ExchangeCodeAsync(code, verifier, redirectUri).ConfigureAwait(false);
         }
         catch (Exception ex)
         {
