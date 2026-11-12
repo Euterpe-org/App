@@ -2,7 +2,7 @@
 
 ## Language & APIs
 
-- Use the newest C# syntax and BCL APIs the repo's `LangVersion`/TFM allows (`field` keyword, `extension` members, collection expressions, span/`IFormatProvider` overloads) — never an older equivalent out of habit; the newer API is usually the better-optimized one.
+- Use the newest C# syntax and BCL APIs the repo's `LangVersion`/TFM allows (`field` keyword, `extension` members, collection expressions, span/`IFormatProvider` overloads) when they buy something (less code, fewer branches, better performance) — never an older equivalent out of habit. A newer spelling that compiles to the same code is optional; use whichever reads better.
 - When several APIs solve the same problem, pick the best-performing one for the concrete situation (allocations, lookup cost, parse overloads) — deliberately, not first-that-works.
 
 ## Naming & comments
