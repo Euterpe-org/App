@@ -21,17 +21,17 @@
         <PackageVersion Include="CliWrap" Version="3.10.5"/>
         <PackageVersion Include="CommunityToolkit.Mvvm" Version="8.4.2"/>
         <PackageVersion Include="DotNext.Threading" Version="6.12.1"/>
-        <PackageVersion Include="Downloader" Version="7.0.1"/>
+        <PackageVersion Include="Downloader" Version="7.1.0"/>
         <PackageVersion Include="DynamicData" Version="9.5.0"/>
         <PackageVersion Include="HotAvalonia" Version="3.1.5"/>
         <PackageVersion Include="Irihi.Ursa" Version="2.3.1"/>
         <PackageVersion Include="Irihi.Ursa.Themes.Semi" Version="2.3.1"/>
         <PackageVersion Include="JetBrains.Annotations" Version="2026.2.0"/>
         <PackageVersion Include="JetBrains.dotCover.Framework" Version="1.0.2"/>
-        <PackageVersion Include="Meziantou.Framework.SnapshotTesting.Roslyn" Version="1.0.20"/>
-        <PackageVersion Include="Microsoft.Build.Utilities.Core" Version="18.11.0"/>
-        <PackageVersion Include="Microsoft.CodeAnalysis.Analyzers" Version="5.9.0"/>
-        <PackageVersion Include="Microsoft.CodeAnalysis.CSharp" Version="5.9.0"/>
+        <PackageVersion Include="Meziantou.Framework.SnapshotTesting.Roslyn" Version="1.0.21"/>
+        <PackageVersion Include="Microsoft.Build.Utilities.Core" Version="18.12.2"/>
+        <PackageVersion Include="Microsoft.CodeAnalysis.Analyzers" Version="5.12.0"/>
+        <PackageVersion Include="Microsoft.CodeAnalysis.CSharp" Version="5.12.0"/>
         <PackageVersion Include="Microsoft.Extensions.Http" Version="11.0.0"/>
         <PackageVersion Include="Microsoft.Extensions.Http.Resilience" Version="11.0.0"/>
         <PackageVersion Include="Nerdbank.MessagePack" Version="1.4.104"/>
@@ -42,8 +42,8 @@
         <PackageVersion Include="ObservableCollections" Version="3.3.4"/>
         <PackageVersion Include="R3" Version="1.3.1"/>
         <PackageVersion Include="R3Extensions.Avalonia" Version="1.3.1"/>
-        <PackageVersion Include="Refit" Version="16.4.0"/>
-        <PackageVersion Include="Refit.HttpClientFactory" Version="16.4.0"/>
+        <PackageVersion Include="Refit" Version="17.0.0"/>
+        <PackageVersion Include="Refit.HttpClientFactory" Version="17.0.0"/>
         <PackageVersion Include="ResXLocalize.Avalonia" Version="3.0.0"/>
         <PackageVersion Include="Riok.Mapperly" Version="4.3.1"/>
         <PackageVersion Include="Roslynator.CodeAnalysis.Analyzers" Version="5.0.1"/>
