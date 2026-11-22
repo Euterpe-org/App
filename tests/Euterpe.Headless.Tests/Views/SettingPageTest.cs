@@ -1,6 +1,7 @@
 using Euterpe.Abstractions;
 using Euterpe.Features.Setting;
 using Euterpe.Models;
+using Euterpe.Models.Auth;
 using Euterpe.Models.Common;
 using Euterpe.Models.Games;
 using Microsoft.Extensions.Logging.Abstractions;
@@ -26,6 +27,10 @@ public sealed class SettingPageTest : HeadlessTest
             LocalizationService = new LocalizationService { Config = config, Logger = NullLogger<LocalizationService>.Instance },
             AppLocalService = IAppLocalService.Mock(),
             GameLocalServiceFor = static _ => IGameLocalService.Mock(),
+            AuthState = new AuthState(),
+            AuthService = IAuthService.Mock(),
+            MessageBoxService = IMessageBoxService.Mock(),
+            AppLifetimeService = IAppLifetimeService.Mock(),
             Launcher = IPlatformLauncher.Mock(),
             Logger = NullLogger<SettingPageViewModel>.Instance
         };

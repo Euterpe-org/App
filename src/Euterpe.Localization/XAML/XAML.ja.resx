@@ -40,6 +40,9 @@
   <data name="Button_LaunchGame" xml:space="preserve">
     <value>ゲームを起動</value>
   </data>
+  <data name="Button_Logout" xml:space="preserve">
+    <value>ログアウト</value>
+  </data>
   <data name="Button_Next" xml:space="preserve">
     <value>次へ</value>
   </data>
@@ -556,6 +559,9 @@
   <data name="Setting_Description_Language" xml:space="preserve">
     <value>表示言語</value>
   </data>
+  <data name="Setting_Description_Logout" xml:space="preserve">
+    <value>Euterpe を再度開いてログインしてください</value>
+  </data>
   <data name="Setting_Description_MinimizeToTrayOnClose" xml:space="preserve">
     <value>メインウィンドウを閉じても Euterpe をタスクトレイで実行し続けます</value>
   </data>
@@ -570,6 +576,9 @@
   </data>
   <data name="Setting_Description_UpdateChannel" xml:space="preserve">
     <value>Euterpe の更新チャンネル</value>
+  </data>
+  <data name="Setting_Group_Account" xml:space="preserve">
+    <value>アカウント</value>
   </data>
   <data name="Setting_Group_Advanced" xml:space="preserve">
     <value>詳細設定</value>

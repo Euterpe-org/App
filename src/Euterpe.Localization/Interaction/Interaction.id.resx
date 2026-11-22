@@ -73,6 +73,9 @@
   <data name="MessageBox_Content_Login_Failed" xml:space="preserve">
     <value>Gagal login. Coba lagi? Memilih “Tidak” akan menutup Euterpe.</value>
   </data>
+  <data name="MessageBox_Content_Logout_Confirm" xml:space="preserve">
+    <value>Logout? Setelah itu, buka ulang Euterpe untuk login.</value>
+  </data>
   <data name="MessageBox_Content_MelonLoader_Install_Failed" xml:space="preserve">
     <value>Gagal menginstal MelonLoader</value>
   </data>

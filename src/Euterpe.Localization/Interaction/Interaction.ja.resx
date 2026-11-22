@@ -73,6 +73,9 @@
   <data name="MessageBox_Content_Login_Failed" xml:space="preserve">
     <value>ログインに失敗しました。再試行しますか？「いいえ」を選ぶと Euterpe を終了します。</value>
   </data>
+  <data name="MessageBox_Content_Logout_Confirm" xml:space="preserve">
+    <value>ログアウトしますか？その後、Euterpe を再度開いてログインしてください。</value>
+  </data>
   <data name="MessageBox_Content_MelonLoader_Install_Failed" xml:space="preserve">
     <value>MelonLoader のインストールに失敗しました</value>
   </data>

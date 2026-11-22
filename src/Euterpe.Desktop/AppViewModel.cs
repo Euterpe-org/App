@@ -19,10 +19,11 @@ public sealed partial class AppViewModel : ViewModelBase
     private static void Show() => ActivateMainWindow();
 
     [RelayCommand]
-    private static void Exit() => GetCurrentDesktop().Shutdown();
+    private void Exit() => AppLifetimeService.Shutdown();
 
     #region Injections
 
+    public required IAppLifetimeService AppLifetimeService { get; init; }
     public required ILogger<AppViewModel> Logger { get; init; }
 #if PUBLISH
     public required ITelemetryService TelemetryService { get; init; }

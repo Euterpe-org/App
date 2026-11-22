@@ -73,6 +73,9 @@
   <data name="MessageBox_Content_Login_Failed" xml:space="preserve">
     <value>No se pudo iniciar sesión. ¿Quieres intentarlo de nuevo? Si seleccionas No, Euterpe se cerrará.</value>
   </data>
+  <data name="MessageBox_Content_Logout_Confirm" xml:space="preserve">
+    <value>¿Cerrar sesión? Luego tendrás que volver a abrir Euterpe para iniciar sesión.</value>
+  </data>
   <data name="MessageBox_Content_MelonLoader_Install_Failed" xml:space="preserve">
     <value>No se pudo instalar MelonLoader</value>
   </data>

@@ -40,6 +40,9 @@
   <data name="Button_LaunchGame" xml:space="preserve">
     <value>Játék</value>
   </data>
+  <data name="Button_Logout" xml:space="preserve">
+    <value>Kijelentkezés</value>
+  </data>
   <data name="Button_Next" xml:space="preserve">
     <value>Tovább</value>
   </data>
@@ -556,6 +559,9 @@
   <data name="Setting_Description_Language" xml:space="preserve">
     <value>Felület nyelve</value>
   </data>
+  <data name="Setting_Description_Logout" xml:space="preserve">
+    <value>A bejelentkezéshez nyisd meg újra az Euterpét</value>
+  </data>
   <data name="Setting_Description_MinimizeToTrayOnClose" xml:space="preserve">
     <value>Az Euterpe tovább fut a rendszertálcán a főablak bezárása után</value>
   </data>
@@ -570,6 +576,9 @@
   </data>
   <data name="Setting_Description_UpdateChannel" xml:space="preserve">
     <value>Az Euterpe frissítési csatornája</value>
+  </data>
+  <data name="Setting_Group_Account" xml:space="preserve">
+    <value>Fiók</value>
   </data>
   <data name="Setting_Group_Advanced" xml:space="preserve">
     <value>Haladó</value>

@@ -40,6 +40,9 @@
   <data name="Button_LaunchGame" xml:space="preserve">
     <value>Spielen</value>
   </data>
+  <data name="Button_Logout" xml:space="preserve">
+    <value>Abmelden</value>
+  </data>
   <data name="Button_Next" xml:space="preserve">
     <value>Weiter</value>
   </data>
@@ -556,6 +559,9 @@
   <data name="Setting_Description_Language" xml:space="preserve">
     <value>Sprache der Benutzeroberfläche</value>
   </data>
+  <data name="Setting_Description_Logout" xml:space="preserve">
+    <value>Öffne Euterpe erneut, um dich anzumelden</value>
+  </data>
   <data name="Setting_Description_MinimizeToTrayOnClose" xml:space="preserve">
     <value>Euterpe beim Schließen des Hauptfensters im Infobereich weiter ausführen</value>
   </data>
@@ -570,6 +576,9 @@
   </data>
   <data name="Setting_Description_UpdateChannel" xml:space="preserve">
     <value>Update-Kanal für Euterpe</value>
+  </data>
+  <data name="Setting_Group_Account" xml:space="preserve">
+    <value>Konto</value>
   </data>
   <data name="Setting_Group_Advanced" xml:space="preserve">
     <value>Erweitert</value>

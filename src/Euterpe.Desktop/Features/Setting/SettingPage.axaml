@@ -165,6 +165,23 @@
 
             </u:SettingsCardGroup>
 
+            <u:SettingsCardGroup
+                Header="{Localize Setting_Group_Account}">
+
+                <!--  Logout  -->
+                <u:SettingsCard
+                    Content="{Binding AuthState.CurrentUser.Nickname}"
+                    Description="{Localize Setting_Description_Logout}">
+                    <u:SettingsCard.RightContent>
+                        <Button
+                            Classes="Danger"
+                            Command="{Binding LogoutCommand}"
+                            Content="{Localize Button_Logout}" />
+                    </u:SettingsCard.RightContent>
+                </u:SettingsCard>
+
+            </u:SettingsCardGroup>
+
         </StackPanel>
     </ScrollViewer>
 

@@ -73,6 +73,9 @@
   <data name="MessageBox_Content_Login_Failed" xml:space="preserve">
     <value>Anmeldung fehlgeschlagen. Möchtest du es erneut versuchen? Wenn du Nein wählst, wird Euterpe geschlossen.</value>
   </data>
+  <data name="MessageBox_Content_Logout_Confirm" xml:space="preserve">
+    <value>Abmelden? Danach musst du Euterpe erneut öffnen, um dich anzumelden.</value>
+  </data>
   <data name="MessageBox_Content_MelonLoader_Install_Failed" xml:space="preserve">
     <value>MelonLoader konnte nicht installiert werden</value>
   </data>

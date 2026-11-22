@@ -73,6 +73,9 @@
   <data name="MessageBox_Content_Login_Failed" xml:space="preserve">
     <value>Falha no login. Deseja tentar novamente? Se escolher “Não”, o Euterpe será fechado.</value>
   </data>
+  <data name="MessageBox_Content_Logout_Confirm" xml:space="preserve">
+    <value>Sair da conta? Depois, abra o Euterpe novamente para fazer login.</value>
+  </data>
   <data name="MessageBox_Content_MelonLoader_Install_Failed" xml:space="preserve">
     <value>Falha ao instalar o MelonLoader</value>
   </data>

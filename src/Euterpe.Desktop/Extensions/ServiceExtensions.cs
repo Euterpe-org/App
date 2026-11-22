@@ -8,6 +8,7 @@ public static partial class ServiceExtensions
     {
         public void RegisterDesktopServices()
         {
+            builder.RegisterType<AppLifetimeService>().As<IAppLifetimeService>().SingleInstance();
             builder.RegisterType<DialogService>().As<IDialogService>().PropertiesAutowired().SingleInstance();
             builder.RegisterType<FileSystemPickerService>().As<IFileSystemPickerService>().PropertiesAutowired().SingleInstance();
             builder.RegisterType<MessageBoxService>().As<IMessageBoxService>().SingleInstance();

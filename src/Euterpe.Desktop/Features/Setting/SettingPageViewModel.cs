@@ -38,12 +38,28 @@ public sealed partial class SettingPageViewModel : ViewModelBase
     private async Task ChangeCacheFolderAsync() =>
         Config.CacheFolder = await AppLocalService.GetCacheFolderAsync().ConfigureAwait(false);
 
+    [RelayCommand]
+    private async Task LogoutAsync()
+    {
+        if (!await MessageBoxService.WarningConfirmAsync(MessageBox_Content_Logout_Confirm).ConfigureAwait(true))
+        {
+            return;
+        }
+
+        await AuthService.LogoutAsync().ConfigureAwait(true);
+        AppLifetimeService.Shutdown();
+    }
+
     #region Injections
 
     public required Config Config { get; init; }
     public required LocalizationService LocalizationService { get; init; }
     public required IAppLocalService AppLocalService { get; init; }
     public required Func<GameId, IGameLocalService> GameLocalServiceFor { get; init; }
+    public required AuthState AuthState { get; init; }
+    public required IAuthService AuthService { get; init; }
+    public required IMessageBoxService MessageBoxService { get; init; }
+    public required IAppLifetimeService AppLifetimeService { get; init; }
     public required ILogger<SettingPageViewModel> Logger { get; init; }
 
     #endregion Injections

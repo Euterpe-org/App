@@ -73,6 +73,9 @@
   <data name="MessageBox_Content_Login_Failed" xml:space="preserve">
     <value>Prijava nije uspjela. Pokušati ponovno? Odabirom opcije „Ne” Euterpe će se zatvoriti.</value>
   </data>
+  <data name="MessageBox_Content_Logout_Confirm" xml:space="preserve">
+    <value>Odjaviti se? Nakon toga ponovno otvori Euterpe za prijavu.</value>
+  </data>
   <data name="MessageBox_Content_MelonLoader_Install_Failed" xml:space="preserve">
     <value>Instalacija MelonLoadera nije uspjela</value>
   </data>

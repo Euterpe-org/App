@@ -73,6 +73,9 @@
   <data name="MessageBox_Content_Login_Failed" xml:space="preserve">
     <value>Échec de la connexion. Veux-tu réessayer ? Si tu réponds Non, Euterpe se fermera.</value>
   </data>
+  <data name="MessageBox_Content_Logout_Confirm" xml:space="preserve">
+    <value>Te déconnecter ? Tu devras rouvrir Euterpe pour te reconnecter.</value>
+  </data>
   <data name="MessageBox_Content_MelonLoader_Install_Failed" xml:space="preserve">
     <value>Échec de l'installation de MelonLoader</value>
   </data>

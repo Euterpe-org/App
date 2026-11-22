@@ -40,6 +40,9 @@
   <data name="Button_LaunchGame" xml:space="preserve">
     <value>開始遊戲</value>
   </data>
+  <data name="Button_Logout" xml:space="preserve">
+    <value>登出</value>
+  </data>
   <data name="Button_Next" xml:space="preserve">
     <value>下一步</value>
   </data>
@@ -556,6 +559,9 @@
   <data name="Setting_Description_Language" xml:space="preserve">
     <value>介面語言</value>
   </data>
+  <data name="Setting_Description_Logout" xml:space="preserve">
+    <value>需要重新開啟 Euterpe 登入</value>
+  </data>
   <data name="Setting_Description_MinimizeToTrayOnClose" xml:space="preserve">
     <value>開啟後，關閉主視窗不會結束 Euterpe；可從系統匣選單結束</value>
   </data>
@@ -570,6 +576,9 @@
   </data>
   <data name="Setting_Description_UpdateChannel" xml:space="preserve">
     <value>Euterpe 的更新頻道</value>
+  </data>
+  <data name="Setting_Group_Account" xml:space="preserve">
+    <value>帳號</value>
   </data>
   <data name="Setting_Group_Advanced" xml:space="preserve">
     <value>進階</value>

@@ -73,6 +73,9 @@
   <data name="MessageBox_Content_Login_Failed" xml:space="preserve">
     <value>A bejelentkezés sikertelen. Szeretnéd újrapróbálni? A „Nem” választása bezárja az Euterpét.</value>
   </data>
+  <data name="MessageBox_Content_Logout_Confirm" xml:space="preserve">
+    <value>Kijelentkezel? Utána nyisd meg újra az Euterpét a bejelentkezéshez.</value>
+  </data>
   <data name="MessageBox_Content_MelonLoader_Install_Failed" xml:space="preserve">
     <value>A MelonLoader telepítése sikertelen</value>
   </data>

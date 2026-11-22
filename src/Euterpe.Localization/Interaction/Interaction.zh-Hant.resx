@@ -73,6 +73,9 @@
   <data name="MessageBox_Content_Login_Failed" xml:space="preserve">
     <value>登入失敗，是否要重試？選擇「否」將關閉 Euterpe。</value>
   </data>
+  <data name="MessageBox_Content_Logout_Confirm" xml:space="preserve">
+    <value>確定要登出嗎？之後需要重新開啟 Euterpe 登入。</value>
+  </data>
   <data name="MessageBox_Content_MelonLoader_Install_Failed" xml:space="preserve">
     <value>MelonLoader 安裝失敗</value>
   </data>

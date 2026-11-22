@@ -73,6 +73,9 @@
   <data name="MessageBox_Content_Login_Failed" xml:space="preserve">
     <value>Aanmelden mislukt. Wil je het opnieuw proberen? Als je Nee kiest, wordt Euterpe afgesloten.</value>
   </data>
+  <data name="MessageBox_Content_Logout_Confirm" xml:space="preserve">
+    <value>Wil je je afmelden? Open Euterpe daarna opnieuw om je aan te melden.</value>
+  </data>
   <data name="MessageBox_Content_MelonLoader_Install_Failed" xml:space="preserve">
     <value>Installatie van MelonLoader mislukt</value>
   </data>
