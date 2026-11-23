@@ -526,14 +526,19 @@
                                                     </Border.Transitions>
 
                                                     <Border
-                                                        Background="#26FFFFFF"
+                                                        Background="#40FFFFFF"
                                                         Classes="playDisc"
+                                                        ClipToBounds="True"
                                                         CornerRadius="20"
                                                         Height="40"
                                                         HorizontalAlignment="Center"
                                                         RenderTransformOrigin="50%,50%"
                                                         VerticalAlignment="Center"
                                                         Width="40">
+                                                        <Border.BackdropEffect>
+                                                            <BlurEffect
+                                                                Radius="10" />
+                                                        </Border.BackdropEffect>
                                                         <Border.Transitions>
                                                             <Transitions>
                                                                 <TransformOperationsTransition
