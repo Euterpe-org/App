@@ -1,11 +1,11 @@
 using System.Runtime.CompilerServices;
 using Autofac;
-using Avalonia.Controls.ApplicationLifetimes;
 using Euterpe.Abstractions;
 using Euterpe.Features.Charting;
 using Euterpe.Features.Share;
 using Euterpe.Models;
 using Euterpe.Models.Progress;
+using Euterpe.Utils;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Abstractions;
 using R3;
@@ -94,7 +94,7 @@ public sealed class SystemActivationServiceTest : HeadlessTest
     public Task HandleActivation_EmptyArgument_RestoresHiddenMinimizedMainWindow() => RunOnUI(async () =>
     {
         var window = new Window();
-        var desktop = (IClassicDesktopStyleApplicationLifetime)Application.Current!.ApplicationLifetime!;
+        var desktop = DesktopUtils.GetCurrentDesktop();
         var previousMainWindow = desktop.MainWindow;
         desktop.MainWindow = window;
         try

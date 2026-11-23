@@ -1,4 +1,3 @@
-using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Input;
 using Avalonia.Input.Platform;
 using Euterpe.Abstractions;
@@ -7,6 +6,7 @@ using Euterpe.Localization;
 using Euterpe.Models.Auth;
 using Euterpe.Proxies;
 using Euterpe.Shell;
+using Euterpe.Utils;
 using Microsoft.Extensions.Logging.Abstractions;
 
 namespace Euterpe.Headless.Tests.Views;
@@ -21,7 +21,7 @@ public sealed class MainSplashWindowTest : HeadlessTest
         const string url = "https://euterpe-org.com/auth/app?state=current-attempt&code_challenge=challenge";
         var vm = NewViewModel();
         var window = new MainSplashWindow { DataContext = vm, MainWindowFactory = () => new MainWindow() };
-        var desktop = (IClassicDesktopStyleApplicationLifetime)Application.Current!.ApplicationLifetime!;
+        var desktop = DesktopUtils.GetCurrentDesktop();
         var previousMainWindow = desktop.MainWindow;
         desktop.MainWindow = window;
         try
