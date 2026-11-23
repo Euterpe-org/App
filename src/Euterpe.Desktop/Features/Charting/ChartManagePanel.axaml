@@ -425,6 +425,7 @@
                         <ItemsControl.ItemsPanel>
                             <ItemsPanelTemplate>
                                 <labs:VirtualizingWrapPanel
+                                    CacheRows="0"
                                     SpacingMode="None" />
                             </ItemsPanelTemplate>
                         </ItemsControl.ItemsPanel>
