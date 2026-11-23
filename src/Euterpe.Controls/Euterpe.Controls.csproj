@@ -8,7 +8,6 @@
     <ItemGroup>
         <PackageReference Include="Avalonia"/>
         <PackageReference Include="Avalonia.Labs.AnimatedImage"/>
-        <PackageReference Include="Avalonia.Labs.Controls"/>
         <PackageReference Include="Irihi.Ursa"/>
         <PackageReference Include="Semi.Avalonia"/>
     </ItemGroup>
