@@ -9,15 +9,9 @@ namespace Euterpe.Controls;
 ///     An enter/leave depth counter is used because <see cref="DragDrop.AllowDropProperty" /> inherits to
 ///     children, so the drag events fire repeatedly as the pointer crosses child controls.
 /// </summary>
-public sealed class DropZone : AvaloniaObject
+public sealed partial class DropZone : AvaloniaObject
 {
     private const string DragOverClass = "DragOver";
-
-    public static readonly AttachedProperty<bool> IsActiveProperty =
-        AvaloniaProperty.RegisterAttached<DropZone, Control, bool>("IsActive");
-
-    private static readonly AttachedProperty<int> DragDepthProperty =
-        AvaloniaProperty.RegisterAttached<DropZone, Control, int>("DragDepth");
 
     static DropZone() => IsActiveProperty.Changed.AddClassHandler<Control>(OnIsActiveChanged);
 
@@ -25,9 +19,11 @@ public sealed class DropZone : AvaloniaObject
     {
     }
 
-    public static bool GetIsActive(Control control) => control.GetValue(IsActiveProperty);
+    [GeneratedAttachedProperty]
+    public static partial bool GetIsActive(Control control);
 
-    public static void SetIsActive(Control control, bool value) => control.SetValue(IsActiveProperty, value);
+    [GeneratedAttachedProperty]
+    private static partial int GetDragDepth(Control control);
 
     private static void OnIsActiveChanged(Control control, AvaloniaPropertyChangedEventArgs args)
     {
@@ -53,8 +49,8 @@ public sealed class DropZone : AvaloniaObject
             return;
         }
 
-        var depth = control.GetValue(DragDepthProperty) + 1;
-        control.SetValue(DragDepthProperty, depth);
+        var depth = GetDragDepth(control) + 1;
+        SetDragDepth(control, depth);
         if (depth is 1)
         {
             control.Classes.Add(DragOverClass);
@@ -68,14 +64,14 @@ public sealed class DropZone : AvaloniaObject
             return;
         }
 
-        var depth = control.GetValue(DragDepthProperty) - 1;
+        var depth = GetDragDepth(control) - 1;
         if (depth > 0)
         {
-            control.SetValue(DragDepthProperty, depth);
+            SetDragDepth(control, depth);
             return;
         }
 
-        control.SetValue(DragDepthProperty, 0);
+        SetDragDepth(control, 0);
         control.Classes.Remove(DragOverClass);
     }
 
@@ -86,7 +82,7 @@ public sealed class DropZone : AvaloniaObject
             return;
         }
 
-        control.SetValue(DragDepthProperty, 0);
+        SetDragDepth(control, 0);
         control.Classes.Remove(DragOverClass);
     }
 }

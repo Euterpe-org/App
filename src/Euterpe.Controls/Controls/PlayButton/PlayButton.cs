@@ -2,24 +2,12 @@ using System.Windows.Input;
 
 namespace Euterpe.Controls;
 
-public sealed class PlayButton : SelectingItemsControl
+public sealed partial class PlayButton : SelectingItemsControl
 {
-    public static readonly StyledProperty<ICommand> CommandProperty =
-        AvaloniaProperty.Register<PlayButton, ICommand>(nameof(Command));
-
-    public static readonly StyledProperty<string> ContentProperty =
-        AvaloniaProperty.Register<PlayButton, string>(nameof(Content));
-
-    public ICommand Command
-    {
-        get => GetValue(CommandProperty);
-        set => SetValue(CommandProperty, value);
-    }
+    [GeneratedStyledProperty]
+    public partial ICommand Command { get; set; }
 
     [Content]
-    public string Content
-    {
-        get => GetValue(ContentProperty);
-        set => SetValue(ContentProperty, value);
-    }
+    [GeneratedStyledProperty]
+    public partial string Content { get; set; }
 }

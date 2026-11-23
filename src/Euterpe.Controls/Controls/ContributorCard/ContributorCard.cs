@@ -3,50 +3,20 @@ using Euterpe.Controls.Models;
 
 namespace Euterpe.Controls;
 
-public sealed class ContributorCard : TemplatedControl
+public sealed partial class ContributorCard : TemplatedControl
 {
-    public static readonly StyledProperty<string> AvatarUrlProperty =
-        AvaloniaProperty.Register<ContributorCard, string>(nameof(AvatarUrl));
+    [GeneratedStyledProperty]
+    public partial string AvatarUrl { get; set; }
 
-    public static readonly StyledProperty<string> ContributorNameProperty =
-        AvaloniaProperty.Register<ContributorCard, string>(nameof(ContributorName));
+    [GeneratedStyledProperty]
+    public partial string ContributorName { get; set; }
 
-    public static readonly StyledProperty<string?> ContributorDescriptionProperty =
-        AvaloniaProperty.Register<ContributorCard, string?>(nameof(ContributorDescription));
+    [GeneratedStyledProperty]
+    public partial string? ContributorDescription { get; set; }
 
-    public static readonly StyledProperty<IEnumerable<ContributorLink>?> LinksProperty =
-        AvaloniaProperty.Register<ContributorCard, IEnumerable<ContributorLink>?>(nameof(Links));
+    [GeneratedStyledProperty]
+    public partial IEnumerable<ContributorLink>? Links { get; set; }
 
-    public static readonly StyledProperty<ICommand> ButtonCommandProperty =
-        AvaloniaProperty.Register<ContributorCard, ICommand>(nameof(ButtonCommand));
-
-    public string AvatarUrl
-    {
-        get => GetValue(AvatarUrlProperty);
-        set => SetValue(AvatarUrlProperty, value);
-    }
-
-    public string ContributorName
-    {
-        get => GetValue(ContributorNameProperty);
-        set => SetValue(ContributorNameProperty, value);
-    }
-
-    public string? ContributorDescription
-    {
-        get => GetValue(ContributorDescriptionProperty);
-        set => SetValue(ContributorDescriptionProperty, value);
-    }
-
-    public IEnumerable<ContributorLink>? Links
-    {
-        get => GetValue(LinksProperty);
-        set => SetValue(LinksProperty, value);
-    }
-
-    public ICommand ButtonCommand
-    {
-        get => GetValue(ButtonCommandProperty);
-        set => SetValue(ButtonCommandProperty, value);
-    }
+    [GeneratedStyledProperty]
+    public partial ICommand ButtonCommand { get; set; }
 }

@@ -2,16 +2,10 @@ using Euterpe.Models.Charts;
 
 namespace Euterpe.Controls;
 
-public sealed class DifficultyStar : TemplatedControl
+public sealed partial class DifficultyStar : TemplatedControl
 {
-    public static readonly StyledProperty<ChartDifficulty> DifficultyProperty =
-        AvaloniaProperty.Register<DifficultyStar, ChartDifficulty>(nameof(Difficulty), ChartDifficulty.Easy);
-
-    public ChartDifficulty Difficulty
-    {
-        get => GetValue(DifficultyProperty);
-        set => SetValue(DifficultyProperty, value);
-    }
+    [GeneratedStyledProperty(DefaultValue = ChartDifficulty.Easy)]
+    public partial ChartDifficulty Difficulty { get; set; }
 
     static DifficultyStar()
     {

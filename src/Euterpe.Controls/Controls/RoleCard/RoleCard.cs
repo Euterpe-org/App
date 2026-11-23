@@ -1,49 +1,19 @@
 namespace Euterpe.Controls;
 
-public sealed class RoleCard : TemplatedControl
+public sealed partial class RoleCard : TemplatedControl
 {
-    public static readonly StyledProperty<Geometry?> IconProperty =
-        AvaloniaProperty.Register<RoleCard, Geometry?>(nameof(Icon));
+    [GeneratedStyledProperty]
+    public partial Geometry? Icon { get; set; }
 
-    public static readonly StyledProperty<string?> TitleProperty =
-        AvaloniaProperty.Register<RoleCard, string?>(nameof(Title));
+    [GeneratedStyledProperty]
+    public partial string? Title { get; set; }
 
-    public static readonly StyledProperty<string?> DescriptionProperty =
-        AvaloniaProperty.Register<RoleCard, string?>(nameof(Description));
+    [GeneratedStyledProperty]
+    public partial string? Description { get; set; }
 
-    public static readonly StyledProperty<IBrush?> AccentColorProperty =
-        AvaloniaProperty.Register<RoleCard, IBrush?>(nameof(AccentColor));
+    [GeneratedStyledProperty]
+    public partial IBrush? AccentColor { get; set; }
 
-    public static readonly StyledProperty<bool> IsSelectedProperty =
-        AvaloniaProperty.Register<RoleCard, bool>(nameof(IsSelected));
-
-    public Geometry? Icon
-    {
-        get => GetValue(IconProperty);
-        set => SetValue(IconProperty, value);
-    }
-
-    public string? Title
-    {
-        get => GetValue(TitleProperty);
-        set => SetValue(TitleProperty, value);
-    }
-
-    public string? Description
-    {
-        get => GetValue(DescriptionProperty);
-        set => SetValue(DescriptionProperty, value);
-    }
-
-    public IBrush? AccentColor
-    {
-        get => GetValue(AccentColorProperty);
-        set => SetValue(AccentColorProperty, value);
-    }
-
-    public bool IsSelected
-    {
-        get => GetValue(IsSelectedProperty);
-        set => SetValue(IsSelectedProperty, value);
-    }
+    [GeneratedStyledProperty]
+    public partial bool IsSelected { get; set; }
 }

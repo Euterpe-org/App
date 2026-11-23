@@ -6,24 +6,9 @@ namespace Euterpe.Controls;
 
 [TemplatePart("PART_Image", typeof(Image))]
 [TemplatePart("PART_PlaceholderImage", typeof(Image))]
-public sealed class AsyncImage : TemplatedControl
+public sealed partial class AsyncImage : TemplatedControl
 {
     private static readonly HttpClient SharedHttpClient = new();
-
-    public static readonly StyledProperty<string?> SourceProperty =
-        AvaloniaProperty.Register<AsyncImage, string?>(nameof(Source));
-
-    public static readonly StyledProperty<IImage?> PlaceholderSourceProperty =
-        AvaloniaProperty.Register<AsyncImage, IImage?>(nameof(PlaceholderSource));
-
-    public static readonly StyledProperty<Stretch> StretchProperty =
-        AvaloniaProperty.Register<AsyncImage, Stretch>(nameof(Stretch), Stretch.Uniform);
-
-    public static readonly StyledProperty<double> DecodeWidthProperty =
-        AvaloniaProperty.Register<AsyncImage, double>(nameof(DecodeWidth), double.NaN);
-
-    public static readonly StyledProperty<double> DecodeHeightProperty =
-        AvaloniaProperty.Register<AsyncImage, double>(nameof(DecodeHeight), double.NaN);
 
     private Bitmap? _currentBitmap;
 
@@ -34,35 +19,20 @@ public sealed class AsyncImage : TemplatedControl
 
     public static IRemoteImageLoader? DefaultRemoteLoader { get; set; }
 
-    public string? Source
-    {
-        get => GetValue(SourceProperty);
-        set => SetValue(SourceProperty, value);
-    }
+    [GeneratedStyledProperty]
+    public partial string? Source { get; set; }
 
-    public IImage? PlaceholderSource
-    {
-        get => GetValue(PlaceholderSourceProperty);
-        set => SetValue(PlaceholderSourceProperty, value);
-    }
+    [GeneratedStyledProperty]
+    public partial IImage? PlaceholderSource { get; set; }
 
-    public Stretch Stretch
-    {
-        get => GetValue(StretchProperty);
-        set => SetValue(StretchProperty, value);
-    }
+    [GeneratedStyledProperty(DefaultValue = Stretch.Uniform)]
+    public partial Stretch Stretch { get; set; }
 
-    public double DecodeWidth
-    {
-        get => GetValue(DecodeWidthProperty);
-        set => SetValue(DecodeWidthProperty, value);
-    }
+    [GeneratedStyledProperty(DefaultValue = double.NaN)]
+    public partial double DecodeWidth { get; set; }
 
-    public double DecodeHeight
-    {
-        get => GetValue(DecodeHeightProperty);
-        set => SetValue(DecodeHeightProperty, value);
-    }
+    [GeneratedStyledProperty(DefaultValue = double.NaN)]
+    public partial double DecodeHeight { get; set; }
 
     protected override void OnApplyTemplate(TemplateAppliedEventArgs e)
     {

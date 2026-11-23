@@ -6,29 +6,17 @@ using Avalonia.Threading;
 namespace Euterpe.Controls;
 
 [TemplatePart("PART_Animated", typeof(AnimatedImage))]
-public sealed class CoverImage : TemplatedControl
+public sealed partial class CoverImage : TemplatedControl
 {
-    public static readonly StyledProperty<string?> SourceProperty =
-        AvaloniaProperty.Register<CoverImage, string?>(nameof(Source));
-
-    public static readonly StyledProperty<Stretch> StretchProperty =
-        AvaloniaProperty.Register<CoverImage, Stretch>(nameof(Stretch), Stretch.Uniform);
-
     private AnimatedImage? _animatedPart;
     private CancellationTokenSource? _loadCts;
     private bool _reloadOnAttach;
 
-    public string? Source
-    {
-        get => GetValue(SourceProperty);
-        set => SetValue(SourceProperty, value);
-    }
+    [GeneratedStyledProperty]
+    public partial string? Source { get; set; }
 
-    public Stretch Stretch
-    {
-        get => GetValue(StretchProperty);
-        set => SetValue(StretchProperty, value);
-    }
+    [GeneratedStyledProperty(DefaultValue = Stretch.Uniform)]
+    public partial Stretch Stretch { get; set; }
 
     protected override void OnApplyTemplate(TemplateAppliedEventArgs e)
     {

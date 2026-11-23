@@ -1,15 +1,9 @@
 namespace Euterpe.Controls;
 
-public sealed class SkeletonList : ItemsControl
+public sealed partial class SkeletonList : ItemsControl
 {
-    public static readonly StyledProperty<int> CountProperty =
-        AvaloniaProperty.Register<SkeletonList, int>(nameof(Count));
-
-    public int Count
-    {
-        get => GetValue(CountProperty);
-        set => SetValue(CountProperty, value);
-    }
+    [GeneratedStyledProperty]
+    public partial int Count { get; set; }
 
     protected override void OnPropertyChanged(AvaloniaPropertyChangedEventArgs change)
     {
