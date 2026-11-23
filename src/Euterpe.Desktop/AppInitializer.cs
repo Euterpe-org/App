@@ -23,7 +23,7 @@ internal sealed class AppInitializer
         AppViewModel.InitializeAsync().SafeFireAndForget();
 
         app.RequestedThemeVariant = ThemeVariants[Config.Theme];
-        LocalizationService.SetLanguage(Config.LanguageCode);
+        LocalizationService.SetLanguage(LocalizationService.GetCurrentLanguage().Name);
 
         SystemActivationService.SetupAsync().SafeFireAndForget(ex => Logger.LogError(ex, "Failed to register OS associations"));
 

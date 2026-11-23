@@ -1,6 +1,5 @@
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
-using System.Globalization;
 
 namespace Euterpe.Models;
 
@@ -38,8 +37,7 @@ public sealed partial class Config : ObservableObject
     };
 
     // Appearance Settings
-    [AllowNull]
-    public string LanguageCode { get; set; } = CultureInfo.CurrentUICulture.ToString();
+    public string LanguageCode { get; set; } = string.Empty;
 
     public string Theme { get; set; } = "Dark";
 

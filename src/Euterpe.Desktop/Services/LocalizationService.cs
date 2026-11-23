@@ -25,17 +25,11 @@ public sealed class LocalizationService
 
     public Language GetCurrentLanguage()
     {
-        CultureInfo currentCulture;
+        var languageCode = Config.LanguageCode.IsNullOrEmpty()
+            ? GetCurrentApplication().PlatformSettings!.PreferredApplicationLanguage
+            : Config.LanguageCode;
 
-        try
-        {
-            currentCulture = CultureInfo.GetCultureInfo(Config.LanguageCode);
-        }
-        catch (CultureNotFoundException ex)
-        {
-            currentCulture = CultureInfo.CurrentUICulture;
-            Logger.LogError(ex, "Invalid language code {LanguageCode} from config, falling back to {CultureName}", Config.LanguageCode, currentCulture.EnglishName);
-        }
+        var currentCulture = CultureInfo.GetCultureInfo(languageCode);
 
         foreach (var cultureName in CreateCultureFallbackChain(currentCulture).Select(x => x.Name))
         {
